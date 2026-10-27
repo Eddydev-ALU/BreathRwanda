@@ -1,0 +1,33 @@
+variable,label,value_label_set
+hhid,Household Identification,
+clust,Clust,
+province,Province,province
+district,District,d
+ur,Area of Residence,ur
+ae,hhsize A/E,
+member,hhsize,
+Food_at_school,Education Expenses/Food at School,
+exp1,Total Education Expenditures,
+exp2,Imputed Rents,
+exp3,Actual Rents,
+exp4,Water expenses,
+exp5,Electricity expenses,
+exp6,Annual Non food Expenditures,
+exp7,Monthly Non food Expenditures,
+exp8,Frequent Non Food Expenditures,
+exp9,Food Consumption/Home,
+exp10,Food outside Home Expenditures,
+exp11,Use values of durable goods,
+hh_index,Household Index,
+weight,Household Weight,
+pop_wt,Population Weight,
+sol_jan,Aggregate Consumption/ae in Jan 2024 Prices,
+quintile,Quintiles of real consumption per ae,lquintile
+food,Total food expenditures,
+cons1,Aggregate Consumption,
+cons1ae,Aggregate Consumption/ae,
+pov_jan,Total Poverty Headcount Ratio,pov_jan
+poverty,Welfare Categories,poverty
+epov_jan,Extreme Poverty Headcount Ratio,epov_jan
+Poverty_line,Value of Povertyline in Jan/2024 Prices,
+Extreme_line,Value of Food Povertyline in Jan/2024 Prices,

@@ -1,0 +1,3486 @@
+variable,label,value_label_set
+hhid,case identification,
+hv000,country code and phase,
+hv001,cluster number,
+hv002,household number,
+hv003,respondent's line number (answering household questionnaire),HV003
+hv004,ultimate area unit,
+hv005,household sample weight (6 decimals),
+hv006,month of interview,
+hv007,year of interview,
+hv008,date of interview (cmc),
+hv008a,date of interview century day code (cdc),
+hv009,number of household members,
+hv010,number of eligible women in household,
+hv011,number of eligible men in household,
+hv012,number of de jure members,
+hv013,number of de facto members,
+hv014,number of children 5 and under (de jure),
+hv015,result of household interview,HV015
+hv016,day of interview,
+hv017,number of visits,
+hv018,interviewer identification,
+hv019,na - keyer identification,
+hv020,ever-married sample,HV020
+hv021,primary sampling unit,
+hv022,sample strata for sampling errors,HV022
+hv023,stratification used in sample design,HV023
+hv024,region,HV024
+hv025,type of place of residence,HV025
+hv026,na - place of residence,HV026
+hv027,household selected for male interview,HV027
+hv028,household weight for male subsample (6 decimals),
+hv030,field supervisor,
+hv031,na - field editor,
+hv032,na - office editor,
+hv035,number of eligible children for height and weight,
+hv040,cluster altitude in meters,
+hv041,total adults measured,
+hv042,household selected for hemoglobin,HV042
+hv044,household selected for domestic violence module,HV044
+hv045a,language of questionnaire,HV045A
+hv045b,language of interview,HV045B
+hv045c,native language of respondent,HV045C
+hv046,translator used,HV046
+hv801,time interview started (hhmm - 24 hour clock),
+hv802,time interview ended (hhmm - 24 hour clock),
+hv803,length of interview in minutes,HV803
+hv804,number of visits for biomarker,
+hv807d,day of biomarker visit,
+hv807m,month of biomarker visit,
+hv807y,year of biomarker visit,
+hv807c,date of biomarker (cmc),
+hv807a,date of biomarker century day code (cdc),
+hv201,source of drinking water,HV201
+hv202,source of non-drinking water,HV202
+hv201a,na - water not available for at least a day last two weeks,HV201A
+hv204,time to get to water source (minutes),HV204
+hv205,type of toilet facility,HV205
+hv206,has electricity,HV206
+hv207,has radio,HV207
+hv208,has television,HV208
+hv209,has refrigerator,HV209
+hv210,has bicycle,HV210
+hv211,has motorcycle/scooter,HV211
+hv212,has car/truck,HV212
+hv213,main floor material,HV213
+hv214,main wall material,HV214
+hv215,main roof material,HV215
+hv216,number of rooms used for sleeping,
+hv217,relationship structure,HV217
+hv218,line number of head of household,
+hv219,sex of head of household,HV219
+hv220,age of head of household,HV220
+hv221,has telephone (land-line),HV221
+hv225,share toilet with other households,HV225
+hv226,type of cooking fuel,HV226
+hv227,has mosquito bed net for sleeping,HV227
+hv228,children under 5 slept under mosquito bed net last night,HV228
+hv230a,place where household members wash their hands,HV230A
+hv230b,presence of water at hand washing place,HV230B
+hv232,items present: soap or detergent,HV232
+hv232b,"items present: ash, mud, sand",HV232B
+hv232c,na - items present: cs,HV232C
+hv232d,na - items present: cs,HV232D
+hv232e,na - items present: cs,HV232E
+hv232y,items present: none,HV232Y
+hv234,na - result of salt test for iodine (ppm),HV234
+hv234a,na - result of salt test for iodine,HV234A
+hv235,location of source for water,HV235
+hv236,na - person fetching water,HV236
+hv237,anything done to water to make safe to drink,HV237
+hv237a,water usually treated by: boil,HV237A
+hv237b,water usually treated by: add bleach/chlorine,HV237B
+hv237c,water usually treated by: strain through a cloth,HV237C
+hv237d,water usually treated by: use water filter,HV237D
+hv237e,water usually treated by: solar disinfection,HV237E
+hv237f,water usually treated by: let it stand and settle,HV237F
+hv237g,water usually treated by: battled water (cs),HV237G
+hv237h,na - water usually treated by: cs,HV237H
+hv237i,na - water usually treated by: cs,HV237I
+hv237j,na - water usually treated by: cs,HV237J
+hv237k,na - water usually treated by: cs,HV237K
+hv237x,water usually treated by: other,HV237X
+hv237z,water usually treated by: don't know,HV237Z
+hv238,number of households sharing toilet,HV238
+hv238a,location of toilet facility,HV238A
+hv239,na - food cooked on stove or open fire,HV239
+hv240,"na - household has a chimney, hood or neither",HV240
+hv241,food cooked in the house/ separate building/ outdoors,HV241
+hv242,household has separate room used as kitchen,HV242
+hv243a,has mobile telephone,HV243A
+hv243b,has watch,HV243B
+hv243c,has animal-drawn cart,HV243C
+hv243d,has boat with a motor,HV243D
+hv243e,has a computer,HV243E
+hv244,owns land usable for agriculture,HV244
+hv245,hectares of agricultural land (1 decimal),HV245
+hv246,"owns livestock, herds or farm animals",HV246
+hv246a,owns cattle,HV246A
+hv246b,owns cows/ bulls,HV246B
+hv246c,owns horses/ donkeys/ mules,HV246C
+hv246d,owns goats,HV246D
+hv246e,owns sheep,HV246E
+hv246f,owns chickens/poultry,HV246F
+hv246g,owns cs: pigs,HV246G
+hv246h,owns cs: rabbits,HV246H
+hv246i,owns cs: cows modern,HV246I
+hv246j,na - owns cs,HV246J
+hv246k,na - owns cs,HV246K
+hv247,has bank account,HV247
+hv252,frequency household members smoke inside the house,HV252
+hv253,na - has dwelling been sprayed against mosquitoes in last 12 months,HV253
+hv253a,na - dwelling sprayed by: government worker/program,HV253A
+hv253b,na - dwelling sprayed by: private company,HV253B
+hv253c,na - dwelling sprayed by: ngo,HV253C
+hv253d,na - dwelling sprayed by: cs,HV253D
+hv253e,na - dwelling sprayed by: cs,HV253E
+hv253f,na - dwelling sprayed by: cs,HV253F
+hv253g,na - dwelling sprayed by: cs,HV253G
+hv253h,na - dwelling sprayed by: cs,HV253H
+hv253x,na - dwelling sprayed by: other,HV253X
+hv253z,na - dwelling sprayed by: don't know,HV253Z
+hv270,wealth index combined,HV270
+hv271,wealth index factor score combined (5 decimals),
+hv270a,wealth index for urban/rural,HV270A
+hv271a,wealth index factor score for urban/rural (5 decimals),
+hml1,number of mosquito bed nets,HML1
+hml1a,number of mosquito bed nets with specific information,
+hml2,number of children under mosquito bed net previous night,
+chl0,na - number of de-jure children 5-14 for child labor module,
+shdistrict,district,SHDISTRI
+sheligmb,eligiblity for micronutrient biomarker,SHELIGMB
+sh104a,how long is the distance from your home to that water source?,SH104A
+sh108a,drinking water stored,SH108A
+sh108b,observe stored water container,SH108B
+sh108c,number of times container is washed,SH108C
+sh112aa,observe cleanliness of toilet facility,SH112AA
+sh112ab,observe cleanliness of toilet facility,SH112AB
+sh112ac,observe cleanliness of toilet facility,SH112AC
+sh112ay,observe cleanliness of toilet facility,SH112AY
+sh121g,mattress,SH121G
+sh121h,bench or at least 3 chairs,SH121H
+sh121i,bed,SH121I
+sh121j,table,SH121J
+sh121k,sofa,SH121K
+sh121l,traditional improved stove,SH121L
+sh121m,stove,SH121M
+sh121n,cupboard,SH121N
+sh121o,dining table,SH121O
+sh121p,iron machine,SH121P
+sh121q,laundry machine,SH121Q
+sh121r,satelite dish,SH121R
+sh122h,boat without a motor,SH122H
+sh122i,camera,SH122I
+sh124b,household plans to obtain health insurance for members that are not currently co,SH124B
+sh144a,selected for micro nutrient,SH144A
+sh145a,type of salt,SH145A
+hvidx_01,line number,
+hvidx_02,line number,
+hvidx_03,line number,
+hvidx_04,line number,
+hvidx_05,line number,
+hvidx_06,line number,
+hvidx_07,line number,
+hvidx_08,line number,
+hvidx_09,line number,
+hvidx_10,line number,
+hvidx_11,line number,
+hvidx_12,line number,
+hvidx_13,line number,
+hvidx_14,line number,
+hvidx_15,line number,
+hvidx_16,line number,
+hv101_01,relationship to head,HV101_01
+hv101_02,relationship to head,HV101_02
+hv101_03,relationship to head,HV101_03
+hv101_04,relationship to head,HV101_04
+hv101_05,relationship to head,HV101_05
+hv101_06,relationship to head,HV101_06
+hv101_07,relationship to head,HV101_07
+hv101_08,relationship to head,HV101_08
+hv101_09,relationship to head,HV101_09
+hv101_10,relationship to head,HV101_10
+hv101_11,relationship to head,HV101_11
+hv101_12,relationship to head,HV101_12
+hv101_13,relationship to head,HV101_13
+hv101_14,relationship to head,HV101_14
+hv101_15,relationship to head,HV101_15
+hv101_16,relationship to head,HV101_16
+hv102_01,usual resident,HV102_01
+hv102_02,usual resident,HV102_02
+hv102_03,usual resident,HV102_03
+hv102_04,usual resident,HV102_04
+hv102_05,usual resident,HV102_05
+hv102_06,usual resident,HV102_06
+hv102_07,usual resident,HV102_07
+hv102_08,usual resident,HV102_08
+hv102_09,usual resident,HV102_09
+hv102_10,usual resident,HV102_10
+hv102_11,usual resident,HV102_11
+hv102_12,usual resident,HV102_12
+hv102_13,usual resident,HV102_13
+hv102_14,usual resident,HV102_14
+hv102_15,usual resident,HV102_15
+hv102_16,usual resident,HV102_16
+hv103_01,slept last night,HV103_01
+hv103_02,slept last night,HV103_02
+hv103_03,slept last night,HV103_03
+hv103_04,slept last night,HV103_04
+hv103_05,slept last night,HV103_05
+hv103_06,slept last night,HV103_06
+hv103_07,slept last night,HV103_07
+hv103_08,slept last night,HV103_08
+hv103_09,slept last night,HV103_09
+hv103_10,slept last night,HV103_10
+hv103_11,slept last night,HV103_11
+hv103_12,slept last night,HV103_12
+hv103_13,slept last night,HV103_13
+hv103_14,slept last night,HV103_14
+hv103_15,slept last night,HV103_15
+hv103_16,slept last night,HV103_16
+hv104_01,sex of household member,HV104_01
+hv104_02,sex of household member,HV104_02
+hv104_03,sex of household member,HV104_03
+hv104_04,sex of household member,HV104_04
+hv104_05,sex of household member,HV104_05
+hv104_06,sex of household member,HV104_06
+hv104_07,sex of household member,HV104_07
+hv104_08,sex of household member,HV104_08
+hv104_09,sex of household member,HV104_09
+hv104_10,sex of household member,HV104_10
+hv104_11,sex of household member,HV104_11
+hv104_12,sex of household member,HV104_12
+hv104_13,sex of household member,HV104_13
+hv104_14,sex of household member,HV104_14
+hv104_15,sex of household member,HV104_15
+hv104_16,sex of household member,HV104_16
+hv105_01,age of household members,HV105_01
+hv105_02,age of household members,HV105_02
+hv105_03,age of household members,HV105_03
+hv105_04,age of household members,HV105_04
+hv105_05,age of household members,HV105_05
+hv105_06,age of household members,HV105_06
+hv105_07,age of household members,HV105_07
+hv105_08,age of household members,HV105_08
+hv105_09,age of household members,HV105_09
+hv105_10,age of household members,HV105_10
+hv105_11,age of household members,HV105_11
+hv105_12,age of household members,HV105_12
+hv105_13,age of household members,HV105_13
+hv105_14,age of household members,HV105_14
+hv105_15,age of household members,HV105_15
+hv105_16,age of household members,HV105_16
+hv106_01,highest educational level attained,HV106_01
+hv106_02,highest educational level attained,HV106_02
+hv106_03,highest educational level attained,HV106_03
+hv106_04,highest educational level attained,HV106_04
+hv106_05,highest educational level attained,HV106_05
+hv106_06,highest educational level attained,HV106_06
+hv106_07,highest educational level attained,HV106_07
+hv106_08,highest educational level attained,HV106_08
+hv106_09,highest educational level attained,HV106_09
+hv106_10,highest educational level attained,HV106_10
+hv106_11,highest educational level attained,HV106_11
+hv106_12,highest educational level attained,HV106_12
+hv106_13,highest educational level attained,HV106_13
+hv106_14,highest educational level attained,HV106_14
+hv106_15,highest educational level attained,HV106_15
+hv106_16,highest educational level attained,HV106_16
+hv107_01,highest year of education completed,HV107_01
+hv107_02,highest year of education completed,HV107_02
+hv107_03,highest year of education completed,HV107_03
+hv107_04,highest year of education completed,HV107_04
+hv107_05,highest year of education completed,HV107_05
+hv107_06,highest year of education completed,HV107_06
+hv107_07,highest year of education completed,HV107_07
+hv107_08,highest year of education completed,HV107_08
+hv107_09,highest year of education completed,HV107_09
+hv107_10,highest year of education completed,HV107_10
+hv107_11,highest year of education completed,HV107_11
+hv107_12,highest year of education completed,HV107_12
+hv107_13,highest year of education completed,HV107_13
+hv107_14,highest year of education completed,HV107_14
+hv107_15,highest year of education completed,HV107_15
+hv107_16,highest year of education completed,HV107_16
+hv108_01,education completed in single years,HV108_01
+hv108_02,education completed in single years,HV108_02
+hv108_03,education completed in single years,HV108_03
+hv108_04,education completed in single years,HV108_04
+hv108_05,education completed in single years,HV108_05
+hv108_06,education completed in single years,HV108_06
+hv108_07,education completed in single years,HV108_07
+hv108_08,education completed in single years,HV108_08
+hv108_09,education completed in single years,HV108_09
+hv108_10,education completed in single years,HV108_10
+hv108_11,education completed in single years,HV108_11
+hv108_12,education completed in single years,HV108_12
+hv108_13,education completed in single years,HV108_13
+hv108_14,education completed in single years,HV108_14
+hv108_15,education completed in single years,HV108_15
+hv108_16,education completed in single years,HV108_16
+hv109_01,educational attainment,HV109_01
+hv109_02,educational attainment,HV109_02
+hv109_03,educational attainment,HV109_03
+hv109_04,educational attainment,HV109_04
+hv109_05,educational attainment,HV109_05
+hv109_06,educational attainment,HV109_06
+hv109_07,educational attainment,HV109_07
+hv109_08,educational attainment,HV109_08
+hv109_09,educational attainment,HV109_09
+hv109_10,educational attainment,HV109_10
+hv109_11,educational attainment,HV109_11
+hv109_12,educational attainment,HV109_12
+hv109_13,educational attainment,HV109_13
+hv109_14,educational attainment,HV109_14
+hv109_15,educational attainment,HV109_15
+hv109_16,educational attainment,HV109_16
+hv110_01,na - member still in school,HV110_01
+hv110_02,na - member still in school,HV110_02
+hv110_03,na - member still in school,HV110_03
+hv110_04,na - member still in school,HV110_04
+hv110_05,na - member still in school,HV110_05
+hv110_06,na - member still in school,HV110_06
+hv110_07,na - member still in school,HV110_07
+hv110_08,na - member still in school,HV110_08
+hv110_09,na - member still in school,HV110_09
+hv110_10,na - member still in school,HV110_10
+hv110_11,na - member still in school,HV110_11
+hv110_12,na - member still in school,HV110_12
+hv110_13,na - member still in school,HV110_13
+hv110_14,na - member still in school,HV110_14
+hv110_15,na - member still in school,HV110_15
+hv110_16,na - member still in school,HV110_16
+hv111_01,mother alive,HV111_01
+hv111_02,mother alive,HV111_02
+hv111_03,mother alive,HV111_03
+hv111_04,mother alive,HV111_04
+hv111_05,mother alive,HV111_05
+hv111_06,mother alive,HV111_06
+hv111_07,mother alive,HV111_07
+hv111_08,mother alive,HV111_08
+hv111_09,mother alive,HV111_09
+hv111_10,mother alive,HV111_10
+hv111_11,mother alive,HV111_11
+hv111_12,mother alive,HV111_12
+hv111_13,mother alive,HV111_13
+hv111_14,mother alive,HV111_14
+hv111_15,mother alive,HV111_15
+hv111_16,mother alive,HV111_16
+hv112_01,mother's line number,HV112_01
+hv112_02,mother's line number,HV112_02
+hv112_03,mother's line number,HV112_03
+hv112_04,mother's line number,HV112_04
+hv112_05,mother's line number,HV112_05
+hv112_06,mother's line number,HV112_06
+hv112_07,mother's line number,HV112_07
+hv112_08,mother's line number,HV112_08
+hv112_09,mother's line number,HV112_09
+hv112_10,mother's line number,HV112_10
+hv112_11,mother's line number,HV112_11
+hv112_12,mother's line number,HV112_12
+hv112_13,mother's line number,HV112_13
+hv112_14,mother's line number,HV112_14
+hv112_15,mother's line number,HV112_15
+hv112_16,mother's line number,HV112_16
+hv113_01,father alive,HV113_01
+hv113_02,father alive,HV113_02
+hv113_03,father alive,HV113_03
+hv113_04,father alive,HV113_04
+hv113_05,father alive,HV113_05
+hv113_06,father alive,HV113_06
+hv113_07,father alive,HV113_07
+hv113_08,father alive,HV113_08
+hv113_09,father alive,HV113_09
+hv113_10,father alive,HV113_10
+hv113_11,father alive,HV113_11
+hv113_12,father alive,HV113_12
+hv113_13,father alive,HV113_13
+hv113_14,father alive,HV113_14
+hv113_15,father alive,HV113_15
+hv113_16,father alive,HV113_16
+hv114_01,father's line number,HV114_01
+hv114_02,father's line number,HV114_02
+hv114_03,father's line number,HV114_03
+hv114_04,father's line number,HV114_04
+hv114_05,father's line number,HV114_05
+hv114_06,father's line number,HV114_06
+hv114_07,father's line number,HV114_07
+hv114_08,father's line number,HV114_08
+hv114_09,father's line number,HV114_09
+hv114_10,father's line number,HV114_10
+hv114_11,father's line number,HV114_11
+hv114_12,father's line number,HV114_12
+hv114_13,father's line number,HV114_13
+hv114_14,father's line number,HV114_14
+hv114_15,father's line number,HV114_15
+hv114_16,father's line number,HV114_16
+hv115_01,current marital status,HV115_01
+hv115_02,current marital status,HV115_02
+hv115_03,current marital status,HV115_03
+hv115_04,current marital status,HV115_04
+hv115_05,current marital status,HV115_05
+hv115_06,current marital status,HV115_06
+hv115_07,current marital status,HV115_07
+hv115_08,current marital status,HV115_08
+hv115_09,current marital status,HV115_09
+hv115_10,current marital status,HV115_10
+hv115_11,current marital status,HV115_11
+hv115_12,current marital status,HV115_12
+hv115_13,current marital status,HV115_13
+hv115_14,current marital status,HV115_14
+hv115_15,current marital status,HV115_15
+hv115_16,current marital status,HV115_16
+hv116_01,"currently, formerly, never married",HV116_01
+hv116_02,"currently, formerly, never married",HV116_02
+hv116_03,"currently, formerly, never married",HV116_03
+hv116_04,"currently, formerly, never married",HV116_04
+hv116_05,"currently, formerly, never married",HV116_05
+hv116_06,"currently, formerly, never married",HV116_06
+hv116_07,"currently, formerly, never married",HV116_07
+hv116_08,"currently, formerly, never married",HV116_08
+hv116_09,"currently, formerly, never married",HV116_09
+hv116_10,"currently, formerly, never married",HV116_10
+hv116_11,"currently, formerly, never married",HV116_11
+hv116_12,"currently, formerly, never married",HV116_12
+hv116_13,"currently, formerly, never married",HV116_13
+hv116_14,"currently, formerly, never married",HV116_14
+hv116_15,"currently, formerly, never married",HV116_15
+hv116_16,"currently, formerly, never married",HV116_16
+hv117_01,eligibility for female interview,HV117_01
+hv117_02,eligibility for female interview,HV117_02
+hv117_03,eligibility for female interview,HV117_03
+hv117_04,eligibility for female interview,HV117_04
+hv117_05,eligibility for female interview,HV117_05
+hv117_06,eligibility for female interview,HV117_06
+hv117_07,eligibility for female interview,HV117_07
+hv117_08,eligibility for female interview,HV117_08
+hv117_09,eligibility for female interview,HV117_09
+hv117_10,eligibility for female interview,HV117_10
+hv117_11,eligibility for female interview,HV117_11
+hv117_12,eligibility for female interview,HV117_12
+hv117_13,eligibility for female interview,HV117_13
+hv117_14,eligibility for female interview,HV117_14
+hv117_15,eligibility for female interview,HV117_15
+hv117_16,eligibility for female interview,HV117_16
+hv118_01,eligibility for male interview,HV118_01
+hv118_02,eligibility for male interview,HV118_02
+hv118_03,eligibility for male interview,HV118_03
+hv118_04,eligibility for male interview,HV118_04
+hv118_05,eligibility for male interview,HV118_05
+hv118_06,eligibility for male interview,HV118_06
+hv118_07,eligibility for male interview,HV118_07
+hv118_08,eligibility for male interview,HV118_08
+hv118_09,eligibility for male interview,HV118_09
+hv118_10,eligibility for male interview,HV118_10
+hv118_11,eligibility for male interview,HV118_11
+hv118_12,eligibility for male interview,HV118_12
+hv118_13,eligibility for male interview,HV118_13
+hv118_14,eligibility for male interview,HV118_14
+hv118_15,eligibility for male interview,HV118_15
+hv118_16,eligibility for male interview,HV118_16
+hv120_01,children eligibility for height/weight and hemoglobin,HV120_01
+hv120_02,children eligibility for height/weight and hemoglobin,HV120_02
+hv120_03,children eligibility for height/weight and hemoglobin,HV120_03
+hv120_04,children eligibility for height/weight and hemoglobin,HV120_04
+hv120_05,children eligibility for height/weight and hemoglobin,HV120_05
+hv120_06,children eligibility for height/weight and hemoglobin,HV120_06
+hv120_07,children eligibility for height/weight and hemoglobin,HV120_07
+hv120_08,children eligibility for height/weight and hemoglobin,HV120_08
+hv120_09,children eligibility for height/weight and hemoglobin,HV120_09
+hv120_10,children eligibility for height/weight and hemoglobin,HV120_10
+hv120_11,children eligibility for height/weight and hemoglobin,HV120_11
+hv120_12,children eligibility for height/weight and hemoglobin,HV120_12
+hv120_13,children eligibility for height/weight and hemoglobin,HV120_13
+hv120_14,children eligibility for height/weight and hemoglobin,HV120_14
+hv120_15,children eligibility for height/weight and hemoglobin,HV120_15
+hv120_16,children eligibility for height/weight and hemoglobin,HV120_16
+hv121_01,member attended school during current school year,HV121_01
+hv121_02,member attended school during current school year,HV121_02
+hv121_03,member attended school during current school year,HV121_03
+hv121_04,member attended school during current school year,HV121_04
+hv121_05,member attended school during current school year,HV121_05
+hv121_06,member attended school during current school year,HV121_06
+hv121_07,member attended school during current school year,HV121_07
+hv121_08,member attended school during current school year,HV121_08
+hv121_09,member attended school during current school year,HV121_09
+hv121_10,member attended school during current school year,HV121_10
+hv121_11,member attended school during current school year,HV121_11
+hv121_12,member attended school during current school year,HV121_12
+hv121_13,member attended school during current school year,HV121_13
+hv121_14,member attended school during current school year,HV121_14
+hv121_15,member attended school during current school year,HV121_15
+hv121_16,member attended school during current school year,HV121_16
+hv122_01,educational level during current school year,HV122_01
+hv122_02,educational level during current school year,HV122_02
+hv122_03,educational level during current school year,HV122_03
+hv122_04,educational level during current school year,HV122_04
+hv122_05,educational level during current school year,HV122_05
+hv122_06,educational level during current school year,HV122_06
+hv122_07,educational level during current school year,HV122_07
+hv122_08,educational level during current school year,HV122_08
+hv122_09,educational level during current school year,HV122_09
+hv122_10,educational level during current school year,HV122_10
+hv122_11,educational level during current school year,HV122_11
+hv122_12,educational level during current school year,HV122_12
+hv122_13,educational level during current school year,HV122_13
+hv122_14,educational level during current school year,HV122_14
+hv122_15,educational level during current school year,HV122_15
+hv122_16,educational level during current school year,HV122_16
+hv123_01,grade of education during current school year,HV123_01
+hv123_02,grade of education during current school year,HV123_02
+hv123_03,grade of education during current school year,HV123_03
+hv123_04,grade of education during current school year,HV123_04
+hv123_05,grade of education during current school year,HV123_05
+hv123_06,grade of education during current school year,HV123_06
+hv123_07,grade of education during current school year,HV123_07
+hv123_08,grade of education during current school year,HV123_08
+hv123_09,grade of education during current school year,HV123_09
+hv123_10,grade of education during current school year,HV123_10
+hv123_11,grade of education during current school year,HV123_11
+hv123_12,grade of education during current school year,HV123_12
+hv123_13,grade of education during current school year,HV123_13
+hv123_14,grade of education during current school year,HV123_14
+hv123_15,grade of education during current school year,HV123_15
+hv123_16,grade of education during current school year,HV123_16
+hv124_01,education in single years - current school year,HV124_01
+hv124_02,education in single years - current school year,HV124_02
+hv124_03,education in single years - current school year,HV124_03
+hv124_04,education in single years - current school year,HV124_04
+hv124_05,education in single years - current school year,HV124_05
+hv124_06,education in single years - current school year,HV124_06
+hv124_07,education in single years - current school year,HV124_07
+hv124_08,education in single years - current school year,HV124_08
+hv124_09,education in single years - current school year,HV124_09
+hv124_10,education in single years - current school year,HV124_10
+hv124_11,education in single years - current school year,HV124_11
+hv124_12,education in single years - current school year,HV124_12
+hv124_13,education in single years - current school year,HV124_13
+hv124_14,education in single years - current school year,HV124_14
+hv124_15,education in single years - current school year,HV124_15
+hv124_16,education in single years - current school year,HV124_16
+hv125_01,na - member attended school during previous school year,HV125_01
+hv125_02,na - member attended school during previous school year,HV125_02
+hv125_03,na - member attended school during previous school year,HV125_03
+hv125_04,na - member attended school during previous school year,HV125_04
+hv125_05,na - member attended school during previous school year,HV125_05
+hv125_06,na - member attended school during previous school year,HV125_06
+hv125_07,na - member attended school during previous school year,HV125_07
+hv125_08,na - member attended school during previous school year,HV125_08
+hv125_09,na - member attended school during previous school year,HV125_09
+hv125_10,na - member attended school during previous school year,HV125_10
+hv125_11,na - member attended school during previous school year,HV125_11
+hv125_12,na - member attended school during previous school year,HV125_12
+hv125_13,na - member attended school during previous school year,HV125_13
+hv125_14,na - member attended school during previous school year,HV125_14
+hv125_15,na - member attended school during previous school year,HV125_15
+hv125_16,na - member attended school during previous school year,HV125_16
+hv126_01,na - educational level during previous school year,HV126_01
+hv126_02,na - educational level during previous school year,HV126_02
+hv126_03,na - educational level during previous school year,HV126_03
+hv126_04,na - educational level during previous school year,HV126_04
+hv126_05,na - educational level during previous school year,HV126_05
+hv126_06,na - educational level during previous school year,HV126_06
+hv126_07,na - educational level during previous school year,HV126_07
+hv126_08,na - educational level during previous school year,HV126_08
+hv126_09,na - educational level during previous school year,HV126_09
+hv126_10,na - educational level during previous school year,HV126_10
+hv126_11,na - educational level during previous school year,HV126_11
+hv126_12,na - educational level during previous school year,HV126_12
+hv126_13,na - educational level during previous school year,HV126_13
+hv126_14,na - educational level during previous school year,HV126_14
+hv126_15,na - educational level during previous school year,HV126_15
+hv126_16,na - educational level during previous school year,HV126_16
+hv127_01,na - grade of education during previous school year,HV127_01
+hv127_02,na - grade of education during previous school year,HV127_02
+hv127_03,na - grade of education during previous school year,HV127_03
+hv127_04,na - grade of education during previous school year,HV127_04
+hv127_05,na - grade of education during previous school year,HV127_05
+hv127_06,na - grade of education during previous school year,HV127_06
+hv127_07,na - grade of education during previous school year,HV127_07
+hv127_08,na - grade of education during previous school year,HV127_08
+hv127_09,na - grade of education during previous school year,HV127_09
+hv127_10,na - grade of education during previous school year,HV127_10
+hv127_11,na - grade of education during previous school year,HV127_11
+hv127_12,na - grade of education during previous school year,HV127_12
+hv127_13,na - grade of education during previous school year,HV127_13
+hv127_14,na - grade of education during previous school year,HV127_14
+hv127_15,na - grade of education during previous school year,HV127_15
+hv127_16,na - grade of education during previous school year,HV127_16
+hv128_01,na - education in single years - previous school year,HV128_01
+hv128_02,na - education in single years - previous school year,HV128_02
+hv128_03,na - education in single years - previous school year,HV128_03
+hv128_04,na - education in single years - previous school year,HV128_04
+hv128_05,na - education in single years - previous school year,HV128_05
+hv128_06,na - education in single years - previous school year,HV128_06
+hv128_07,na - education in single years - previous school year,HV128_07
+hv128_08,na - education in single years - previous school year,HV128_08
+hv128_09,na - education in single years - previous school year,HV128_09
+hv128_10,na - education in single years - previous school year,HV128_10
+hv128_11,na - education in single years - previous school year,HV128_11
+hv128_12,na - education in single years - previous school year,HV128_12
+hv128_13,na - education in single years - previous school year,HV128_13
+hv128_14,na - education in single years - previous school year,HV128_14
+hv128_15,na - education in single years - previous school year,HV128_15
+hv128_16,na - education in single years - previous school year,HV128_16
+hv129_01,na - school attendance status,HV129_01
+hv129_02,na - school attendance status,HV129_02
+hv129_03,na - school attendance status,HV129_03
+hv129_04,na - school attendance status,HV129_04
+hv129_05,na - school attendance status,HV129_05
+hv129_06,na - school attendance status,HV129_06
+hv129_07,na - school attendance status,HV129_07
+hv129_08,na - school attendance status,HV129_08
+hv129_09,na - school attendance status,HV129_09
+hv129_10,na - school attendance status,HV129_10
+hv129_11,na - school attendance status,HV129_11
+hv129_12,na - school attendance status,HV129_12
+hv129_13,na - school attendance status,HV129_13
+hv129_14,na - school attendance status,HV129_14
+hv129_15,na - school attendance status,HV129_15
+hv129_16,na - school attendance status,HV129_16
+hv140_01,member has a birth certificate,HV140_01
+hv140_02,member has a birth certificate,HV140_02
+hv140_03,member has a birth certificate,HV140_03
+hv140_04,member has a birth certificate,HV140_04
+hv140_05,member has a birth certificate,HV140_05
+hv140_06,member has a birth certificate,HV140_06
+hv140_07,member has a birth certificate,HV140_07
+hv140_08,member has a birth certificate,HV140_08
+hv140_09,member has a birth certificate,HV140_09
+hv140_10,member has a birth certificate,HV140_10
+hv140_11,member has a birth certificate,HV140_11
+hv140_12,member has a birth certificate,HV140_12
+hv140_13,member has a birth certificate,HV140_13
+hv140_14,member has a birth certificate,HV140_14
+hv140_15,member has a birth certificate,HV140_15
+hv140_16,member has a birth certificate,HV140_16
+idxh4_01,index to household schedule,
+idxh4_02,index to household schedule,
+idxh4_03,index to household schedule,
+idxh4_04,index to household schedule,
+idxh4_05,index to household schedule,
+idxh4_06,index to household schedule,
+idxh4_07,index to household schedule,
+idxh4_08,index to household schedule,
+idxh4_09,index to household schedule,
+idxh4_10,index to household schedule,
+idxh4_11,index to household schedule,
+idxh4_12,index to household schedule,
+idxh4_13,index to household schedule,
+idxh4_14,index to household schedule,
+idxh4_15,index to household schedule,
+idxh4_16,index to household schedule,
+sh08_01,marital status,SH08_01
+sh08_02,marital status,SH08_02
+sh08_03,marital status,SH08_03
+sh08_04,marital status,SH08_04
+sh08_05,marital status,SH08_05
+sh08_06,marital status,SH08_06
+sh08_07,marital status,SH08_07
+sh08_08,marital status,SH08_08
+sh08_09,marital status,SH08_09
+sh08_10,marital status,SH08_10
+sh08_11,marital status,SH08_11
+sh08_12,marital status,SH08_12
+sh08_13,marital status,SH08_13
+sh08_14,marital status,SH08_14
+sh08_15,marital status,SH08_15
+sh08_16,marital status,SH08_16
+sh16_01,ever attended school,SH16_01
+sh16_02,ever attended school,SH16_02
+sh16_03,ever attended school,SH16_03
+sh16_04,ever attended school,SH16_04
+sh16_05,ever attended school,SH16_05
+sh16_06,ever attended school,SH16_06
+sh16_07,ever attended school,SH16_07
+sh16_08,ever attended school,SH16_08
+sh16_09,ever attended school,SH16_09
+sh16_10,ever attended school,SH16_10
+sh16_11,ever attended school,SH16_11
+sh16_12,ever attended school,SH16_12
+sh16_13,ever attended school,SH16_13
+sh16_14,ever attended school,SH16_14
+sh16_15,ever attended school,SH16_15
+sh16_16,ever attended school,SH16_16
+sh17a_01,level of education attended,SH17A_01
+sh17a_02,level of education attended,SH17A_02
+sh17a_03,level of education attended,SH17A_03
+sh17a_04,level of education attended,SH17A_04
+sh17a_05,level of education attended,SH17A_05
+sh17a_06,level of education attended,SH17A_06
+sh17a_07,level of education attended,SH17A_07
+sh17a_08,level of education attended,SH17A_08
+sh17a_09,level of education attended,SH17A_09
+sh17a_10,level of education attended,SH17A_10
+sh17a_11,level of education attended,SH17A_11
+sh17a_12,level of education attended,SH17A_12
+sh17a_13,level of education attended,SH17A_13
+sh17a_14,level of education attended,SH17A_14
+sh17a_15,level of education attended,SH17A_15
+sh17a_16,level of education attended,SH17A_16
+sh17b_01,highest grade completed,SH17B_01
+sh17b_02,highest grade completed,SH17B_02
+sh17b_03,highest grade completed,SH17B_03
+sh17b_04,highest grade completed,SH17B_04
+sh17b_05,highest grade completed,SH17B_05
+sh17b_06,highest grade completed,SH17B_06
+sh17b_07,highest grade completed,SH17B_07
+sh17b_08,highest grade completed,SH17B_08
+sh17b_09,highest grade completed,SH17B_09
+sh17b_10,highest grade completed,SH17B_10
+sh17b_11,highest grade completed,SH17B_11
+sh17b_12,highest grade completed,SH17B_12
+sh17b_13,highest grade completed,SH17B_13
+sh17b_14,highest grade completed,SH17B_14
+sh17b_15,highest grade completed,SH17B_15
+sh17b_16,highest grade completed,SH17B_16
+sh18_01,attend school current year,SH18_01
+sh18_02,attend school current year,SH18_02
+sh18_03,attend school current year,SH18_03
+sh18_04,attend school current year,SH18_04
+sh18_05,attend school current year,SH18_05
+sh18_06,attend school current year,SH18_06
+sh18_07,attend school current year,SH18_07
+sh18_08,attend school current year,SH18_08
+sh18_09,attend school current year,SH18_09
+sh18_10,attend school current year,SH18_10
+sh18_11,attend school current year,SH18_11
+sh18_12,attend school current year,SH18_12
+sh18_13,attend school current year,SH18_13
+sh18_14,attend school current year,SH18_14
+sh18_15,attend school current year,SH18_15
+sh18_16,attend school current year,SH18_16
+sh19a_01,level of education attending,SH19A_01
+sh19a_02,level of education attending,SH19A_02
+sh19a_03,level of education attending,SH19A_03
+sh19a_04,level of education attending,SH19A_04
+sh19a_05,level of education attending,SH19A_05
+sh19a_06,level of education attending,SH19A_06
+sh19a_07,level of education attending,SH19A_07
+sh19a_08,level of education attending,SH19A_08
+sh19a_09,level of education attending,SH19A_09
+sh19a_10,level of education attending,SH19A_10
+sh19a_11,level of education attending,SH19A_11
+sh19a_12,level of education attending,SH19A_12
+sh19a_13,level of education attending,SH19A_13
+sh19a_14,level of education attending,SH19A_14
+sh19a_15,level of education attending,SH19A_15
+sh19a_16,level of education attending,SH19A_16
+sh19b_01,grade attending,SH19B_01
+sh19b_02,grade attending,SH19B_02
+sh19b_03,grade attending,SH19B_03
+sh19b_04,grade attending,SH19B_04
+sh19b_05,grade attending,SH19B_05
+sh19b_06,grade attending,SH19B_06
+sh19b_07,grade attending,SH19B_07
+sh19b_08,grade attending,SH19B_08
+sh19b_09,grade attending,SH19B_09
+sh19b_10,grade attending,SH19B_10
+sh19b_11,grade attending,SH19B_11
+sh19b_12,grade attending,SH19B_12
+sh19b_13,grade attending,SH19B_13
+sh19b_14,grade attending,SH19B_14
+sh19b_15,grade attending,SH19B_15
+sh19b_16,grade attending,SH19B_16
+sh21_01,covered by insurance,SH21_01
+sh21_02,covered by insurance,SH21_02
+sh21_03,covered by insurance,SH21_03
+sh21_04,covered by insurance,SH21_04
+sh21_05,covered by insurance,SH21_05
+sh21_06,covered by insurance,SH21_06
+sh21_07,covered by insurance,SH21_07
+sh21_08,covered by insurance,SH21_08
+sh21_09,covered by insurance,SH21_09
+sh21_10,covered by insurance,SH21_10
+sh21_11,covered by insurance,SH21_11
+sh21_12,covered by insurance,SH21_12
+sh21_13,covered by insurance,SH21_13
+sh21_14,covered by insurance,SH21_14
+sh21_15,covered by insurance,SH21_15
+sh21_16,covered by insurance,SH21_16
+sh22_01,name of main type of health insurance,SH22_01
+sh22_02,name of main type of health insurance,SH22_02
+sh22_03,name of main type of health insurance,SH22_03
+sh22_04,name of main type of health insurance,SH22_04
+sh22_05,name of main type of health insurance,SH22_05
+sh22_06,name of main type of health insurance,SH22_06
+sh22_07,name of main type of health insurance,SH22_07
+sh22_08,name of main type of health insurance,SH22_08
+sh22_09,name of main type of health insurance,SH22_09
+sh22_10,name of main type of health insurance,SH22_10
+sh22_11,name of main type of health insurance,SH22_11
+sh22_12,name of main type of health insurance,SH22_12
+sh22_13,name of main type of health insurance,SH22_13
+sh22_14,name of main type of health insurance,SH22_14
+sh22_15,name of main type of health insurance,SH22_15
+sh22_16,name of main type of health insurance,SH22_16
+sh23_01,currently smokes,SH23_01
+sh23_02,currently smokes,SH23_02
+sh23_03,currently smokes,SH23_03
+sh23_04,currently smokes,SH23_04
+sh23_05,currently smokes,SH23_05
+sh23_06,currently smokes,SH23_06
+sh23_07,currently smokes,SH23_07
+sh23_08,currently smokes,SH23_08
+sh23_09,currently smokes,SH23_09
+sh23_10,currently smokes,SH23_10
+sh23_11,currently smokes,SH23_11
+sh23_12,currently smokes,SH23_12
+sh23_13,currently smokes,SH23_13
+sh23_14,currently smokes,SH23_14
+sh23_15,currently smokes,SH23_15
+sh23_16,currently smokes,SH23_16
+sb315_01,read consent statement to respondent (hiv rdt),SB315_01
+sb315_02,read consent statement to respondent (hiv rdt),SB315_02
+sb315_03,read consent statement to respondent (hiv rdt),SB315_03
+sb315_04,read consent statement to respondent (hiv rdt),SB315_04
+sb315_05,read consent statement to respondent (hiv rdt),SB315_05
+sb315_06,read consent statement to respondent (hiv rdt),SB315_06
+sb315_07,read consent statement to respondent (hiv rdt),SB315_07
+sb315_08,read consent statement to respondent (hiv rdt),SB315_08
+sb315_09,read consent statement to respondent (hiv rdt),SB315_09
+sb315_10,read consent statement to respondent (hiv rdt),SB315_10
+sb315_11,read consent statement to respondent (hiv rdt),SB315_11
+sb315_12,read consent statement to respondent (hiv rdt),SB315_12
+sb315_13,read consent statement to respondent (hiv rdt),SB315_13
+sb315_14,read consent statement to respondent (hiv rdt),SB315_14
+sb315_15,read consent statement to respondent (hiv rdt),SB315_15
+sb315_16,read consent statement to respondent (hiv rdt),SB315_16
+sb315f_01,fieldworker number for hiv rdt,
+sb315f_02,fieldworker number for hiv rdt,
+sb315f_03,fieldworker number for hiv rdt,
+sb315f_04,fieldworker number for hiv rdt,
+sb315f_05,fieldworker number for hiv rdt,
+sb315f_06,fieldworker number for hiv rdt,
+sb315f_07,fieldworker number for hiv rdt,
+sb315f_08,fieldworker number for hiv rdt,
+sb315f_09,fieldworker number for hiv rdt,
+sb315f_10,fieldworker number for hiv rdt,
+sb315f_11,fieldworker number for hiv rdt,
+sb315f_12,fieldworker number for hiv rdt,
+sb315f_13,fieldworker number for hiv rdt,
+sb315f_14,fieldworker number for hiv rdt,
+sb315f_15,fieldworker number for hiv rdt,
+sb315f_16,fieldworker number for hiv rdt,
+sb332_01,result hiv rdt combo set,SB332_01
+sb332_02,result hiv rdt combo set,SB332_02
+sb332_03,result hiv rdt combo set,SB332_03
+sb332_04,result hiv rdt combo set,SB332_04
+sb332_05,result hiv rdt combo set,SB332_05
+sb332_06,result hiv rdt combo set,SB332_06
+sb332_07,result hiv rdt combo set,SB332_07
+sb332_08,result hiv rdt combo set,SB332_08
+sb332_09,result hiv rdt combo set,SB332_09
+sb332_10,result hiv rdt combo set,SB332_10
+sb332_11,result hiv rdt combo set,SB332_11
+sb332_12,result hiv rdt combo set,SB332_12
+sb332_13,result hiv rdt combo set,SB332_13
+sb332_14,result hiv rdt combo set,SB332_14
+sb332_15,result hiv rdt combo set,SB332_15
+sb332_16,result hiv rdt combo set,SB332_16
+sb333_01,result hiv rdt stat pak,SB333_01
+sb333_02,result hiv rdt stat pak,SB333_02
+sb333_03,result hiv rdt stat pak,SB333_03
+sb333_04,result hiv rdt stat pak,SB333_04
+sb333_05,result hiv rdt stat pak,SB333_05
+sb333_06,result hiv rdt stat pak,SB333_06
+sb333_07,result hiv rdt stat pak,SB333_07
+sb333_08,result hiv rdt stat pak,SB333_08
+sb333_09,result hiv rdt stat pak,SB333_09
+sb333_10,result hiv rdt stat pak,SB333_10
+sb333_11,result hiv rdt stat pak,SB333_11
+sb333_12,result hiv rdt stat pak,SB333_12
+sb333_13,result hiv rdt stat pak,SB333_13
+sb333_14,result hiv rdt stat pak,SB333_14
+sb333_15,result hiv rdt stat pak,SB333_15
+sb333_16,result hiv rdt stat pak,SB333_16
+sb337_01,any invalid/failed rdt,SB337_01
+sb337_02,any invalid/failed rdt,SB337_02
+sb337_03,any invalid/failed rdt,SB337_03
+sb337_04,any invalid/failed rdt,SB337_04
+sb337_05,any invalid/failed rdt,SB337_05
+sb337_06,any invalid/failed rdt,SB337_06
+sb337_07,any invalid/failed rdt,SB337_07
+sb337_08,any invalid/failed rdt,SB337_08
+sb337_09,any invalid/failed rdt,SB337_09
+sb337_10,any invalid/failed rdt,SB337_10
+sb337_11,any invalid/failed rdt,SB337_11
+sb337_12,any invalid/failed rdt,SB337_12
+sb337_13,any invalid/failed rdt,SB337_13
+sb337_14,any invalid/failed rdt,SB337_14
+sb337_15,any invalid/failed rdt,SB337_15
+sb337_16,any invalid/failed rdt,SB337_16
+sb338_01,record number of invalid hiv rdt combo set,SB338_01
+sb338_02,record number of invalid hiv rdt combo set,SB338_02
+sb338_03,record number of invalid hiv rdt combo set,SB338_03
+sb338_04,record number of invalid hiv rdt combo set,SB338_04
+sb338_05,record number of invalid hiv rdt combo set,SB338_05
+sb338_06,record number of invalid hiv rdt combo set,SB338_06
+sb338_07,record number of invalid hiv rdt combo set,SB338_07
+sb338_08,record number of invalid hiv rdt combo set,SB338_08
+sb338_09,record number of invalid hiv rdt combo set,SB338_09
+sb338_10,record number of invalid hiv rdt combo set,SB338_10
+sb338_11,record number of invalid hiv rdt combo set,SB338_11
+sb338_12,record number of invalid hiv rdt combo set,SB338_12
+sb338_13,record number of invalid hiv rdt combo set,SB338_13
+sb338_14,record number of invalid hiv rdt combo set,SB338_14
+sb338_15,record number of invalid hiv rdt combo set,SB338_15
+sb338_16,record number of invalid hiv rdt combo set,SB338_16
+sb339_01,record number of invalid hiv rdt stat pak,SB339_01
+sb339_02,record number of invalid hiv rdt stat pak,SB339_02
+sb339_03,record number of invalid hiv rdt stat pak,SB339_03
+sb339_04,record number of invalid hiv rdt stat pak,SB339_04
+sb339_05,record number of invalid hiv rdt stat pak,SB339_05
+sb339_06,record number of invalid hiv rdt stat pak,SB339_06
+sb339_07,record number of invalid hiv rdt stat pak,SB339_07
+sb339_08,record number of invalid hiv rdt stat pak,SB339_08
+sb339_09,record number of invalid hiv rdt stat pak,SB339_09
+sb339_10,record number of invalid hiv rdt stat pak,SB339_10
+sb339_11,record number of invalid hiv rdt stat pak,SB339_11
+sb339_12,record number of invalid hiv rdt stat pak,SB339_12
+sb339_13,record number of invalid hiv rdt stat pak,SB339_13
+sb339_14,record number of invalid hiv rdt stat pak,SB339_14
+sb339_15,record number of invalid hiv rdt stat pak,SB339_15
+sb339_16,record number of invalid hiv rdt stat pak,SB339_16
+ha0_1,index to household schedule,
+ha0_2,index to household schedule,
+ha0_3,index to household schedule,
+ha0_4,index to household schedule,
+ha0_5,index to household schedule,
+ha0_6,index to household schedule,
+ha1_1,woman's age in years,
+ha1_2,woman's age in years,
+ha1_3,woman's age in years,
+ha1_4,woman's age in years,
+ha1_5,woman's age in years,
+ha1_6,woman's age in years,
+ha2_1,woman's weight in kilograms (1 decimal),HA2_1
+ha2_2,woman's weight in kilograms (1 decimal),HA2_2
+ha2_3,woman's weight in kilograms (1 decimal),HA2_3
+ha2_4,woman's weight in kilograms (1 decimal),HA2_4
+ha2_5,woman's weight in kilograms (1 decimal),HA2_5
+ha2_6,woman's weight in kilograms (1 decimal),HA2_6
+ha3_1,woman's height in centimeters (1 decimal),HA3_1
+ha3_2,woman's height in centimeters (1 decimal),HA3_2
+ha3_3,woman's height in centimeters (1 decimal),HA3_3
+ha3_4,woman's height in centimeters (1 decimal),HA3_4
+ha3_5,woman's height in centimeters (1 decimal),HA3_5
+ha3_6,woman's height in centimeters (1 decimal),HA3_6
+ha4_1,height/age percentile,HA4_1
+ha4_2,height/age percentile,HA4_2
+ha4_3,height/age percentile,HA4_3
+ha4_4,height/age percentile,HA4_4
+ha4_5,height/age percentile,HA4_5
+ha4_6,height/age percentile,HA4_6
+ha5_1,height/age standard deviation,HA5_1
+ha5_2,height/age standard deviation,HA5_2
+ha5_3,height/age standard deviation,HA5_3
+ha5_4,height/age standard deviation,HA5_4
+ha5_5,height/age standard deviation,HA5_5
+ha5_6,height/age standard deviation,HA5_6
+ha6_1,height/age percent ref. median,HA6_1
+ha6_2,height/age percent ref. median,HA6_2
+ha6_3,height/age percent ref. median,HA6_3
+ha6_4,height/age percent ref. median,HA6_4
+ha6_5,height/age percent ref. median,HA6_5
+ha6_6,height/age percent ref. median,HA6_6
+ha11_1,weight/height standard deviation (dhs),HA11_1
+ha11_2,weight/height standard deviation (dhs),HA11_2
+ha11_3,weight/height standard deviation (dhs),HA11_3
+ha11_4,weight/height standard deviation (dhs),HA11_4
+ha11_5,weight/height standard deviation (dhs),HA11_5
+ha11_6,weight/height standard deviation (dhs),HA11_6
+ha12_1,weight/height percent ref. median (dhs),HA12_1
+ha12_2,weight/height percent ref. median (dhs),HA12_2
+ha12_3,weight/height percent ref. median (dhs),HA12_3
+ha12_4,weight/height percent ref. median (dhs),HA12_4
+ha12_5,weight/height percent ref. median (dhs),HA12_5
+ha12_6,weight/height percent ref. median (dhs),HA12_6
+ha12a_1,weight/height percent ref. median (fog),HA12A_1
+ha12a_2,weight/height percent ref. median (fog),HA12A_2
+ha12a_3,weight/height percent ref. median (fog),HA12A_3
+ha12a_4,weight/height percent ref. median (fog),HA12A_4
+ha12a_5,weight/height percent ref. median (fog),HA12A_5
+ha12a_6,weight/height percent ref. median (fog),HA12A_6
+ha12b_1,weight/height percent ref. median (who),HA12B_1
+ha12b_2,weight/height percent ref. median (who),HA12B_2
+ha12b_3,weight/height percent ref. median (who),HA12B_3
+ha12b_4,weight/height percent ref. median (who),HA12B_4
+ha12b_5,weight/height percent ref. median (who),HA12B_5
+ha12b_6,weight/height percent ref. median (who),HA12B_6
+ha13_1,result of measurement - height/weight,HA13_1
+ha13_2,result of measurement - height/weight,HA13_2
+ha13_3,result of measurement - height/weight,HA13_3
+ha13_4,result of measurement - height/weight,HA13_4
+ha13_5,result of measurement - height/weight,HA13_5
+ha13_6,result of measurement - height/weight,HA13_6
+ha21_1,fieldworker measurer code,
+ha21_2,fieldworker measurer code,
+ha21_3,fieldworker measurer code,
+ha21_4,fieldworker measurer code,
+ha21_5,fieldworker measurer code,
+ha21_6,fieldworker measurer code,
+ha32_1,date of birth (cmc),
+ha32_2,date of birth (cmc),
+ha32_3,date of birth (cmc),
+ha32_4,date of birth (cmc),
+ha32_5,date of birth (cmc),
+ha32_6,date of birth (cmc),
+ha33_1,completeness of ha32 information,HA33_1
+ha33_2,completeness of ha32 information,HA33_2
+ha33_3,completeness of ha32 information,HA33_3
+ha33_4,completeness of ha32 information,HA33_4
+ha33_5,completeness of ha32 information,HA33_5
+ha33_6,completeness of ha32 information,HA33_6
+ha35_1,smoking (cigarettes in last 24 hours),HA35_1
+ha35_2,smoking (cigarettes in last 24 hours),HA35_2
+ha35_3,smoking (cigarettes in last 24 hours),HA35_3
+ha35_4,smoking (cigarettes in last 24 hours),HA35_4
+ha35_5,smoking (cigarettes in last 24 hours),HA35_5
+ha35_6,smoking (cigarettes in last 24 hours),HA35_6
+ha40_1,body mass index,HA40_1
+ha40_2,body mass index,HA40_2
+ha40_3,body mass index,HA40_3
+ha40_4,body mass index,HA40_4
+ha40_5,body mass index,HA40_5
+ha40_6,body mass index,HA40_6
+ha41_1,rohrer's index,HA41_1
+ha41_2,rohrer's index,HA41_2
+ha41_3,rohrer's index,HA41_3
+ha41_4,rohrer's index,HA41_4
+ha41_5,rohrer's index,HA41_5
+ha41_6,rohrer's index,HA41_6
+ha50_1,under age 18,HA50_1
+ha50_2,under age 18,HA50_2
+ha50_3,under age 18,HA50_3
+ha50_4,under age 18,HA50_4
+ha50_5,under age 18,HA50_5
+ha50_6,under age 18,HA50_6
+ha51_1,line number of parent/caretaker,HA51_1
+ha51_2,line number of parent/caretaker,HA51_2
+ha51_3,line number of parent/caretaker,HA51_3
+ha51_4,line number of parent/caretaker,HA51_4
+ha51_5,line number of parent/caretaker,HA51_5
+ha51_6,line number of parent/caretaker,HA51_6
+ha52_1,read consent statement - hemoglobin,HA52_1
+ha52_2,read consent statement - hemoglobin,HA52_2
+ha52_3,read consent statement - hemoglobin,HA52_3
+ha52_4,read consent statement - hemoglobin,HA52_4
+ha52_5,read consent statement - hemoglobin,HA52_5
+ha52_6,read consent statement - hemoglobin,HA52_6
+ha53_1,hemoglobin level (g/dl - 1 decimal),HA53_1
+ha53_2,hemoglobin level (g/dl - 1 decimal),HA53_2
+ha53_3,hemoglobin level (g/dl - 1 decimal),HA53_3
+ha53_4,hemoglobin level (g/dl - 1 decimal),HA53_4
+ha53_5,hemoglobin level (g/dl - 1 decimal),HA53_5
+ha53_6,hemoglobin level (g/dl - 1 decimal),HA53_6
+ha54_1,currently pregnant,HA54_1
+ha54_2,currently pregnant,HA54_2
+ha54_3,currently pregnant,HA54_3
+ha54_4,currently pregnant,HA54_4
+ha54_5,currently pregnant,HA54_5
+ha54_6,currently pregnant,HA54_6
+ha55_1,result of measurement - hemoglobin,HA55_1
+ha55_2,result of measurement - hemoglobin,HA55_2
+ha55_3,result of measurement - hemoglobin,HA55_3
+ha55_4,result of measurement - hemoglobin,HA55_4
+ha55_5,result of measurement - hemoglobin,HA55_5
+ha55_6,result of measurement - hemoglobin,HA55_6
+ha56_1,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56_1
+ha56_2,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56_2
+ha56_3,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56_3
+ha56_4,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56_4
+ha56_5,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56_5
+ha56_6,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56_6
+ha57_1,anemia level,HA57_1
+ha57_2,anemia level,HA57_2
+ha57_3,anemia level,HA57_3
+ha57_4,anemia level,HA57_4
+ha57_5,anemia level,HA57_5
+ha57_6,anemia level,HA57_6
+ha58_1,na - agrees to referral - anemia,HA58_1
+ha58_2,na - agrees to referral - anemia,HA58_2
+ha58_3,na - agrees to referral - anemia,HA58_3
+ha58_4,na - agrees to referral - anemia,HA58_4
+ha58_5,na - agrees to referral - anemia,HA58_5
+ha58_6,na - agrees to referral - anemia,HA58_6
+ha60_1,marital status,HA60_1
+ha60_2,marital status,HA60_2
+ha60_3,marital status,HA60_3
+ha60_4,marital status,HA60_4
+ha60_5,marital status,HA60_5
+ha60_6,marital status,HA60_6
+ha61_1,read consent statement - hiv,HA61_1
+ha61_2,read consent statement - hiv,HA61_2
+ha61_3,read consent statement - hiv,HA61_3
+ha61_4,read consent statement - hiv,HA61_4
+ha61_5,read consent statement - hiv,HA61_5
+ha61_6,read consent statement - hiv,HA61_6
+ha62_1,bar code for hiv blood sample,
+ha62_2,bar code for hiv blood sample,
+ha62_3,bar code for hiv blood sample,
+ha62_4,bar code for hiv blood sample,
+ha62_5,bar code for hiv blood sample,
+ha62_6,bar code for hiv blood sample,
+ha63_1,result of measurement - hiv,HA63_1
+ha63_2,result of measurement - hiv,HA63_2
+ha63_3,result of measurement - hiv,HA63_3
+ha63_4,result of measurement - hiv,HA63_4
+ha63_5,result of measurement - hiv,HA63_5
+ha63_6,result of measurement - hiv,HA63_6
+ha64_1,na - consent for additional tests,HA64_1
+ha64_2,na - consent for additional tests,HA64_2
+ha64_3,na - consent for additional tests,HA64_3
+ha64_4,na - consent for additional tests,HA64_4
+ha64_5,na - consent for additional tests,HA64_5
+ha64_6,na - consent for additional tests,HA64_6
+ha65_1,result of woman's individual interview,HA65_1
+ha65_2,result of woman's individual interview,HA65_2
+ha65_3,result of woman's individual interview,HA65_3
+ha65_4,result of woman's individual interview,HA65_4
+ha65_5,result of woman's individual interview,HA65_5
+ha65_6,result of woman's individual interview,HA65_6
+ha66_1,woman's highest educational level,HA66_1
+ha66_2,woman's highest educational level,HA66_2
+ha66_3,woman's highest educational level,HA66_3
+ha66_4,woman's highest educational level,HA66_4
+ha66_5,woman's highest educational level,HA66_5
+ha66_6,woman's highest educational level,HA66_6
+ha67_1,woman's highest year of education,HA67_1
+ha67_2,woman's highest year of education,HA67_2
+ha67_3,woman's highest year of education,HA67_3
+ha67_4,woman's highest year of education,HA67_4
+ha67_5,woman's highest year of education,HA67_5
+ha67_6,woman's highest year of education,HA67_6
+ha68_1,woman's highest educational level (for preliminary and final report),HA68_1
+ha68_2,woman's highest educational level (for preliminary and final report),HA68_2
+ha68_3,woman's highest educational level (for preliminary and final report),HA68_3
+ha68_4,woman's highest educational level (for preliminary and final report),HA68_4
+ha68_5,woman's highest educational level (for preliminary and final report),HA68_5
+ha68_6,woman's highest educational level (for preliminary and final report),HA68_6
+ha69_1,na - hiv weight (6 decimals),
+ha69_2,na - hiv weight (6 decimals),
+ha69_3,na - hiv weight (6 decimals),
+ha69_4,na - hiv weight (6 decimals),
+ha69_5,na - hiv weight (6 decimals),
+ha69_6,na - hiv weight (6 decimals),
+ha70_1,interviewer that took blood for hiv testing,
+ha70_2,interviewer that took blood for hiv testing,
+ha70_3,interviewer that took blood for hiv testing,
+ha70_4,interviewer that took blood for hiv testing,
+ha70_5,interviewer that took blood for hiv testing,
+ha70_6,interviewer that took blood for hiv testing,
+hc0_1,index to household schedule,
+hc0_2,index to household schedule,
+hc0_3,index to household schedule,
+hc0_4,index to household schedule,
+hc0_5,index to household schedule,
+hc1_1,child's age in months,
+hc1_2,child's age in months,
+hc1_3,child's age in months,
+hc1_4,child's age in months,
+hc1_5,child's age in months,
+hc1a_1,child's age in days,
+hc1a_2,child's age in days,
+hc1a_3,child's age in days,
+hc1a_4,child's age in days,
+hc1a_5,child's age in days,
+hc2_1,child's weight in kilograms (1 decimal),HC2_1
+hc2_2,child's weight in kilograms (1 decimal),HC2_2
+hc2_3,child's weight in kilograms (1 decimal),HC2_3
+hc2_4,child's weight in kilograms (1 decimal),HC2_4
+hc2_5,child's weight in kilograms (1 decimal),HC2_5
+hc3_1,child's height in centimeters (1 decimal),HC3_1
+hc3_2,child's height in centimeters (1 decimal),HC3_2
+hc3_3,child's height in centimeters (1 decimal),HC3_3
+hc3_4,child's height in centimeters (1 decimal),HC3_4
+hc3_5,child's height in centimeters (1 decimal),HC3_5
+hc4_1,height/age percentile,HC4_1
+hc4_2,height/age percentile,HC4_2
+hc4_3,height/age percentile,HC4_3
+hc4_4,height/age percentile,HC4_4
+hc4_5,height/age percentile,HC4_5
+hc5_1,height/age standard deviation,HC5_1
+hc5_2,height/age standard deviation,HC5_2
+hc5_3,height/age standard deviation,HC5_3
+hc5_4,height/age standard deviation,HC5_4
+hc5_5,height/age standard deviation,HC5_5
+hc6_1,height/age percent of ref. median,HC6_1
+hc6_2,height/age percent of ref. median,HC6_2
+hc6_3,height/age percent of ref. median,HC6_3
+hc6_4,height/age percent of ref. median,HC6_4
+hc6_5,height/age percent of ref. median,HC6_5
+hc7_1,weight/age percentile,HC7_1
+hc7_2,weight/age percentile,HC7_2
+hc7_3,weight/age percentile,HC7_3
+hc7_4,weight/age percentile,HC7_4
+hc7_5,weight/age percentile,HC7_5
+hc8_1,weight/age standard deviation,HC8_1
+hc8_2,weight/age standard deviation,HC8_2
+hc8_3,weight/age standard deviation,HC8_3
+hc8_4,weight/age standard deviation,HC8_4
+hc8_5,weight/age standard deviation,HC8_5
+hc9_1,weight/age percent of ref. median,HC9_1
+hc9_2,weight/age percent of ref. median,HC9_2
+hc9_3,weight/age percent of ref. median,HC9_3
+hc9_4,weight/age percent of ref. median,HC9_4
+hc9_5,weight/age percent of ref. median,HC9_5
+hc10_1,weight/height percentile,HC10_1
+hc10_2,weight/height percentile,HC10_2
+hc10_3,weight/height percentile,HC10_3
+hc10_4,weight/height percentile,HC10_4
+hc10_5,weight/height percentile,HC10_5
+hc11_1,weight/height standard deviation,HC11_1
+hc11_2,weight/height standard deviation,HC11_2
+hc11_3,weight/height standard deviation,HC11_3
+hc11_4,weight/height standard deviation,HC11_4
+hc11_5,weight/height standard deviation,HC11_5
+hc12_1,weight/height percent of ref. median,HC12_1
+hc12_2,weight/height percent of ref. median,HC12_2
+hc12_3,weight/height percent of ref. median,HC12_3
+hc12_4,weight/height percent of ref. median,HC12_4
+hc12_5,weight/height percent of ref. median,HC12_5
+hc13_1,result of measurement - height/weight,HC13_1
+hc13_2,result of measurement - height/weight,HC13_2
+hc13_3,result of measurement - height/weight,HC13_3
+hc13_4,result of measurement - height/weight,HC13_4
+hc13_5,result of measurement - height/weight,HC13_5
+hc15_1,height: lying or standing,HC15_1
+hc15_2,height: lying or standing,HC15_2
+hc15_3,height: lying or standing,HC15_3
+hc15_4,height: lying or standing,HC15_4
+hc15_5,height: lying or standing,HC15_5
+hc16_1,day of birth,HC16_1
+hc16_2,day of birth,HC16_2
+hc16_3,day of birth,HC16_3
+hc16_4,day of birth,HC16_4
+hc16_5,day of birth,HC16_5
+hc17_1,date measured (day),
+hc17_2,date measured (day),
+hc17_3,date measured (day),
+hc17_4,date measured (day),
+hc17_5,date measured (day),
+hc18_1,date measured (month),
+hc18_2,date measured (month),
+hc18_3,date measured (month),
+hc18_4,date measured (month),
+hc18_5,date measured (month),
+hc19_1,date measured (year),
+hc19_2,date measured (year),
+hc19_3,date measured (year),
+hc19_4,date measured (year),
+hc19_5,date measured (year),
+hc20_1,century day code (cdc) of measurement,
+hc20_2,century day code (cdc) of measurement,
+hc20_3,century day code (cdc) of measurement,
+hc20_4,century day code (cdc) of measurement,
+hc20_5,century day code (cdc) of measurement,
+hc21_1,fieldworker measurer code,
+hc21_2,fieldworker measurer code,
+hc21_3,fieldworker measurer code,
+hc21_4,fieldworker measurer code,
+hc21_5,fieldworker measurer code,
+hc27_1,sex,HC27_1
+hc27_2,sex,HC27_2
+hc27_3,sex,HC27_3
+hc27_4,sex,HC27_4
+hc27_5,sex,HC27_5
+hc30_1,month of birth,HC30_1
+hc30_2,month of birth,HC30_2
+hc30_3,month of birth,HC30_3
+hc30_4,month of birth,HC30_4
+hc30_5,month of birth,HC30_5
+hc31_1,year of birth,HC31_1
+hc31_2,year of birth,HC31_2
+hc31_3,year of birth,HC31_3
+hc31_4,year of birth,HC31_4
+hc31_5,year of birth,HC31_5
+hc32_1,date of birth (cmc),
+hc32_2,date of birth (cmc),
+hc32_3,date of birth (cmc),
+hc32_4,date of birth (cmc),
+hc32_5,date of birth (cmc),
+hc32a_1,century day code (cdc) of birth,
+hc32a_2,century day code (cdc) of birth,
+hc32a_3,century day code (cdc) of birth,
+hc32a_4,century day code (cdc) of birth,
+hc32a_5,century day code (cdc) of birth,
+hc33_1,completeness of hc32 information,HC33_1
+hc33_2,completeness of hc32 information,HC33_2
+hc33_3,completeness of hc32 information,HC33_3
+hc33_4,completeness of hc32 information,HC33_4
+hc33_5,completeness of hc32 information,HC33_5
+hc51_1,line number of parent/caretaker,HC51_1
+hc51_2,line number of parent/caretaker,HC51_2
+hc51_3,line number of parent/caretaker,HC51_3
+hc51_4,line number of parent/caretaker,HC51_4
+hc51_5,line number of parent/caretaker,HC51_5
+hc52_1,read consent statement - hemoglobin,HC52_1
+hc52_2,read consent statement - hemoglobin,HC52_2
+hc52_3,read consent statement - hemoglobin,HC52_3
+hc52_4,read consent statement - hemoglobin,HC52_4
+hc52_5,read consent statement - hemoglobin,HC52_5
+hc53_1,hemoglobin level (g/dl - 1 decimal),HC53_1
+hc53_2,hemoglobin level (g/dl - 1 decimal),HC53_2
+hc53_3,hemoglobin level (g/dl - 1 decimal),HC53_3
+hc53_4,hemoglobin level (g/dl - 1 decimal),HC53_4
+hc53_5,hemoglobin level (g/dl - 1 decimal),HC53_5
+hc55_1,result of measurement - hemoglobin,HC55_1
+hc55_2,result of measurement - hemoglobin,HC55_2
+hc55_3,result of measurement - hemoglobin,HC55_3
+hc55_4,result of measurement - hemoglobin,HC55_4
+hc55_5,result of measurement - hemoglobin,HC55_5
+hc56_1,hemoglobin level adjusted for altitude (g/dl - 1 decimal),HC56_1
+hc56_2,hemoglobin level adjusted for altitude (g/dl - 1 decimal),HC56_2
+hc56_3,hemoglobin level adjusted for altitude (g/dl - 1 decimal),HC56_3
+hc56_4,hemoglobin level adjusted for altitude (g/dl - 1 decimal),HC56_4
+hc56_5,hemoglobin level adjusted for altitude (g/dl - 1 decimal),HC56_5
+hc57_1,anemia level,HC57_1
+hc57_2,anemia level,HC57_2
+hc57_3,anemia level,HC57_3
+hc57_4,anemia level,HC57_4
+hc57_5,anemia level,HC57_5
+hc58_1,na - agrees to referral - anemia,HC58_1
+hc58_2,na - agrees to referral - anemia,HC58_2
+hc58_3,na - agrees to referral - anemia,HC58_3
+hc58_4,na - agrees to referral - anemia,HC58_4
+hc58_5,na - agrees to referral - anemia,HC58_5
+hc60_1,mother's line number (woman's questionnaire),HC60_1
+hc60_2,mother's line number (woman's questionnaire),HC60_2
+hc60_3,mother's line number (woman's questionnaire),HC60_3
+hc60_4,mother's line number (woman's questionnaire),HC60_4
+hc60_5,mother's line number (woman's questionnaire),HC60_5
+hc61_1,mother's highest educational level,HC61_1
+hc61_2,mother's highest educational level,HC61_2
+hc61_3,mother's highest educational level,HC61_3
+hc61_4,mother's highest educational level,HC61_4
+hc61_5,mother's highest educational level,HC61_5
+hc62_1,mother's highest year of education,HC62_1
+hc62_2,mother's highest year of education,HC62_2
+hc62_3,mother's highest year of education,HC62_3
+hc62_4,mother's highest year of education,HC62_4
+hc62_5,mother's highest year of education,HC62_5
+hc63_1,preceding birth interval (months),
+hc63_2,preceding birth interval (months),
+hc63_3,preceding birth interval (months),
+hc63_4,preceding birth interval (months),
+hc63_5,preceding birth interval (months),
+hc64_1,birth order number,
+hc64_2,birth order number,
+hc64_3,birth order number,
+hc64_4,birth order number,
+hc64_5,birth order number,
+hc68_1,mother's highest educational level (for preliminary and final report),HC68_1
+hc68_2,mother's highest educational level (for preliminary and final report),HC68_2
+hc68_3,mother's highest educational level (for preliminary and final report),HC68_3
+hc68_4,mother's highest educational level (for preliminary and final report),HC68_4
+hc68_5,mother's highest educational level (for preliminary and final report),HC68_5
+hc70_1,height/age standard deviation (new who),HC70_1
+hc70_2,height/age standard deviation (new who),HC70_2
+hc70_3,height/age standard deviation (new who),HC70_3
+hc70_4,height/age standard deviation (new who),HC70_4
+hc70_5,height/age standard deviation (new who),HC70_5
+hc71_1,weight/age standard deviation (new who),HC71_1
+hc71_2,weight/age standard deviation (new who),HC71_2
+hc71_3,weight/age standard deviation (new who),HC71_3
+hc71_4,weight/age standard deviation (new who),HC71_4
+hc71_5,weight/age standard deviation (new who),HC71_5
+hc72_1,weight/height standard deviation (new who),HC72_1
+hc72_2,weight/height standard deviation (new who),HC72_2
+hc72_3,weight/height standard deviation (new who),HC72_3
+hc72_4,weight/height standard deviation (new who),HC72_4
+hc72_5,weight/height standard deviation (new who),HC72_5
+hc73_1,bmi standard deviation (new who),HC73_1
+hc73_2,bmi standard deviation (new who),HC73_2
+hc73_3,bmi standard deviation (new who),HC73_3
+hc73_4,bmi standard deviation (new who),HC73_4
+hc73_5,bmi standard deviation (new who),HC73_5
+hc2a_1,child's weight in kilograms (1 decimal) - first measurement,HC2A_1
+hc2a_2,child's weight in kilograms (1 decimal) - first measurement,HC2A_2
+hc2a_3,child's weight in kilograms (1 decimal) - first measurement,HC2A_3
+hc2a_4,child's weight in kilograms (1 decimal) - first measurement,HC2A_4
+hc2a_5,child's weight in kilograms (1 decimal) - first measurement,HC2A_5
+hc3a_1,child's height in centimeters (1 decimal) - first measurement,HC3A_1
+hc3a_2,child's height in centimeters (1 decimal) - first measurement,HC3A_2
+hc3a_3,child's height in centimeters (1 decimal) - first measurement,HC3A_3
+hc3a_4,child's height in centimeters (1 decimal) - first measurement,HC3A_4
+hc3a_5,child's height in centimeters (1 decimal) - first measurement,HC3A_5
+hc15a_1,height: lying or standing - first measurement,HC15A_1
+hc15a_2,height: lying or standing - first measurement,HC15A_2
+hc15a_3,height: lying or standing - first measurement,HC15A_3
+hc15a_4,height: lying or standing - first measurement,HC15A_4
+hc15a_5,height: lying or standing - first measurement,HC15A_5
+hc2b_1,child's weight in kilograms (1 decimal) - re-measurement,HC2B_1
+hc2b_2,child's weight in kilograms (1 decimal) - re-measurement,HC2B_2
+hc2b_3,child's weight in kilograms (1 decimal) - re-measurement,HC2B_3
+hc2b_4,child's weight in kilograms (1 decimal) - re-measurement,HC2B_4
+hc2b_5,child's weight in kilograms (1 decimal) - re-measurement,HC2B_5
+hc3b_1,child's height in centimeters (1 decimal) - re-measurement,HC3B_1
+hc3b_2,child's height in centimeters (1 decimal) - re-measurement,HC3B_2
+hc3b_3,child's height in centimeters (1 decimal) - re-measurement,HC3B_3
+hc3b_4,child's height in centimeters (1 decimal) - re-measurement,HC3B_4
+hc3b_5,child's height in centimeters (1 decimal) - re-measurement,HC3B_5
+hc15b_1,height: lying or standing - re-measurement,HC15B_1
+hc15b_2,height: lying or standing - re-measurement,HC15B_2
+hc15b_3,height: lying or standing - re-measurement,HC15B_3
+hc15b_4,height: lying or standing - re-measurement,HC15B_4
+hc15b_5,height: lying or standing - re-measurement,HC15B_5
+hc35_1,reason for re-measurement,HC35_1
+hc35_2,reason for re-measurement,HC35_2
+hc35_3,reason for re-measurement,HC35_3
+hc35_4,reason for re-measurement,HC35_4
+hc35_5,reason for re-measurement,HC35_5
+hb0_1,index to household schedule,
+hb0_2,index to household schedule,
+hb0_3,index to household schedule,
+hb0_4,index to household schedule,
+hb0_5,index to household schedule,
+hb0_6,index to household schedule,
+hb0_7,index to household schedule,
+hb0_8,index to household schedule,
+hb1_1,man's age in years,
+hb1_2,man's age in years,
+hb1_3,man's age in years,
+hb1_4,man's age in years,
+hb1_5,man's age in years,
+hb1_6,man's age in years,
+hb1_7,man's age in years,
+hb1_8,man's age in years,
+hb2_1,na - man's weight in kilograms (1 decimal),HB2_1
+hb2_2,na - man's weight in kilograms (1 decimal),HB2_2
+hb2_3,na - man's weight in kilograms (1 decimal),HB2_3
+hb2_4,na - man's weight in kilograms (1 decimal),HB2_4
+hb2_5,na - man's weight in kilograms (1 decimal),HB2_5
+hb2_6,na - man's weight in kilograms (1 decimal),HB2_6
+hb2_7,na - man's weight in kilograms (1 decimal),HB2_7
+hb2_8,na - man's weight in kilograms (1 decimal),HB2_8
+hb3_1,na - man's height in centimeters (1 decimal),HB3_1
+hb3_2,na - man's height in centimeters (1 decimal),HB3_2
+hb3_3,na - man's height in centimeters (1 decimal),HB3_3
+hb3_4,na - man's height in centimeters (1 decimal),HB3_4
+hb3_5,na - man's height in centimeters (1 decimal),HB3_5
+hb3_6,na - man's height in centimeters (1 decimal),HB3_6
+hb3_7,na - man's height in centimeters (1 decimal),HB3_7
+hb3_8,na - man's height in centimeters (1 decimal),HB3_8
+hb4_1,na - height/age percentile,HB4_1
+hb4_2,na - height/age percentile,HB4_2
+hb4_3,na - height/age percentile,HB4_3
+hb4_4,na - height/age percentile,HB4_4
+hb4_5,na - height/age percentile,HB4_5
+hb4_6,na - height/age percentile,HB4_6
+hb4_7,na - height/age percentile,HB4_7
+hb4_8,na - height/age percentile,HB4_8
+hb5_1,height/age standard deviation,HB5_1
+hb5_2,height/age standard deviation,HB5_2
+hb5_3,height/age standard deviation,HB5_3
+hb5_4,height/age standard deviation,HB5_4
+hb5_5,height/age standard deviation,HB5_5
+hb5_6,height/age standard deviation,HB5_6
+hb5_7,height/age standard deviation,HB5_7
+hb5_8,height/age standard deviation,HB5_8
+hb6_1,na - height/age percent ref. median,HB6_1
+hb6_2,na - height/age percent ref. median,HB6_2
+hb6_3,na - height/age percent ref. median,HB6_3
+hb6_4,na - height/age percent ref. median,HB6_4
+hb6_5,na - height/age percent ref. median,HB6_5
+hb6_6,na - height/age percent ref. median,HB6_6
+hb6_7,na - height/age percent ref. median,HB6_7
+hb6_8,na - height/age percent ref. median,HB6_8
+hb11_1,weight/height standard deviation (dhs),HB11_1
+hb11_2,weight/height standard deviation (dhs),HB11_2
+hb11_3,weight/height standard deviation (dhs),HB11_3
+hb11_4,weight/height standard deviation (dhs),HB11_4
+hb11_5,weight/height standard deviation (dhs),HB11_5
+hb11_6,weight/height standard deviation (dhs),HB11_6
+hb11_7,weight/height standard deviation (dhs),HB11_7
+hb11_8,weight/height standard deviation (dhs),HB11_8
+hb12_1,na - weight/height percent ref. median (dhs),HB12_1
+hb12_2,na - weight/height percent ref. median (dhs),HB12_2
+hb12_3,na - weight/height percent ref. median (dhs),HB12_3
+hb12_4,na - weight/height percent ref. median (dhs),HB12_4
+hb12_5,na - weight/height percent ref. median (dhs),HB12_5
+hb12_6,na - weight/height percent ref. median (dhs),HB12_6
+hb12_7,na - weight/height percent ref. median (dhs),HB12_7
+hb12_8,na - weight/height percent ref. median (dhs),HB12_8
+hb12a_1,na - weight/height percent ref. median (fog),HB12A_1
+hb12a_2,na - weight/height percent ref. median (fog),HB12A_2
+hb12a_3,na - weight/height percent ref. median (fog),HB12A_3
+hb12a_4,na - weight/height percent ref. median (fog),HB12A_4
+hb12a_5,na - weight/height percent ref. median (fog),HB12A_5
+hb12a_6,na - weight/height percent ref. median (fog),HB12A_6
+hb12a_7,na - weight/height percent ref. median (fog),HB12A_7
+hb12a_8,na - weight/height percent ref. median (fog),HB12A_8
+hb12b_1,na - weight/height percent ref. median (who),HB12B_1
+hb12b_2,na - weight/height percent ref. median (who),HB12B_2
+hb12b_3,na - weight/height percent ref. median (who),HB12B_3
+hb12b_4,na - weight/height percent ref. median (who),HB12B_4
+hb12b_5,na - weight/height percent ref. median (who),HB12B_5
+hb12b_6,na - weight/height percent ref. median (who),HB12B_6
+hb12b_7,na - weight/height percent ref. median (who),HB12B_7
+hb12b_8,na - weight/height percent ref. median (who),HB12B_8
+hb13_1,na - result of measurement - height/weight,HB13_1
+hb13_2,na - result of measurement - height/weight,HB13_2
+hb13_3,na - result of measurement - height/weight,HB13_3
+hb13_4,na - result of measurement - height/weight,HB13_4
+hb13_5,na - result of measurement - height/weight,HB13_5
+hb13_6,na - result of measurement - height/weight,HB13_6
+hb13_7,na - result of measurement - height/weight,HB13_7
+hb13_8,na - result of measurement - height/weight,HB13_8
+hb21_1,na - fieldworker measurer code,
+hb21_2,na - fieldworker measurer code,
+hb21_3,na - fieldworker measurer code,
+hb21_4,na - fieldworker measurer code,
+hb21_5,na - fieldworker measurer code,
+hb21_6,na - fieldworker measurer code,
+hb21_7,na - fieldworker measurer code,
+hb21_8,na - fieldworker measurer code,
+hb32_1,date of birth (cmc),
+hb32_2,date of birth (cmc),
+hb32_3,date of birth (cmc),
+hb32_4,date of birth (cmc),
+hb32_5,date of birth (cmc),
+hb32_6,date of birth (cmc),
+hb32_7,date of birth (cmc),
+hb32_8,date of birth (cmc),
+hb33_1,completeness of hb32 information,HB33_1
+hb33_2,completeness of hb32 information,HB33_2
+hb33_3,completeness of hb32 information,HB33_3
+hb33_4,completeness of hb32 information,HB33_4
+hb33_5,completeness of hb32 information,HB33_5
+hb33_6,completeness of hb32 information,HB33_6
+hb33_7,completeness of hb32 information,HB33_7
+hb33_8,completeness of hb32 information,HB33_8
+hb35_1,smoking (cigarettes in last 24 hours),HB35_1
+hb35_2,smoking (cigarettes in last 24 hours),HB35_2
+hb35_3,smoking (cigarettes in last 24 hours),HB35_3
+hb35_4,smoking (cigarettes in last 24 hours),HB35_4
+hb35_5,smoking (cigarettes in last 24 hours),HB35_5
+hb35_6,smoking (cigarettes in last 24 hours),HB35_6
+hb35_7,smoking (cigarettes in last 24 hours),HB35_7
+hb35_8,smoking (cigarettes in last 24 hours),HB35_8
+hb40_1,na - body mass index,HB40_1
+hb40_2,na - body mass index,HB40_2
+hb40_3,na - body mass index,HB40_3
+hb40_4,na - body mass index,HB40_4
+hb40_5,na - body mass index,HB40_5
+hb40_6,na - body mass index,HB40_6
+hb40_7,na - body mass index,HB40_7
+hb40_8,na - body mass index,HB40_8
+hb41_1,na - rohrer's index,HB41_1
+hb41_2,na - rohrer's index,HB41_2
+hb41_3,na - rohrer's index,HB41_3
+hb41_4,na - rohrer's index,HB41_4
+hb41_5,na - rohrer's index,HB41_5
+hb41_6,na - rohrer's index,HB41_6
+hb41_7,na - rohrer's index,HB41_7
+hb41_8,na - rohrer's index,HB41_8
+hb50_1,under age 18,HB50_1
+hb50_2,under age 18,HB50_2
+hb50_3,under age 18,HB50_3
+hb50_4,under age 18,HB50_4
+hb50_5,under age 18,HB50_5
+hb50_6,under age 18,HB50_6
+hb50_7,under age 18,HB50_7
+hb50_8,under age 18,HB50_8
+hb51_1,line number of parent/caretaker,HB51_1
+hb51_2,line number of parent/caretaker,HB51_2
+hb51_3,line number of parent/caretaker,HB51_3
+hb51_4,line number of parent/caretaker,HB51_4
+hb51_5,line number of parent/caretaker,HB51_5
+hb51_6,line number of parent/caretaker,HB51_6
+hb51_7,line number of parent/caretaker,HB51_7
+hb51_8,line number of parent/caretaker,HB51_8
+hb52_1,na - read consent statement - hemoglobin,HB52_1
+hb52_2,na - read consent statement - hemoglobin,HB52_2
+hb52_3,na - read consent statement - hemoglobin,HB52_3
+hb52_4,na - read consent statement - hemoglobin,HB52_4
+hb52_5,na - read consent statement - hemoglobin,HB52_5
+hb52_6,na - read consent statement - hemoglobin,HB52_6
+hb52_7,na - read consent statement - hemoglobin,HB52_7
+hb52_8,na - read consent statement - hemoglobin,HB52_8
+hb53_1,na - hemoglobin level (g/dl - 1 decimal),HB53_1
+hb53_2,na - hemoglobin level (g/dl - 1 decimal),HB53_2
+hb53_3,na - hemoglobin level (g/dl - 1 decimal),HB53_3
+hb53_4,na - hemoglobin level (g/dl - 1 decimal),HB53_4
+hb53_5,na - hemoglobin level (g/dl - 1 decimal),HB53_5
+hb53_6,na - hemoglobin level (g/dl - 1 decimal),HB53_6
+hb53_7,na - hemoglobin level (g/dl - 1 decimal),HB53_7
+hb53_8,na - hemoglobin level (g/dl - 1 decimal),HB53_8
+hb55_1,na - result of measurement - hemoglobin,HB55_1
+hb55_2,na - result of measurement - hemoglobin,HB55_2
+hb55_3,na - result of measurement - hemoglobin,HB55_3
+hb55_4,na - result of measurement - hemoglobin,HB55_4
+hb55_5,na - result of measurement - hemoglobin,HB55_5
+hb55_6,na - result of measurement - hemoglobin,HB55_6
+hb55_7,na - result of measurement - hemoglobin,HB55_7
+hb55_8,na - result of measurement - hemoglobin,HB55_8
+hb56_1,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_1
+hb56_2,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_2
+hb56_3,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_3
+hb56_4,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_4
+hb56_5,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_5
+hb56_6,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_6
+hb56_7,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_7
+hb56_8,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56_8
+hb57_1,na - anemia level,HB57_1
+hb57_2,na - anemia level,HB57_2
+hb57_3,na - anemia level,HB57_3
+hb57_4,na - anemia level,HB57_4
+hb57_5,na - anemia level,HB57_5
+hb57_6,na - anemia level,HB57_6
+hb57_7,na - anemia level,HB57_7
+hb57_8,na - anemia level,HB57_8
+hb58_1,na - agrees to referral - anemia,HB58_1
+hb58_2,na - agrees to referral - anemia,HB58_2
+hb58_3,na - agrees to referral - anemia,HB58_3
+hb58_4,na - agrees to referral - anemia,HB58_4
+hb58_5,na - agrees to referral - anemia,HB58_5
+hb58_6,na - agrees to referral - anemia,HB58_6
+hb58_7,na - agrees to referral - anemia,HB58_7
+hb58_8,na - agrees to referral - anemia,HB58_8
+hb60_1,marital status,HB60_1
+hb60_2,marital status,HB60_2
+hb60_3,marital status,HB60_3
+hb60_4,marital status,HB60_4
+hb60_5,marital status,HB60_5
+hb60_6,marital status,HB60_6
+hb60_7,marital status,HB60_7
+hb60_8,marital status,HB60_8
+hb61_1,read consent statement - hiv,HB61_1
+hb61_2,read consent statement - hiv,HB61_2
+hb61_3,read consent statement - hiv,HB61_3
+hb61_4,read consent statement - hiv,HB61_4
+hb61_5,read consent statement - hiv,HB61_5
+hb61_6,read consent statement - hiv,HB61_6
+hb61_7,read consent statement - hiv,HB61_7
+hb61_8,read consent statement - hiv,HB61_8
+hb62_1,bar code for hiv blood sample,
+hb62_2,bar code for hiv blood sample,
+hb62_3,bar code for hiv blood sample,
+hb62_4,bar code for hiv blood sample,
+hb62_5,bar code for hiv blood sample,
+hb62_6,bar code for hiv blood sample,
+hb62_7,bar code for hiv blood sample,
+hb62_8,bar code for hiv blood sample,
+hb63_1,result of measurement - hiv,HB63_1
+hb63_2,result of measurement - hiv,HB63_2
+hb63_3,result of measurement - hiv,HB63_3
+hb63_4,result of measurement - hiv,HB63_4
+hb63_5,result of measurement - hiv,HB63_5
+hb63_6,result of measurement - hiv,HB63_6
+hb63_7,result of measurement - hiv,HB63_7
+hb63_8,result of measurement - hiv,HB63_8
+hb64_1,na - consent for additional tests,HB64_1
+hb64_2,na - consent for additional tests,HB64_2
+hb64_3,na - consent for additional tests,HB64_3
+hb64_4,na - consent for additional tests,HB64_4
+hb64_5,na - consent for additional tests,HB64_5
+hb64_6,na - consent for additional tests,HB64_6
+hb64_7,na - consent for additional tests,HB64_7
+hb64_8,na - consent for additional tests,HB64_8
+hb65_1,result of man's individual interview,HB65_1
+hb65_2,result of man's individual interview,HB65_2
+hb65_3,result of man's individual interview,HB65_3
+hb65_4,result of man's individual interview,HB65_4
+hb65_5,result of man's individual interview,HB65_5
+hb65_6,result of man's individual interview,HB65_6
+hb65_7,result of man's individual interview,HB65_7
+hb65_8,result of man's individual interview,HB65_8
+hb66_1,man's highest educational level,HB66_1
+hb66_2,man's highest educational level,HB66_2
+hb66_3,man's highest educational level,HB66_3
+hb66_4,man's highest educational level,HB66_4
+hb66_5,man's highest educational level,HB66_5
+hb66_6,man's highest educational level,HB66_6
+hb66_7,man's highest educational level,HB66_7
+hb66_8,man's highest educational level,HB66_8
+hb67_1,man's highest year of education,HB67_1
+hb67_2,man's highest year of education,HB67_2
+hb67_3,man's highest year of education,HB67_3
+hb67_4,man's highest year of education,HB67_4
+hb67_5,man's highest year of education,HB67_5
+hb67_6,man's highest year of education,HB67_6
+hb67_7,man's highest year of education,HB67_7
+hb67_8,man's highest year of education,HB67_8
+hb68_1,man's highest educational level (for preliminary and final report),HB68_1
+hb68_2,man's highest educational level (for preliminary and final report),HB68_2
+hb68_3,man's highest educational level (for preliminary and final report),HB68_3
+hb68_4,man's highest educational level (for preliminary and final report),HB68_4
+hb68_5,man's highest educational level (for preliminary and final report),HB68_5
+hb68_6,man's highest educational level (for preliminary and final report),HB68_6
+hb68_7,man's highest educational level (for preliminary and final report),HB68_7
+hb68_8,man's highest educational level (for preliminary and final report),HB68_8
+hb69_1,na - hiv weight (6 decimals),
+hb69_2,na - hiv weight (6 decimals),
+hb69_3,na - hiv weight (6 decimals),
+hb69_4,na - hiv weight (6 decimals),
+hb69_5,na - hiv weight (6 decimals),
+hb69_6,na - hiv weight (6 decimals),
+hb69_7,na - hiv weight (6 decimals),
+hb69_8,na - hiv weight (6 decimals),
+hb70_1,interviewer that took blood for hiv testing,
+hb70_2,interviewer that took blood for hiv testing,
+hb70_3,interviewer that took blood for hiv testing,
+hb70_4,interviewer that took blood for hiv testing,
+hb70_5,interviewer that took blood for hiv testing,
+hb70_6,interviewer that took blood for hiv testing,
+hb70_7,interviewer that took blood for hiv testing,
+hb70_8,interviewer that took blood for hiv testing,
+hmlidx_1,mosquito bed net designation number,
+hmlidx_2,mosquito bed net designation number,
+hmlidx_3,mosquito bed net designation number,
+hmlidx_4,mosquito bed net designation number,
+hmlidx_5,mosquito bed net designation number,
+hmlidx_6,mosquito bed net designation number,
+hmlidx_7,mosquito bed net designation number,
+hml3_1,net observed by interviewer,HML3_1
+hml3_2,net observed by interviewer,HML3_2
+hml3_3,net observed by interviewer,HML3_3
+hml3_4,net observed by interviewer,HML3_4
+hml3_5,net observed by interviewer,HML3_5
+hml3_6,net observed by interviewer,HML3_6
+hml3_7,net observed by interviewer,HML3_7
+hml4_1,months ago net obtained,HML4_1
+hml4_2,months ago net obtained,HML4_2
+hml4_3,months ago net obtained,HML4_3
+hml4_4,months ago net obtained,HML4_4
+hml4_5,months ago net obtained,HML4_5
+hml4_6,months ago net obtained,HML4_6
+hml4_7,months ago net obtained,HML4_7
+hml5_1,na - net treated with insecticide when bought,HML5_1
+hml5_2,na - net treated with insecticide when bought,HML5_2
+hml5_3,na - net treated with insecticide when bought,HML5_3
+hml5_4,na - net treated with insecticide when bought,HML5_4
+hml5_5,na - net treated with insecticide when bought,HML5_5
+hml5_6,na - net treated with insecticide when bought,HML5_6
+hml5_7,na - net treated with insecticide when bought,HML5_7
+hml6_1,na - net treatment status,HML6_1
+hml6_2,na - net treatment status,HML6_2
+hml6_3,na - net treatment status,HML6_3
+hml6_4,na - net treatment status,HML6_4
+hml6_5,na - net treatment status,HML6_5
+hml6_6,na - net treatment status,HML6_6
+hml6_7,na - net treatment status,HML6_7
+hml7_1,brand of net,HML7_1
+hml7_2,brand of net,HML7_2
+hml7_3,brand of net,HML7_3
+hml7_4,brand of net,HML7_4
+hml7_5,brand of net,HML7_5
+hml7_6,brand of net,HML7_6
+hml7_7,brand of net,HML7_7
+hml8_1,na - net treated since received,HML8_1
+hml8_2,na - net treated since received,HML8_2
+hml8_3,na - net treated since received,HML8_3
+hml8_4,na - net treated since received,HML8_4
+hml8_5,na - net treated since received,HML8_5
+hml8_6,na - net treated since received,HML8_6
+hml8_7,na - net treated since received,HML8_7
+hml9_1,na - time since last re-treatment (months),HML9_1
+hml9_2,na - time since last re-treatment (months),HML9_2
+hml9_3,na - time since last re-treatment (months),HML9_3
+hml9_4,na - time since last re-treatment (months),HML9_4
+hml9_5,na - time since last re-treatment (months),HML9_5
+hml9_6,na - time since last re-treatment (months),HML9_6
+hml9_7,na - time since last re-treatment (months),HML9_7
+hml10_1,insecticide-treated net (itn),HML10_1
+hml10_2,insecticide-treated net (itn),HML10_2
+hml10_3,insecticide-treated net (itn),HML10_3
+hml10_4,insecticide-treated net (itn),HML10_4
+hml10_5,insecticide-treated net (itn),HML10_5
+hml10_6,insecticide-treated net (itn),HML10_6
+hml10_7,insecticide-treated net (itn),HML10_7
+hml11_1,number of persons who slept under this net,HML11_1
+hml11_2,number of persons who slept under this net,HML11_2
+hml11_3,number of persons who slept under this net,HML11_3
+hml11_4,number of persons who slept under this net,HML11_4
+hml11_5,number of persons who slept under this net,HML11_5
+hml11_6,number of persons who slept under this net,HML11_6
+hml11_7,number of persons who slept under this net,HML11_7
+hml21_1,someone slept under this net last night,HML21_1
+hml21_2,someone slept under this net last night,HML21_2
+hml21_3,someone slept under this net last night,HML21_3
+hml21_4,someone slept under this net last night,HML21_4
+hml21_5,someone slept under this net last night,HML21_5
+hml21_6,someone slept under this net last night,HML21_6
+hml21_7,someone slept under this net last night,HML21_7
+hmla_1,line number of person who slept in this net,HMLA_1
+hmla_2,line number of person who slept in this net,HMLA_2
+hmla_3,line number of person who slept in this net,HMLA_3
+hmla_4,line number of person who slept in this net,HMLA_4
+hmla_5,line number of person who slept in this net,HMLA_5
+hmla_6,line number of person who slept in this net,HMLA_6
+hmla_7,line number of person who slept in this net,HMLA_7
+hmlb_1,line number of person who slept in this net,
+hmlb_2,line number of person who slept in this net,
+hmlb_3,line number of person who slept in this net,
+hmlb_4,line number of person who slept in this net,
+hmlb_5,line number of person who slept in this net,
+hmlb_6,line number of person who slept in this net,
+hmlb_7,line number of person who slept in this net,
+hmlc_1,line number of person who slept in this net,
+hmlc_2,line number of person who slept in this net,
+hmlc_3,line number of person who slept in this net,
+hmlc_4,line number of person who slept in this net,
+hmlc_5,line number of person who slept in this net,
+hmlc_6,line number of person who slept in this net,
+hmlc_7,line number of person who slept in this net,
+hmld_1,line number of person who slept in this net,
+hmld_2,line number of person who slept in this net,
+hmld_3,line number of person who slept in this net,
+hmld_4,line number of person who slept in this net,
+hmld_5,line number of person who slept in this net,
+hmld_6,line number of person who slept in this net,
+hmld_7,line number of person who slept in this net,
+hmle_1,na - line number of person who slept in this net,
+hmle_2,na - line number of person who slept in this net,
+hmle_3,na - line number of person who slept in this net,
+hmle_4,na - line number of person who slept in this net,
+hmle_5,na - line number of person who slept in this net,
+hmle_6,na - line number of person who slept in this net,
+hmle_7,na - line number of person who slept in this net,
+hml22_1,"obtained net from campaign, antenatal or immunization visit",HML22_1
+hml22_2,"obtained net from campaign, antenatal or immunization visit",HML22_2
+hml22_3,"obtained net from campaign, antenatal or immunization visit",HML22_3
+hml22_4,"obtained net from campaign, antenatal or immunization visit",HML22_4
+hml22_5,"obtained net from campaign, antenatal or immunization visit",HML22_5
+hml22_6,"obtained net from campaign, antenatal or immunization visit",HML22_6
+hml22_7,"obtained net from campaign, antenatal or immunization visit",HML22_7
+hml23_1,place where net was obtained,HML23_1
+hml23_2,place where net was obtained,HML23_2
+hml23_3,place where net was obtained,HML23_3
+hml23_4,place where net was obtained,HML23_4
+hml23_5,place where net was obtained,HML23_5
+hml23_6,place where net was obtained,HML23_6
+hml23_7,place where net was obtained,HML23_7
+sh135a_1,net has holes equal to or larger than the tip of your thumb,SH135A_1
+sh135a_2,net has holes equal to or larger than the tip of your thumb,SH135A_2
+sh135a_3,net has holes equal to or larger than the tip of your thumb,SH135A_3
+sh135a_4,net has holes equal to or larger than the tip of your thumb,SH135A_4
+sh135a_5,net has holes equal to or larger than the tip of your thumb,SH135A_5
+sh135a_6,net has holes equal to or larger than the tip of your thumb,SH135A_6
+sh135a_7,net has holes equal to or larger than the tip of your thumb,SH135A_7
+sh135b_1,observe or ask shape of mosquito net,SH135B_1
+sh135b_2,observe or ask shape of mosquito net,SH135B_2
+sh135b_3,observe or ask shape of mosquito net,SH135B_3
+sh135b_4,observe or ask shape of mosquito net,SH135B_4
+sh135b_5,observe or ask shape of mosquito net,SH135B_5
+sh135b_6,observe or ask shape of mosquito net,SH135B_6
+sh135b_7,observe or ask shape of mosquito net,SH135B_7
+sh137aa_1,why no one slept under the mosquito net,SH137AA_
+sh137aa_2,why no one slept under the mosquito net,V1870_A
+sh137aa_3,why no one slept under the mosquito net,V1871_A
+sh137aa_4,why no one slept under the mosquito net,V1872_A
+sh137aa_5,why no one slept under the mosquito net,V1873_A
+sh137aa_6,why no one slept under the mosquito net,V1874_A
+sh137aa_7,why no one slept under the mosquito net,V1875_A
+hmhidx_01,index to household schedule,
+hmhidx_02,index to household schedule,
+hmhidx_03,index to household schedule,
+hmhidx_04,index to household schedule,
+hmhidx_05,index to household schedule,
+hmhidx_06,index to household schedule,
+hmhidx_07,index to household schedule,
+hmhidx_08,index to household schedule,
+hmhidx_09,index to household schedule,
+hmhidx_10,index to household schedule,
+hmhidx_11,index to household schedule,
+hmhidx_12,index to household schedule,
+hmhidx_13,index to household schedule,
+hmhidx_14,index to household schedule,
+hmhidx_15,index to household schedule,
+hmhidx_16,index to household schedule,
+hml12_01,type of mosquito bed net(s) person slept under last night,HML12_01
+hml12_02,type of mosquito bed net(s) person slept under last night,HML12_02
+hml12_03,type of mosquito bed net(s) person slept under last night,HML12_03
+hml12_04,type of mosquito bed net(s) person slept under last night,HML12_04
+hml12_05,type of mosquito bed net(s) person slept under last night,HML12_05
+hml12_06,type of mosquito bed net(s) person slept under last night,HML12_06
+hml12_07,type of mosquito bed net(s) person slept under last night,HML12_07
+hml12_08,type of mosquito bed net(s) person slept under last night,HML12_08
+hml12_09,type of mosquito bed net(s) person slept under last night,HML12_09
+hml12_10,type of mosquito bed net(s) person slept under last night,HML12_10
+hml12_11,type of mosquito bed net(s) person slept under last night,HML12_11
+hml12_12,type of mosquito bed net(s) person slept under last night,HML12_12
+hml12_13,type of mosquito bed net(s) person slept under last night,HML12_13
+hml12_14,type of mosquito bed net(s) person slept under last night,HML12_14
+hml12_15,type of mosquito bed net(s) person slept under last night,HML12_15
+hml12_16,type of mosquito bed net(s) person slept under last night,HML12_16
+hml13_01,net designation number (hmlidx) for 1st net person slept under last night,HML13_01
+hml13_02,net designation number (hmlidx) for 1st net person slept under last night,HML13_02
+hml13_03,net designation number (hmlidx) for 1st net person slept under last night,HML13_03
+hml13_04,net designation number (hmlidx) for 1st net person slept under last night,HML13_04
+hml13_05,net designation number (hmlidx) for 1st net person slept under last night,HML13_05
+hml13_06,net designation number (hmlidx) for 1st net person slept under last night,HML13_06
+hml13_07,net designation number (hmlidx) for 1st net person slept under last night,HML13_07
+hml13_08,net designation number (hmlidx) for 1st net person slept under last night,HML13_08
+hml13_09,net designation number (hmlidx) for 1st net person slept under last night,HML13_09
+hml13_10,net designation number (hmlidx) for 1st net person slept under last night,HML13_10
+hml13_11,net designation number (hmlidx) for 1st net person slept under last night,HML13_11
+hml13_12,net designation number (hmlidx) for 1st net person slept under last night,HML13_12
+hml13_13,net designation number (hmlidx) for 1st net person slept under last night,HML13_13
+hml13_14,net designation number (hmlidx) for 1st net person slept under last night,HML13_14
+hml13_15,net designation number (hmlidx) for 1st net person slept under last night,HML13_15
+hml13_16,net designation number (hmlidx) for 1st net person slept under last night,HML13_16
+hml14_01,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_02,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_03,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_04,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_05,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_06,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_07,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_08,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_09,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_10,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_11,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_12,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_13,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_14,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_15,net designation number (hmlidx) for 2nd net person slept under last night,
+hml14_16,net designation number (hmlidx) for 2nd net person slept under last night,
+hml15_01,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_02,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_03,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_04,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_05,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_06,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_07,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_08,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_09,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_10,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_11,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_12,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_13,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_14,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_15,net designation number (hmlidx) for 3rd net person slept under last night,
+hml15_16,net designation number (hmlidx) for 3rd net person slept under last night,
+hml16_01,corrected age from individual file,HML16_01
+hml16_02,corrected age from individual file,HML16_02
+hml16_03,corrected age from individual file,HML16_03
+hml16_04,corrected age from individual file,HML16_04
+hml16_05,corrected age from individual file,HML16_05
+hml16_06,corrected age from individual file,HML16_06
+hml16_07,corrected age from individual file,HML16_07
+hml16_08,corrected age from individual file,HML16_08
+hml16_09,corrected age from individual file,HML16_09
+hml16_10,corrected age from individual file,HML16_10
+hml16_11,corrected age from individual file,HML16_11
+hml16_12,corrected age from individual file,HML16_12
+hml16_13,corrected age from individual file,HML16_13
+hml16_14,corrected age from individual file,HML16_14
+hml16_15,corrected age from individual file,HML16_15
+hml16_16,corrected age from individual file,HML16_16
+hml16a_01,age in months (for children),
+hml16a_02,age in months (for children),
+hml16a_03,age in months (for children),
+hml16a_04,age in months (for children),
+hml16a_05,age in months (for children),
+hml16a_06,age in months (for children),
+hml16a_07,age in months (for children),
+hml16a_08,age in months (for children),
+hml16a_09,age in months (for children),
+hml16a_10,age in months (for children),
+hml16a_11,age in months (for children),
+hml16a_12,age in months (for children),
+hml16a_13,age in months (for children),
+hml16a_14,age in months (for children),
+hml16a_15,age in months (for children),
+hml16a_16,age in months (for children),
+hml17_01,flag for age from individual file,HML17_01
+hml17_02,flag for age from individual file,HML17_02
+hml17_03,flag for age from individual file,HML17_03
+hml17_04,flag for age from individual file,HML17_04
+hml17_05,flag for age from individual file,HML17_05
+hml17_06,flag for age from individual file,HML17_06
+hml17_07,flag for age from individual file,HML17_07
+hml17_08,flag for age from individual file,HML17_08
+hml17_09,flag for age from individual file,HML17_09
+hml17_10,flag for age from individual file,HML17_10
+hml17_11,flag for age from individual file,HML17_11
+hml17_12,flag for age from individual file,HML17_12
+hml17_13,flag for age from individual file,HML17_13
+hml17_14,flag for age from individual file,HML17_14
+hml17_15,flag for age from individual file,HML17_15
+hml17_16,flag for age from individual file,HML17_16
+hml18_01,pregnancy status from individual file,HML18_01
+hml18_02,pregnancy status from individual file,HML18_02
+hml18_03,pregnancy status from individual file,HML18_03
+hml18_04,pregnancy status from individual file,HML18_04
+hml18_05,pregnancy status from individual file,HML18_05
+hml18_06,pregnancy status from individual file,HML18_06
+hml18_07,pregnancy status from individual file,HML18_07
+hml18_08,pregnancy status from individual file,HML18_08
+hml18_09,pregnancy status from individual file,HML18_09
+hml18_10,pregnancy status from individual file,HML18_10
+hml18_11,pregnancy status from individual file,HML18_11
+hml18_12,pregnancy status from individual file,HML18_12
+hml18_13,pregnancy status from individual file,HML18_13
+hml18_14,pregnancy status from individual file,HML18_14
+hml18_15,pregnancy status from individual file,HML18_15
+hml18_16,pregnancy status from individual file,HML18_16
+hml19_01,person slept under an ever-treated net,HML19_01
+hml19_02,person slept under an ever-treated net,HML19_02
+hml19_03,person slept under an ever-treated net,HML19_03
+hml19_04,person slept under an ever-treated net,HML19_04
+hml19_05,person slept under an ever-treated net,HML19_05
+hml19_06,person slept under an ever-treated net,HML19_06
+hml19_07,person slept under an ever-treated net,HML19_07
+hml19_08,person slept under an ever-treated net,HML19_08
+hml19_09,person slept under an ever-treated net,HML19_09
+hml19_10,person slept under an ever-treated net,HML19_10
+hml19_11,person slept under an ever-treated net,HML19_11
+hml19_12,person slept under an ever-treated net,HML19_12
+hml19_13,person slept under an ever-treated net,HML19_13
+hml19_14,person slept under an ever-treated net,HML19_14
+hml19_15,person slept under an ever-treated net,HML19_15
+hml19_16,person slept under an ever-treated net,HML19_16
+hml20_01,person slept under an llin net,HML20_01
+hml20_02,person slept under an llin net,HML20_02
+hml20_03,person slept under an llin net,HML20_03
+hml20_04,person slept under an llin net,HML20_04
+hml20_05,person slept under an llin net,HML20_05
+hml20_06,person slept under an llin net,HML20_06
+hml20_07,person slept under an llin net,HML20_07
+hml20_08,person slept under an llin net,HML20_08
+hml20_09,person slept under an llin net,HML20_09
+hml20_10,person slept under an llin net,HML20_10
+hml20_11,person slept under an llin net,HML20_11
+hml20_12,person slept under an llin net,HML20_12
+hml20_13,person slept under an llin net,HML20_13
+hml20_14,person slept under an llin net,HML20_14
+hml20_15,person slept under an llin net,HML20_15
+hml20_16,person slept under an llin net,HML20_16
+hml30_01,line number of parent/caretaker (for malaria testing),HML30_01
+hml30_02,line number of parent/caretaker (for malaria testing),HML30_02
+hml30_03,line number of parent/caretaker (for malaria testing),HML30_03
+hml30_04,line number of parent/caretaker (for malaria testing),HML30_04
+hml30_05,line number of parent/caretaker (for malaria testing),HML30_05
+hml30_06,line number of parent/caretaker (for malaria testing),HML30_06
+hml30_07,line number of parent/caretaker (for malaria testing),HML30_07
+hml30_08,line number of parent/caretaker (for malaria testing),HML30_08
+hml30_09,line number of parent/caretaker (for malaria testing),HML30_09
+hml30_10,line number of parent/caretaker (for malaria testing),HML30_10
+hml30_11,line number of parent/caretaker (for malaria testing),HML30_11
+hml30_12,line number of parent/caretaker (for malaria testing),HML30_12
+hml30_13,line number of parent/caretaker (for malaria testing),HML30_13
+hml30_14,line number of parent/caretaker (for malaria testing),HML30_14
+hml30_15,line number of parent/caretaker (for malaria testing),HML30_15
+hml30_16,line number of parent/caretaker (for malaria testing),HML30_16
+hml31_01,read consent statement for malaria,HML31_01
+hml31_02,read consent statement for malaria,HML31_02
+hml31_03,read consent statement for malaria,HML31_03
+hml31_04,read consent statement for malaria,HML31_04
+hml31_05,read consent statement for malaria,HML31_05
+hml31_06,read consent statement for malaria,HML31_06
+hml31_07,read consent statement for malaria,HML31_07
+hml31_08,read consent statement for malaria,HML31_08
+hml31_09,read consent statement for malaria,HML31_09
+hml31_10,read consent statement for malaria,HML31_10
+hml31_11,read consent statement for malaria,HML31_11
+hml31_12,read consent statement for malaria,HML31_12
+hml31_13,read consent statement for malaria,HML31_13
+hml31_14,read consent statement for malaria,HML31_14
+hml31_15,read consent statement for malaria,HML31_15
+hml31_16,read consent statement for malaria,HML31_16
+hml32_01,final result of malaria from blood smear test,HML32_01
+hml32_02,final result of malaria from blood smear test,HML32_02
+hml32_03,final result of malaria from blood smear test,HML32_03
+hml32_04,final result of malaria from blood smear test,HML32_04
+hml32_05,final result of malaria from blood smear test,HML32_05
+hml32_06,final result of malaria from blood smear test,HML32_06
+hml32_07,final result of malaria from blood smear test,HML32_07
+hml32_08,final result of malaria from blood smear test,HML32_08
+hml32_09,final result of malaria from blood smear test,HML32_09
+hml32_10,final result of malaria from blood smear test,HML32_10
+hml32_11,final result of malaria from blood smear test,HML32_11
+hml32_12,final result of malaria from blood smear test,HML32_12
+hml32_13,final result of malaria from blood smear test,HML32_13
+hml32_14,final result of malaria from blood smear test,HML32_14
+hml32_15,final result of malaria from blood smear test,HML32_15
+hml32_16,final result of malaria from blood smear test,HML32_16
+hml32a_01,presence of species: falciparum (pf),HML32A_0
+hml32a_02,presence of species: falciparum (pf),V2101_A
+hml32a_03,presence of species: falciparum (pf),V2102_A
+hml32a_04,presence of species: falciparum (pf),V2103_A
+hml32a_05,presence of species: falciparum (pf),V2104_A
+hml32a_06,presence of species: falciparum (pf),V2105_A
+hml32a_07,presence of species: falciparum (pf),V2106_A
+hml32a_08,presence of species: falciparum (pf),V2107_A
+hml32a_09,presence of species: falciparum (pf),V2108_A
+hml32a_10,presence of species: falciparum (pf),HML32A_1
+hml32a_11,presence of species: falciparum (pf),V2110_A
+hml32a_12,presence of species: falciparum (pf),V2111_A
+hml32a_13,presence of species: falciparum (pf),V2112_A
+hml32a_14,presence of species: falciparum (pf),V2113_A
+hml32a_15,presence of species: falciparum (pf),V2114_A
+hml32a_16,presence of species: falciparum (pf),V2115_A
+hml32b_01,presence of species: malariae (pm),HML32B_0
+hml32b_02,presence of species: malariae (pm),V2117_A
+hml32b_03,presence of species: malariae (pm),V2118_A
+hml32b_04,presence of species: malariae (pm),V2119_A
+hml32b_05,presence of species: malariae (pm),V2120_A
+hml32b_06,presence of species: malariae (pm),V2121_A
+hml32b_07,presence of species: malariae (pm),V2122_A
+hml32b_08,presence of species: malariae (pm),V2123_A
+hml32b_09,presence of species: malariae (pm),V2124_A
+hml32b_10,presence of species: malariae (pm),HML32B_1
+hml32b_11,presence of species: malariae (pm),V2126_A
+hml32b_12,presence of species: malariae (pm),V2127_A
+hml32b_13,presence of species: malariae (pm),V2128_A
+hml32b_14,presence of species: malariae (pm),V2129_A
+hml32b_15,presence of species: malariae (pm),V2130_A
+hml32b_16,presence of species: malariae (pm),V2131_A
+hml32c_01,presence of species: ovale (po),HML32C_0
+hml32c_02,presence of species: ovale (po),V2133_A
+hml32c_03,presence of species: ovale (po),V2134_A
+hml32c_04,presence of species: ovale (po),V2135_A
+hml32c_05,presence of species: ovale (po),V2136_A
+hml32c_06,presence of species: ovale (po),V2137_A
+hml32c_07,presence of species: ovale (po),V2138_A
+hml32c_08,presence of species: ovale (po),V2139_A
+hml32c_09,presence of species: ovale (po),V2140_A
+hml32c_10,presence of species: ovale (po),HML32C_1
+hml32c_11,presence of species: ovale (po),V2142_A
+hml32c_12,presence of species: ovale (po),V2143_A
+hml32c_13,presence of species: ovale (po),V2144_A
+hml32c_14,presence of species: ovale (po),V2145_A
+hml32c_15,presence of species: ovale (po),V2146_A
+hml32c_16,presence of species: ovale (po),V2147_A
+hml32d_01,na - presence of species: vivax (pv),HML32D_0
+hml32d_02,na - presence of species: vivax (pv),V2149_A
+hml32d_03,na - presence of species: vivax (pv),V2150_A
+hml32d_04,na - presence of species: vivax (pv),V2151_A
+hml32d_05,na - presence of species: vivax (pv),V2152_A
+hml32d_06,na - presence of species: vivax (pv),V2153_A
+hml32d_07,na - presence of species: vivax (pv),V2154_A
+hml32d_08,na - presence of species: vivax (pv),V2155_A
+hml32d_09,na - presence of species: vivax (pv),V2156_A
+hml32d_10,na - presence of species: vivax (pv),HML32D_1
+hml32d_11,na - presence of species: vivax (pv),V2158_A
+hml32d_12,na - presence of species: vivax (pv),V2159_A
+hml32d_13,na - presence of species: vivax (pv),V2160_A
+hml32d_14,na - presence of species: vivax (pv),V2161_A
+hml32d_15,na - presence of species: vivax (pv),V2162_A
+hml32d_16,na - presence of species: vivax (pv),V2163_A
+hml32e_01,na - presence of species: cs,HML32E_0
+hml32e_02,na - presence of species: cs,V2165_A
+hml32e_03,na - presence of species: cs,V2166_A
+hml32e_04,na - presence of species: cs,V2167_A
+hml32e_05,na - presence of species: cs,V2168_A
+hml32e_06,na - presence of species: cs,V2169_A
+hml32e_07,na - presence of species: cs,V2170_A
+hml32e_08,na - presence of species: cs,V2171_A
+hml32e_09,na - presence of species: cs,V2172_A
+hml32e_10,na - presence of species: cs,HML32E_1
+hml32e_11,na - presence of species: cs,V2174_A
+hml32e_12,na - presence of species: cs,V2175_A
+hml32e_13,na - presence of species: cs,V2176_A
+hml32e_14,na - presence of species: cs,V2177_A
+hml32e_15,na - presence of species: cs,V2178_A
+hml32e_16,na - presence of species: cs,V2179_A
+hml32f_01,na - presence of species: cs,HML32F_0
+hml32f_02,na - presence of species: cs,V2181_A
+hml32f_03,na - presence of species: cs,V2182_A
+hml32f_04,na - presence of species: cs,V2183_A
+hml32f_05,na - presence of species: cs,V2184_A
+hml32f_06,na - presence of species: cs,V2185_A
+hml32f_07,na - presence of species: cs,V2186_A
+hml32f_08,na - presence of species: cs,V2187_A
+hml32f_09,na - presence of species: cs,V2188_A
+hml32f_10,na - presence of species: cs,HML32F_1
+hml32f_11,na - presence of species: cs,V2190_A
+hml32f_12,na - presence of species: cs,V2191_A
+hml32f_13,na - presence of species: cs,V2192_A
+hml32f_14,na - presence of species: cs,V2193_A
+hml32f_15,na - presence of species: cs,V2194_A
+hml32f_16,na - presence of species: cs,V2195_A
+hml32g_01,na - presence of species: cs,HML32G_0
+hml32g_02,na - presence of species: cs,V2197_A
+hml32g_03,na - presence of species: cs,V2198_A
+hml32g_04,na - presence of species: cs,V2199_A
+hml32g_05,na - presence of species: cs,V2200_A
+hml32g_06,na - presence of species: cs,V2201_A
+hml32g_07,na - presence of species: cs,V2202_A
+hml32g_08,na - presence of species: cs,V2203_A
+hml32g_09,na - presence of species: cs,V2204_A
+hml32g_10,na - presence of species: cs,HML32G_1
+hml32g_11,na - presence of species: cs,V2206_A
+hml32g_12,na - presence of species: cs,V2207_A
+hml32g_13,na - presence of species: cs,V2208_A
+hml32g_14,na - presence of species: cs,V2209_A
+hml32g_15,na - presence of species: cs,V2210_A
+hml32g_16,na - presence of species: cs,V2211_A
+hml33_01,result of malaria measurement,HML33_01
+hml33_02,result of malaria measurement,HML33_02
+hml33_03,result of malaria measurement,HML33_03
+hml33_04,result of malaria measurement,HML33_04
+hml33_05,result of malaria measurement,HML33_05
+hml33_06,result of malaria measurement,HML33_06
+hml33_07,result of malaria measurement,HML33_07
+hml33_08,result of malaria measurement,HML33_08
+hml33_09,result of malaria measurement,HML33_09
+hml33_10,result of malaria measurement,HML33_10
+hml33_11,result of malaria measurement,HML33_11
+hml33_12,result of malaria measurement,HML33_12
+hml33_13,result of malaria measurement,HML33_13
+hml33_14,result of malaria measurement,HML33_14
+hml33_15,result of malaria measurement,HML33_15
+hml33_16,result of malaria measurement,HML33_16
+hml34_01,bar code for blood smear sample,
+hml34_02,bar code for blood smear sample,
+hml34_03,bar code for blood smear sample,
+hml34_04,bar code for blood smear sample,
+hml34_05,bar code for blood smear sample,
+hml34_06,bar code for blood smear sample,
+hml34_07,bar code for blood smear sample,
+hml34_08,bar code for blood smear sample,
+hml34_09,bar code for blood smear sample,
+hml34_10,bar code for blood smear sample,
+hml34_11,bar code for blood smear sample,
+hml34_12,bar code for blood smear sample,
+hml34_13,bar code for blood smear sample,
+hml34_14,bar code for blood smear sample,
+hml34_15,bar code for blood smear sample,
+hml34_16,bar code for blood smear sample,
+hml35_01,result of malaria rapid test,HML35_01
+hml35_02,result of malaria rapid test,HML35_02
+hml35_03,result of malaria rapid test,HML35_03
+hml35_04,result of malaria rapid test,HML35_04
+hml35_05,result of malaria rapid test,HML35_05
+hml35_06,result of malaria rapid test,HML35_06
+hml35_07,result of malaria rapid test,HML35_07
+hml35_08,result of malaria rapid test,HML35_08
+hml35_09,result of malaria rapid test,HML35_09
+hml35_10,result of malaria rapid test,HML35_10
+hml35_11,result of malaria rapid test,HML35_11
+hml35_12,result of malaria rapid test,HML35_12
+hml35_13,result of malaria rapid test,HML35_13
+hml35_14,result of malaria rapid test,HML35_14
+hml35_15,result of malaria rapid test,HML35_15
+hml35_16,result of malaria rapid test,HML35_16
+hml36_01,fieldworker measurer code for malaria,
+hml36_02,fieldworker measurer code for malaria,
+hml36_03,fieldworker measurer code for malaria,
+hml36_04,fieldworker measurer code for malaria,
+hml36_05,fieldworker measurer code for malaria,
+hml36_06,fieldworker measurer code for malaria,
+hml36_07,fieldworker measurer code for malaria,
+hml36_08,fieldworker measurer code for malaria,
+hml36_09,fieldworker measurer code for malaria,
+hml36_10,fieldworker measurer code for malaria,
+hml36_11,fieldworker measurer code for malaria,
+hml36_12,fieldworker measurer code for malaria,
+hml36_13,fieldworker measurer code for malaria,
+hml36_14,fieldworker measurer code for malaria,
+hml36_15,fieldworker measurer code for malaria,
+hml36_16,fieldworker measurer code for malaria,
+sbsel_01,selected for:,SBSEL_01
+sbsel_02,selected for:,SBSEL_02
+sbsel_03,selected for:,SBSEL_03
+sbsel_04,selected for:,SBSEL_04
+sbsel_05,selected for:,SBSEL_05
+sbsel_06,selected for:,SBSEL_06
+sbsel_07,selected for:,SBSEL_07
+sbsel_08,selected for:,SBSEL_08
+sbsel_09,selected for:,SBSEL_09
+sbsel_10,selected for:,SBSEL_10
+sbsel_11,selected for:,SBSEL_11
+sbsel_12,selected for:,SBSEL_12
+sbsel_13,selected for:,SBSEL_13
+sbsel_14,selected for:,SBSEL_14
+sbsel_15,selected for:,SBSEL_15
+sbsel_16,selected for:,SBSEL_16
+sb211f_01,fieldworker for anemia testing,
+sb211f_02,fieldworker for anemia testing,
+sb211f_03,fieldworker for anemia testing,
+sb211f_04,fieldworker for anemia testing,
+sb211f_05,fieldworker for anemia testing,
+sb211f_06,fieldworker for anemia testing,
+sb211f_07,fieldworker for anemia testing,
+sb211f_08,fieldworker for anemia testing,
+sb211f_09,fieldworker for anemia testing,
+sb211f_10,fieldworker for anemia testing,
+sb211f_11,fieldworker for anemia testing,
+sb211f_12,fieldworker for anemia testing,
+sb211f_13,fieldworker for anemia testing,
+sb211f_14,fieldworker for anemia testing,
+sb211f_15,fieldworker for anemia testing,
+sb211f_16,fieldworker for anemia testing,
+sb217_01,read consent statement to respondent (hiv rdt),SB217_01
+sb217_02,read consent statement to respondent (hiv rdt),SB217_02
+sb217_03,read consent statement to respondent (hiv rdt),SB217_03
+sb217_04,read consent statement to respondent (hiv rdt),SB217_04
+sb217_05,read consent statement to respondent (hiv rdt),SB217_05
+sb217_06,read consent statement to respondent (hiv rdt),SB217_06
+sb217_07,read consent statement to respondent (hiv rdt),SB217_07
+sb217_08,read consent statement to respondent (hiv rdt),SB217_08
+sb217_09,read consent statement to respondent (hiv rdt),SB217_09
+sb217_10,read consent statement to respondent (hiv rdt),SB217_10
+sb217_11,read consent statement to respondent (hiv rdt),SB217_11
+sb217_12,read consent statement to respondent (hiv rdt),SB217_12
+sb217_13,read consent statement to respondent (hiv rdt),SB217_13
+sb217_14,read consent statement to respondent (hiv rdt),SB217_14
+sb217_15,read consent statement to respondent (hiv rdt),SB217_15
+sb217_16,read consent statement to respondent (hiv rdt),SB217_16
+sb239_01,hiv result,SB239_01
+sb239_02,hiv result,SB239_02
+sb239_03,hiv result,SB239_03
+sb239_04,hiv result,SB239_04
+sb239_05,hiv result,SB239_05
+sb239_06,hiv result,SB239_06
+sb239_07,hiv result,SB239_07
+sb239_08,hiv result,SB239_08
+sb239_09,hiv result,SB239_09
+sb239_10,hiv result,SB239_10
+sb239_11,hiv result,SB239_11
+sb239_12,hiv result,SB239_12
+sb239_13,hiv result,SB239_13
+sb239_14,hiv result,SB239_14
+sb239_15,hiv result,SB239_15
+sb239_16,hiv result,SB239_16
+sb240_01,hiv rdt combo set,SB240_01
+sb240_02,hiv rdt combo set,SB240_02
+sb240_03,hiv rdt combo set,SB240_03
+sb240_04,hiv rdt combo set,SB240_04
+sb240_05,hiv rdt combo set,SB240_05
+sb240_06,hiv rdt combo set,SB240_06
+sb240_07,hiv rdt combo set,SB240_07
+sb240_08,hiv rdt combo set,SB240_08
+sb240_09,hiv rdt combo set,SB240_09
+sb240_10,hiv rdt combo set,SB240_10
+sb240_11,hiv rdt combo set,SB240_11
+sb240_12,hiv rdt combo set,SB240_12
+sb240_13,hiv rdt combo set,SB240_13
+sb240_14,hiv rdt combo set,SB240_14
+sb240_15,hiv rdt combo set,SB240_15
+sb240_16,hiv rdt combo set,SB240_16
+sb241_01,hiv rdt stat pak,SB241_01
+sb241_02,hiv rdt stat pak,SB241_02
+sb241_03,hiv rdt stat pak,SB241_03
+sb241_04,hiv rdt stat pak,SB241_04
+sb241_05,hiv rdt stat pak,SB241_05
+sb241_06,hiv rdt stat pak,SB241_06
+sb241_07,hiv rdt stat pak,SB241_07
+sb241_08,hiv rdt stat pak,SB241_08
+sb241_09,hiv rdt stat pak,SB241_09
+sb241_10,hiv rdt stat pak,SB241_10
+sb241_11,hiv rdt stat pak,SB241_11
+sb241_12,hiv rdt stat pak,SB241_12
+sb241_13,hiv rdt stat pak,SB241_13
+sb241_14,hiv rdt stat pak,SB241_14
+sb241_15,hiv rdt stat pak,SB241_15
+sb241_16,hiv rdt stat pak,SB241_16
+sb245_01,any rdt invalid/fail,SB245_01
+sb245_02,any rdt invalid/fail,SB245_02
+sb245_03,any rdt invalid/fail,SB245_03
+sb245_04,any rdt invalid/fail,SB245_04
+sb245_05,any rdt invalid/fail,SB245_05
+sb245_06,any rdt invalid/fail,SB245_06
+sb245_07,any rdt invalid/fail,SB245_07
+sb245_08,any rdt invalid/fail,SB245_08
+sb245_09,any rdt invalid/fail,SB245_09
+sb245_10,any rdt invalid/fail,SB245_10
+sb245_11,any rdt invalid/fail,SB245_11
+sb245_12,any rdt invalid/fail,SB245_12
+sb245_13,any rdt invalid/fail,SB245_13
+sb245_14,any rdt invalid/fail,SB245_14
+sb245_15,any rdt invalid/fail,SB245_15
+sb245_16,any rdt invalid/fail,SB245_16
+sb246_01,number of invalid results using hiv rdt combo set,SB246_01
+sb246_02,number of invalid results using hiv rdt combo set,SB246_02
+sb246_03,number of invalid results using hiv rdt combo set,SB246_03
+sb246_04,number of invalid results using hiv rdt combo set,SB246_04
+sb246_05,number of invalid results using hiv rdt combo set,SB246_05
+sb246_06,number of invalid results using hiv rdt combo set,SB246_06
+sb246_07,number of invalid results using hiv rdt combo set,SB246_07
+sb246_08,number of invalid results using hiv rdt combo set,SB246_08
+sb246_09,number of invalid results using hiv rdt combo set,SB246_09
+sb246_10,number of invalid results using hiv rdt combo set,SB246_10
+sb246_11,number of invalid results using hiv rdt combo set,SB246_11
+sb246_12,number of invalid results using hiv rdt combo set,SB246_12
+sb246_13,number of invalid results using hiv rdt combo set,SB246_13
+sb246_14,number of invalid results using hiv rdt combo set,SB246_14
+sb246_15,number of invalid results using hiv rdt combo set,SB246_15
+sb246_16,number of invalid results using hiv rdt combo set,SB246_16
+sb247_01,number of invalid results using hiv rdt stat pak,SB247_01
+sb247_02,number of invalid results using hiv rdt stat pak,SB247_02
+sb247_03,number of invalid results using hiv rdt stat pak,SB247_03
+sb247_04,number of invalid results using hiv rdt stat pak,SB247_04
+sb247_05,number of invalid results using hiv rdt stat pak,SB247_05
+sb247_06,number of invalid results using hiv rdt stat pak,SB247_06
+sb247_07,number of invalid results using hiv rdt stat pak,SB247_07
+sb247_08,number of invalid results using hiv rdt stat pak,SB247_08
+sb247_09,number of invalid results using hiv rdt stat pak,SB247_09
+sb247_10,number of invalid results using hiv rdt stat pak,SB247_10
+sb247_11,number of invalid results using hiv rdt stat pak,SB247_11
+sb247_12,number of invalid results using hiv rdt stat pak,SB247_12
+sb247_13,number of invalid results using hiv rdt stat pak,SB247_13
+sb247_14,number of invalid results using hiv rdt stat pak,SB247_14
+sb247_15,number of invalid results using hiv rdt stat pak,SB247_15
+sb247_16,number of invalid results using hiv rdt stat pak,SB247_16
+sb249_01,taken coartem past 2 weeks,SB249_01
+sb249_02,taken coartem past 2 weeks,SB249_02
+sb249_03,taken coartem past 2 weeks,SB249_03
+sb249_04,taken coartem past 2 weeks,SB249_04
+sb249_05,taken coartem past 2 weeks,SB249_05
+sb249_06,taken coartem past 2 weeks,SB249_06
+sb249_07,taken coartem past 2 weeks,SB249_07
+sb249_08,taken coartem past 2 weeks,SB249_08
+sb249_09,taken coartem past 2 weeks,SB249_09
+sb249_10,taken coartem past 2 weeks,SB249_10
+sb249_11,taken coartem past 2 weeks,SB249_11
+sb249_12,taken coartem past 2 weeks,SB249_12
+sb249_13,taken coartem past 2 weeks,SB249_13
+sb249_14,taken coartem past 2 weeks,SB249_14
+sb249_15,taken coartem past 2 weeks,SB249_15
+sb249_16,taken coartem past 2 weeks,SB249_16
+sb253_01,medication accepted code,SB253_01
+sb253_02,medication accepted code,SB253_02
+sb253_03,medication accepted code,SB253_03
+sb253_04,medication accepted code,SB253_04
+sb253_05,medication accepted code,SB253_05
+sb253_06,medication accepted code,SB253_06
+sb253_07,medication accepted code,SB253_07
+sb253_08,medication accepted code,SB253_08
+sb253_09,medication accepted code,SB253_09
+sb253_10,medication accepted code,SB253_10
+sb253_11,medication accepted code,SB253_11
+sb253_12,medication accepted code,SB253_12
+sb253_13,medication accepted code,SB253_13
+sb253_14,medication accepted code,SB253_14
+sb253_15,medication accepted code,SB253_15
+sb253_16,medication accepted code,SB253_16
+sb254_01,medication accepted,SB254_01
+sb254_02,medication accepted,SB254_02
+sb254_03,medication accepted,SB254_03
+sb254_04,medication accepted,SB254_04
+sb254_05,medication accepted,SB254_05
+sb254_06,medication accepted,SB254_06
+sb254_07,medication accepted,SB254_07
+sb254_08,medication accepted,SB254_08
+sb254_09,medication accepted,SB254_09
+sb254_10,medication accepted,SB254_10
+sb254_11,medication accepted,SB254_11
+sb254_12,medication accepted,SB254_12
+sb254_13,medication accepted,SB254_13
+sb254_14,medication accepted,SB254_14
+sb254_15,medication accepted,SB254_15
+sb254_16,medication accepted,SB254_16
+sb117_01,malaria rdt code consent result,SB117_01
+sb117_02,malaria rdt code consent result,SB117_02
+sb117_03,malaria rdt code consent result,SB117_03
+sb117_04,malaria rdt code consent result,SB117_04
+sb117_05,malaria rdt code consent result,SB117_05
+sb117_06,malaria rdt code consent result,SB117_06
+sb117_07,malaria rdt code consent result,SB117_07
+sb117_08,malaria rdt code consent result,SB117_08
+sb117_09,malaria rdt code consent result,SB117_09
+sb117_10,malaria rdt code consent result,SB117_10
+sb117_11,malaria rdt code consent result,SB117_11
+sb117_12,malaria rdt code consent result,SB117_12
+sb117_13,malaria rdt code consent result,SB117_13
+sb117_14,malaria rdt code consent result,SB117_14
+sb117_15,malaria rdt code consent result,SB117_15
+sb117_16,malaria rdt code consent result,SB117_16
+sb121a_01,suffers symptoms: extreme weakness,SB121A_0
+sb121a_02,suffers symptoms: extreme weakness,V2485_A
+sb121a_03,suffers symptoms: extreme weakness,V2486_A
+sb121a_04,suffers symptoms: extreme weakness,V2487_A
+sb121a_05,suffers symptoms: extreme weakness,V2488_A
+sb121a_06,suffers symptoms: extreme weakness,V2489_A
+sb121a_07,suffers symptoms: extreme weakness,V2490_A
+sb121a_08,suffers symptoms: extreme weakness,V2491_A
+sb121a_09,suffers symptoms: extreme weakness,V2492_A
+sb121a_10,suffers symptoms: extreme weakness,SB121A_1
+sb121a_11,suffers symptoms: extreme weakness,V2494_A
+sb121a_12,suffers symptoms: extreme weakness,V2495_A
+sb121a_13,suffers symptoms: extreme weakness,V2496_A
+sb121a_14,suffers symptoms: extreme weakness,V2497_A
+sb121a_15,suffers symptoms: extreme weakness,V2498_A
+sb121a_16,suffers symptoms: extreme weakness,V2499_A
+sb121b_01,suffers symptoms: heart problems,SB121B_0
+sb121b_02,suffers symptoms: heart problems,V2501_A
+sb121b_03,suffers symptoms: heart problems,V2502_A
+sb121b_04,suffers symptoms: heart problems,V2503_A
+sb121b_05,suffers symptoms: heart problems,V2504_A
+sb121b_06,suffers symptoms: heart problems,V2505_A
+sb121b_07,suffers symptoms: heart problems,V2506_A
+sb121b_08,suffers symptoms: heart problems,V2507_A
+sb121b_09,suffers symptoms: heart problems,V2508_A
+sb121b_10,suffers symptoms: heart problems,SB121B_1
+sb121b_11,suffers symptoms: heart problems,V2510_A
+sb121b_12,suffers symptoms: heart problems,V2511_A
+sb121b_13,suffers symptoms: heart problems,V2512_A
+sb121b_14,suffers symptoms: heart problems,V2513_A
+sb121b_15,suffers symptoms: heart problems,V2514_A
+sb121b_16,suffers symptoms: heart problems,V2515_A
+sb121c_01,suffers symptoms: loss of consciousness,SB121C_0
+sb121c_02,suffers symptoms: loss of consciousness,V2517_A
+sb121c_03,suffers symptoms: loss of consciousness,V2518_A
+sb121c_04,suffers symptoms: loss of consciousness,V2519_A
+sb121c_05,suffers symptoms: loss of consciousness,V2520_A
+sb121c_06,suffers symptoms: loss of consciousness,V2521_A
+sb121c_07,suffers symptoms: loss of consciousness,V2522_A
+sb121c_08,suffers symptoms: loss of consciousness,V2523_A
+sb121c_09,suffers symptoms: loss of consciousness,V2524_A
+sb121c_10,suffers symptoms: loss of consciousness,SB121C_1
+sb121c_11,suffers symptoms: loss of consciousness,V2526_A
+sb121c_12,suffers symptoms: loss of consciousness,V2527_A
+sb121c_13,suffers symptoms: loss of consciousness,V2528_A
+sb121c_14,suffers symptoms: loss of consciousness,V2529_A
+sb121c_15,suffers symptoms: loss of consciousness,V2530_A
+sb121c_16,suffers symptoms: loss of consciousness,V2531_A
+sb121d_01,suffers symptoms: rapid or difficult breathing,SB121D_0
+sb121d_02,suffers symptoms: rapid or difficult breathing,V2533_A
+sb121d_03,suffers symptoms: rapid or difficult breathing,V2534_A
+sb121d_04,suffers symptoms: rapid or difficult breathing,V2535_A
+sb121d_05,suffers symptoms: rapid or difficult breathing,V2536_A
+sb121d_06,suffers symptoms: rapid or difficult breathing,V2537_A
+sb121d_07,suffers symptoms: rapid or difficult breathing,V2538_A
+sb121d_08,suffers symptoms: rapid or difficult breathing,V2539_A
+sb121d_09,suffers symptoms: rapid or difficult breathing,V2540_A
+sb121d_10,suffers symptoms: rapid or difficult breathing,SB121D_1
+sb121d_11,suffers symptoms: rapid or difficult breathing,V2542_A
+sb121d_12,suffers symptoms: rapid or difficult breathing,V2543_A
+sb121d_13,suffers symptoms: rapid or difficult breathing,V2544_A
+sb121d_14,suffers symptoms: rapid or difficult breathing,V2545_A
+sb121d_15,suffers symptoms: rapid or difficult breathing,V2546_A
+sb121d_16,suffers symptoms: rapid or difficult breathing,V2547_A
+sb121e_01,suffers symptoms: seizures,SB121E_0
+sb121e_02,suffers symptoms: seizures,V2549_A
+sb121e_03,suffers symptoms: seizures,V2550_A
+sb121e_04,suffers symptoms: seizures,V2551_A
+sb121e_05,suffers symptoms: seizures,V2552_A
+sb121e_06,suffers symptoms: seizures,V2553_A
+sb121e_07,suffers symptoms: seizures,V2554_A
+sb121e_08,suffers symptoms: seizures,V2555_A
+sb121e_09,suffers symptoms: seizures,V2556_A
+sb121e_10,suffers symptoms: seizures,SB121E_1
+sb121e_11,suffers symptoms: seizures,V2558_A
+sb121e_12,suffers symptoms: seizures,V2559_A
+sb121e_13,suffers symptoms: seizures,V2560_A
+sb121e_14,suffers symptoms: seizures,V2561_A
+sb121e_15,suffers symptoms: seizures,V2562_A
+sb121e_16,suffers symptoms: seizures,V2563_A
+sb121f_01,suffers symptoms: abnormal bleeding,SB121F_0
+sb121f_02,suffers symptoms: abnormal bleeding,V2565_A
+sb121f_03,suffers symptoms: abnormal bleeding,V2566_A
+sb121f_04,suffers symptoms: abnormal bleeding,V2567_A
+sb121f_05,suffers symptoms: abnormal bleeding,V2568_A
+sb121f_06,suffers symptoms: abnormal bleeding,V2569_A
+sb121f_07,suffers symptoms: abnormal bleeding,V2570_A
+sb121f_08,suffers symptoms: abnormal bleeding,V2571_A
+sb121f_09,suffers symptoms: abnormal bleeding,V2572_A
+sb121f_10,suffers symptoms: abnormal bleeding,SB121F_1
+sb121f_11,suffers symptoms: abnormal bleeding,V2574_A
+sb121f_12,suffers symptoms: abnormal bleeding,V2575_A
+sb121f_13,suffers symptoms: abnormal bleeding,V2576_A
+sb121f_14,suffers symptoms: abnormal bleeding,V2577_A
+sb121f_15,suffers symptoms: abnormal bleeding,V2578_A
+sb121f_16,suffers symptoms: abnormal bleeding,V2579_A
+sb121g_01,suffers symptoms: jaundice or yellow skin,SB121G_0
+sb121g_02,suffers symptoms: jaundice or yellow skin,V2581_A
+sb121g_03,suffers symptoms: jaundice or yellow skin,V2582_A
+sb121g_04,suffers symptoms: jaundice or yellow skin,V2583_A
+sb121g_05,suffers symptoms: jaundice or yellow skin,V2584_A
+sb121g_06,suffers symptoms: jaundice or yellow skin,V2585_A
+sb121g_07,suffers symptoms: jaundice or yellow skin,V2586_A
+sb121g_08,suffers symptoms: jaundice or yellow skin,V2587_A
+sb121g_09,suffers symptoms: jaundice or yellow skin,V2588_A
+sb121g_10,suffers symptoms: jaundice or yellow skin,SB121G_1
+sb121g_11,suffers symptoms: jaundice or yellow skin,V2590_A
+sb121g_12,suffers symptoms: jaundice or yellow skin,V2591_A
+sb121g_13,suffers symptoms: jaundice or yellow skin,V2592_A
+sb121g_14,suffers symptoms: jaundice or yellow skin,V2593_A
+sb121g_15,suffers symptoms: jaundice or yellow skin,V2594_A
+sb121g_16,suffers symptoms: jaundice or yellow skin,V2595_A
+sb121h_01,suffers symptoms: dark urine,SB121H_0
+sb121h_02,suffers symptoms: dark urine,V2597_A
+sb121h_03,suffers symptoms: dark urine,V2598_A
+sb121h_04,suffers symptoms: dark urine,V2599_A
+sb121h_05,suffers symptoms: dark urine,V2600_A
+sb121h_06,suffers symptoms: dark urine,V2601_A
+sb121h_07,suffers symptoms: dark urine,V2602_A
+sb121h_08,suffers symptoms: dark urine,V2603_A
+sb121h_09,suffers symptoms: dark urine,V2604_A
+sb121h_10,suffers symptoms: dark urine,SB121H_1
+sb121h_11,suffers symptoms: dark urine,V2606_A
+sb121h_12,suffers symptoms: dark urine,V2607_A
+sb121h_13,suffers symptoms: dark urine,V2608_A
+sb121h_14,suffers symptoms: dark urine,V2609_A
+sb121h_15,suffers symptoms: dark urine,V2610_A
+sb121h_16,suffers symptoms: dark urine,V2611_A
+sb124_01,taken act given by doctor or health center,SB124_01
+sb124_02,taken act given by doctor or health center,SB124_02
+sb124_03,taken act given by doctor or health center,SB124_03
+sb124_04,taken act given by doctor or health center,SB124_04
+sb124_05,taken act given by doctor or health center,SB124_05
+sb124_06,taken act given by doctor or health center,SB124_06
+sb124_07,taken act given by doctor or health center,SB124_07
+sb124_08,taken act given by doctor or health center,SB124_08
+sb124_09,taken act given by doctor or health center,SB124_09
+sb124_10,taken act given by doctor or health center,SB124_10
+sb124_11,taken act given by doctor or health center,SB124_11
+sb124_12,taken act given by doctor or health center,SB124_12
+sb124_13,taken act given by doctor or health center,SB124_13
+sb124_14,taken act given by doctor or health center,SB124_14
+sb124_15,taken act given by doctor or health center,SB124_15
+sb124_16,taken act given by doctor or health center,SB124_16
+sb128_01,didn't take act - code and sign name,SB128_01
+sb128_02,didn't take act - code and sign name,SB128_02
+sb128_03,didn't take act - code and sign name,SB128_03
+sb128_04,didn't take act - code and sign name,SB128_04
+sb128_05,didn't take act - code and sign name,SB128_05
+sb128_06,didn't take act - code and sign name,SB128_06
+sb128_07,didn't take act - code and sign name,SB128_07
+sb128_08,didn't take act - code and sign name,SB128_08
+sb128_09,didn't take act - code and sign name,SB128_09
+sb128_10,didn't take act - code and sign name,SB128_10
+sb128_11,didn't take act - code and sign name,SB128_11
+sb128_12,didn't take act - code and sign name,SB128_12
+sb128_13,didn't take act - code and sign name,SB128_13
+sb128_14,didn't take act - code and sign name,SB128_14
+sb128_15,didn't take act - code and sign name,SB128_15
+sb128_16,didn't take act - code and sign name,SB128_16
+sb129_01,medication accepted,SB129_01
+sb129_02,medication accepted,SB129_02
+sb129_03,medication accepted,SB129_03
+sb129_04,medication accepted,SB129_04
+sb129_05,medication accepted,SB129_05
+sb129_06,medication accepted,SB129_06
+sb129_07,medication accepted,SB129_07
+sb129_08,medication accepted,SB129_08
+sb129_09,medication accepted,SB129_09
+sb129_10,medication accepted,SB129_10
+sb129_11,medication accepted,SB129_11
+sb129_12,medication accepted,SB129_12
+sb129_13,medication accepted,SB129_13
+sb129_14,medication accepted,SB129_14
+sb129_15,medication accepted,SB129_15
+sb129_16,medication accepted,SB129_16
+idxdis_01,index to household schedule,
+idxdis_02,index to household schedule,
+idxdis_03,index to household schedule,
+idxdis_04,index to household schedule,
+idxdis_05,index to household schedule,
+idxdis_06,index to household schedule,
+idxdis_07,index to household schedule,
+idxdis_08,index to household schedule,
+idxdis_09,index to household schedule,
+idxdis_10,index to household schedule,
+idxdis_11,index to household schedule,
+idxdis_12,index to household schedule,
+idxdis_13,index to household schedule,
+idxdis_14,index to household schedule,
+idxdis_15,index to household schedule,
+idxdis_16,index to household schedule,
+hdis1_01,wear glasses or contact lenses,HDIS1_01
+hdis1_02,wear glasses or contact lenses,HDIS1_02
+hdis1_03,wear glasses or contact lenses,HDIS1_03
+hdis1_04,wear glasses or contact lenses,HDIS1_04
+hdis1_05,wear glasses or contact lenses,HDIS1_05
+hdis1_06,wear glasses or contact lenses,HDIS1_06
+hdis1_07,wear glasses or contact lenses,HDIS1_07
+hdis1_08,wear glasses or contact lenses,HDIS1_08
+hdis1_09,wear glasses or contact lenses,HDIS1_09
+hdis1_10,wear glasses or contact lenses,HDIS1_10
+hdis1_11,wear glasses or contact lenses,HDIS1_11
+hdis1_12,wear glasses or contact lenses,HDIS1_12
+hdis1_13,wear glasses or contact lenses,HDIS1_13
+hdis1_14,wear glasses or contact lenses,HDIS1_14
+hdis1_15,wear glasses or contact lenses,HDIS1_15
+hdis1_16,wear glasses or contact lenses,HDIS1_16
+hdis2_01,have difficulty seeing,HDIS2_01
+hdis2_02,have difficulty seeing,HDIS2_02
+hdis2_03,have difficulty seeing,HDIS2_03
+hdis2_04,have difficulty seeing,HDIS2_04
+hdis2_05,have difficulty seeing,HDIS2_05
+hdis2_06,have difficulty seeing,HDIS2_06
+hdis2_07,have difficulty seeing,HDIS2_07
+hdis2_08,have difficulty seeing,HDIS2_08
+hdis2_09,have difficulty seeing,HDIS2_09
+hdis2_10,have difficulty seeing,HDIS2_10
+hdis2_11,have difficulty seeing,HDIS2_11
+hdis2_12,have difficulty seeing,HDIS2_12
+hdis2_13,have difficulty seeing,HDIS2_13
+hdis2_14,have difficulty seeing,HDIS2_14
+hdis2_15,have difficulty seeing,HDIS2_15
+hdis2_16,have difficulty seeing,HDIS2_16
+hdis3_01,wear a hearing aid,HDIS3_01
+hdis3_02,wear a hearing aid,HDIS3_02
+hdis3_03,wear a hearing aid,HDIS3_03
+hdis3_04,wear a hearing aid,HDIS3_04
+hdis3_05,wear a hearing aid,HDIS3_05
+hdis3_06,wear a hearing aid,HDIS3_06
+hdis3_07,wear a hearing aid,HDIS3_07
+hdis3_08,wear a hearing aid,HDIS3_08
+hdis3_09,wear a hearing aid,HDIS3_09
+hdis3_10,wear a hearing aid,HDIS3_10
+hdis3_11,wear a hearing aid,HDIS3_11
+hdis3_12,wear a hearing aid,HDIS3_12
+hdis3_13,wear a hearing aid,HDIS3_13
+hdis3_14,wear a hearing aid,HDIS3_14
+hdis3_15,wear a hearing aid,HDIS3_15
+hdis3_16,wear a hearing aid,HDIS3_16
+hdis4_01,have difficulty hearing,HDIS4_01
+hdis4_02,have difficulty hearing,HDIS4_02
+hdis4_03,have difficulty hearing,HDIS4_03
+hdis4_04,have difficulty hearing,HDIS4_04
+hdis4_05,have difficulty hearing,HDIS4_05
+hdis4_06,have difficulty hearing,HDIS4_06
+hdis4_07,have difficulty hearing,HDIS4_07
+hdis4_08,have difficulty hearing,HDIS4_08
+hdis4_09,have difficulty hearing,HDIS4_09
+hdis4_10,have difficulty hearing,HDIS4_10
+hdis4_11,have difficulty hearing,HDIS4_11
+hdis4_12,have difficulty hearing,HDIS4_12
+hdis4_13,have difficulty hearing,HDIS4_13
+hdis4_14,have difficulty hearing,HDIS4_14
+hdis4_15,have difficulty hearing,HDIS4_15
+hdis4_16,have difficulty hearing,HDIS4_16
+hdis5_01,have difficulty communicating using usual language,HDIS5_01
+hdis5_02,have difficulty communicating using usual language,HDIS5_02
+hdis5_03,have difficulty communicating using usual language,HDIS5_03
+hdis5_04,have difficulty communicating using usual language,HDIS5_04
+hdis5_05,have difficulty communicating using usual language,HDIS5_05
+hdis5_06,have difficulty communicating using usual language,HDIS5_06
+hdis5_07,have difficulty communicating using usual language,HDIS5_07
+hdis5_08,have difficulty communicating using usual language,HDIS5_08
+hdis5_09,have difficulty communicating using usual language,HDIS5_09
+hdis5_10,have difficulty communicating using usual language,HDIS5_10
+hdis5_11,have difficulty communicating using usual language,HDIS5_11
+hdis5_12,have difficulty communicating using usual language,HDIS5_12
+hdis5_13,have difficulty communicating using usual language,HDIS5_13
+hdis5_14,have difficulty communicating using usual language,HDIS5_14
+hdis5_15,have difficulty communicating using usual language,HDIS5_15
+hdis5_16,have difficulty communicating using usual language,HDIS5_16
+hdis6_01,have difficulty remembering or concentrating,HDIS6_01
+hdis6_02,have difficulty remembering or concentrating,HDIS6_02
+hdis6_03,have difficulty remembering or concentrating,HDIS6_03
+hdis6_04,have difficulty remembering or concentrating,HDIS6_04
+hdis6_05,have difficulty remembering or concentrating,HDIS6_05
+hdis6_06,have difficulty remembering or concentrating,HDIS6_06
+hdis6_07,have difficulty remembering or concentrating,HDIS6_07
+hdis6_08,have difficulty remembering or concentrating,HDIS6_08
+hdis6_09,have difficulty remembering or concentrating,HDIS6_09
+hdis6_10,have difficulty remembering or concentrating,HDIS6_10
+hdis6_11,have difficulty remembering or concentrating,HDIS6_11
+hdis6_12,have difficulty remembering or concentrating,HDIS6_12
+hdis6_13,have difficulty remembering or concentrating,HDIS6_13
+hdis6_14,have difficulty remembering or concentrating,HDIS6_14
+hdis6_15,have difficulty remembering or concentrating,HDIS6_15
+hdis6_16,have difficulty remembering or concentrating,HDIS6_16
+hdis7_01,have difficulty walking or climbing steps,HDIS7_01
+hdis7_02,have difficulty walking or climbing steps,HDIS7_02
+hdis7_03,have difficulty walking or climbing steps,HDIS7_03
+hdis7_04,have difficulty walking or climbing steps,HDIS7_04
+hdis7_05,have difficulty walking or climbing steps,HDIS7_05
+hdis7_06,have difficulty walking or climbing steps,HDIS7_06
+hdis7_07,have difficulty walking or climbing steps,HDIS7_07
+hdis7_08,have difficulty walking or climbing steps,HDIS7_08
+hdis7_09,have difficulty walking or climbing steps,HDIS7_09
+hdis7_10,have difficulty walking or climbing steps,HDIS7_10
+hdis7_11,have difficulty walking or climbing steps,HDIS7_11
+hdis7_12,have difficulty walking or climbing steps,HDIS7_12
+hdis7_13,have difficulty walking or climbing steps,HDIS7_13
+hdis7_14,have difficulty walking or climbing steps,HDIS7_14
+hdis7_15,have difficulty walking or climbing steps,HDIS7_15
+hdis7_16,have difficulty walking or climbing steps,HDIS7_16
+hdis8_01,have difficulty washing all over or dressing,HDIS8_01
+hdis8_02,have difficulty washing all over or dressing,HDIS8_02
+hdis8_03,have difficulty washing all over or dressing,HDIS8_03
+hdis8_04,have difficulty washing all over or dressing,HDIS8_04
+hdis8_05,have difficulty washing all over or dressing,HDIS8_05
+hdis8_06,have difficulty washing all over or dressing,HDIS8_06
+hdis8_07,have difficulty washing all over or dressing,HDIS8_07
+hdis8_08,have difficulty washing all over or dressing,HDIS8_08
+hdis8_09,have difficulty washing all over or dressing,HDIS8_09
+hdis8_10,have difficulty washing all over or dressing,HDIS8_10
+hdis8_11,have difficulty washing all over or dressing,HDIS8_11
+hdis8_12,have difficulty washing all over or dressing,HDIS8_12
+hdis8_13,have difficulty washing all over or dressing,HDIS8_13
+hdis8_14,have difficulty washing all over or dressing,HDIS8_14
+hdis8_15,have difficulty washing all over or dressing,HDIS8_15
+hdis8_16,have difficulty washing all over or dressing,HDIS8_16
+hdis9_01,highest degree of difficulty for any of the impairments,HDIS9_01
+hdis9_02,highest degree of difficulty for any of the impairments,HDIS9_02
+hdis9_03,highest degree of difficulty for any of the impairments,HDIS9_03
+hdis9_04,highest degree of difficulty for any of the impairments,HDIS9_04
+hdis9_05,highest degree of difficulty for any of the impairments,HDIS9_05
+hdis9_06,highest degree of difficulty for any of the impairments,HDIS9_06
+hdis9_07,highest degree of difficulty for any of the impairments,HDIS9_07
+hdis9_08,highest degree of difficulty for any of the impairments,HDIS9_08
+hdis9_09,highest degree of difficulty for any of the impairments,HDIS9_09
+hdis9_10,highest degree of difficulty for any of the impairments,HDIS9_10
+hdis9_11,highest degree of difficulty for any of the impairments,HDIS9_11
+hdis9_12,highest degree of difficulty for any of the impairments,HDIS9_12
+hdis9_13,highest degree of difficulty for any of the impairments,HDIS9_13
+hdis9_14,highest degree of difficulty for any of the impairments,HDIS9_14
+hdis9_15,highest degree of difficulty for any of the impairments,HDIS9_15
+hdis9_16,highest degree of difficulty for any of the impairments,HDIS9_16
+mha0_1,index to household schedule,
+mha0_2,index to household schedule,
+mha0_3,index to household schedule,
+mha0_4,index to household schedule,
+mha0_5,index to household schedule,
+mha1_1,woman's age in years,
+mha1_2,woman's age in years,
+mha1_3,woman's age in years,
+mha1_4,woman's age in years,
+mha1_5,woman's age in years,
+mha2_1,woman's weight in kilograms (1 decimal),MHA2_1
+mha2_2,woman's weight in kilograms (1 decimal),MHA2_2
+mha2_3,woman's weight in kilograms (1 decimal),MHA2_3
+mha2_4,woman's weight in kilograms (1 decimal),MHA2_4
+mha2_5,woman's weight in kilograms (1 decimal),MHA2_5
+mha3_1,woman's height in centimeters (1 decimal),MHA3_1
+mha3_2,woman's height in centimeters (1 decimal),MHA3_2
+mha3_3,woman's height in centimeters (1 decimal),MHA3_3
+mha3_4,woman's height in centimeters (1 decimal),MHA3_4
+mha3_5,woman's height in centimeters (1 decimal),MHA3_5
+mha4_1,height/age percentile,MHA4_1
+mha4_2,height/age percentile,MHA4_2
+mha4_3,height/age percentile,MHA4_3
+mha4_4,height/age percentile,MHA4_4
+mha4_5,height/age percentile,MHA4_5
+mha5_1,height/age standard deviation,MHA5_1
+mha5_2,height/age standard deviation,MHA5_2
+mha5_3,height/age standard deviation,MHA5_3
+mha5_4,height/age standard deviation,MHA5_4
+mha5_5,height/age standard deviation,MHA5_5
+mha6_1,height/age percent ref. median,MHA6_1
+mha6_2,height/age percent ref. median,MHA6_2
+mha6_3,height/age percent ref. median,MHA6_3
+mha6_4,height/age percent ref. median,MHA6_4
+mha6_5,height/age percent ref. median,MHA6_5
+mha11_1,weight/height standard deviation (dhs),MHA11_1
+mha11_2,weight/height standard deviation (dhs),MHA11_2
+mha11_3,weight/height standard deviation (dhs),MHA11_3
+mha11_4,weight/height standard deviation (dhs),MHA11_4
+mha11_5,weight/height standard deviation (dhs),MHA11_5
+mha12_1,weight/height percent ref. median (dhs),MHA12_1
+mha12_2,weight/height percent ref. median (dhs),MHA12_2
+mha12_3,weight/height percent ref. median (dhs),MHA12_3
+mha12_4,weight/height percent ref. median (dhs),MHA12_4
+mha12_5,weight/height percent ref. median (dhs),MHA12_5
+mha12a_1,weight/height percent ref. median (fog),MHA12A_1
+mha12a_2,weight/height percent ref. median (fog),MHA12A_2
+mha12a_3,weight/height percent ref. median (fog),MHA12A_3
+mha12a_4,weight/height percent ref. median (fog),MHA12A_4
+mha12a_5,weight/height percent ref. median (fog),MHA12A_5
+mha12b_1,weight/height percent ref. median (who),MHA12B_1
+mha12b_2,weight/height percent ref. median (who),MHA12B_2
+mha12b_3,weight/height percent ref. median (who),MHA12B_3
+mha12b_4,weight/height percent ref. median (who),MHA12B_4
+mha12b_5,weight/height percent ref. median (who),MHA12B_5
+mha13_1,result of measurement - height/weight,MHA13_1
+mha13_2,result of measurement - height/weight,MHA13_2
+mha13_3,result of measurement - height/weight,MHA13_3
+mha13_4,result of measurement - height/weight,MHA13_4
+mha13_5,result of measurement - height/weight,MHA13_5
+mha21_1,fieldworker measurer code,MHA21_1
+mha21_2,fieldworker measurer code,MHA21_2
+mha21_3,fieldworker measurer code,MHA21_3
+mha21_4,fieldworker measurer code,MHA21_4
+mha21_5,fieldworker measurer code,MHA21_5
+mha32_1,date of birth (cmc),
+mha32_2,date of birth (cmc),
+mha32_3,date of birth (cmc),
+mha32_4,date of birth (cmc),
+mha32_5,date of birth (cmc),
+mha33_1,completeness of ha32 information,MHA33_1
+mha33_2,completeness of ha32 information,MHA33_2
+mha33_3,completeness of ha32 information,MHA33_3
+mha33_4,completeness of ha32 information,MHA33_4
+mha33_5,completeness of ha32 information,MHA33_5
+mha35_1,smoking (cigarettes in last 24 hours),MHA35_1
+mha35_2,smoking (cigarettes in last 24 hours),MHA35_2
+mha35_3,smoking (cigarettes in last 24 hours),MHA35_3
+mha35_4,smoking (cigarettes in last 24 hours),MHA35_4
+mha35_5,smoking (cigarettes in last 24 hours),MHA35_5
+mha40_1,body mass index,MHA40_1
+mha40_2,body mass index,MHA40_2
+mha40_3,body mass index,MHA40_3
+mha40_4,body mass index,MHA40_4
+mha40_5,body mass index,MHA40_5
+mha41_1,rohrer's index,MHA41_1
+mha41_2,rohrer's index,MHA41_2
+mha41_3,rohrer's index,MHA41_3
+mha41_4,rohrer's index,MHA41_4
+mha41_5,rohrer's index,MHA41_5
+mha50_1,under age 18,MHA50_1
+mha50_2,under age 18,MHA50_2
+mha50_3,under age 18,MHA50_3
+mha50_4,under age 18,MHA50_4
+mha50_5,under age 18,MHA50_5
+mha51_1,line number of parent/caretaker,MHA51_1
+mha51_2,line number of parent/caretaker,MHA51_2
+mha51_3,line number of parent/caretaker,MHA51_3
+mha51_4,line number of parent/caretaker,MHA51_4
+mha51_5,line number of parent/caretaker,MHA51_5
+mha52_1,read consent statement - hemoglobin,MHA52_1
+mha52_2,read consent statement - hemoglobin,MHA52_2
+mha52_3,read consent statement - hemoglobin,MHA52_3
+mha52_4,read consent statement - hemoglobin,MHA52_4
+mha52_5,read consent statement - hemoglobin,MHA52_5
+mha53_1,hemoglobin level (g/dl - 1 decimal),MHA53_1
+mha53_2,hemoglobin level (g/dl - 1 decimal),MHA53_2
+mha53_3,hemoglobin level (g/dl - 1 decimal),MHA53_3
+mha53_4,hemoglobin level (g/dl - 1 decimal),MHA53_4
+mha53_5,hemoglobin level (g/dl - 1 decimal),MHA53_5
+mha54_1,currently pregnant,MHA54_1
+mha54_2,currently pregnant,MHA54_2
+mha54_3,currently pregnant,MHA54_3
+mha54_4,currently pregnant,MHA54_4
+mha54_5,currently pregnant,MHA54_5
+mha55_1,result of measurement - hemoglobin,MHA55_1
+mha55_2,result of measurement - hemoglobin,MHA55_2
+mha55_3,result of measurement - hemoglobin,MHA55_3
+mha55_4,result of measurement - hemoglobin,MHA55_4
+mha55_5,result of measurement - hemoglobin,MHA55_5
+mha56_1,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),MHA56_1
+mha56_2,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),MHA56_2
+mha56_3,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),MHA56_3
+mha56_4,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),MHA56_4
+mha56_5,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),MHA56_5
+mha57_1,anemia level,MHA57_1
+mha57_2,anemia level,MHA57_2
+mha57_3,anemia level,MHA57_3
+mha57_4,anemia level,MHA57_4
+mha57_5,anemia level,MHA57_5
+mha58_1,na - agrees to referral - anemia,MHA58_1
+mha58_2,na - agrees to referral - anemia,MHA58_2
+mha58_3,na - agrees to referral - anemia,MHA58_3
+mha58_4,na - agrees to referral - anemia,MHA58_4
+mha58_5,na - agrees to referral - anemia,MHA58_5
+mha60_1,marital status,MHA60_1
+mha60_2,marital status,MHA60_2
+mha60_3,marital status,MHA60_3
+mha60_4,marital status,MHA60_4
+mha60_5,marital status,MHA60_5
+mha61_1,read consent statement - hiv,MHA61_1
+mha61_2,read consent statement - hiv,MHA61_2
+mha61_3,read consent statement - hiv,MHA61_3
+mha61_4,read consent statement - hiv,MHA61_4
+mha61_5,read consent statement - hiv,MHA61_5
+mha62_1,bar code for hiv blood sample,
+mha62_2,bar code for hiv blood sample,
+mha62_3,bar code for hiv blood sample,
+mha62_4,bar code for hiv blood sample,
+mha62_5,bar code for hiv blood sample,
+mha63_1,result of measurement - hiv,MHA63_1
+mha63_2,result of measurement - hiv,MHA63_2
+mha63_3,result of measurement - hiv,MHA63_3
+mha63_4,result of measurement - hiv,MHA63_4
+mha63_5,result of measurement - hiv,MHA63_5
+mha64_1,na - consent for additional tests,MHA64_1
+mha64_2,na - consent for additional tests,MHA64_2
+mha64_3,na - consent for additional tests,MHA64_3
+mha64_4,na - consent for additional tests,MHA64_4
+mha64_5,na - consent for additional tests,MHA64_5
+mha65_1,result of woman's individual interview,MHA65_1
+mha65_2,result of woman's individual interview,MHA65_2
+mha65_3,result of woman's individual interview,MHA65_3
+mha65_4,result of woman's individual interview,MHA65_4
+mha65_5,result of woman's individual interview,MHA65_5
+mha66_1,woman's highest educational level,MHA66_1
+mha66_2,woman's highest educational level,MHA66_2
+mha66_3,woman's highest educational level,MHA66_3
+mha66_4,woman's highest educational level,MHA66_4
+mha66_5,woman's highest educational level,MHA66_5
+mha67_1,woman's highest year of education,MHA67_1
+mha67_2,woman's highest year of education,MHA67_2
+mha67_3,woman's highest year of education,MHA67_3
+mha67_4,woman's highest year of education,MHA67_4
+mha67_5,woman's highest year of education,MHA67_5
+mha68_1,woman's highest educational level (for preliminary and final report),MHA68_1
+mha68_2,woman's highest educational level (for preliminary and final report),MHA68_2
+mha68_3,woman's highest educational level (for preliminary and final report),MHA68_3
+mha68_4,woman's highest educational level (for preliminary and final report),MHA68_4
+mha68_5,woman's highest educational level (for preliminary and final report),MHA68_5
+mha69_1,na - hiv weight (6 decimals),
+mha69_2,na - hiv weight (6 decimals),
+mha69_3,na - hiv weight (6 decimals),
+mha69_4,na - hiv weight (6 decimals),
+mha69_5,na - hiv weight (6 decimals),
+mha70_1,interviewer that took blood for hiv testing,
+mha70_2,interviewer that took blood for hiv testing,
+mha70_3,interviewer that took blood for hiv testing,
+mha70_4,interviewer that took blood for hiv testing,
+mha70_5,interviewer that took blood for hiv testing,
+sb505a_1,received deworming treatment past 6 months,SB505A_1
+sb505a_2,received deworming treatment past 6 months,SB505A_2
+sb505a_3,received deworming treatment past 6 months,SB505A_3
+sb505a_4,received deworming treatment past 6 months,SB505A_4
+sb505a_5,received deworming treatment past 6 months,SB505A_5
+sb505b_1,"consumed nootrimama, shisha kibondo, sosoma fortified, or csb+ past week",SB505B_1
+sb505b_2,"consumed nootrimama, shisha kibondo, sosoma fortified, or csb+ past week",SB505B_2
+sb505b_3,"consumed nootrimama, shisha kibondo, sosoma fortified, or csb+ past week",SB505B_3
+sb505b_4,"consumed nootrimama, shisha kibondo, sosoma fortified, or csb+ past week",SB505B_4
+sb505b_5,"consumed nootrimama, shisha kibondo, sosoma fortified, or csb+ past week",SB505B_5
+sb505ch_1,time of most recent meal (hours),SB505CH_
+sb505ch_2,time of most recent meal (hours),V3021_A
+sb505ch_3,time of most recent meal (hours),V3022_A
+sb505ch_4,time of most recent meal (hours),V3023_A
+sb505ch_5,time of most recent meal (hours),V3024_A
+sb505cm_1,time of most recent meal (minutes),
+sb505cm_2,time of most recent meal (minutes),
+sb505cm_3,time of most recent meal (minutes),
+sb505cm_4,time of most recent meal (minutes),
+sb505cm_5,time of most recent meal (minutes),
+sb513a_1,malaria consent,SB513A_1
+sb513a_2,malaria consent,SB513A_2
+sb513a_3,malaria consent,SB513A_3
+sb513a_4,malaria consent,SB513A_4
+sb513a_5,malaria consent,SB513A_5
+sb513c_1,vitamin consent,SB513C_1
+sb513c_2,vitamin consent,SB513C_2
+sb513c_3,vitamin consent,SB513C_3
+sb513c_4,vitamin consent,SB513C_4
+sb513c_5,vitamin consent,SB513C_5
+sb515_1,urine collection and testing consent,SB515_1
+sb515_2,urine collection and testing consent,SB515_2
+sb515_3,urine collection and testing consent,SB515_3
+sb515_4,urine collection and testing consent,SB515_4
+sb515_5,urine collection and testing consent,SB515_5
+sb515f_1,urine collection and testing fieldworker number,
+sb515f_2,urine collection and testing fieldworker number,
+sb515f_3,urine collection and testing fieldworker number,
+sb515f_4,urine collection and testing fieldworker number,
+sb515f_5,urine collection and testing fieldworker number,
+sb527_1,purple top tube,SB527_1
+sb527_2,purple top tube,SB527_2
+sb527_3,purple top tube,SB527_3
+sb527_4,purple top tube,SB527_4
+sb527_5,purple top tube,SB527_5
+sb528_1,red top tube,SB528_1
+sb528_2,red top tube,SB528_2
+sb528_3,red top tube,SB528_3
+sb528_4,red top tube,SB528_4
+sb528_5,red top tube,SB528_5
+sb529a_1,red tube top bar code,SB529A_1
+sb529a_2,red tube top bar code,SB529A_2
+sb529a_3,red tube top bar code,SB529A_3
+sb529a_4,red tube top bar code,SB529A_4
+sb529a_5,red tube top bar code,SB529A_5
+sb529b_1,red tube top bar code,SB529B_1
+sb529b_2,red tube top bar code,SB529B_2
+sb529b_3,red tube top bar code,SB529B_3
+sb529b_4,red tube top bar code,SB529B_4
+sb529b_5,red tube top bar code,SB529B_5
+sb529c_1,red tube top bar code,SB529C_1
+sb529c_2,red tube top bar code,SB529C_2
+sb529c_3,red tube top bar code,SB529C_3
+sb529c_4,red tube top bar code,SB529C_4
+sb529c_5,red tube top bar code,SB529C_5
+sb529d_1,red tube top bar code,SB529D_1
+sb529d_2,red tube top bar code,SB529D_2
+sb529d_3,red tube top bar code,SB529D_3
+sb529d_4,red tube top bar code,SB529D_4
+sb529d_5,red tube top bar code,SB529D_5
+sb530d_1,day of blood sample,SB530D_1
+sb530d_2,day of blood sample,SB530D_2
+sb530d_3,day of blood sample,SB530D_3
+sb530d_4,day of blood sample,SB530D_4
+sb530d_5,day of blood sample,SB530D_5
+sb530m_1,month of blood sample,SB530M_1
+sb530m_2,month of blood sample,SB530M_2
+sb530m_3,month of blood sample,SB530M_3
+sb530m_4,month of blood sample,SB530M_4
+sb530m_5,month of blood sample,SB530M_5
+sb530y_1,year of blood sample,SB530Y_1
+sb530y_2,year of blood sample,SB530Y_2
+sb530y_3,year of blood sample,SB530Y_3
+sb530y_4,year of blood sample,SB530Y_4
+sb530y_5,year of blood sample,SB530Y_5
+sb531h_1,hour of blood sample,
+sb531h_2,hour of blood sample,
+sb531h_3,hour of blood sample,
+sb531h_4,hour of blood sample,
+sb531h_5,hour of blood sample,
+sb531m_1,minute of blood sample,
+sb531m_2,minute of blood sample,
+sb531m_3,minute of blood sample,
+sb531m_4,minute of blood sample,
+sb531m_5,minute of blood sample,
+sb533_1,result malaria rdt,SB533_1
+sb533_2,result malaria rdt,SB533_2
+sb533_3,result malaria rdt,SB533_3
+sb533_4,result malaria rdt,SB533_4
+sb533_5,result malaria rdt,SB533_5
+sb534_1,result malaria blood slide collection,SB534_1
+sb534_2,result malaria blood slide collection,SB534_2
+sb534_3,result malaria blood slide collection,SB534_3
+sb534_4,result malaria blood slide collection,SB534_4
+sb534_5,result malaria blood slide collection,SB534_5
+sb535_1,urine result,SB535_1
+sb535_2,urine result,SB535_2
+sb535_3,urine result,SB535_3
+sb535_4,urine result,SB535_4
+sb535_5,urine result,SB535_5
+sb536d_1,day of urine sample,
+sb536d_2,day of urine sample,
+sb536d_3,day of urine sample,
+sb536d_4,day of urine sample,
+sb536d_5,day of urine sample,
+sb536m_1,month of urine sample,SB536M_1
+sb536m_2,month of urine sample,SB536M_2
+sb536m_3,month of urine sample,SB536M_3
+sb536m_4,month of urine sample,SB536M_4
+sb536m_5,month of urine sample,SB536M_5
+sb536y_1,year of urine sample,SB536Y_1
+sb536y_2,year of urine sample,SB536Y_2
+sb536y_3,year of urine sample,SB536Y_3
+sb536y_4,year of urine sample,SB536Y_4
+sb536y_5,year of urine sample,SB536Y_5
+sb538_1,taking coartem given by doctor or health center for malaria,SB538_1
+sb538_2,taking coartem given by doctor or health center for malaria,SB538_2
+sb538_3,taking coartem given by doctor or health center for malaria,SB538_3
+sb538_4,taking coartem given by doctor or health center for malaria,SB538_4
+sb538_5,taking coartem given by doctor or health center for malaria,SB538_5
+sb542_1,medication accepted code,SB542_1
+sb542_2,medication accepted code,SB542_2
+sb542_3,medication accepted code,SB542_3
+sb542_4,medication accepted code,SB542_4
+sb542_5,medication accepted code,SB542_5
+sb543_1,medication accepted,SB543_1
+sb543_2,medication accepted,SB543_2
+sb543_3,medication accepted,SB543_3
+sb543_4,medication accepted,SB543_4
+sb543_5,medication accepted,SB543_5
+mhc0_1,index to household schedule,
+mhc0_2,index to household schedule,
+mhc0_3,index to household schedule,
+mhc0_4,index to household schedule,
+mhc1_1,child's age in months,
+mhc1_2,child's age in months,
+mhc1_3,child's age in months,
+mhc1_4,child's age in months,
+mhc1a_1,child's age in days,
+mhc1a_2,child's age in days,
+mhc1a_3,child's age in days,
+mhc1a_4,child's age in days,
+mhc2_1,child's weight in kilograms (1 decimal),MHC2_1
+mhc2_2,child's weight in kilograms (1 decimal),MHC2_2
+mhc2_3,child's weight in kilograms (1 decimal),MHC2_3
+mhc2_4,child's weight in kilograms (1 decimal),MHC2_4
+mhc3_1,child's height in centimeters (1 decimal),MHC3_1
+mhc3_2,child's height in centimeters (1 decimal),MHC3_2
+mhc3_3,child's height in centimeters (1 decimal),MHC3_3
+mhc3_4,child's height in centimeters (1 decimal),MHC3_4
+mhc4_1,height/age percentile,MHC4_1
+mhc4_2,height/age percentile,MHC4_2
+mhc4_3,height/age percentile,MHC4_3
+mhc4_4,height/age percentile,MHC4_4
+mhc5_1,height/age standard deviation,MHC5_1
+mhc5_2,height/age standard deviation,MHC5_2
+mhc5_3,height/age standard deviation,MHC5_3
+mhc5_4,height/age standard deviation,MHC5_4
+mhc6_1,height/age percent of ref. median,MHC6_1
+mhc6_2,height/age percent of ref. median,MHC6_2
+mhc6_3,height/age percent of ref. median,MHC6_3
+mhc6_4,height/age percent of ref. median,MHC6_4
+mhc7_1,weight/age percentile,MHC7_1
+mhc7_2,weight/age percentile,MHC7_2
+mhc7_3,weight/age percentile,MHC7_3
+mhc7_4,weight/age percentile,MHC7_4
+mhc8_1,weight/age standard deviation,MHC8_1
+mhc8_2,weight/age standard deviation,MHC8_2
+mhc8_3,weight/age standard deviation,MHC8_3
+mhc8_4,weight/age standard deviation,MHC8_4
+mhc9_1,weight/age percent of ref. median,MHC9_1
+mhc9_2,weight/age percent of ref. median,MHC9_2
+mhc9_3,weight/age percent of ref. median,MHC9_3
+mhc9_4,weight/age percent of ref. median,MHC9_4
+mhc10_1,weight/height percentile,MHC10_1
+mhc10_2,weight/height percentile,MHC10_2
+mhc10_3,weight/height percentile,MHC10_3
+mhc10_4,weight/height percentile,MHC10_4
+mhc11_1,weight/height standard deviation,MHC11_1
+mhc11_2,weight/height standard deviation,MHC11_2
+mhc11_3,weight/height standard deviation,MHC11_3
+mhc11_4,weight/height standard deviation,MHC11_4
+mhc12_1,weight/height percent of ref. median,MHC12_1
+mhc12_2,weight/height percent of ref. median,MHC12_2
+mhc12_3,weight/height percent of ref. median,MHC12_3
+mhc12_4,weight/height percent of ref. median,MHC12_4
+mhc13_1,result of measurement - height/weight,MHC13_1
+mhc13_2,result of measurement - height/weight,MHC13_2
+mhc13_3,result of measurement - height/weight,MHC13_3
+mhc13_4,result of measurement - height/weight,MHC13_4
+mhc15_1,height: lying or standing,MHC15_1
+mhc15_2,height: lying or standing,MHC15_2
+mhc15_3,height: lying or standing,MHC15_3
+mhc15_4,height: lying or standing,MHC15_4
+mhc16_1,day of birth,MHC16_1
+mhc16_2,day of birth,MHC16_2
+mhc16_3,day of birth,MHC16_3
+mhc16_4,day of birth,MHC16_4
+mhc17_1,date measured (day),
+mhc17_2,date measured (day),
+mhc17_3,date measured (day),
+mhc17_4,date measured (day),
+mhc18_1,date measured (month),
+mhc18_2,date measured (month),
+mhc18_3,date measured (month),
+mhc18_4,date measured (month),
+mhc19_1,date measured (year),
+mhc19_2,date measured (year),
+mhc19_3,date measured (year),
+mhc19_4,date measured (year),
+mhc20_1,century day code (cdc) of measurement,
+mhc20_2,century day code (cdc) of measurement,
+mhc20_3,century day code (cdc) of measurement,
+mhc20_4,century day code (cdc) of measurement,
+mhc21_1,fieldworker measurer code,
+mhc21_2,fieldworker measurer code,
+mhc21_3,fieldworker measurer code,
+mhc21_4,fieldworker measurer code,
+mhc27_1,sex,MHC27_1
+mhc27_2,sex,MHC27_2
+mhc27_3,sex,MHC27_3
+mhc27_4,sex,MHC27_4
+mhc30_1,month of birth,MHC30_1
+mhc30_2,month of birth,MHC30_2
+mhc30_3,month of birth,MHC30_3
+mhc30_4,month of birth,MHC30_4
+mhc31_1,year of birth,MHC31_1
+mhc31_2,year of birth,MHC31_2
+mhc31_3,year of birth,MHC31_3
+mhc31_4,year of birth,MHC31_4
+mhc32_1,date of birth (cmc),
+mhc32_2,date of birth (cmc),
+mhc32_3,date of birth (cmc),
+mhc32_4,date of birth (cmc),
+mhc32a_1,century day code (cdc) of birth,
+mhc32a_2,century day code (cdc) of birth,
+mhc32a_3,century day code (cdc) of birth,
+mhc32a_4,century day code (cdc) of birth,
+mhc33_1,completeness of hc32 information,MHC33_1
+mhc33_2,completeness of hc32 information,MHC33_2
+mhc33_3,completeness of hc32 information,MHC33_3
+mhc33_4,completeness of hc32 information,MHC33_4
+mhc51_1,line number of parent/caretaker,MHC51_1
+mhc51_2,line number of parent/caretaker,MHC51_2
+mhc51_3,line number of parent/caretaker,MHC51_3
+mhc51_4,line number of parent/caretaker,MHC51_4
+mhc52_1,read consent statement - hemoglobin,MHC52_1
+mhc52_2,read consent statement - hemoglobin,MHC52_2
+mhc52_3,read consent statement - hemoglobin,MHC52_3
+mhc52_4,read consent statement - hemoglobin,MHC52_4
+mhc53_1,hemoglobin level (g/dl - 1 decimal),MHC53_1
+mhc53_2,hemoglobin level (g/dl - 1 decimal),MHC53_2
+mhc53_3,hemoglobin level (g/dl - 1 decimal),MHC53_3
+mhc53_4,hemoglobin level (g/dl - 1 decimal),MHC53_4
+mhc55_1,result of measurement - hemoglobin,MHC55_1
+mhc55_2,result of measurement - hemoglobin,MHC55_2
+mhc55_3,result of measurement - hemoglobin,MHC55_3
+mhc55_4,result of measurement - hemoglobin,MHC55_4
+mhc56_1,hemoglobin level adjusted for altitude (g/dl - 1 decimal),MHC56_1
+mhc56_2,hemoglobin level adjusted for altitude (g/dl - 1 decimal),MHC56_2
+mhc56_3,hemoglobin level adjusted for altitude (g/dl - 1 decimal),MHC56_3
+mhc56_4,hemoglobin level adjusted for altitude (g/dl - 1 decimal),MHC56_4
+mhc57_1,anemia level,MHC57_1
+mhc57_2,anemia level,MHC57_2
+mhc57_3,anemia level,MHC57_3
+mhc57_4,anemia level,MHC57_4
+mhc58_1,na - agrees to referral - anemia,MHC58_1
+mhc58_2,na - agrees to referral - anemia,MHC58_2
+mhc58_3,na - agrees to referral - anemia,MHC58_3
+mhc58_4,na - agrees to referral - anemia,MHC58_4
+mhc60_1,mother's line number (woman's questionnaire),MHC60_1
+mhc60_2,mother's line number (woman's questionnaire),MHC60_2
+mhc60_3,mother's line number (woman's questionnaire),MHC60_3
+mhc60_4,mother's line number (woman's questionnaire),MHC60_4
+mhc61_1,mother's highest educational level,MHC61_1
+mhc61_2,mother's highest educational level,MHC61_2
+mhc61_3,mother's highest educational level,MHC61_3
+mhc61_4,mother's highest educational level,MHC61_4
+mhc62_1,mother's highest year of education,MHC62_1
+mhc62_2,mother's highest year of education,MHC62_2
+mhc62_3,mother's highest year of education,MHC62_3
+mhc62_4,mother's highest year of education,MHC62_4
+mhc63_1,preceding birth interval (months),
+mhc63_2,preceding birth interval (months),
+mhc63_3,preceding birth interval (months),
+mhc63_4,preceding birth interval (months),
+mhc64_1,birth order number,
+mhc64_2,birth order number,
+mhc64_3,birth order number,
+mhc64_4,birth order number,
+mhc68_1,mother's highest educational level (for preliminary and final report),MHC68_1
+mhc68_2,mother's highest educational level (for preliminary and final report),MHC68_2
+mhc68_3,mother's highest educational level (for preliminary and final report),MHC68_3
+mhc68_4,mother's highest educational level (for preliminary and final report),MHC68_4
+mhc70_1,height/age standard deviation (new who),MHC70_1
+mhc70_2,height/age standard deviation (new who),MHC70_2
+mhc70_3,height/age standard deviation (new who),MHC70_3
+mhc70_4,height/age standard deviation (new who),MHC70_4
+mhc71_1,weight/age standard deviation (new who),MHC71_1
+mhc71_2,weight/age standard deviation (new who),MHC71_2
+mhc71_3,weight/age standard deviation (new who),MHC71_3
+mhc71_4,weight/age standard deviation (new who),MHC71_4
+mhc72_1,weight/height standard deviation (new who),MHC72_1
+mhc72_2,weight/height standard deviation (new who),MHC72_2
+mhc72_3,weight/height standard deviation (new who),MHC72_3
+mhc72_4,weight/height standard deviation (new who),MHC72_4
+mhc73_1,bmi standard deviation (new who),MHC73_1
+mhc73_2,bmi standard deviation (new who),MHC73_2
+mhc73_3,bmi standard deviation (new who),MHC73_3
+mhc73_4,bmi standard deviation (new who),MHC73_4
+mhc2a_1,child's weight in kilograms (1 decimal) - first measurement,MHC2A_1
+mhc2a_2,child's weight in kilograms (1 decimal) - first measurement,MHC2A_2
+mhc2a_3,child's weight in kilograms (1 decimal) - first measurement,MHC2A_3
+mhc2a_4,child's weight in kilograms (1 decimal) - first measurement,MHC2A_4
+mhc3a_1,child's height in centimeters (1 decimal) - first measurement,MHC3A_1
+mhc3a_2,child's height in centimeters (1 decimal) - first measurement,MHC3A_2
+mhc3a_3,child's height in centimeters (1 decimal) - first measurement,MHC3A_3
+mhc3a_4,child's height in centimeters (1 decimal) - first measurement,MHC3A_4
+mhc15a_1,height: lying or standing - first measurement,MHC15A_1
+mhc15a_2,height: lying or standing - first measurement,MHC15A_2
+mhc15a_3,height: lying or standing - first measurement,MHC15A_3
+mhc15a_4,height: lying or standing - first measurement,MHC15A_4
+mhc2b_1,child's weight in kilograms (1 decimal) - re-measurement,MHC2B_1
+mhc2b_2,child's weight in kilograms (1 decimal) - re-measurement,MHC2B_2
+mhc2b_3,child's weight in kilograms (1 decimal) - re-measurement,MHC2B_3
+mhc2b_4,child's weight in kilograms (1 decimal) - re-measurement,MHC2B_4
+mhc3b_1,child's height in centimeters (1 decimal) - re-measurement,MHC3B_1
+mhc3b_2,child's height in centimeters (1 decimal) - re-measurement,MHC3B_2
+mhc3b_3,child's height in centimeters (1 decimal) - re-measurement,MHC3B_3
+mhc3b_4,child's height in centimeters (1 decimal) - re-measurement,MHC3B_4
+mhc15b_1,height: lying or standing - re-measurement,MHC15B_1
+mhc15b_2,height: lying or standing - re-measurement,MHC15B_2
+mhc15b_3,height: lying or standing - re-measurement,MHC15B_3
+mhc15b_4,height: lying or standing - re-measurement,MHC15B_4
+mhc35_1,reason for re-measurement,MHC35_1
+mhc35_2,reason for re-measurement,MHC35_2
+mhc35_3,reason for re-measurement,MHC35_3
+mhc35_4,reason for re-measurement,MHC35_4
+sb404a_1,"consumed nootrito, shisha kibondo, sosoma fortified, or csb+ past week",SB404A_1
+sb404a_2,"consumed nootrito, shisha kibondo, sosoma fortified, or csb+ past week",SB404A_2
+sb404a_3,"consumed nootrito, shisha kibondo, sosoma fortified, or csb+ past week",SB404A_3
+sb404a_4,"consumed nootrito, shisha kibondo, sosoma fortified, or csb+ past week",SB404A_4
+sb404bh_1,time of most recent meal or breastfeeding (hour),SB404BH_
+sb404bh_2,time of most recent meal or breastfeeding (hour),V3363_A
+sb404bh_3,time of most recent meal or breastfeeding (hour),V3364_A
+sb404bh_4,time of most recent meal or breastfeeding (hour),V3365_A
+sb404bm_1,time of most recent meal or breastfeeding (minute),
+sb404bm_2,time of most recent meal or breastfeeding (minute),
+sb404bm_3,time of most recent meal or breastfeeding (minute),
+sb404bm_4,time of most recent meal or breastfeeding (minute),
+sb412_1,read consent statement,SB412_1
+sb412_2,read consent statement,SB412_2
+sb412_3,read consent statement,SB412_3
+sb412_4,read consent statement,SB412_4
+sb412f_1,fieldworker number for blood testing,
+sb412f_2,fieldworker number for blood testing,
+sb412f_3,fieldworker number for blood testing,
+sb412f_4,fieldworker number for blood testing,
+sb413a_1,consent for malaria,SB413A_1
+sb413a_2,consent for malaria,SB413A_2
+sb413a_3,consent for malaria,SB413A_3
+sb413a_4,consent for malaria,SB413A_4
+sb413c_1,consent for vitamin and mineral,SB413C_1
+sb413c_2,consent for vitamin and mineral,SB413C_2
+sb413c_3,consent for vitamin and mineral,SB413C_3
+sb413c_4,consent for vitamin and mineral,SB413C_4
+sb413f_1,fieldworker number for tests,
+sb413f_2,fieldworker number for tests,
+sb413f_3,fieldworker number for tests,
+sb413f_4,fieldworker number for tests,
+sb414_1,purple top tube result,SB414_1
+sb414_2,purple top tube result,SB414_2
+sb414_3,purple top tube result,SB414_3
+sb414_4,purple top tube result,SB414_4
+sb415_1,red top tube result,SB415_1
+sb415_2,red top tube result,SB415_2
+sb415_3,red top tube result,SB415_3
+sb415_4,red top tube result,SB415_4
+sb415a_1,tob tupe filter,SB415A_1
+sb415a_2,tob tupe filter,SB415A_2
+sb415a_3,tob tupe filter,SB415A_3
+sb415a_4,tob tupe filter,SB415A_4
+sb416a_1,top tube test bar code placed location,SB416A_1
+sb416a_2,top tube test bar code placed location,SB416A_2
+sb416a_3,top tube test bar code placed location,SB416A_3
+sb416a_4,top tube test bar code placed location,SB416A_4
+sb416b_1,top tube test bar code placed location,SB416B_1
+sb416b_2,top tube test bar code placed location,SB416B_2
+sb416b_3,top tube test bar code placed location,SB416B_3
+sb416b_4,top tube test bar code placed location,SB416B_4
+sb416c_1,top tube test bar code placed location,SB416C_1
+sb416c_2,top tube test bar code placed location,SB416C_2
+sb416c_3,top tube test bar code placed location,SB416C_3
+sb416c_4,top tube test bar code placed location,SB416C_4
+sb417d_1,day of blood sample,
+sb417d_2,day of blood sample,
+sb417d_3,day of blood sample,
+sb417d_4,day of blood sample,
+sb417m_1,month of blood sample,SB417M_1
+sb417m_2,month of blood sample,SB417M_2
+sb417m_3,month of blood sample,SB417M_3
+sb417m_4,month of blood sample,SB417M_4
+sb417y_1,year of blood sample,SB417Y_1
+sb417y_2,year of blood sample,SB417Y_2
+sb417y_3,year of blood sample,SB417Y_3
+sb417y_4,year of blood sample,SB417Y_4
+sb418h_1,hour of blood sample,
+sb418h_2,hour of blood sample,
+sb418h_3,hour of blood sample,
+sb418h_4,hour of blood sample,
+sb418m_1,minute of blood sample,
+sb418m_2,minute of blood sample,
+sb418m_3,minute of blood sample,
+sb418m_4,minute of blood sample,
+sb420_1,malaria rdt code,SB420_1
+sb420_2,malaria rdt code,SB420_2
+sb420_3,malaria rdt code,SB420_3
+sb420_4,malaria rdt code,SB420_4
+sb421_1,malaria rdt result,SB421_1
+sb421_2,malaria rdt result,SB421_2
+sb421_3,malaria rdt result,SB421_3
+sb421_4,malaria rdt result,SB421_4
+sb422a_1,suffers symptoms: extreme weakness,SB422A_1
+sb422a_2,suffers symptoms: extreme weakness,SB422A_2
+sb422a_3,suffers symptoms: extreme weakness,SB422A_3
+sb422a_4,suffers symptoms: extreme weakness,SB422A_4
+sb422b_1,suffers symptoms: heart problems,SB422B_1
+sb422b_2,suffers symptoms: heart problems,SB422B_2
+sb422b_3,suffers symptoms: heart problems,SB422B_3
+sb422b_4,suffers symptoms: heart problems,SB422B_4
+sb422c_1,suffers symptoms: loss of consciousness,SB422C_1
+sb422c_2,suffers symptoms: loss of consciousness,SB422C_2
+sb422c_3,suffers symptoms: loss of consciousness,SB422C_3
+sb422c_4,suffers symptoms: loss of consciousness,SB422C_4
+sb422d_1,suffers symptoms: rapid or difficult breathing,SB422D_1
+sb422d_2,suffers symptoms: rapid or difficult breathing,SB422D_2
+sb422d_3,suffers symptoms: rapid or difficult breathing,SB422D_3
+sb422d_4,suffers symptoms: rapid or difficult breathing,SB422D_4
+sb422e_1,suffers symptoms: seizures,SB422E_1
+sb422e_2,suffers symptoms: seizures,SB422E_2
+sb422e_3,suffers symptoms: seizures,SB422E_3
+sb422e_4,suffers symptoms: seizures,SB422E_4
+sb422f_1,suffers symptoms: abnormal bleeding,SB422F_1
+sb422f_2,suffers symptoms: abnormal bleeding,SB422F_2
+sb422f_3,suffers symptoms: abnormal bleeding,SB422F_3
+sb422f_4,suffers symptoms: abnormal bleeding,SB422F_4
+sb422g_1,suffers symptoms: jaundice or yellow skin,SB422G_1
+sb422g_2,suffers symptoms: jaundice or yellow skin,SB422G_2
+sb422g_3,suffers symptoms: jaundice or yellow skin,SB422G_3
+sb422g_4,suffers symptoms: jaundice or yellow skin,SB422G_4
+sb422h_1,suffers symptoms: dark urine,SB422H_1
+sb422h_2,suffers symptoms: dark urine,SB422H_2
+sb422h_3,suffers symptoms: dark urine,SB422H_3
+sb422h_4,suffers symptoms: dark urine,SB422H_4
+sb425_1,taken act given by doctor or health center,SB425_1
+sb425_2,taken act given by doctor or health center,SB425_2
+sb425_3,taken act given by doctor or health center,SB425_3
+sb425_4,taken act given by doctor or health center,SB425_4
+sb429_1,code and sign name,SB429_1
+sb429_2,code and sign name,SB429_2
+sb429_3,code and sign name,SB429_3
+sb429_4,code and sign name,SB429_4
+sb430_1,medication accepted,SB430_1
+sb430_2,medication accepted,SB430_2
+sb430_3,medication accepted,SB430_3
+sb430_4,medication accepted,SB430_4

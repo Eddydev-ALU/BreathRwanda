@@ -1,0 +1,1217 @@
+variable,label,value_label_set
+caseid,case identification,
+midx,index to birth history,
+v000,country code and phase,
+v001,cluster number,
+v002,household number,
+v003,respondent's line number,
+v004,ultimate area unit,
+v005,women's individual sample weight (6 decimals),
+v006,month of interview,
+v007,year of interview,
+v008,date of interview (cmc),
+v008a,date of interview century day code (cdc),
+v009,respondent's month of birth,
+v010,respondent's year of birth,
+v011,date of birth (cmc),
+v012,respondent's current age,
+v013,age in 5-year groups,V013
+v014,completeness of age information,V014
+v015,result of individual interview,V015
+v016,day of interview,
+v017,cmc start of calendar,
+v018,row of month of interview,V018
+v019,length of calendar,V019
+v019a,number of calendar columns,V019A
+v020,ever-married sample,V020
+v021,primary sampling unit,
+v022,sample strata for sampling errors,V022
+v023,stratification used in sample design,V023
+v024,region,V024
+v025,type of place of residence,V025
+v026,na - de facto place of residence,V026
+v027,number of visits,
+v028,interviewer identification,
+v029,na - keyer identification,
+v030,field supervisor,
+v031,na - field editor,
+v032,na - office editor,
+v034,line number of husband,V034
+v040,cluster altitude in meters,
+v042,household selected for hemoglobin,V042
+v044,selected for domestic violence module,V044
+v045a,language of questionnaire,V045A
+v045b,language of interview,V045B
+v045c,native language of respondent,V045C
+v046,translator used,V046
+v101,region,V101
+v102,type of place of residence,V102
+v103,na - childhood place of residence,V103
+v104,years lived in place of residence,V104
+v105,type of place of previous residence,V105
+v105a,region of previous residence,V105A
+v106,highest educational level,V106
+v107,highest year of education,V107
+v113,source of drinking water,V113
+v115,time to get to water source,V115
+v116,type of toilet facility,V116
+v119,household has: electricity,V119
+v120,household has: radio,V120
+v121,household has: television,V121
+v122,household has: refrigerator,V122
+v123,household has: bicycle,V123
+v124,household has: motorcycle/scooter,V124
+v125,household has: car/truck,V125
+v127,main floor material,V127
+v128,main wall material,V128
+v129,main roof material,V129
+v130,religion,V130
+v131,na - ethnicity,
+v133,education in single years,V133
+v134,na - de facto place of residence,V134
+v135,usual resident or visitor,V135
+v136,number of household members (listed),
+v137,number of children 5 and under in household (de jure),
+v138,number of eligible women in household (de facto),
+v139,de jure region of residence,V139
+v140,de jure type of place of residence,V140
+v141,na - de jure place of residence,V141
+v149,educational attainment,V149
+v150,relationship to household head,V150
+v151,sex of household head,V151
+v152,age of household head,V152
+v153,household has: telephone (land-line),V153
+awfactt,all woman factor - total,
+awfactu,all woman factor - urban/rural,
+awfactr,all woman factor - regional,
+awfacte,all woman factor - educational,
+awfactw,all woman factor - wealth index,
+v155,literacy,V155
+v156,na - ever participated in a literacy program outside of primary,V156
+v157,frequency of reading newspaper or magazine,V157
+v158,frequency of listening to radio,V158
+v159,frequency of watching television,V159
+v160,toilet facilities shared with other households,V160
+v161,type of cooking fuel,V161
+v166,result of salt test for iodine,V166
+v167,number of trips in last 12 months,V167
+v168,away for more than one month in last 12 months,V168
+v169a,owns a mobile telephone,V169A
+v169b,use mobile telephone for financial transactions,V169B
+v170,has an account in a bank or other financial institution,V170
+v171a,use of internet,V171A
+v171b,frequency of using internet last month,V171B
+v190,wealth index combined,V190
+v191,wealth index factor score combined (5 decimals),
+v190a,wealth index for urban/rural,V190A
+v191a,wealth index factor score for urban/rural (5 decimals),
+ml101,type of mosquito bed net(s) slept under last night,ML101
+v201,total children ever born,
+v202,sons at home,
+v203,daughters at home,
+v204,sons elsewhere,
+v205,daughters elsewhere,
+v206,sons who have died,
+v207,daughters who have died,
+v208,births in last five years,V208
+v209,births in past year,V209
+v210,births in month of interview,
+v211,date of first birth (cmc),
+v212,age of respondent at 1st birth,
+v213,currently pregnant,V213
+v214,duration of current pregnancy,
+v215,time since last menstrual period,V215
+v216,menstruated in last six weeks,V216
+v217,knowledge of ovulatory cycle,V217
+v218,number of living children,
+v219,living children + current pregnancy,
+v220,living children + current pregnancy (grouped),V220
+v221,marriage to first birth interval (months),V221
+v222,last birth to interview (months),
+v223,completeness of current pregnancy information,V223
+v224,entries in birth history,
+v225,current pregnancy wanted,V225
+v226,time since last period (comp) (months),V226
+v227,flag for last period,V227
+v228,ever had a terminated pregnancy,V228
+v229,month pregnancy ended,V229
+v230,year pregnancy ended,V230
+v231,cmc pregnancy ended,V231
+v232,completeness of last termination information,V232
+v233,months when pregnancy ended,V233
+v234,other such pregnancies,V234
+v235,index last child prior to maternity-health (calendar),V235
+v237,birth between last and interview,V237
+v238,births in last three years,
+v239,pregnancies terminated before calendar beginning,V239
+v240,month of last termination prior to calendar,V240
+v241,year of last termination prior to calendar,V241
+v242,cmc termination ended prior to calendar,V242
+v243,completeness of last termination date prior to calendar,V243
+v244,can women get pregnant after birth and before period,V244
+v310,na - living children at first use,
+v311,na - children at first use (grouped),V311
+v312,current contraceptive method,V312
+v313,current use by method type,V313
+v315,month of start of use of method,
+v316,year of start of use of method,
+v317,date of start of use of method (cmc),
+v318,completeness of information,V318
+v319,years since sterilization,V319
+v320,age at sterilization,V320
+v321,marital duration at sterilization,V321
+v322,parity at sterilization,V322
+v323,brand of pill used,V323
+v323a,brand of condom used,V323A
+v325a,na - cost of current method (in currency),V325A
+v326,last source for current users,V326
+v327,last source for users by type,V327
+v337,months of use of current method,V337
+v359,last method discontinued in last 5 years,V359
+v360,reason of last discontinuation,V360
+v361,pattern of use,V361
+v362,intention to use,V362
+v363,na - preferred future method,V363
+v364,contraceptive use and intention,V364
+v367,wanted last child,V367
+v372,na - shown pill package,V372
+v372a,na - shown condom package,V372A
+v375a,na - main reason not using a method,V375A
+v376,na - main reason not to use a method,V376
+v376a,na - would ever use method if married,V376A
+v379,source known for any method,V379
+v380,source known for any method,V380
+v384a,heard family planning on radio last few months,V384A
+v384b,heard family planning on tv last few months,V384B
+v384c,heard family planning in newspaper/magazine last few months,V384C
+v384d,heard family planning by text messages on mobile phone,V384D
+v393,visited by fieldworker in last 12 months,V393
+v393a,did fieldworker talk about family planning,V393A
+v394,visited health facility last 12 months,V394
+v395,"at health facility, told of family planning",V395
+v3a00a,na - source of family planning for non-users: government hospital,V3A00A
+v3a00b,na - source of family planning for non-users: cs public sector,V3A00B
+v3a00c,na - source of family planning for non-users: cs public sector,V3A00C
+v3a00d,na - source of family planning for non-users: cs public sector,V3A00D
+v3a00e,na - source of family planning for non-users: cs public sector,V3A00E
+v3a00f,na - source of family planning for non-users: cs public sector,V3A00F
+v3a00g,na - source of family planning for non-users: cs public sector,V3A00G
+v3a00h,na - source of family planning for non-users: cs public sector,V3A00H
+v3a00i,na - source of family planning for non-users: cs public sector,V3A00I
+v3a00j,na - source of family planning for non-users: private hospital/clinic,V3A00J
+v3a00k,na - source of family planning for non-users: pharmacy,V3A00K
+v3a00l,na - source of family planning for non-users: private doctor,V3A00L
+v3a00m,na - source of family planning for non-users: cs private sector,V3A00M
+v3a00n,na - source of family planning for non-users: cs private sector,V3A00N
+v3a00o,na - source of family planning for non-users: cs private sector,V3A00O
+v3a00p,na - source of family planning for non-users: cs private sector,V3A00P
+v3a00q,na - source of family planning for non-users: cs private sector,V3A00Q
+v3a00r,na - source of family planning for non-users: cs private sector,V3A00R
+v3a00s,na - source of family planning for non-users: cs other,V3A00S
+v3a00t,na - source of family planning for non-users: cs other,V3A00T
+v3a00u,na - source of family planning for non-users: cs other,V3A00U
+v3a00v,na - source of family planning for non-users: cs other,V3A00V
+v3a00w,na - source of family planning for non-users: cs other,V3A00W
+v3a00x,na - source of family planning for non-users: other,V3A00X
+v3a00y,source of family planning for non-users: no source,V3A00Y
+v3a00z,source of family planning for non-users: any source,V3A00Z
+v3a01,na - told sterilization would mean no more children,V3A01
+v3a02,told about side effects,V3A02
+v3a03,told about side effects by health or family planning worker,V3A03
+v3a04,told how to deal with side effects,V3A04
+v3a05,told about other family planning methods,V3A05
+v3a06,told about other family planning methods by health or family planning worker,V3A06
+v3a07,first source for current method,V3A07
+v3a08a,reason not using: not married,V3A08A
+v3a08b,reason not using: not having sex,V3A08B
+v3a08c,reason not using: infrequent sex,V3A08C
+v3a08d,reason not using: menopausal/hysterectomy,V3A08D
+v3a08e,reason not using: subfecund/infecund,V3A08E
+v3a08f,reason not using: postpartum amenorrheic,V3A08F
+v3a08g,reason not using: breastfeeding,V3A08G
+v3a08h,reason not using: fatalistic,V3A08H
+v3a08i,reason not using: respondent opposed,V3A08I
+v3a08j,reason not using: husband/partner opposed,V3A08J
+v3a08k,reason not using: others opposed,V3A08K
+v3a08l,reason not using: religious prohibition,V3A08L
+v3a08m,reason not using: knows no method,V3A08M
+v3a08n,reason not using: knows no source,V3A08N
+v3a08o,na - reason not using: health concerns,V3A08O
+v3a08p,reason not using: fear of side effects/health concerns,V3A08P
+v3a08q,reason not using: lack of access/too far,V3A08Q
+v3a08r,reason not using: costs too much,V3A08R
+v3a08s,reason not using: inconvenient to use,V3A08S
+v3a08t,reason not using: interferes with body'??s processes,V3A08T
+v3a08u,reason not using: preferred method not available,V3A08U
+v3a08v,reason not using: no method available,V3A08V
+v3a08w,na - reason not using: cs,V3A08W
+v3a08aa,na - reason not using: cs,V3A08AA
+v3a08ab,na - reason not using: cs,V3A08AB
+v3a08ac,na - reason not using: cs,V3A08AC
+v3a08ad,na - reason not using: cs,V3A08AD
+v3a08x,reason not using: other,V3A08X
+v3a08z,reason not using: don't know,V3A08Z
+v3a09a,na - how many pill cycles did get last time,V3A09A
+v3a09b,na - how many condoms did get last time,V3A09B
+v401,last birth a caesarean section,V401
+v404,currently breastfeeding,V404
+v405,currently amenorrheic,V405
+v406,currently abstaining,V406
+v407,na - number of times breastfed during night,V407
+v408,na - number of times breastfed during day,V408
+v409,gave child plain water,V409
+v409a,na - gave child sugar water,V409A
+v410,gave child juice,V410
+v410a,na - gave child tea or coffee,V410A
+v411,"gave child tinned, powdered or fresh milk",V411
+v411a,gave child baby formula,V411A
+v412,na - gave child fresh milk,V412
+v412a,"gave child fortified baby food (cerelac, etc)",V412A
+v412b,na - gave child other porridge/gruel,V412B
+v412c,gave child soup/clear broth,V412C
+v413,gave child other liquid,V413
+v413a,na - gave child cs liquid,V413A
+v413b,na - gave child cs liquid,V413B
+v413c,na - gave child cs liquid,V413C
+v413d,na - gave child cs liquid,V413D
+v414a,na - gave child cs foods,V414A
+v414b,na - gave child cs foods,V414B
+v414c,na - gave child cs foods,V414C
+v414d,na - gave child cs foods,V414D
+v414e,"gave child bread, noodles, other made from grains",V414E
+v414f,"gave child potatoes, cassava, or other tubers",V414F
+v414g,gave child eggs,V414G
+v414h,"gave child meat (beef, pork, lamb, chicken, etc)",V414H
+v414i,"gave child pumpkin, carrots, squash (yellow or orange inside)",V414I
+v414j,gave child any dark green leafy vegetables,V414J
+v414k,"gave child mangoes, papayas, other vitamin a fruits",V414K
+v414l,gave child any other fruits,V414L
+v414m,"gave child liver, heart, other organs",V414M
+v414n,gave child fish or shellfish,V414N
+v414o,"gave child food made from beans, peas, lentils, nuts",V414O
+v414p,"gave child cheese, yogurt, other milk products",V414P
+v414q,"na - gave child oil, fats, butter, products made of them",V414Q
+v414r,"na - gave child chocolates, sweets, candies, pastries, etc",V414R
+v414s,gave child other solid-semisolid food,V414S
+v414t,na - gave child cs foods,V414T
+v414u,na - gave child cs foods,V414U
+v414v,gave child yogurt,V414V
+v414w,na - gave child cs foods,V414W
+v415,drank from bottle with nipple yesterday/last night,V415
+v416,heard of oral rehydration,V416
+v417,entries in pregnancy and postnatal care roster,
+v418,entries in immunization roster,
+v418a,entries in child health roster,
+v419,entries in height/weight roster,
+v420,measurer's code,
+v421,na - assistant measurer's code,
+v426,when child put to breast,V426
+v437,respondent's weight in kilograms (1 decimal),V437
+v438,respondent's height in centimeters (1 decimal),V438
+v439,height/age percentile,V439
+v440,height/age standard deviation,V440
+v441,height/age percent ref. median,V441
+v442,weight/height percent ref. median (dhs),V442
+v443,weight/height percent ref. median (fog),V443
+v444,weight/height percent ref. median (who),V444
+v444a,weight/height standard deviation (dhs),V444A
+v445,body mass index,V445
+v446,rohrer's index,V446
+v447,result of measurement - height/weight,V447
+v447a,women's age in years (from household questionnaire),
+v452a,under age 18 (from household questionnaire),V452A
+v452b,line number of parent/caretaker,V452B
+v452c,read consent statement - hemoglobin,V452C
+v453,hemoglobin level (g/dl - 1 decimal),V453
+v454,currently pregnant (from household questionnaire),V454
+v455,result of measurement - hemoglobin,V455
+v456,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),
+v457,anemia level,V457
+v458,na - agrees to referral - anemia,V458
+v459,have mosquito bed net for sleeping (from household questionnaire),V459
+v460,children under 5 slept under mosquito bed net last night (household questionnair,V460
+v461,respondent slept under mosquito bed net,V461
+v462,na - washed hands before preparing last meal,V462
+v463a,smokes cigarettes,V463A
+v463b,smokes pipe full of tobacco,V463B
+v463c,chews tobacco,V463C
+v463d,snuffs by nose,V463D
+v463e,smokes kreteks,V463E
+v463f,"smokes cigars, cheroots or cigarillos",V463F
+v463g,smokes water pipe,V463G
+v463h,snuff by mouth,V463H
+v463i,chews betel quid with tobacco,V463I
+v463j,na - smokes/uses country specific,V463J
+v463k,na - smokes/uses country specific,V463K
+v463l,na - smokes/uses country specific,V463L
+v463x,smokes/uses other,V463X
+v463z,does not use cigarettes and tobacco,V463Z
+v463aa,frequency smokes cigarettes,V463AA
+v463ab,frequency currently uses other type of tobacco,V463AB
+v464,number of cigarettes in last 24 hours,V464
+v465,disposal of youngest child's stools when not using toilet,V465
+v466,"na - when child is seriously ill, can decide whether medical treatment sought",V466
+v467a,na - getting medical help for self: know where to go,V467A
+v467b,getting medical help for self: getting permission to go,V467B
+v467c,getting medical help for self: getting money needed for treatment,V467C
+v467d,getting medical help for self: distance to health facility,V467D
+v467e,na - getting medical help for self: having to take transport,V467E
+v467f,getting medical help for self: not wanting to go alone,V467F
+v467g,na - getting medical help for self: concern no female health provider,V467G
+v467h,na - getting medical help for self: concern no provider,V467H
+v467i,na - getting medical help for self: concern no drugs available,V467I
+v467j,na - getting medical help for self: cs,V467J
+v467k,na - getting medical help for self: cs,V467K
+v467l,na - getting medical help for self: cs,V467L
+v467m,na - getting medical help for self: cs,V467M
+v468,record for last birth,V468
+v469e,times gave child powdered/tinned/fresh milk,V469E
+v469f,times gave child infant formula,V469F
+v469x,times gave child yogurt,V469X
+v471a,"na - mother had tinned, powdered or fresh milk",V471A
+v471b,na - mother had tea or coffee,V471B
+v471c,na - mother had any other liquid,V471C
+v471d,na - mother had cs liquid,V471D
+v471e,na - mother had cs liquid,V471E
+v471f,na - mother had cs liquid,V471F
+v471g,na - mother had cs liquid,V471G
+v472a,na - mother had cs foods,V472A
+v472b,na - mother had cs foods,V472B
+v472c,na - mother had cs foods,V472C
+v472d,na - mother had cs foods,V472D
+v472e,"na - mother had bread, noodles, other made from grains",V472E
+v472f,"na - mother had potatoes, cassava, or other tubers",V472F
+v472g,na - mother had eggs,V472G
+v472h,"na - mother had meat (beef, pork, lamb, chicken, etc)",V472H
+v472i,"na - mother had pumpkin, carrots, squash (yellow or orange inside)",V472I
+v472j,na - mother had any dark green leafy vegetables,V472J
+v472k,"na - mother had mangoes, papayas, other vitamin a fruits",V472K
+v472l,na - mother had any other fruits,V472L
+v472m,"na - mother had liver, heart, other organs",V472M
+v472n,na - mother had fish or shellfish,V472N
+v472o,"na - mother had food made from beans, peas, lentils, nuts",V472O
+v472p,"na - mother had cheese, yogurt, other milk products",V472P
+v472q,"na - mother had oil, fats, butter, products made of them",V472Q
+v472r,"na - mother had chocolates, sweets, candies, pastries, etc",V472R
+v472s,na - mother had other solid-semisolid food,V472S
+v472t,na - mother had cs foods,V472T
+v472u,na - mother had cs foods,V472U
+v473a,read consent statement - hiv,V473A
+v473b,result of measurement - hiv,V473B
+v474,na - heard of tuberculosis or tb,V474
+v474a,tuberculosis spread by: air when coughing or sneezing,V474A
+v474b,tuberculosis spread by: sharing utensils,V474B
+v474c,tuberculosis spread by: touching a person with tb,V474C
+v474d,tuberculosis spread by: food,V474D
+v474e,tuberculosis spread by: sexual contact,V474E
+v474f,tuberculosis spread by: mosquito bites,V474F
+v474g,tuberculosis spread by: living with someone infected by tb,V474G
+v474h,tuberculosis spread by: big consumption of tobacco and other narcotics,V474H
+v474i,tuberculosis spread by: drink uncooked milk,V474I
+v474j,tuberculosis spread by: dust and smoke,V474J
+v474x,tuberculosis spread by: other,V474X
+v474z,tuberculosis spread by: don't know,V474Z
+v475,na - tuberculosis can be cured,V475
+v476,na - keep secret when family member gets tb,V476
+v477,number of injections in last 12 months,V477
+v478,number of injections administered by a health worker,V478
+v479,na - place of injection by health worker,V479
+v480,"syringe and needle from new, unopened package",V480
+v481,covered by health insurance,V481
+v481a,health insurance type: mutual/community organization,V481A
+v481b,health insurance type: provided by employer,V481B
+v481c,health insurance type: social security/ rssb/rama,V481C
+v481d,health insurance type: private/commercially purchased,V481D
+v481e,health insurance type: mmi,V481E
+v481f,na - health insurance type: cs,V481F
+v481g,na - health insurance type: cs,V481G
+v481h,na - health insurance type: cs,V481H
+v481x,health insurance type: other,V481X
+v482a,na - arrange care of biological children under age 18,V482A
+v482b,na - primary caregiver of children under age 18,V482B
+v482c,na - arrange care of non-biological children < 18,V482C
+v501,current marital status,V501
+v502,currently/formerly/never in union,V502
+v503,number of unions,V503
+v504,currently residing with husband/partner,V504
+v505,number of other wives,V505
+v506,respondent's rank among wives,V506
+v507,month of first cohabitation,
+v508,year of first cohabitation,
+v509,date of first cohabitation (cmc),
+v510,completeness of date information in v509,V510
+v511,age at first cohabitation,
+v512,years since first cohabitation,
+v513,cohabitation duration (grouped),V513
+v525,age at first sex,V525
+v527,time since last sex,V527
+v528,time since last sex (in days),V528
+v529,time since last sex (in months),V529
+v530,flag for v529,V530
+v531,age at first sex (imputed),V531
+v532,flag for v531,V532
+v535,ever been married or in union,V535
+v536,recent sexual activity,V536
+v537,months of abstinence,V537
+v538,na - how previous marriage or union ended,V538
+v539,na - person who received most of late husband's property,V539
+v540,na - respondent received any of late husband's assets or valuables,V540
+v541,na - intends to wait until marriage to have sex,V541
+v602,fertility preference,V602
+v603,preferred waiting time for birth of a/another child,V603
+v604,preferred waiting time for birth of a/another child (grouped),V604
+v605,desire for more children,V605
+v613,ideal number of children,V613
+v614,ideal number of children (grouped),V614
+v616,time for future birth,V616
+v621,husband's desire for children,V621
+v623,exposure,V623
+v624,unmet need,V624
+v625,exposure (definition 2),V625
+v626,unmet need (definition 2),V626
+v625a,exposure to need for contraception (definition 3),V625A
+v626a,unmet need for contraception (definition 3),V626A
+v627,ideal number of boys,V627
+v628,ideal number of girls,V628
+v629,ideal number of either sex,V629
+v631,na - problem if became pregnant,V631
+v632,decision maker for using contraception,V632
+v632a,decision maker for not using contraception,V632A
+v633a,na - reason for not having sex: husband has sti,V633A
+v633b,reason for not having sex: husband has other women,V633B
+v633c,na - reason for not having sex: recent birth,V633C
+v633d,"na - reason for not having sex: tired, not in mood",V633D
+v633e,na - reason for not having sex: cs,V633E
+v633f,na - reason for not having sex: cs,V633F
+v633g,na - reason for not having sex: cs,V633G
+v634,na - husband knows that respondent is using contraception,V634
+v701,husband/partner's education level,V701
+v702,husband/partner's highest year of education (at level in v701),V702
+v704,husband/partner's occupation,V704
+v704a,husband/partner worked in last 7 days/12 months,V704A
+v705,husband/partner's occupation (grouped),V705
+v714,respondent currently working,V714
+v714a,"respondent has a job, but currently absent",V714A
+v715,husband/partner's total number of years of education,V715
+v716,respondent's occupation,V716
+v717,respondent's occupation (grouped),V717
+v719,"respondent works for family, others, self",V719
+v721,na - respondent works at home or away,V721
+v729,husband/partner's educational attainment,V729
+v730,husband/partner's age,V730
+v731,respondent worked in last 12 months,V731
+v732,respondent employed all year/seasonal,V732
+v739,person who usually decides how to spend respondent's earnings,V739
+v740,na - type of land where respondent works,V740
+v741,type of earnings from respondent's work,V741
+v743a,person who usually decides on: respondent's health care,V743A
+v743b,person who usually decides on: large household purchases,V743B
+v743c,na - person who usually decides on: household purchases for daily needs,V743C
+v743d,person who usually decides on: visits to family or relatives,V743D
+v743e,na - person who usually decides on: food to be cooked each day,V743E
+v743f,person who usually decides on: what to do with money husband earns,V743F
+v744a,beating justified if wife goes out without telling husband,V744A
+v744b,beating justified if wife neglects the children,V744B
+v744c,beating justified if wife argues with husband,V744C
+v744d,beating justified if wife refuses to have sex with husband,V744D
+v744e,beating justified if wife burns the food,V744E
+v745a,owns a house alone or jointly,V745A
+v745b,owns land alone or jointly,V745B
+v745c,title deed on house own by respondent,V745C
+v745d,title deed on land own by respondent,V745D
+v746,respondent earns more than husband/partner,V746
+bidx,birth column number,
+bord,birth order number,
+b0,child is twin,B0
+b1,month of birth,
+b2,year of birth,
+b3,date of birth (cmc),
+b4,sex of child,B4
+b5,child is alive,B5
+b6,age at death,B6
+b7,"age at death (months, imputed)",
+b8,current age of child,
+b9,child lives with whom,B9
+b10,completeness of information,B10
+b11,preceding birth interval (months),
+b12,succeeding birth interval (months),
+b13,flag for age at death,B13
+b15,live birth between births,B15
+b16,child's line number in household,B16
+b17,day of birth,
+b18,century day code of birth (cdc),
+b19,current age of child in months (months since birth for dead children),
+b20,duration of pregnancy,
+m1,number of tetanus injections before birth,M1
+m1a,number of tetanus injections before pregnancy,M1A
+m1b,na - month of last tetanus injection before pregnancy,M1B
+m1c,na - year of last tetanus injection before pregnancy,M1C
+m1d,years ago received last tetanus injection before pregnancy,
+m1e,last tetanus injection before pregnancy (cmc),M1E
+m2a,prenatal: doctor,M2A
+m2b,prenatal: nurse/midwife,M2B
+m2c,prenatal: auxiliary midwife,M2C
+m2d,na - prenatal: cs health professional,M2D
+m2e,na - prenatal: cs health professional,M2E
+m2f,na - prenatal: cs health professional,M2F
+m2g,prenatal: traditional birth attendant,M2G
+m2h,prenatal: communitary/ village health worker,M2H
+m2i,prenatal: community health mother and child,M2I
+m2j,na - prenatal: cs other person,M2J
+m2k,prenatal: other,M2K
+m2l,na - prenatal: cs other,M2L
+m2m,na - prenatal: cs other,M2M
+m2n,prenatal: no one,M2N
+m3a,assistance: doctor,M3A
+m3b,assistance: nurse/midwife,M3B
+m3c,assistance: auxiliary midwife,M3C
+m3d,na - assistance: cs health professional,M3D
+m3e,na - assistance: cs health professional,M3E
+m3f,na - assistance: cs health professional,M3F
+m3g,assistance: traditional birth attendant,M3G
+m3h,assistance: community health worker,M3H
+m3i,assistance: community health mother and child,M3I
+m3j,assistance: relative/friend,M3J
+m3k,assistance: other,M3K
+m3l,na - assistance: cs other,M3L
+m3m,na - assistance: cs other,M3M
+m3n,assistance: no one,M3N
+m4,duration of breastfeeding,M4
+m5,months of breastfeeding,M5
+m6,duration of amenorrhea,M6
+m7,months of amenorrhea,M7
+m8,duration of abstinence,M8
+m9,months of abstinence,M9
+m10,wanted pregnancy when became pregnant,M10
+m11,desired time would have waited,M11
+m13,timing of 1st antenatal check (months),M13
+m14,number of antenatal visits during pregnancy,M14
+m15,place of delivery,M15
+m17,delivery by caesarean section,M17
+m17a,timing on decision for caesarean section,M17A
+m18,size of child at birth,M18
+m19,birth weight in kilograms (3 decimals),M19
+m19a,weight at birth/recall,M19A
+m27,na - flag for breastfeeding,M27
+m28,flag for amenorrhea,M28
+m29,flag for abstinence,M29
+m34,when child put to breast,M34
+m35,na - number of times breastfed during previous night,M35
+m36,na - number of times breastfed during previous day,M36
+m38,drank from bottle with nipple yesterday/last night,M38
+m39a,"did eat any solid, semi-solid or soft foods yesterday",M39A
+m39,"number of times ate solid, semi-solid or soft food yesterday",M39
+m42a,na - during pregnancy: weighed,M42A
+m42b,na - during pregnancy: height measured,M42B
+m42c,during pregnancy: blood pressure taken,M42C
+m42d,during pregnancy: urine sample taken,M42D
+m42e,during pregnancy: blood sample taken,M42E
+m43,na - told about pregnancy complications,M43
+m44,na - told where to go for pregnancy complications,M44
+m45,"during pregnancy, given or bought iron tablets/syrup",M45
+m46,days tablets or syrup taken,M46
+m47,"na - during pregnancy, had difficulty with daylight vision",M47
+m48,"na - during pregnancy, had difficulty with night blindness",M48
+m49a,na - during pregnancy took: sp/fansidar for malaria,M49A
+m49b,na - during pregnancy took: chloroquine for malaria,M49B
+m49c,na - during pregnancy took: cs drug for malaria,M49C
+m49d,na - during pregnancy took: cs drug for malaria,M49D
+m49e,na - during pregnancy took: cs drug for malaria,M49E
+m49f,na - during pregnancy took: cs drug for malaria,M49F
+m49g,na - during pregnancy took: cs drug for malaria,M49G
+m49x,na - during pregnancy took: other drug for malaria,M49X
+m49z,na - during pregnancy took: don't know,M49Z
+m49y,na - during pregnancy took: no drug for malaria,M49Y
+m54,na - received vitamin a dose in first 2 months after delivery,M54
+m55,given child anything other than breast milk,M55
+m55a,"first 3 days, given milk (other than breast milk)",M55A
+m55b,"first 3 days, given plain water",M55B
+m55c,"first 3 days, given sugar/glucose water",M55C
+m55d,"first 3 days, given gripe water",M55D
+m55e,"first 3 days, given sugar/salt solution",M55E
+m55f,"first 3 days, given fruit juice",M55F
+m55g,"first 3 days, given infant formula",M55G
+m55h,"first 3 days, given tea/infusions",M55H
+m55i,"first 3 days, given honey",M55I
+m55j,"first 3 days, given coffee",M55J
+m55k,"na - first 3 days, given country specific",M55K
+m55l,"na - first 3 days, given country specific",M55L
+m55m,"na - first 3 days, given country specific",M55M
+m55n,"na - first 3 days, given country specific",M55N
+m55o,"na - first 3 days, given country specific",M55O
+m55x,"first 3 days, given other",M55X
+m55z,"first 3 days, given nothing",M55Z
+m57a,antenatal care: respondent's home,M57A
+m57b,antenatal care: other home,M57B
+m57c,na - antenatal care: cs home,M57C
+m57d,na - antenatal care: cs home,M57D
+m57e,antenatal care: government referral hospital,M57E
+m57f,antenatal care: provincial district hospital,M57F
+m57g,antenatal care: health center,M57G
+m57h,antenatal care: health post,M57H
+m57i,antenatal care: outreach,M57I
+m57j,antenatal care: other public medical health,M57J
+m57k,na - antenatal care: cs public health,M57K
+m57l,na - antenatal care: cs public health,M57L
+m57m,antenatal care: private polyclinic,M57M
+m57n,antenatal care: clinic,M57N
+m57o,antenatal care: dispensary,M57O
+m57p,antenatal care: other private medical,M57P
+m57q,na - antenatal care: cs private medical,M57Q
+m57r,na - antenatal care: cs private medical,M57R
+m57s,na - antenatal care: cs other,M57S
+m57t,na - antenatal care: cs other,M57T
+m57u,na - antenatal care: cs other,M57U
+m57v,na - antenatal care: cs other,M57V
+m57x,antenatal care: other,M57X
+m60,drugs for intestinal parasites during pregnancy,M60
+m61,time spent at place of delivery,M61
+m62,respondent's health checked before discharge,M62
+m63,how long before discharging respondent health check took place,M63
+m64,who checked respondent health before discharge,M64
+m65a,na - reason didn't deliver at health facility: cost too much,M65A
+m65b,na - reason didn't deliver at health facility: facility not open,M65B
+m65c,na - reason didn't deliver at health facility: too far/no transport,M65C
+m65d,na - reason didn't deliver at health facility: don't trust facility/poor service,M65D
+m65e,na - reason didn't deliver at health facility: no female provider,M65E
+m65f,na - reason didn't deliver at health facility: husband/family didn't allow,M65F
+m65g,na - reason didn't deliver at health facility: not necessary,M65G
+m65h,na - reason didn't deliver at health facility: not customary,M65H
+m65i,na - reason didn't deliver at health facility: cs,M65I
+m65j,na - reason didn't deliver at health facility: cs,M65J
+m65k,na - reason didn't deliver at health facility: cs,M65K
+m65l,na - reason didn't deliver at health facility: cs,M65L
+m65x,na - reason didn't deliver at health facility: other,M65X
+m66,respondent's health checked after discharge/delivery at home,M66
+m67,how long after discharge/delivery at home respondent health check took place,M67
+m68,who checked respondent health after discharge/delivery at home,M68
+m69,where respondent check after discharge/delivery at home took place,M69
+m70,baby postnatal check within 2 months,M70
+m71,time after delivery postnatal check took place,M71
+m72,person who performed postnatal checkup,M72
+m73,place baby was first checked,M73
+m74,child's health checked before discharge,M74
+m75,how long before discharging child health check took place,M75
+m76,who checked child health before discharge,M76
+m77,was child put on mother's chest and bare skin after birth,M77
+m78a,during first 2 days health provider: examine cord,M78A
+m78b,during first 2 days health provider: measure temperature,M78B
+m78c,during first 2 days health provider: counsel on newborn dangers,M78C
+m78d,during first 2 days health provider: counsel on breastfeeding,M78D
+m78e,during first 2 days health provider: observe breastfeeding,M78E
+m78f,na - during first 2 days health provider: cs,M78F
+m78g,na - during first 2 days health provider: cs,M78G
+m78h,na - during first 2 days health provider: cs,M78H
+m78i,na - during first 2 days health provider: cs,M78I
+m78j,na - during first 2 days health provider: cs,M78J
+hidx,index to birth history,
+h1,has health card,H1
+h1a,has health card and or other vaccination document,H1A
+h2,received bcg,H2
+h2d,bcg day,H2D
+h2m,bcg month,H2M
+h2y,bcg year,H2Y
+h3,received dpt 1,H3
+h3d,dpt 1 day,H3D
+h3m,dpt 1 month,H3M
+h3y,dpt 1 year,H3Y
+h4,received polio 1,H4
+h4d,polio 1 day,H4D
+h4m,polio 1 month,H4M
+h4y,polio 1 year,H4Y
+h5,received dpt 2,H5
+h5d,dpt 2 day,H5D
+h5m,dpt 2 month,H5M
+h5y,dpt 2 year,H5Y
+h6,received polio 2,H6
+h6d,polio 2 day,H6D
+h6m,polio 2 month,H6M
+h6y,polio 2 year,H6Y
+h7,received dpt 3,H7
+h7d,dpt 3 day,H7D
+h7m,dpt 3 month,H7M
+h7y,dpt 3 year,H7Y
+h8,received polio 3,H8
+h8d,polio 3 day,H8D
+h8m,polio 3 month,H8M
+h8y,polio 3 year,H8Y
+h9,received measles 1,H9
+h9d,measles 1 day,H9D
+h9m,measles 1 month,H9M
+h9y,measles 1 year,H9Y
+h9a,received measles 2,H9A
+h9ad,measles 2 day,H9AD
+h9am,measles 2 month,H9AM
+h9ay,measles 2 year,H9AY
+h0,received polio 0,H0
+h0d,polio 0 day,H0D
+h0m,polio 0 month,H0M
+h0y,polio 0 year,H0Y
+h10,ever had vaccination,H10
+h33,received vitamin a1 (most recent),H33
+h33d,vitamin a1 day,H33D
+h33m,vitamin a1 month,H33M
+h33y,vitamin a1 year,H33Y
+h35,na - any vaccinations in last 2 years part of campaign,H35
+h36a,na - vaccinated during campaign a,H36A
+h36b,na - vaccinated during campaign b,H36B
+h36c,na - vaccinated during campaign c,H36C
+h36d,na - vaccinated during campaign d,H36D
+h36e,na - vaccinated during campaign e,H36E
+h36f,na - vaccinated during campaign f,H36F
+h40,na - received vitamin a2 (2nd most recent),H40
+h40d,na - vitamin a2 day,H40D
+h40m,na - vitamin a2 month,H40M
+h40y,na - vitamin a2 year,H40Y
+h41a,na - received vitamin a after most recent in card,H41A
+h41b,na - ever received vitamin a dose,H41B
+h50,na - received hepatitis b at birth,H50
+h50d,na - hepatitis b at birth day,H50D
+h50m,na - hepatitis b at birth month,H50M
+h50y,na - hepatitis b at birth year,H50Y
+h51,received pentavalent 1,H51
+h51d,pentavalent 1 day,H51D
+h51m,pentavalent 1 month,H51M
+h51y,pentavalent 1 year,H51Y
+h52,received pentavalent 2,H52
+h52d,pentavalent 2 day,H52D
+h52m,pentavalent 2 month,H52M
+h52y,pentavalent 2 year,H52Y
+h53,received pentavalent 3,H53
+h53d,pentavalent 3 day,H53D
+h53m,pentavalent 3 month,H53M
+h53y,pentavalent 3 year,H53Y
+h54,received pneumococcal 1,H54
+h54d,pneumococcal 1 day,H54D
+h54m,pneumococcal 1 month,H54M
+h54y,pneumococcal 1 year,H54Y
+h55,received pneumococcal 2,H55
+h55d,pneumococcal 2 day,H55D
+h55m,pneumococcal 2 month,H55M
+h55y,pneumococcal 2 year,H55Y
+h56,received pneumococcal 3,H56
+h56d,pneumococcal 3 day,H56D
+h56m,pneumococcal 3 month,H56M
+h56y,pneumococcal 3 year,H56Y
+h57,received rotavirus 1,H57
+h57d,rotavirus 1 day,H57D
+h57m,rotavirus 1 month,H57M
+h57y,rotavirus 1 year,H57Y
+h58,received rotavirus 2,H58
+h58d,rotavirus 2 day,H58D
+h58m,rotavirus 2 month,H58M
+h58y,rotavirus 2 year,H58Y
+h59,na - received rotavirus 3,H59
+h59d,na - rotavirus 3 day,H59D
+h59m,na - rotavirus 3 month,H59M
+h59y,na - rotavirus 3 year,H59Y
+h60,received polio inactive,H60
+h60d,polio inactive day,H60D
+h60m,polio inactive month,H60M
+h60y,polio inactive year,H60Y
+h61,received hepatitis b 1,H61
+h61d,hepatitis b 1 day,H61D
+h61m,hepatitis b 1 month,H61M
+h61y,hepatitis b 1 year,H61Y
+h62,received hepatitis b 2,H62
+h62d,hepatitis b 2 day,H62D
+h62m,hepatitis b 2 month,H62M
+h62y,hepatitis b 2 year,H62Y
+h63,received hepatitis b 3,H63
+h63d,hepatitis b 3 day,H63D
+h63m,hepatitis b 3 month,H63M
+h63y,hepatitis b 3 year,H63Y
+h64,received hib 1,H64
+h64d,hib 1 day,H64D
+h64m,hib 1 month,H64M
+h64y,hib 1 year,H64Y
+h65,received hib 2,H65
+h65d,hib 2 day,H65D
+h65m,hib 2 month,H65M
+h65y,hib 2 year,H65Y
+h66,received hib 3,H66
+h66d,hib 3 day,H66D
+h66m,hib 3 month,H66M
+h66y,hib 3 year,H66Y
+h80a,in the last 7 days given: local name for multiple micronutrient powder,H80A
+h80b,na - in the last 7 days given: local name ready to use therapeutic food,H80B
+h80c,na - in the last 7 days given: local name for ready to use supplemental food,H80C
+h80d,na - in the last 7 days given: cs,H80D
+h80e,na - in the last 7 days given: cs,H80E
+h80f,na - in the last 7 days given: cs,H80F
+h80g,na - in the last 7 days given: cs,H80G
+hidxa,index to birth history,
+h11,had diarrhea recently,H11
+h11b,blood in the stools,H11B
+h12a,diarrhea: government referral hospital,H12A
+h12b,diarrhea: provincial/ district hospital,H12B
+h12c,diarrhea: health center,H12C
+h12d,diarrhea: health post,H12D
+h12e,diarrhea: outreach,H12E
+h12f,diarrhea: community health worker,H12F
+h12g,diarrhea: other public sector,H12G
+h12h,na - diarrhea: cs public sector,H12H
+h12i,na - diarrhea: cs public sector,H12I
+h12j,diarrhea: private polyclinic,H12J
+h12k,diarrhea: private pharmacy,H12K
+h12l,diarrhea: private clinic,H12L
+h12m,diarrhea: private dispensary,H12M
+h12n,diarrhea: other private medical,H12N
+h12o,na - diarrhea: cs private medical,H12O
+h12p,na - diarrhea: cs private medical,H12P
+h12q,na - diarrhea: cs private medical,H12Q
+h12r,na - diarrhea: cs private medical,H12R
+h12s,diarrhea: kiosk/ shop,H12S
+h12t,diarrhea: traditional practitioner,H12T
+h12u,diarrhea: church,H12U
+h12v,diarrhea: friend/relative,H12V
+h12w,na - diarrhea: cs other sector,H12W
+h12x,diarrhea: other,H12X
+h12y,diarrhea: no treatment,H12Y
+h12z,diarrhea: medical treatment,H12Z
+h13,na - given oral rehydration,H13
+h13b,given pre-packaged ors liquid,H13B
+h14,given recommended home solution,H14
+h15,given antibiotic pills or syrups,H15
+h15a,given antimotility,H15A
+h15b,given antibiotic injection,H15B
+h15c,given intravenous (iv),H15C
+h15d,"given home remedy, herbal medicine",H15D
+h15e,given zinc,H15E
+h15f,"given other (not antibiotic, antimotility, zinc)",H15F
+h15g,given unknown pill or syrup,H15G
+h15h,given non-antibiotic injection,H15H
+h15i,given unknown injection,H15I
+h15j,na - given cs,H15J
+h15k,na - given cs,H15K
+h15l,na - given cs,H15L
+h15m,na - given cs,H15M
+h20,given other treatment,H20
+h21a,given no treatment,H21A
+h21,received any treatment,H21
+h22,had fever in last two weeks,H22
+h31,had cough in last two weeks,H31
+h31b,"short, rapid breaths",H31B
+h31c,problem in the chest or blocked or running nose,H31C
+h31d,had fever/cough in last 2 weeks: amount offered to drink,H31D
+h31e,had fever/cough in last 2 weeks: amount offered to eat,H31E
+h32a,fever/cough: government referral hospital,H32A
+h32b,fever/cough: provincial/district hospital,H32B
+h32c,fever/cough: health center,H32C
+h32d,fever/cough: health post,H32D
+h32e,fever/cough: outreach,H32E
+h32f,fever/cough: community health worker,H32F
+h32g,fever/cough: other public sector,H32G
+h32h,na - fever/cough: cs public sector,H32H
+h32i,na - fever/cough: cs public sector,H32I
+h32j,fever/cough: private polyclinic,H32J
+h32k,fever/cough: private pharmacy,H32K
+h32l,fever/cough: private clinic,H32L
+h32m,fever/cough: private dispensary,H32M
+h32n,fever/cough: other private medical,H32N
+h32o,na - fever/cough: cs private medical,H32O
+h32p,na - fever/cough: cs private medical,H32P
+h32q,na - fever/cough: cs private medical,H32Q
+h32r,na - fever/cough: cs private medical,H32R
+h32s,fever/cough: kiosk/shop,H32S
+h32t,fever/cough: traditional healer,H32T
+h32u,fever/cough: church,H32U
+h32v,fever/cough: friend/relative,H32V
+h32w,na - fever/cough: cs other sector,H32W
+h32x,fever/cough: other,H32X
+h32y,fever/cough: no treatment,H32Y
+h32z,fever/cough: medical treatment,H32Z
+h34,vitamin a in last 6 months,H34
+h37a,na - sp/fansidar taken for fever,H37A
+h37b,na - chloroquine taken for fever,H37B
+h37c,na - amodiaquine taken for fever,H37C
+h37d,quinine taken for fever,H37D
+h37da,na - quinine injection/iv taken for fever,H37DA
+h37e,combination with artemisinin taken for fever,H37E
+h37aa,artesunate rectal taken for fever,H37AA
+h37ab,na - artesunate injection/iv taken for fever,H37AB
+h37f,na - cs antimalarial taken for fever,H37F
+h37g,na - cs antimalarial taken for fever,H37G
+h37h,other antimalarial taken for fever,H37H
+h37i,antibiotic pill/syrup taken for fever,H37I
+h37j,antibiotic injection taken for fever,H37J
+h37k,aspirin taken for fever,H37K
+h37l,acetaminophen/paracetamol/panadol taken for fever,H37L
+h37m,ibuprofen taken for fever,H37M
+h37n,cs other taken for fever,H37N
+h37o,na - cs other for fever/cough,H37O
+h37p,na - cs other for fever/cough,H37P
+h37x,other taken for fever,H37X
+h37y,nothing taken and didn't seek treatment for fever/cough,H37Y
+h37z,don't know if or what was taken for fever,H37Z
+h38,diarrhea in last 2 weeks: amount offered to drink,H38
+h39,diarrhea in last 2 weeks: amount offered to eat,H39
+h42,"na - taking iron pills, sprinkles or syrup",H42
+h43,drugs for intestinal parasites in last 6 months,H43
+h44a,place first sought treatment for diarrhea,H44A
+h44b,na - days after diarrhea sought advice or treatment,H44B
+h44c,na - still has diarrhea,H44C
+h45,na - times zinc was given,H45
+h46a,place first sought treatment for fever,H46A
+h46b,number of days after fever began sought advice or treatment,H46B
+h47,blood taken from child's finger/heel for testing,H47
+hwidx,index to birth history,
+hw1,child's age in months,
+hw2,child's weight in kilograms (1 decimal),HW2
+hw3,child's height in centimeters (1 decimal),HW3
+hw4,height/age percentile,HW4
+hw5,height/age standard deviation,HW5
+hw6,height/age percent of ref. median,HW6
+hw7,weight/age percentile,HW7
+hw8,weight/age standard deviation,HW8
+hw9,weight/age percent of ref. median,HW9
+hw10,weight/height percentile,HW10
+hw11,weight/height standard deviation,HW11
+hw12,weight/height percent of ref. median,HW12
+hw13,result of measurement - height/weight,HW13
+hw15,height: lying or standing,HW15
+hw16,day of birth of child,HW16
+hw17,date measured (day),
+hw18,date measured (month),
+hw19,date measured (year),
+hw51,line number of parent/caretaker,HW51
+hw52,read consent statement - hemoglobin,HW52
+hw53,hemoglobin level (g/dl - 1 decimal),HW53
+hw55,result of measurement - hemoglobin,HW55
+hw56,hemoglobin level adjusted for altitude (g/dl - 1 decimal),HW56
+hw57,anemia level,HW57
+hw58,na - agrees to referral - anemia,HW58
+hw70,height/age standard deviation (new who),HW70
+hw71,weight/age standard deviation (new who),HW71
+hw72,weight/height standard deviation (new who),HW72
+hw73,bmi standard deviation (new who),HW73
+idxml,index to birth history,
+ml0,type of mosquito bed net(s) child slept under last night,ML0
+ml1,na - number of times took fansidar during pregnancy,ML1
+ml2,na - source of antimalarial during pregnancy,ML2
+ml11,na - child has fever/cough now,ML11
+ml12,na - child has had convulsions in last 2 weeks,ML12
+ml13a,na - fansidar taken for fever,ML13A
+ml13b,na - chloroquine taken for fever,ML13B
+ml13c,na - amodiaquine taken for fever,ML13C
+ml13d,quinine taken for fever,ML13D
+ml13da,na - quinine injection/iv taken for fever,ML13DA
+ml13e,combination with artemisinin taken for fever,ML13E
+ml13aa,artesunate rectal taken for fever,ML13AA
+ml13ab,na - artesunate injection/iv taken for fever,ML13AB
+ml13f,na - cs antimalarial taken for fever,ML13F
+ml13g,na - cs antimalarial taken for fever,ML13G
+ml13h,other antimalarial taken for fever,ML13H
+ml13i,antibiotic pill/syrup taken for fever,ML13I
+ml13j,antibiotic injection taken for fever,ML13J
+ml13k,aspirin taken for fever,ML13K
+ml13l,acetaminophen/paracetamol/panadol taken for fever,ML13L
+ml13m,ibuprofen taken for fever,ML13M
+ml13n,cs other taken for fever,ML13N
+ml13o,na - cs other taken for fever,ML13O
+ml13p,na - cs other taken for fever,ML13P
+ml13x,other taken for fever,ML13X
+ml13y,nothing taken and didn't seek treatment for fever/cough,ML13Y
+ml13z,don't know if or what was taken for fever,ML13Z
+ml14a,na - injection given for fever/convulsion,ML14A
+ml14b,na - suppository given for fever/convulsion,ML14B
+ml14y,na - no suppository or injection given for fever/convulsion,ML14Y
+ml14z,na - don't know if suppository or injection given for fever/convulsion,ML14Z
+ml15a,na - timing of start of fansidar,ML15A
+ml15b,na - number of days child took fansidar,ML15B
+ml15c,na - first source for fansidar,ML15C
+ml16a,na - timing of start of chloroquine,ML16A
+ml16b,na - number of days child took chloroquine,ML16B
+ml16c,na - first source for chloroquine,ML16C
+ml17a,na - timing of start of amodiaquine,ML17A
+ml17b,na - number of days child took amodiaquine,ML17B
+ml17c,na - first source for amodiaquine,ML17C
+ml18a,na - timing of start of quinine,ML18A
+ml18b,na - number of days child took quinine,ML18B
+ml18c,na - first source for quinine,ML18C
+ml19a,na - for fever/convulsion: consulted traditional healer,ML19A
+ml19b,na - for fever/convulsion: gave tepid sponging,ML19B
+ml19c,na - for fever/convulsion: gave herbs,ML19C
+ml19d,na - for fever/convulsion: cs,ML19D
+ml19e,na - for fever/convulsion: cs,ML19E
+ml19f,na - for fever/convulsion: cs,ML19F
+ml19x,na - for fever/convulsion: other,ML19X
+ml19y,na - for fever/convulsion: gave/did nothing,ML19Y
+ml19z,na - for fever/convulsion: don't know if something else was done,ML19Z
+ml20a,timing of start of combination with artemisinin,ML20A
+ml20b,na - number of days child took combination with artemisinin,ML20B
+ml20c,na - first source for combination with artemisinin,ML20C
+ml21a,na - timing of start of cs antimalarial use,ML21A
+ml21b,na - number of days child took cs antimalarial,ML21B
+ml21c,na - first source for cs antimalarial,ML21C
+ml22a,na - timing of start of cs antimalarial use,ML22A
+ml22b,na - number of days child took cs antimalarial,ML22B
+ml22c,na - first source for cs antimalarial,ML22C
+ml23a,timing of start of other anti-malarial use,ML23A
+ml23b,na - number of days child took other anti-malarial,ML23B
+ml23c,na - first source for other anti-malarial,ML23C
+ml24c,na - first source for antibiotic pill/syrup,ML24C
+ml25a,timing of start of artesunate,ML25A
+ecd2,child line number,
+ecd4,number of books for child,ECD4
+ecd5a,toys that child play with: homemade,ECD5A
+ecd5b,toys that child play with: from a shop,ECD5B
+ecd5c,toys that child play with: households objects,ECD5C
+ecd6a,days in past week child was: left alone for more than an hour,ECD6A
+ecd6b,days in past week child was: left to another child for more than an hour,ECD6B
+ecd8,line number of youngest child 3 or 4 years old,
+ecd9,child attend an early childhood education program,ECD9
+ecd10a,in past 3 days household members: read/look at books,ECD10A
+ecd10b,in past 3 days household members: told stories,ECD10B
+ecd10c,in past 3 days household members: sang songs,ECD10C
+ecd10d,in past 3 days household members: took outside home,ECD10D
+ecd10e,in past 3 days household members: played with child,ECD10E
+ecd10f,"in past 3 days household members: named, counted, draw",ECD10F
+ecd10g,na - in past 3 days household members: cs,ECD10G
+ecd10h,na - in past 3 days household members: cs,ECD10H
+ecd10i,na - in past 3 days household members: cs,ECD10I
+ecd11,can child identify at least 10 letters of the alphabet,ECD11
+ecd12,can child read at least four popular words,ECD12
+ecd13,can child recognize numbers from 1 to 10,ECD13
+ecd14,can child pick up small object with two fingers,ECD14
+ecd15,is child sometimes sick to play,ECD15
+ecd16,can child follow directions to do things correctly,ECD16
+ecd17,can child do things independently,ECD17
+ecd18,does child get along well with other children,ECD18
+ecd19,"does child kick, bite, or hit other children",ECD19
+ecd20,does the child get distracted easly,ECD20
+ecdage59,age in month ecd2,
+ecdage24,age in month ecd8,
+sdistrict,district,SDISTRIC
+s107,ever attended school,S107
+s108,highest educational level,S108
+s109,highest grade/form/year at that level,S109
+s205ca,where sons or daughters live,S205CA
+s205cb,where sons or daughters live,S205CB
+s205cc,where sons or daughters live,S205CC
+s205cd,where sons or daughters live,S205CD
+s205ce,where sons or daughters live,S205CE
+s205cx,where sons or daughters live,S205CX
+s205cz,where sons or daughters live,S205CZ
+s653a,participated in monthly growth monitoring and nutrition promotion sessions,S653A
+s653b,main reason for not participating,S653B
+s656l,na - line number youngest child,
+s657a,read books or looked at pictures,S657A
+s657b,told stories to,S657B
+s657c,sang songs or lullabies to,S657C
+s657d,took outside,S657D
+s657e,played with,S657E
+s657f,named counted or drew things with,S657F
+s660ca,attend umugoroba w'abayeyi,S660CA
+s660cb,attend inshuti z'umuryango,S660CB
+s660cc,attend community parenting session in ec facility,S660CC
+s660cd,parenting programmes - religious sessions,S660CD
+s660ce,parenting programmes - from womens groups,S660CE
+s660cf,community theatre,S660CF
+s720a1,times have intercourse during the last month (last partner),S720A1
+s720a2,times have intercourse during the last month (second-to-last partner),S720A2
+s720a3,times have intercourse during the last month (third-to-last partner),S720A3
+s723a,total number of partners last month,S723A
+s730a,can get male condom if wanted to,S730A
+s932f,justifies domestic violence: wife has sex with someone else,S932F
+s932g,justifies domestic violence: wife looks in his telephone,S932G
+s932i,justifies domestic violence: child disobeys,S932I
+s932j,justifies domestic violence: child is impolite,S932J
+s932k,justifies domestic violence: child embarrasses family,S932K
+s1007a,can men reduce chances of getting aids by getting circumcized,S1007A
+s1010b,ever tested for aids for prenuptial purposes,S1010B
+s1010d,ever been tested for aids as couple with partner,S1010D
+s1010e,ever discuss with partner the results of the tests,S1010E
+s1108fa,ways to avoid tuberculosis bacilli spread,S1108FA
+s1108fb,ways to avoid tuberculosis bacilli spread,S1108FB
+s1108fc,ways to avoid tuberculosis bacilli spread,S1108FC
+s1108fd,ways to avoid tuberculosis bacilli spread,S1108FD
+s1108fe,ways to avoid tuberculosis bacilli spread,S1108FE
+s1108ff,ways to avoid tuberculosis bacilli spread,S1108FF
+s1108fg,ways to avoid tuberculosis bacilli spread,S1108FG
+s1108fh,ways to avoid tuberculosis bacilli spread,S1108FH
+s1108fx,ways to avoid tuberculosis bacilli spread,S1108FX
+s1108fz,ways to avoid tuberculosis bacilli spread,S1108FZ
+s1108g,who is most at risk of getting tuberculosis disease,S1108G
+s1108ha,main symptoms of tuberculosis disease,S1108HA
+s1108hb,main symptoms of tuberculosis disease,S1108HB
+s1108hc,main symptoms of tuberculosis disease,S1108HC
+s1108hd,main symptoms of tuberculosis disease,S1108HD
+s1108he,main symptoms of tuberculosis disease,S1108HE
+s1108hf,main symptoms of tuberculosis disease,S1108HF
+s1108hz,main symptoms of tuberculosis disease,S1108HZ
+s1108ij,has any of the following symptoms: cough,S1108IJ
+s1108ik,has any of the following symptoms: fever,S1108IK
+s1108il,has any of the following symptoms: drenching night sweats,S1108IL
+s1108im,has any of the following symptoms: unexpected weight lost,S1108IM
+s1108in,has any of the following symptoms: general fatigue or malaise,S1108IN
+s1108io,has any of the following symptoms: chest pain,S1108IO
+s1108q,ever sought care or help,S1108Q
+s1108ra,where care or help was sought,S1108RA
+s1108rb,where care or help was sought,S1108RB
+s1108rc,where care or help was sought,S1108RC
+s1108rd,where care or help was sought,S1108RD
+s1108re,where care or help was sought,S1108RE
+s1108rf,where care or help was sought,S1108RF
+s1108rg,where care or help was sought,S1108RG
+s1108rh,where care or help was sought,S1108RH
+s1108ri,where care or help was sought,S1108RI
+s1108rj,where care or help was sought,S1108RJ
+s1108rk,where care or help was sought,S1108RK
+s1108rl,where care or help was sought,S1108RL
+s1108rm,where care or help was sought,S1108RM
+s1108rn,where care or help was sought,S1108RN
+s1108ro,where care or help was sought,S1108RO
+s1108rp,where care or help was sought,S1108RP
+s1108rx,where care or help was sought,S1108RX
+s1110b,has card where hpv vaccinations against cervical cancer are written,S1110B
+s1110c,may i see the card,S1110C
+s1110cad,hpv vaccination date 1st time day,S1110CAD
+s1110cam,hpv vaccination date 1st time month,S1110CAM
+s1110cay,hpv vaccination date 1st time year,S1110CAY
+s1110cbd,hpv vaccination date 2nd time day,S1110CBD
+s1110cbm,hpv vaccination date 2nd time month,S1110CBM
+s1110cby,hpv vaccination date 2nd time year,S1110CBY
+s1110d,ever have hpv vaccine card,S1110D
+s1110e,ever received hpv vaccine in previous 5 years,S1110E
+s1110f,dis you receive one dose or two doses of the hpv vaccine?,S1110F
+s1110i,ever experienced constant leakage of urine or stool from vagina during day and n,S1110I
+s1110j,ever sought treatment and got cured,S1110J
+sdv18b,relation to main person who hurt respondent in the past 12 months,SDV18B
+mnmicron,women selected for micronutrient subsample,MNMICRON
+mnv420,measurer's code,
+mnv421,na - assistant measurer's code,
+mnv426,na - when child put to breast,MNV426
+mnv437,respondent's weight in kilograms (1 decimal),MNV437
+mnv438,respondent's height in centimeters (1 decimal),MNV438
+mnv439,height/age percentile,MNV439
+mnv440,height/age standard deviation,MNV440
+mnv441,height/age percent ref. median,MNV441
+mnv442,weight/height percent ref. median (dhs),MNV442
+mnv443,weight/height percent ref. median (fog),MNV443
+mnv444,weight/height percent ref. median (who),MNV444
+mnv444a,weight/height standard deviation (dhs),MNV444A
+mnv445,body mass index,MNV445
+mnv446,rohrer's index,MNV446
+mnv447,result of measurement - height/weight,MNV447
+mnv447a,women's age in years (from household questionnaire),
+mnv452a,under age 18 (from household questionnaire),MNV452A
+mnv452b,na - line number of parent/caretaker,MNV452B
+mnv452c,na - read consent statement - hemoglobin,MNV452C
+mnv453,hemoglobin level (g/dl - 1 decimal),MNV453
+mnv454,currently pregnant (from household questionnaire),MNV454
+mnv455,result of measurement - hemoglobin,MNV455
+mnv456,hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),
+mnv457,anemia level,MNV457
+mnv458,na - agrees to referral - anemia,MNV458
+idx94,index to birth history,
+s412b,months pregnant at second antenatal care,S412B
+s412d,months pregnant at third antenatal care,S412D
+s412f,months pregnant at fourth antenatal care,S412F
+s413d,antenatal care: circumference,S413D
+s413e,told to look out for things to look out for during antenatal care,S413E
+s457f,total number of times respondent has been checked after delivery,
+s470b,why did respondent not deliver at health facility,S470B
+idx95,index to birth history,
+s525an,number of times micronutrient was given,
+s610b,breastfed during diarrhea,S610B

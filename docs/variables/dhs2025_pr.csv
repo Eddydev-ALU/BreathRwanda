@@ -1,0 +1,427 @@
+variable,label,value_label_set
+hhid,case identification,
+hvidx,line number,
+hv000,country code and phase,
+hv001,cluster number,
+hv002,household number,
+hv003,respondent's line number (answering household questionnaire),HV003
+hv004,ultimate area unit,
+hv005,household sample weight (6 decimals),
+hv006,month of interview,
+hv007,year of interview,
+hv008,date of interview (cmc),
+hv008a,date of interview century day code (cdc),
+hv009,number of household members,
+hv010,number of eligible women in household,
+hv011,number of eligible men in household,
+hv012,number of de jure members,
+hv013,number of de facto members,
+hv014,number of children 5 and under (de jure),
+hv015,result of household interview,HV015
+hv016,day of interview,
+hv017,number of visits,
+hv018,interviewer identification,
+hv019,na - keyer identification,
+hv020,ever-married sample,HV020
+hv021,primary sampling unit,
+hv022,sample strata for sampling errors,
+hv023,stratification used in sample design,HV023
+hv024,region,HV024
+hv025,type of place of residence,HV025
+hv026,na - place of residence,HV026
+hv027,household selected for man's interview,HV027
+hv028,household weight for male subsample (6 decimals),
+hv030,field supervisor,
+hv031,na - field editor,
+hv032,na - office editor,
+hv035,number of eligible children for height and weight,
+hv040,cluster altitude in meters,
+hv041,total adults measured,
+hv042,na - household selected for hemoglobin,HV042
+hv044,household selected for domestic violence module,HV044
+hv045a,language of questionnaire,HV045A
+hv045b,language of interview,HV045B
+hv045c,native language of respondent,HV045C
+hv046,translator used,HV046
+hv047,team number,
+hv048,na - team supervisor,
+hv801,time interview started (hhmm - 24 hour clock),
+hv802,time interview ended (hhmm - 24 hour clock),
+hv803,length of interview in minutes,HV803
+hv804,number of visits for biomarker,
+hv807d,day of biomarker visit,
+hv807m,month of biomarker visit,
+hv807y,year of biomarker visit,
+hv807c,date of biomarker (cmc),
+hv807a,date of biomarker century day code (cdc),
+hv201,source of drinking water,HV201
+hv202,source of non-drinking water,HV202
+hv201a,na - water not available for at least a day last two weeks,HV201A
+hv201b,water for drinking not sufficient in the last month,HV201B
+hv204,time to get to water source (minutes),HV204
+hv205,type of toilet facility,HV205
+hv206,has electricity,HV206
+hv207,has radio,HV207
+hv208,has television,HV208
+hv209,has refrigerator,HV209
+hv210,has bicycle,HV210
+hv211,has motorcycle/scooter,HV211
+hv212,has car/truck,HV212
+hv213,main floor material,HV213
+hv214,main wall material,HV214
+hv215,main roof material,HV215
+hv216,number of rooms used for sleeping,
+hv217,relationship structure,HV217
+hv218,line number of head of household,
+hv219,sex of head of household,HV219
+hv220,age of head of household,HV220
+hv221,has telephone (land-line),HV221
+hv222,type of cookstove,HV222
+hv223,type of cooking fuel,HV223
+hv225,share toilet with other households,HV225
+hv226,type of cooking fuel,HV226
+hv227,na - has mosquito bed net for sleeping,HV227
+hv228,na - children under 5 slept under mosquito bed net last night,HV228
+hv230a,place where household members wash their hands,HV230A
+hv230b,presence of water at hand washing place,HV230B
+hv232,items present: soap or detergent,HV232
+hv232b,"items present: ash, mud, sand",HV232B
+hv232c,na - items present: cs,HV232C
+hv232d,na - items present: cs,HV232D
+hv232e,na - items present: cs,HV232E
+hv232y,items present: none,HV232Y
+hv234,na - result of salt test for iodine (ppm),HV234
+hv234a,na - result of salt test for iodine,HV234A
+hv235,location of source for water,HV235
+hv236a,line number person fetching water,HV236A
+hv237,anything done to water to make safe to drink,HV237
+hv237a,water usually treated by: boil,HV237A
+hv237b,water usually treated by: add bleach/chlorine,HV237B
+hv237c,water usually treated by: strain through a cloth,HV237C
+hv237d,water usually treated by: use water filter,HV237D
+hv237e,water usually treated by: solar disinfection,HV237E
+hv237f,water usually treated by: let it stand and settle,HV237F
+hv237g,na - water usually treated by: cs,HV237G
+hv237h,na - water usually treated by: cs,HV237H
+hv237i,na - water usually treated by: cs,HV237I
+hv237j,na - water usually treated by: cs,HV237J
+hv237k,na - water usually treated by: cs,HV237K
+hv237x,water usually treated by: other,HV237X
+hv237z,water usually treated by: don't know,HV237Z
+hv238,number of households sharing toilet,HV238
+hv238a,location of toilet facility,HV238A
+hv239,na - food cooked on stove or open fire,HV239
+hv240,stove has a chimney,HV240
+hv241,food cooked in the house/ separate building/ outdoors,HV241
+hv242,household has separate room used as kitchen,HV242
+hv243a,has mobile telephone,HV243A
+hv243b,has watch,HV243B
+hv243c,has animal-drawn cart,HV243C
+hv243d,has boat with a motor,HV243D
+hv243e,has a computer,HV243E
+hv244,owns land usable for agriculture,HV244
+hv245,hectares of agricultural land (1 decimal),HV245
+hv246,"owns livestock, herds or farm animals",HV246
+hv246a,na - owns cattle,HV246A
+hv246b,owns cows/ bulls,HV246B
+hv246c,owns horses/ donkeys/ mules,HV246C
+hv246d,owns goats,HV246D
+hv246e,owns sheep,HV246E
+hv246f,owns chickens/poultry,HV246F
+hv246g,traditional modern milk,HV246G
+hv246h,modern milk,HV246H
+hv246i,pigs,HV246I
+hv246j,owns cs,HV246J
+hv246k,na - owns cs,HV246K
+hv247,has bank account,HV247
+hv252,frequency household members smoke inside the house,HV252
+hv253,na - has dwelling been sprayed against mosquitoes in last 12 months,HV253
+hv253a,na - dwelling sprayed by: government worker/program,HV253A
+hv253b,na - dwelling sprayed by: private company,HV253B
+hv253c,na - dwelling sprayed by: ngo,HV253C
+hv253d,na - dwelling sprayed by: cs,HV253D
+hv253e,na - dwelling sprayed by: cs,HV253E
+hv253f,na - dwelling sprayed by: cs,HV253F
+hv253g,na - dwelling sprayed by: cs,HV253G
+hv253h,na - dwelling sprayed by: cs,HV253H
+hv253x,na - dwelling sprayed by: other,HV253X
+hv253z,na - dwelling sprayed by: don't know,HV253Z
+hv255,septic tank has been emptied,HV255
+hv256,septic tank emptied by a service provider,HV256
+hv257,where septic tanked emptied to,HV257
+hv259,na - heat source for home,HV259
+hv260,na - heat at home has a chimney,HV260
+hv261,na - type of fuel for home heat,HV261
+hv262,type of light at home,HV262
+hv263,mobile phone used financial transactions,HV263
+hv270,wealth index combined,HV270
+hv271,wealth index factor score combined (5 decimals),
+hv270a,wealth index for urban/rural,HV270A
+hv271a,wealth index factor score for urban/rural (5 decimals),
+hml1,na - number of mosquito bed nets,HML1
+hml1a,na - number of mosquito bed nets with specific information,
+hml2,na - number of children under mosquito bed net previous night,
+shdistrict,district code,SHDISTRI
+sh104a,distance from home to the water source,SH104A
+sh108a,having specific container used to keep drinking water,SH108A
+sh108b,container in which water is stored seen,SH108B
+sh108c,number of times the container is washed per week,SH108C
+sh112aa,cleaness of the toilet: toilet's plate form is dry and clean,SH112AA
+sh112ab,cleaness of the toilet:with urine or excreta,SH112AB
+sh112ac,cleaness of the toilet:with flies,SH112AC
+sh132f,mattress,SH132F
+sh132g,a bench or at least 3 chairs,SH132G
+sh132h,a bed,SH132H
+sh132i,a chair,SH132I
+sh132j,a table,SH132J
+sh132k,a sofa,SH132K
+sh132l,traditional improved stove,SH132L
+sh132m,a cooker stove,SH132M
+sh132n,a cupboard,SH132N
+sh132o,a dinning table,SH132O
+sh132p,an iron machine,SH132P
+sh132q,a laundry machine,SH132Q
+sh132r,a satelite dich,SH132R
+sh132s,a disch washing machine,SH132S
+sh132t,a security camera,SH132T
+sh133c,smart phone,SH133C
+sh133i,boat without a motor,SH133I
+sh133j,photo camera,SH133J
+hv101,relationship to head,HV101
+hv102,usual resident,HV102
+hv103,stayed last night,HV103
+hv104,sex of household member,HV104
+hv105,age of household members,HV105
+hv106,highest educational level attained,HV106
+hv107,highest year of education completed,HV107
+hv108,education completed in single years,HV108
+hv109,educational attainment,HV109
+hv110,na - member still in school,HV110
+hv111,mother alive,HV111
+hv112,mother's line number,HV112
+hv113,father alive,HV113
+hv114,father's line number,HV114
+hv115,current marital status,HV115
+hv116,"currently, formerly, never married",HV116
+hv117,eligibility for female interview,HV117
+hv118,eligibility for male interview,HV118
+hv120,children eligibility for height/weight and hemoglobin,HV120
+hv121,member attended school during current school year,HV121
+hv122,educational level during current school year,HV122
+hv123,grade of education during current school year,HV123
+hv124,education in single years - current school year,HV124
+hv125,na - member attended school during previous school year,HV125
+hv126,na - educational level during previous school year,HV126
+hv127,na - grade of education during previous school year,HV127
+hv128,na - education in single years - previous school year,HV128
+hv129,na - school attendance status,HV129
+hv140,member has a birth certificate,HV140
+hcw101,na - year mother died,HCW101
+hcw102,na - year father died,HCW102
+hcw103,na - line number of primary caregiver,HCW103
+hcw104,na - relationship to primary caregiver,HCW104
+idxh4,index to household schedule,
+sh17a,level of education attended,SH17A
+sh17b,highest grade completed,SH17B
+sh19a,level of education attending,SH19A
+sh19b,grade attending,SH19B
+sh21,health insurance coverage,SH21
+sh22,main type of medical health insurance,SH22
+sh23,currently smoking,SH23
+sh24,bitten by a snake or dog between 2020 and 2024,SH24
+sh24a,among the following which bite?,SH24A
+sh25,was last time bitten by dog?,SH25
+sh25a,in which month was last bitten by dog?,SH25A
+sh25b,was last time bitten by snake,SH25B
+sh25c,in which month was last bitten by snake,SH25C
+sh25da,place treated for the last bite: formal health facilities,SH25DA
+sh25db,place treated for the last bite: traditional healers,SH25DB
+sh25dy,place treated for the last bite: none,SH25DY
+sh25dx,place treated for the last bite: other,SH25DX
+sh25ea,long-term health consequence experience: tissue damage or scarring,SH25EA
+sh25eb,long-term health consequence experience: recurrent swelling,SH25EB
+sh25ec,long-term health consequence experience: dizziness,SH25EC
+sh25ed,long-term health consequence experience: sleeping problems,SH25ED
+sh25ee,long-term health consequence experience: blurred vision,SH25EE
+sh25ef,long-term health consequence experience: breathing problems,SH25EF
+sh25eg,long-term health consequence experience: amputation or permanent physical disabi,SH25EG
+sh25eh,long-term health consequence experience: paralysis,SH25EH
+sh25ei,long-term health consequence experience: mental health issues,SH25EI
+sh25ej,long-term health consequence experience: no consequence,SH25EJ
+sh25ex,long-term health consequence experience: other,SH25EX
+sh25fa,suffering from any deseases in the last 12 months: scabies,SH25FA
+sh25fb,suffering from any deseases in the last 12 months: podoconiosis,SH25FB
+sh25fc,suffering from any deseases in the last 12 months: lymphatic filariasis,SH25FC
+sh25fd,suffering from any deseases in the last 12 months: leprosy,SH25FD
+sh25fe,suffering from any deseases in the last 12 months: onchocerciasis,SH25FE
+sh25ff,suffering from any deseases in the last 12 months: mycetoma,SH25FF
+sh25fg,suffering from any deseases in the last 12 months: yaws,SH25FG
+sh25fy,suffering from any deseases in the last 12 months: none,SH25FY
+sh25ga,place where treatment taken: formal health facilities,SH25GA
+sh25gb,place where treatment taken: traditional healers,SH25GB
+sh25gy,place where treatment taken: none,SH25GY
+sh25gx,place where treatment taken: others,SH25GX
+ha0,index to household schedule,
+ha1,woman's age in years,
+ha2,woman's weight in kilograms (1 decimal),HA2
+ha3,woman's height in centimeters (1 decimal),HA3
+ha13,result of measurement - height/weight,HA13
+ha17,date measured (day),
+ha18,date measured (month),
+ha19,date measured (year),
+ha21,fieldworker measurer code for anthropometry,
+ha21a,fieldworker assistant measurer code for anthropometry,
+ha21b,na - fieldworker measurer code for hemoglobin,
+ha21c,na - fieldworker consent for hemoglobin from parent/responsible,
+ha22,was woman wearing only lightweight clothing,HA22
+ha24,measurement interfered with braided or ornament,HA24
+ha32,date of birth (cmc),
+ha33,completeness of ha32 information,HA33
+ha35,smoking (cigarettes in last 24 hours),HA35
+ha36,na - height/weight recorded in anthropometry/anemia pamphlet,HA36
+ha40,body mass index,HA40
+ha50,under age 18,HA50
+ha51,line number of parent/caretaker,HA51
+ha52,na - read consent statement - hemoglobin,HA52
+ha53,na - hemoglobin level (g/dl - 1 decimal),HA53
+ha54,na - currently pregnant,HA54
+ha54a,na - duration of current pregnancy in months,
+ha55,na - result of measurement - hemoglobin,HA55
+ha56,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HA56
+ha56a,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal) (new,HA56A
+ha57,na - anemia level,HA57
+ha57a,na - anemia level (new who),HA57A
+ha58,na - agrees to referral - anemia,HA58
+ha59,na - severe anemia referral provided,HA59
+ha60,marital status,HA60
+ha61,read consent statement - hiv,HA61
+ha62,bar code for hiv blood sample,
+ha63,result of measurement - hiv,HA63
+ha64,consent for additional tests,HA64
+ha65,result of woman's individual interview,HA65
+ha66,woman's highest educational level,HA66
+ha67,woman's highest year of education,HA67
+ha68,woman's highest educational level (for preliminary and final report),HA68
+ha69,hiv weight (6 decimals),
+ha70a,interviewer that took blood for hiv testing,
+ha70,height/age standard deviation (new who) (women age 15-19),HA70
+ha73,bmi/age standard deviation (new who) (women age 15-19),HA73
+sb223,read consent statement - hiv rapid test,SB223
+sb224,fieldworker number for hiv rapid test,
+sb259,result: determine hiv rdt,SB259
+sb260,result: stat pack rdt,SB260
+sb265,rdt fail to run while doing the rdt test,SB265
+sb266,number of invalid results for the determine hiv rdt,SB266
+sb267,number of invalid results for the stat pack hiv rdt,SB267
+hc0,index to household schedule,
+hc1,child's age in months,
+hc1a,child's age in days,
+hc2,child's weight in kilograms (1 decimal),HC2
+hc2a,child's weight in kilograms (1 decimal) - first measurement,HC2A
+hc2b,child's weight in kilograms (1 decimal) - re-measurement,HC2B
+hc3,child's height in centimeters (1 decimal),HC3
+hc3a,child's height in centimeters (1 decimal) - first measurement,HC3A
+hc3b,child's height in centimeters (1 decimal) - re-measurement,HC3B
+hc13,result of measurement - height/weight,HC13
+hc15,height: lying or standing,HC15
+hc15a,height: lying or standing - first measurement,HC15A
+hc15b,height: lying or standing - re-measurement,HC15B
+hc16,day of birth,HC16
+hc17,date measured (day),
+hc18,date measured (month),
+hc19,date measured (year),
+hc20,century day code (cdc) of measurement,
+hc21,fieldworker measurer code for anthropometry,
+hc21a,fieldworker assistant measurer code for anthropometry,
+hc21b,na - fieldworker measurer code for hemoglobin,
+hc22,child minimally dressed,HC22
+hc23,correct measurement procedure used,HC23
+hc24,child's hair had braids or ornaments,HC24
+hc27,sex,HC27
+hc30,month of birth,HC30
+hc31,year of birth,HC31
+hc32,date of birth (cmc),
+hc32a,century day code (cdc) of birth,
+hc33,completeness of hc32 information,HC33
+hc35,reason for re-measurement,HC35
+hc36,na - height/weight recorded in anthropometry/anemia pamphlet,HC36
+hc51,line number of parent/caretaker,HC51
+hc52,na - read consent statement - hemoglobin,HC52
+hc53,na - hemoglobin level (g/dl - 1 decimal),HC53
+hc55,na - result of measurement - hemoglobin,HC55
+hc56,na - hemoglobin level adjusted for altitude (g/dl - 1 decimal),HC56
+hc56a,na - hemoglobin level adjusted for altitude (g/dl - 1 decimal) (new who),HC56A
+hc57,na - anemia level,HC57
+hc57a,na - anemia level (new who),HC57A
+hc58,na - agrees to referral - anemia,HC58
+hc59,na - severe anemia referral provided,HC59
+hc60,mother's line number (woman's questionnaire),HC60
+hc61,mother's highest educational level,HC61
+hc62,mother's highest year of education,HC62
+hc63,preceding birth interval (months),
+hc64,birth order number,
+hc68,mother's highest educational level (for preliminary and final report),HC68
+hc70,height/age standard deviation (new who),HC70
+hc71,weight/age standard deviation (new who),HC71
+hc72,weight/height standard deviation (new who),HC72
+hc73,bmi standard deviation (new who),HC73
+hb0,index to household schedule,
+hb1,man's age in years,
+hb2,man's weight in kilograms (1 decimal),HB2
+hb3,man's height in centimeters (1 decimal),HB3
+hb13,result of measurement - height/weight,HB13
+hb17,date measured (day),
+hb18,date measured (month),
+hb19,date measured (year),
+hb21,fieldworker measurer code for anthropometry,
+hb21a,fieldworker assistant measurer code for anthropometry,
+hb21b,na - fieldworker measurer code for hemoglobin,
+hb21c,na - fieldworker consent for hemoglobin from parent/responsible,
+hb22,was man wearing only lightweight clothing,HB22
+hb24,measurement interfered with braided or ornament,HB24
+hb32,date of birth (cmc),
+hb33,completeness of hb32 information,HB33
+hb35,smoking (cigarettes in last 24 hours),HB35
+hb36,na - height/weight recorded in anthropometry/anemia pamphlet,HB36
+hb40,body mass index,HB40
+hb50,under age 18,HB50
+hb51,line number of parent/caretaker,HB51
+hb52,na - read consent statement - hemoglobin,HB52
+hb53,na - hemoglobin level (g/dl - 1 decimal),HB53
+hb55,na - result of measurement - hemoglobin,HB55
+hb56,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal),HB56
+hb56a,na - hemoglobin level adjusted for altitude and smoking (g/dl - 1 decimal) (new,HB56A
+hb57,na - anemia level,HB57
+hb57a,na - anemia level (new who),HB57A
+hb58,na - agrees to referral - anemia,HB58
+hb59,na - severe anemia referral provided,HB59
+hb60,marital status,HB60
+hb61,read consent statement - hiv,HB61
+hb62,bar code for hiv blood sample,
+hb63,result of measurement - hiv,HB63
+hb64,consent for additional tests,HB64
+hb65,result of man's individual interview,HB65
+hb66,man's highest educational level,HB66
+hb67,man's highest year of education,HB67
+hb68,man's highest educational level (for preliminary and final report),HB68
+hb69,hiv weight (6 decimals),
+hb70a,interviewer that took blood for hiv testing,
+hb70,height/age standard deviation (new who) (men age 15-19),HB70
+hb73,bmi/age standard deviation (new who) (men age 15-19),HB73
+sb323,na - read consent statement - hiv rapid test,SB323
+sb324,fieldworker number for hiv rapid test,
+sb359,result: determine hiv rdt,SB359
+sb360,result: stat pack rdt,SB360
+sb365,rdt fail to run while doing the rdt test,SB365
+sb366,number of invalid results for the determine hiv rdt,SB366
+sb367,number of invalid results for the stat pack hiv rdt,SB367
+idxdis,index to household schedule,
+hdis1,wear glasses or contact lenses,HDIS1
+hdis2,have difficulty seeing,HDIS2
+hdis3,wear a hearing aid,HDIS3
+hdis4,have difficulty hearing,HDIS4
+hdis5,have difficulty communicating using usual language,HDIS5
+hdis6,have difficulty remembering or concentrating,HDIS6
+hdis7,have difficulty walking or climbing steps,HDIS7
+hdis8,have difficulty washing all over or dressing,HDIS8
+hdis9,highest degree of difficulty for any of the impairments,HDIS9
