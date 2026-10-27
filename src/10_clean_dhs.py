@@ -2,7 +2,8 @@
 
 One row per living child under 5 with harmonised predictors and two outcomes:
   cough_fast  cough in last 2 weeks AND short, rapid breaths (main outcome)
-  ari         cough_fast AND problem in the chest (strict DHS ARI; sensitivity)
+  ari         short, rapid breaths AND problem in the chest, cough not required
+              (official DHS-7/8 ARI definition; sensitivity)
 
 Output: data/processed/dhs_children.parquet (row-level, git-ignored)
         outputs/cleaning_log_dhs.csv (record counts per step)
@@ -42,7 +43,7 @@ def build(year):
         "place": cat(k.hv241.map(DHS_PLACE), PLACE_LEVELS),
         "cough_known": k.h31.isin([0, 1, 2]).astype(int),
         "cough_fast": (k.h31.isin([1, 2]) & (k.h31b == 1)).astype(int),
-        "ari": (k.h31.isin([1, 2]) & (k.h31b == 1) & k.h31c.isin([1, 3])).astype(int),
+        "ari": ((k.h31b == 1) & k.h31c.isin([1, 3])).astype(int),
     })
     n = len(d)
     d = d[d.cough_known == 1]

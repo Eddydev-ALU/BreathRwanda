@@ -99,7 +99,7 @@ def main():
             "cough_fast": {**ms["cough_fast"], "role": "main", "definition":
                            "Child under 5, alive, mother reports cough in the last 2 weeks (h31 = 1 or 2) AND short, rapid breaths (h31b = 1)."},
             "ari": {**ms["ari"], "role": "sensitivity", "definition":
-                    "As above AND the problem was in the chest (h31c = 1 chest only or 3 both): the standard DHS ARI definition."},
+                    "Short, rapid breaths (h31b = 1) with a problem in the chest (h31c = 1 chest only or 3 both); cough not required. The official DHS-7/8 ARI definition; reproduces the published 1.8% (2025) and 1.7% (2019-20)."},
         },
         "oddsRatios": {o: [{"feature": f.feature, "label": LABELS[f.feature], "level": f.level, "or": r(f.odds_ratio, 3),
                             "lo": r(f.or_lo, 3), "hi": r(f.or_hi, 3), "p": r(f.p_value, 4)}
