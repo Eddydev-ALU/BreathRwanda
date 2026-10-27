@@ -1,0 +1,25 @@
+# --- Survey microdata: never commit (NISR / DHS terms) ---
+data/raw/
+data/processed/
+*.dta
+*.DTA
+*.sav
+*.zip
+*.parquet
+*.feather
+*.sas7bdat
+
+# Row-level extracts anywhere
+**/rowlevel_*
+**/*_rowlevel.*
+
+# Python / env
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+data/reference/districts_rbc_full.geojson
