@@ -23,3 +23,16 @@ __pycache__/
 .DS_Store
 .vscode/
 data/reference/districts_rbc_full.geojson
+
+# Model artifacts / binary data caches (never commit)
+*.pkl
+*.pickle
+*.joblib
+*.rds
+*.RData
+*.xlsx
+*.xls
+*.h5
+*.hdf5
+*.npy
+*.npz
