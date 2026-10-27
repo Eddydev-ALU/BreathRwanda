@@ -1,0 +1,158 @@
+variable,label,value_label_set
+hhid,Household Identification,
+clust,Clust,
+province,Province,province
+district,District,d
+ur,Residence area,UR
+pid,Person ID Number(EICV7),
+s1q1,Sex,S1Q1
+s1q2,Relation with the head of household,S1Q2
+s1q3y,Age (Years),S1Q3Y
+s1q3m,Age (Months),
+s1q4,Marital status,S1Q4
+s1q5a,country of birth,S1Q5A
+s1q5b,District of birth,S1Q5B
+s1q6,Nationality,S1Q6
+s1q7a,Absent during past 12 months,S1Q7A
+s1q7,how many months has been away from this household during past 12 months,
+s1q8,primary  reason of absence from household in the last 12 months,S1Q8
+s1q9,Resident of another household in the last 12 months,S1Q9
+s1q10,Will be resident in the household during the period of enumeration,S1Q10
+s1q11,primary n reason for absence during enumeration,S1Q11
+s1q12,Father still alive,S1Q12
+s1q13,Mother still alive,S1Q13
+s1q14,Household membership,S1Q14
+s2q2,Always lived in the district,S2Q2
+s2q3y,Duration since last move (years),S2Q3Y
+s2q3m,Duration since last move (months),
+s2q4a,country  lived prior to current place,S2Q4A
+s2q4b,District lived prior to current place,S2Q4B
+s2q5,Kind of place lived prior to current place,S2Q5
+s2q6,Duration lived in the previuos location years,S2Q6
+s2q7,Primary reason for moving,S2Q7
+s2q8,Move alone or with other members of your household,S2Q8
+s3q2,Is [name] currently covered by any health insurance?,S3Q2
+s3q3,Main health insurance carry,S3Q3
+s3q4,Suffer from an illness or injury over the last 4weeks,S3Q4
+s3q5,Medical consultation in the over last 4 weeks,S3Q5
+s3q5a,why not consult any Medical profession,S3Q5A
+s3q6,Main reason for medical consultation,S3Q6
+s3q7,Difficulty in seeing,S3Q7
+s3q8,Difficulty hearing,S3Q8
+s3q9,Difficulty in moving,S3Q9
+s3q10,Difficulty in remembering or concentrating,S3Q10
+s3q11,Difficulty communicating,S3Q11
+s3q12,Difficulty in self-care (such as: washing all over or dressing),S3Q12
+s4aq1,Ever been to school or organized learning,S4AQ1
+s4aq1a,Main reason of never attended school,S4AQ1A
+s4aq2,Highest class succesfully attended in school,S4AQ2
+s4aq2a,years of school  complete successfully at that level?,
+s4aq3,Highest diploma/certificate/ degree you have ever obtained,S4AQ3
+s4aq6a,Class attended in 2022/2023,class_attended
+s4aq6b,Class attended in 2023/2024,class_attended
+s4aq6c,Class attended in 2024/2025,S4AQ6C
+s4aq6d,Cause of repeat the 2023 class in 2024,S4AQ6D
+s4aq7,Attended school in the last 12 months,S4AQ7
+s4aq8,Highest level of education attended in last 12 months,S4AQ8
+s4aq8a,Highest class attended in last 12 months,S4AQ8A
+s4aq8b,Boarding School,S4AQ8B
+s4aq9,Age when studying in the Reported class,
+s4aq10,Reason for delaying start the school?,S4AQ10
+s4aq11,Type of school,s4aq11
+s4aq14a,Registration and school fees,S4AQ14A
+s4aq14b,Parent contributions,S4AQ14B
+s4aq14c,School uniforms,S4AQ14C
+s4aq14d,Books and school supplies,S4AQ14D
+s4aq14e,Transport to and from school,S4AQ14E
+s4aq14f,Room and board (or board only),S4AQ14F
+s4aq14g,Other schooling expenditures,S4AQ14G
+s4aq14h,Total education expenses (non-distributed option),S4AQ14H
+s4aq15,Responsible for payment of majority of school related expenditures,S4AQ15
+s4aq15a,school feeding,S4AQ15A
+s4aq16,Absence at school in last 7 days,S4AQ16
+s4aq17,School days not attend last week,
+s4aq18,Primary cause of not attending school,s4aq18
+s4aq19,Year of lefting school,
+s4aq20,Reason for leaving school,S4AQ20
+s4bq1,attended any vocational training,S4BQ1
+s4bq2,"Expense of this training including fees, expenses and accommodation",S4BQ2
+s4bq3,Have you attended a literacy course?,S4BQ3
+s4bq4,Able to read a simple note,S4BQ4
+s4bq5,Can read proposed a sentence,S4BQ5
+s4bq6,Able to write a simple note,S4BQ6
+s4bq7,Able to do a written calculation,S4BQ7
+s4bq8,Have a mobile telephone,S4BQ8
+s4bq9,Phone functionalities. Owned by ...,S4BQ9
+s4bq10,type of phone do you own?,S4BQ10
+s4bq11,reasons for not having a smartphone,S4BQ11
+s4bq12,Why does not have a mobile telephone,S4BQ12
+s4bq13a,Own a computer,S4BQ13A
+s4bq13b,Computer literacy,S4BQ13B
+s4bq13c,How often did use a computer in the last three months?,S4BQ13C
+s4bq14a,Copying or moving a file or a folder,S4BQ14A
+s4bq14b,Using copy and paste tools to duplicate or move information,S4BQ14B
+s4bq14c,Sending e-mails with attached files,S4BQ14C
+s4bq14d,Using basic arithmetic formula in a spreadsheet,S4BQ14D
+s4bq14e,Connecting and installing new devices,S4BQ14E
+s4bq14f,"Finding, downloading, installing and configuring software",S4BQ14F
+s4bq14g,Creating electronic presentations with presentation software,S4BQ14G
+s4bq14h,Transferring files between a computer and other devices,S4BQ14H
+s4bq14i,Writing a computer program using a specialized programming language,S4BQ14I
+s4bq15,Used of internet in the last 3 months,S4BQ15
+s4bq16,Reason for not using internet in the last three months?,S4BQ16
+s4bq17,How often did use the internet in the last three months?,S4BQ17
+s4bq18,Use of the internet in the last three months for finding information about goods,S4BQ18
+s4bq19,Use of internet in the last three months for reading or downloading online news/,S4BQ19
+s4bq20,Use of the internet in the last three months for obtaining information from webs,S4BQ20
+s4bq21,Use of the internet in the last three months for seeking health information,S4BQ21
+s4bq22,Use of internet on social media in the last 3 months,s4bq22
+s4bq23a,Use only USSD code  to access E-services or information,S4BQ23A
+s4bq23b,Use application based system  to access E-services or information,S4BQ23B
+s4bq23c,Use mobile financial services(MOMO/AIRTEL MONEY/MOCASH/PUSH AND PULL),S4BQ23C
+s4bq23d," Use any social media (whatsapp or facebook, or instagram or youtube or twitter",S4BQ23D
+s4bq23e,Access information through web browser,S4BQ23E
+s4bq23f,Access IREMBO services,S4BQ23F
+s4bq23g,Use any E-commerce plaforms,S4BQ23G
+s4bq23h,Access E-learning platforms,S4BQ23H
+s4bq25,Use the internet from  in the last 3 months,S4BQ25
+s4bq26,Type of device used in accessing social media in the last three months,S4BQ26
+s6aq2,Worked on own farm no payment,S6AQ2
+s6aq3,products obtained from this agricultural  activity for,S6AQ3
+s6aq4,Carry out any agricultural activity,S6AQ4
+s6aq5,Worked for salary or wages in non-farm sector,S6AQ5
+s6aq6,Run a non-farm business for cash or profit,S6AQ6
+s6aq7,Worked in a non-fam business,S6AQ7
+s6aq8,work as an unpaid trainee worker or as a volunteer worker in any economic activi,S6AQ8
+s6aq9,"any economic activity (job, business or agriculture) from which he/she was tempo",S6AQ9
+s6aq10,Main reason not working over the last 7 days,S6AQ10
+s6aq11,Receiving an income from his/her economic activity during absence?,S6AQ11
+s6aq12,to work for a period less than 3 months?,S6AQ12
+s6bq1,Hours usually work in the all economic activities over a week,
+s6bq2,Hours  actually work in all economic activities last 7 days,
+s6bq3, ISCO level 1,isco_level1
+s6bq4, ISIC level 1,isic_level1
+s6bq5,What is [NAME]?s institutional sector of the main economic activity?,S6BQ5
+s6bq6,perform this main economic activity overnight from 6pm to 6 am?,S6BQ6
+s6bq7,What is [NAME]?s status in economic activity,S6BQ7
+s6bq8,Nature of [names]s? economic activity contract?,S6BQ8
+s6bq9a,usually earn in this main job (Amount),
+s6bq9b,usually earn in this main job (Unit),S6BQ9B
+s6cq1,"Over the last 7 days, fetch water for the household?",S6CQ1
+s6cq2,Number of hours spend fetching water over the last 7 days,
+s6cq3,"Over the last 7 days,   forage for firewood for the household",S6CQ3
+s6cq4,How many hours    spend foraging for wood over the last 7 days,
+s6cq5,"Over the last 7 days, searching for  fodder or grazing for the household?s anima",S6CQ5
+s6cq6,How many hours spend  caring for or searching for fodder over the last 7 days?,
+s6cq7,"Over the last 7 days, did go to the market for the household for shopping?",S6CQ7
+s6cq8,How many hours did spend going to market for shopping the last 7 days (to and fr,
+s6cq9,"Over the last 7 days, did cook for the household?",S6CQ9
+s6cq10,How many hours did spend cooking over the last 7 days?,
+s6cq11,"Over the last 7 days, did spend any time on other household chores such as laund",S6CQ11
+s6cq12,How many hours did spend on other household chores over the last 7 days?,
+strata_id,strata_id,
+weight,Household Weight,
+epov_jan,Extreme Poverty,epov_jan
+pov_jan,Poverty Rate,pov_jan
+poverty,Welfare Categories,poverty
+quintile,Quintiles of real consumption per ae,quintile
+ed_foodgov,Gvt Contribution to School feeding,

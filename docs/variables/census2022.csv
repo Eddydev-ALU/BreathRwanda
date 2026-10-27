@@ -1,0 +1,251 @@
+variable,label,value_label_set
+ml01,Province,PROV
+ml02,District,dist
+ml03,Sector,L03
+ml07,Area of residence,ML07
+hhid,Househod_ID,
+p01,Person ID,
+p02,Relationship (Private HH only),P02
+p03,Sex,P03
+p04,Age,
+p06,marital status,P06
+p07a,Residence Status,P07A
+p07b,Residence status of resident member,P07B
+p08c,Age at first marriage,MSS
+p09a,Place of birth/country,P09A
+p09b,Place of birh/district,P09B
+p09c,Country of birth: country code,P09CB
+p10a,Duration of Residence,P10A
+p10b,Place of previous residence,P10B
+p11a,District of previous residence,P11A
+p11b,Country of previous residence: country code,P11BB
+p12b,Nationality: country code,P12BB
+p13,Religious affiliation,P13
+p14,Medical insurance,P14
+p15b,Level of difficulty of seeing,P15B
+p16b,Level of difficulty of hearing,P16B
+p17b,Level of difficulty of walking,P17B
+p18b,Level of difficulty of communicating,P18B
+p19b,Level of difficulty of remembering or concentrating,P19B
+p20b,Level of difficulty with self-care such as washing all over or dressing,P20B
+p21a,Has a problem of short stature,P21B
+p22a,Has a disability with albinism,P22B
+p23a,Biological mother alive,P23A
+p23b,Biological mother live in this household,P23B
+p23bb,Select the name of the biological mother,
+p23c,Biological father alive,P23C
+p23d,Biological father live in this household,P23D
+p23dd,Select the name of the biological father,
+p24,Registered in the Civil Registration books,P24
+p29,Ever or currently attending  school,P29
+p30a,Highest level of education,P30A
+p30b,Years of school complete successfully at that level,P30B
+p31,Highest certificate/degree,P31
+p32,Can read and write with understanding in the following languages,p32
+p33,Ever attended or currently attending Informal adult litteracy Program,P33
+p34,Internet use,P34
+p35,Access to internet,P35
+p36c,type of mobile phone,P36C
+p46,Institutional sector,P46
+p47a, ISIC High level,econ_deriv8
+p48a,Main occupations(ISCO high level),econ_deriv10
+p49,status in employment,P49
+p50a,given birth,P50A
+p50b_boys,Number of live births ever had / boys,P50B_BOYS
+p50b_girls,Number of live births ever had / girls,P50B_GIRLS
+p50c_boys,Among those children how many are still alive / Boys,P50C_BOYS
+p50c_girls,Among those children how many are still alive / Girls,P50C_GIRLS
+p51a,During the last 12 months (From 15/08/2020-15/08/2021) [NAME] Have you ever give,P51A
+p51b_boys,Number of live births  had during the last 12 months (From 15/08/2020-15/08/2021,
+p51b_girls,Number of live births  had during the last 12 months (From 15/08/2020-15/08/2021,
+p51c_boys,"Among those children s,how many are still alive / Boys",
+p51c_girls,"Among those children s,how many are still alive / Girls",
+h01,Type of habitant,H01
+h02,Type of Building,H02
+h03,Tenure of then housing unit,H03
+h04,Is this Household has its own housing unit  in this village or elsewhere,H04
+h05,main material used for the roof,H05
+h06,main material used for the walls,H06
+h07,main material used for the floor,H07
+h08,Number of rooms,
+h09,number of rooms are used for sleeping,
+h10,Are Sleeping rooms  for Boys separated from those for Girls,H10
+h11,Main source of water used for general purposes,H11
+h12,Main source of drinking water,H12
+h13,Toilet Facility,H13
+h14,Electricity (Grid line) connectivity,H14
+h15,Main source of energy for lighting,H15
+h16,Main source of energy for cooking,H16
+h17,Secondary source of energy for cooking,H17
+h18,Does your HH use a cooking energy saving stove?,H18
+h19,Main mode of household waste disposal used,H19
+h20,Main mode of sewage,H20
+h21_01,Functional assets own by HH: Radio,H21
+h21_02,Functional assets own by HH: Television,H21
+h21_03,Functional assets own by HH: Refrigerator/Freezer for HH use only,H21
+h21_04,Functional assets own by HH: Gas/Electrical Cooker,H21
+h21_05,Functional assets own by HH: Washing machine,H21
+h21_06,Functional assets own by HH: Microwave,H21
+h21_07,Functional assets own by HH: Mattress,H21
+h21_08,Functional assets own by HH: Bench/Chair,H21
+h21_09,Functional assets own by HH: Bed,H21
+h21_10,Functional assets own by HH: Tables,H21
+h21_11,Functional assets own by HH: Sofa,H21
+h21_12,Functional assets own by HH: Computers,H21
+h21_13,Functional assets own by HH: Vehicles for household use only,H21
+h21_14,Functional assets own by HH: Motorcycles for household use only,H21
+h21_15,Functional assets own by HH: Bicycles for household use only,H21
+h21_16,Functional assets own by HH: Electrical/Charcoal Iron,H21
+h22,HH own livestock or beehive,H22
+h22a_01,Local breed cows reared,H22A
+h22a_02,Exotic breed cows reared,H22A
+h22a_03,Cross breed cows reared,H22A
+h22a_04,Local goats reared,H22A
+h22a_05,Exotic goats reared,H22A
+h22a_06,Cross goats reared,H22A
+h22a_07,Local sheep reared,H22A
+h22a_08,Exotic sheep reared,H22A
+h22a_09,Local pigs reared,H22A
+h22a_10,Exotic pig reared,H22A
+h22a_11,Cross pig reared,H22A
+h22a_12,Rabbits reared,H22A
+h22a_13,Broiler chicken reared,H22A
+h22a_14,Layers chicken reared,H22A
+h22a_15,Dual purpose chicken reared,H22A
+h22a_16,Local chicken reared,H22A
+h22a_17,Duck reared,H22A
+h22a_18,Turkey reared,H22A
+h22a_19,Other poultry reared,H22A
+h22a_20,Camel reared,H22A
+h22a_21,Bees hive reared,H22A
+h22a_22,Dogs reared,H22A
+h22a_23,Other reared,H22A
+h22b1_01,Number of Local breed cows reared,
+h22b1_02,Number of Exotic breed cows reared,
+h22b1_03,Number of Cross breed cows reared,
+h22b1_04,Number of Local goats reared,
+h22b1_05,Number of Exotic goats reared,
+h22b1_06,Number of Cross goats reared,
+h22b1_07,Number of Local sheep reared,
+h22b1_08,Number of Exotic sheep reared,
+h22b1_09,Number of Local pigs reared,
+h22b1_10,Number of Exotic pig reared,
+h22b1_11,Number of Cross pig reared,
+h22b1_12,Number of Rabbits reared,
+h22b1_13,Number of Broiler chicken reared,
+h22b1_14,Number of Layers chicken reared,
+h22b1_15,Number of Dual purpose chicken reared,
+h22b1_16,Number of Local chicken reared,
+h22b1_17,Number of Duck reared,
+h22b1_18,Number of Turkey reared,
+h22b1_19,Number of Other poultry reared,
+h22b1_20,Number of Camel reared,
+h22b1_21,Number of Bees hive reared,
+h22b1_22,Number of Dogs reared,
+h22b1_23,Number of Other reared,
+h22b2_01,Location(District) where is Local breed cows reared,H22B2
+h22b2_02,Location(District) where is Exotic breed cows reared,H22B2
+h22b2_03,Location(District) where is Cross breed cows reared,H22B2
+h22b2_04,Location(District) where is Local goats reared,H22B2
+h22b2_05,Location(District) where is Exotic goats reared,H22B2
+h22b2_06,Location(District) where is Cross goats reared,H22B2
+h22b2_07,Location(District) where is Local sheep reared,H22B2
+h22b2_08,Location(District) where is Exotic sheep reared,H22B2
+h22b2_09,Location(District) where is Local pigs reared,H22B2
+h22b2_10,Location(District) where is Exotic pig reared,H22B2
+h22b2_11,Location(District) where is Cross pig reared,H22B2
+h22b2_12,Location(District) where is Rabbits reared,H22B2
+h22b2_13,Location(District) where is Broiler chicken reared,H22B2
+h22b2_14,Location(District) where is Layers chicken reared,H22B2
+h22b2_15,Location(District) where is Dual purpose chicken reared,H22B2
+h22b2_16,Location(District) where is Local chicken reared,H22B2
+h22b2_17,Location(District) where is Duck reared,H22B2
+h22b2_18,Location(District) where is Turkey reared,H22B2
+h22b2_19,Location(District) where is Other poultry reared,H22B2
+h22b2_20,Location(District) where is Camel reared,H22B2
+h22b2_21,Location(District) where is Bees hive reared,H22B2
+h22b2_22,Location(District) where is Dogs reared,H22B2
+h22b2_23,Location(District) where is Other reared,H22B2
+h23,Household grew crops in last 12 months,H23
+h23a,Place where the agricultural activities is done,H23A
+h24_01,Maize grown,H24
+h24_02,Rice grown,H24
+h24_03,Sorghum grown,H24
+h24_04,Wheat grown,H24
+h24_05,Bean grown,H24
+h24_06,Pea grown,H24
+h24_07,Groundnut grown,H24
+h24_08,Soybean grown,H24
+h24_09,Cassava grown,H24
+h24_10,Sweet potato grown,H24
+h24_11,Irish potato grown,H24
+h24_12,Yams& Taro grown,H24
+h24_13,Cooking Banana grown,H24
+h24_14,Dessert Banana grown,H24
+h24_15,Banana for Beer grown,H24
+h24_16,Vegetables grown,H24
+h24_17,Tea grown,H24
+h24_18,Coffee grown,H24
+h24_19,Sugarcane grown,H24
+h24_20,Pyrethrum grown,H24
+h24_21,Flowers grown,H24
+h24_22,Other crop type grown,H24
+h25_01,Amaranths grown,H25
+h25_02,Tomato grown,H25
+h25_03,Cabbage grown,H25
+h25_04,Onion grown,H25
+h25_05,Carrot grown,H25
+h25_06,Eggplant grown,H25
+h25_07,Black eggplant grown,H25
+h25_08,Sweet pepper grown,H25
+h25_09,Pepper grown,H25
+h25_10,Cauliflower grown,H25
+h25_11,French beans grown,H25
+h25_12,Beetroot grown,H25
+h25_13,Garlic grown,H25
+h25_14,Lettuce grown,H25
+h25_15,Broccoli grown,H25
+h25_16,Spinach grown,H25
+h25_17,Celery grown,H25
+h25_18,Leeks grown,H25
+h25_19,Pumpkin grown,H25
+h25_20,Cocumber grown,H25
+h25_21,Mushroom grown,H25
+h25_22,Chayote grown,H25
+h25_23,Cassava Leaves grown,H25
+h25_24,Other vegetables grown,H25
+h26,Number of tea trees grown,
+h27,Number of coffee trees grown,
+h28a,Any fruit tree,H28A
+h28b1_01,Grow Avocado,H28B1
+h28b1_02,Grow Orange,H28B1
+h28b1_03,Grow Papaya,H28B1
+h28b1_04,Grow Guava,H28B1
+h28b1_05,Grow Lemon,H28B1
+h28b1_06,Grow Mango,H28B1
+h28b1_07,Grow Mandarin,H28B1
+h28b1_08,Grow Jack fruits,H28B1
+h28b1_09,Grow Beefheart,H28B1
+h28b1_10,Grow Passion fruits,H28B1
+h28b1_11,Grow Pineapple,H28B1
+h28b1_12,Grow Tree tomato,H28B1
+h28b1_13,Grow Watermelon,H28B1
+h28b1_14,Grow Strawberry,H28B1
+h28b1_15,Grow Other fruit,H28B1
+h28b2_01,Number of Avocado,
+h28b2_02,Number of Orange,
+h28b2_03,Number of Papaya,
+h28b2_04,Number of Guava,
+h28b2_05,Number of Lemon,
+h28b2_06,Number of Mango,
+h28b2_07,Number of Mandarin,
+h28b2_08,Number of Jack fruits,
+h28b2_09,Number of Beefheart,
+h28b2_10,Number of Passion fruits,
+h28b2_11,Number of Pineapple,
+h28b2_12,Number of Tree tomato,
+h28b2_13,Number of Watermelon,
+h28b2_14,Number of Strawberry,
+h28b2_15,Number of Other fruit,
+HH_weight,household weight,
+Pop_weight,population weight,

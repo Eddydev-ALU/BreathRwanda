@@ -1,0 +1,31 @@
+district_code,district_name,province_code,province_name
+11,Nyarugenge,1,City of Kigali
+12,Gasabo,1,City of Kigali
+13,Kicukiro,1,City of Kigali
+21,Nyanza,2,Southern
+22,Gisagara,2,Southern
+23,Nyaruguru,2,Southern
+24,Huye,2,Southern
+25,Nyamagabe,2,Southern
+26,Ruhango,2,Southern
+27,Muhanga,2,Southern
+28,Kamonyi,2,Southern
+31,Karongi,3,Western
+32,Rutsiro,3,Western
+33,Rubavu,3,Western
+34,Nyabihu,3,Western
+35,Ngororero,3,Western
+36,Rusizi,3,Western
+37,Nyamasheke,3,Western
+41,Rulindo,4,Northern
+42,Gakenke,4,Northern
+43,Musanze,4,Northern
+44,Burera,4,Northern
+45,Gicumbi,4,Northern
+51,Rwamagana,5,Eastern
+52,Nyagatare,5,Eastern
+53,Gatsibo,5,Eastern
+54,Kayonza,5,Eastern
+55,Kirehe,5,Eastern
+56,Ngoma,5,Eastern
+57,Bugesera,5,Eastern

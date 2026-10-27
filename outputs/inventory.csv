@@ -1,0 +1,12 @@
+key,file,format,size_mb,rows,cols,id_vars_present
+eicv7_household,CS_S01_S5_S7_Household.dta,Stata .dta,3.3,15054,112,"hhid, clust, province, district"
+eicv7_person,CS_S0_S1_S2_S3_S4_S6A_S6B_S6C_Person.dta,Stata .dta,28.7,62110,157,"hhid, clust, province, district, pid"
+eicv7_poverty,CS_EICV7_poverty_file.dta,Stata .dta,2.4,15054,32,"hhid, clust, province, district"
+eicv7_services,CS_S5F_access_to_services.dta,Stata .dta,17.6,225810,22,"hhid, clust, province, district"
+dhs2025_kr,RWKR91FL.dta,Stata .dta,10.6,7214,1295,"caseid, v001, v002, v003"
+dhs2025_hr,RWHR91FL.dta,Stata .dta,41.3,14427,2452,"hhid, hv001, hv002"
+dhs2025_pr,RWPR91FL.dta,Stata .dta,30.6,57046,426,"hhid, hvidx, hv001, hv002"
+dhs2019_kr,RWKR81FL.DTA,Stata .dta,11.5,8092,1216,"caseid, v001, v002, v003"
+dhs2019_hr,RWHR81FL.DTA,Stata .dta,56.6,12949,3485,"hhid, hv001, hv002"
+dhs2019_pr,RWPR81FL.DTA,Stata .dta,43.8,55920,581,"hhid, hvidx, hv001, hv002"
+census2022,PHC5_Public_microdata.dta,Stata .dta,409.9,1313015,250,hhid

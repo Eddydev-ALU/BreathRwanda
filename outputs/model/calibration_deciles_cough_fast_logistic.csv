@@ -1,0 +1,11 @@
+decile,n,pred_pct,obs_pct,model,outcome
+1,1470,3.68,3.74,Logistic regression,cough_fast
+2,1469,5.31,5.22,Logistic regression,cough_fast
+3,1469,6.15,6.67,Logistic regression,cough_fast
+4,1469,6.85,7.32,Logistic regression,cough_fast
+5,1469,7.53,8.19,Logistic regression,cough_fast
+6,1469,8.2,7.65,Logistic regression,cough_fast
+7,1469,8.93,10.48,Logistic regression,cough_fast
+8,1469,9.82,8.08,Logistic regression,cough_fast
+9,1469,11.0,10.99,Logistic regression,cough_fast
+10,1470,13.41,12.36,Logistic regression,cough_fast

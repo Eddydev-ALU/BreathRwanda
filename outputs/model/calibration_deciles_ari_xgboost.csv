@@ -1,0 +1,11 @@
+decile,n,pred_pct,obs_pct,model,outcome
+1,1470,0.54,0.9,XGBoost (depth 3),ari
+2,1469,0.77,1.16,XGBoost (depth 3),ari
+3,1469,0.95,1.36,XGBoost (depth 3),ari
+4,1469,1.12,1.46,XGBoost (depth 3),ari
+5,1469,1.28,0.98,XGBoost (depth 3),ari
+6,1469,1.47,2.59,XGBoost (depth 3),ari
+7,1469,1.66,1.27,XGBoost (depth 3),ari
+8,1469,1.91,1.42,XGBoost (depth 3),ari
+9,1469,2.29,1.48,XGBoost (depth 3),ari
+10,1470,3.36,2.73,XGBoost (depth 3),ari

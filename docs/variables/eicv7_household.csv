@@ -1,0 +1,113 @@
+variable,label,value_label_set
+hhid,Household Identification,
+clust,Clust,
+province,Province,province
+district,District,d
+ur,Residence area,UR
+s5aq1,Type of habitat,S5AQ1
+s5aq2,Type of dwelling,S5AQ2
+s5aq3,Number of  rooms does your household have for sleeping,
+s5aq4y,Duration household inhabited dwelling (years),
+s5aq4m,Duration household inhabited dwelling (months),
+s5aq5,Household lived in other dwellings before occupying your current house,S5AQ5
+s5aq6,Main reason for moving to current dwelling,S5AQ6
+s5aq7,Owner of the dwelling,S5AQ7
+s5aq8,Current occupancy status,S5AQ8
+s5bq1,The current value of your dwelling if you were to sell it,
+s5bq2a,Estimated rent for dwelling,
+s5bq2b,Time period,S5BQ2B
+s5bq3a,Actual amount of rent paid in cash,
+s5bq3b,Time period,S5BQ3B
+s5bq4,Household provide service/payments in kind,S5BQ4
+s5bq5a,Amount of services/payment in kind,
+s5bq5b,Time period,S5BQ5B
+s5bq6,Do you own a residential house in this village or elsewhere?,S5BQ6
+s5bq7,In which year did you acquire that house?,
+s5bq8,What was the value of that house when you acquired it?,
+s5bq9,How did you acquire that house?,S5BQ9
+s5cq1,Main source of water used for your household?,S5CQ1
+s5cq2a,Distance in meters between your dwelling and this source?,
+s5cq2b,"Time in minutes it take to go there, to get water and come back?",
+s5cq3,Main Source of drinking water for members of your household?,S5CQ3
+s5cq4b,"Time in minutes it take to go there, to get water and come back",
+s5cq5,Is this source the nearest to you dwelling?,S5CQ5
+s5cq6a,Unused nearest drinking water source to your dwelling?,S5CQ6A
+s5cq6b,Distance in meters between your dwelling and unused nearest drinking water sourc,
+s5cq7,Main reason preventing your HH to use the nearest drinking water source?,S5CQ7
+s5cq8,In the last 4 weeks has there been anytime when your hh deed not have sufficient,S5CQ8
+s5cq9a,Amount of last water bill from WASAC or other distributors (month),
+s5cq9b,Amount of last water bill from WASAC or other distributors-amount,
+s5cq10,Did you buy water from a private vendor/neighbour during the last 7 days,S5CQ10
+s5cq11,Amount paid to private water vendor last 7 days,
+s5cq12,Amount contribute to maintain the water source during the last month,
+s5cq13,Household manage the rainwater,S5CQ13
+s5cq14,Is this HH connected to the grid (electricity from the grid)?,S5CQ14
+s5cq15,Main Reason your household is not connected to the electricity grid,S5CQ15
+s5cq16,Main source energy for home lighting,S5CQ16
+s5cq17,Main Source of electricity that you mostly used in your household,S5CQ17
+s5cq18,Main reason preventing your household to use electricity for lighting,S5CQ18
+s5cq19,Appliances get damaged/electrical system (voltage surges),S5CQ19
+s5cq20,Amount your household pay for electricity the last 4 weeks?,
+s5cq20a,Does your household have an internet connection,S5CQ20A
+s5cq20b,What is the main kind of internet connection used by household members?,S5CQ20B
+s5cq20c,What is the main barrier/reason for not accessing internet at home?,S5CQ20C
+s5cq21,Type of your primary cook stove,S5CQ21
+s5cq22a,Three main sources of cooking fuel you used on this cook stove Most used(Primary,S5CQ22A
+s5cq22b,Three main sources of cooking fuel you used on this cook stove Second most used,S5CQ22B
+s5cq22c,Three main sources of cooking fuel you used on this cook stove Most used(third),S5CQ22C
+s5cq23,Where did you normally cook with the cook stove?,S5CQ23
+s5cq24,How does your household dispose of its rubbish/garbage?,S5CQ24
+s5cq25,What type of toilet does your household use?,S5CQ25
+s5cq26,Is the toilet facility shared with another household?,S5CQ26
+s5cq27,"Number of households in total use this toilet facility, including your own house",S5CQ27
+s5cq28,Has your (pit latrine or septic tank) ever been emptied?,S5CQ28
+s5cq29,who removed the content of toilet last time it was empted,S5CQ29
+s5cq30,Where were the contents emptied to?,S5CQ30
+s5cq31,faced any problems that resulted from environmental destruction in the previous,S5CQ31
+s5cq32,main disaster you have experienced with your dwelling,S5CQ32
+s5cq33,Have you received any environmental information in the last 12 months,S5CQ33
+s5cq34,main source of information on environmental issues,S5CQ34
+s5dq1,Main construction material of exterior wall,S5DQ1
+s5dq2,Main roofing material for dwelling,S5DQ2
+s5dq3,Main floor material for dwelling,S5DQ3
+s5dq4,Area of the floor for dwelling-outside,
+s5eq1,Unsual negative situation  affected household,S5EQ1
+s5eq2a,Main problems affecting your household during the last 12 months(1st  severe sho,S5EQ2A
+s5eq2b,Main problems affecting your household during the last 12 months(2nd  severe sho,S5EQ2B
+s5eq2c,Main problems affecting your household during the last 12 months(3rd  severe sho,S5EQ2C
+s5eq2aa_m,Main problems affecting your household during the last 12 months(1st  severe sho,
+s5eq2ab_m,Main problems affecting your household during the last 12 months(2nd  severe sho,
+s5eq2ac_m,Main problems affecting your household during the last 12 months(3rd  severe sho,
+s5eq2aa_y,Main problems affecting your household during the last 12 months(1st  severe sho,
+s5eq2ab_y,Main problems affecting your household during the last 12 months(2nd  severe sho,
+s5eq2ac_y,Main problems affecting your household during the last 12 months(3rd  severe sho,
+s5eq3a,What did the household do to compensate for the consequences of the chock in the,S5EQ3A
+s5eq3b,What did the household do to compensate for the consequences of the chock in the,S5EQ3B
+s5eq3c,What did the household do to compensate for the consequences of the chock in the,S5EQ3C
+s5eq4a,Number of months did it take your HH to recover from the recent shock and get ba,S5EQ4A
+s5eq4b,Number of months did it take your HH to recover from the recent shock and get ba,S5EQ4B
+s5eq4c,Number of months did it take your HH to recover from the recent shock and get ba,S5EQ4C
+s7aq4,"Did any member of your household own and/or raise any livestock, herds, other fa",S7AQ4
+s7aq4a,How many of the following livestock or poultry does the household own - Cattle,
+s7aq4b,How many of the following livestock or poultry does the household own - Goats,
+s7aq4c,How many of the following livestock or poultry does the household own - Sheep,
+s7aq4d,How many of the following livestock or poultry does the household own - Pigs,
+s7aq4e,How many of the following livestock or poultry does the household own - Poultry,
+s7aq4f,How many of the following livestock or poultry does the household own - Other (s,
+s7a2q1,Have you ever received a cow from the Governments ?one cow per poor family polic,S7A2Q1
+s7a2q2,In what year did you receive this animal?,
+s7a2q3,Do you still keep this animal?,S7A2Q3
+s7a2q4,Household ever receiced animal from NGO or other social protection scheme,S7A2Q4
+s7a2q5a,Kind of animal 1st,
+s7a2q6a,Has the number of animals changed (Cow poor family),S7A2Q6A
+s7a2q6b,Has the number of animals changed (1st animal from NGO),S7A2Q6B
+s7a2q6c,Has the number of animals changed (2nd animal from NGO),S7A2Q6C
+s7a2q7,Household uses a maintained pasture,S7A2Q7
+quintile,Quintiles of real consumption per ae,quintile
+s5cq4a,Distance in meters between your dwelling,
+strata_id,strata_id,
+weight,Household Weight,
+pop_wt,Population Weight,
+epov_jan,Extreme Poverty,epov_jan
+pov_jan,Poverty Rate,pov_jan
+poverty,Welfare Categories,poverty

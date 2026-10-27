@@ -1,0 +1,11 @@
+decile,n,pred_pct,obs_pct,model,outcome
+1,1470,0.59,0.82,Logistic regression,ari
+2,1469,0.82,0.97,Logistic regression,ari
+3,1469,1.01,1.48,Logistic regression,ari
+4,1469,1.2,1.15,Logistic regression,ari
+5,1469,1.39,1.98,Logistic regression,ari
+6,1469,1.58,1.99,Logistic regression,ari
+7,1469,1.76,1.79,Logistic regression,ari
+8,1469,1.98,1.31,Logistic regression,ari
+9,1469,2.27,2.24,Logistic regression,ari
+10,1470,2.93,1.74,Logistic regression,ari

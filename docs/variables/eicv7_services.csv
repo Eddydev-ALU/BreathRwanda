@@ -1,0 +1,23 @@
+variable,label,value_label_set
+hhid,Household Identification,
+clust,Clust,
+province,Province,province
+district,District,d
+ur,Residence area,UR
+s5fq0,Id Basic service,S5FQ0
+s5fq0d,Basic service description,
+s5fq1,Frequency of use of service,S5FQ1
+s5fq2,Main reason of litle or not used,S5FQ2
+s5fq3a,Time to arrive to the service (hours),
+s5fq3b,Time to arrive to the service (minutes),
+s5fq4,Distance from here to the nearest,
+s5fq5,Mode of transport to access service,S5FQ5
+s5fq6,Service quality satisfaction,S5FQ6
+s5fq7,Service quality in last 12 months,S5FQ7
+s5fq8,Improved result  of  VUP PW activities,S5FQ8
+strata_id,strata_id,
+weight,Household Weight,
+quintile,Quintiles of real consumption per ae,lquintile
+pov_jan,Total Poverty Headcount Ratio,pov_jan
+poverty,Welfare Categories,poverty
+epov_jan,Extreme Poverty Headcount Ratio,epov_jan
