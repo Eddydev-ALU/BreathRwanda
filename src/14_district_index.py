@@ -5,15 +5,19 @@ Each bootstrap round:
   1. resample DHS clusters within strata and refit the logistic model (model uncertainty);
   2. resample EICV7 clusters within strata (sampling uncertainty of district shares);
   3. recompute every district quantity and the priority rank.
-Census counts (10% sample, ~30-90k persons per district) are treated as fixed.
+Census counts and Census shares (10% sample, ~30-90k persons per district) are taken from
+step 03 with their own design-based intervals.
 
 Quantities per district d (EICV7 child- or household-weighted unless noted):
   children_u5 (C_d, Census), households (Census)
-  exposure_share        share of children <5 in households with polluting primary fuel
-  indoor_smoke_share    ... with polluting fuel AND cooking inside the house
+  exposure_share        Census: share of children <5 in households with polluting primary fuel.
+                        Census rather than EICV7 because EICV7 hits 100% in 11 districts (no
+                        interval possible) and may not sample refugee camps (Mahama, Kirehe).
+  eicv7_exposure_share  the same share from EICV7, kept for comparison / low-confidence flag
+  indoor_smoke_share    EICV7: polluting fuel AND cooking inside the house (Census has no cooking place)
   risk                  mean predicted probability of cough with fast breathing (R_d)
   risk_exposed          mean predicted risk among children in polluting-fuel households
-  polluting_hh          share of households with polluting fuel x Census households (H_d)
+  polluting_hh          Census households with polluting main cooking fuel (H_d)
   children_per_hh       children <5 per polluting-fuel household
   priority_score        children_per_hh x risk_exposed (= cases averted per stove / (e x u))
   model_fuel_effect     model-based drop in risk if polluting -> clean fuel (survey estimate)
@@ -59,7 +63,7 @@ def district_stats(kids, hh, p, p_clean, wk, wh):
     h["wpol"], h["wu5pol"], h["wind"], h["wu5ind"] = h.w * h.pol, h.w * h.u5 * h.pol, h.w * h.ind, h.w * h.u5 * h.ind
     gh = h.groupby("d")[["w", "wpol", "wu5pol", "wind", "wu5ind"]].sum()
     out = pd.DataFrame({
-        "exposure_share": g.wpol / g.w,
+        "eicv7_exposure_share": g.wpol / g.w,
         "indoor_smoke_share": g.wind / g.w,
         "risk": g.wp / g.w,
         "risk_exposed": g.wp_pol / g.wpol,
@@ -82,8 +86,8 @@ def main():
     rng = np.random.default_rng(SEED)
     dhs = prepare(pd.read_parquet(PROCESSED / "dhs_children.parquet")).reset_index(drop=True)
     kids = prepare(pd.read_parquet(PROCESSED / "eicv7_children.parquet")).reset_index(drop=True)
+    # All households stay in the denominators; the 96 with no cooking/other fuel count as not polluting.
     hh = pd.read_parquet(PROCESSED / "eicv7_households.parquet")
-    hh = hh[hh.fuel.notna()].reset_index(drop=True)   # 96 households with no cooking/other fuel
     census = pd.read_csv(OUTPUTS / "census" / "district_population.csv").set_index("district")
     lookup = pd.read_csv(REFERENCE / "district_lookup.csv").set_index("district_code")
 
@@ -128,21 +132,24 @@ def main():
 
     q = draws.groupby("d").quantile([0.05, 0.95]).unstack()
     t = point.copy()
-    for c in ["exposure_share", "indoor_smoke_share", "risk", "risk_exposed", "priority_score", "model_fuel_effect",
+    for c in ["eicv7_exposure_share", "indoor_smoke_share", "risk", "risk_exposed", "priority_score", "model_fuel_effect",
               "priority_score_indoor"]:
         t[f"{c}_lo"], t[f"{c}_hi"] = q[(c, 0.05)], q[(c, 0.95)]
     t["priority_rank"] = t.priority_score.rank(ascending=False).astype(int)
     t["priority_rank_lo"], t["priority_rank_hi"] = q[("priority_rank", 0.05)], q[("priority_rank", 0.95)]
     t["risk_rank"] = t.risk.rank(ascending=False).astype(int)
 
-    t = t.join(census[["children_u5", "households", "population"]])
+    t = t.join(census[["children_u5", "households", "population", "pct_u5_polluting", "pct_u5_polluting_lo",
+                       "pct_u5_polluting_hi", "pct_hh_polluting"]])
+    t["exposure_share"] = t.pct_u5_polluting / 100
+    t["exposure_share_lo"], t["exposure_share_hi"] = t.pct_u5_polluting_lo / 100, t.pct_u5_polluting_hi / 100
     t = t.join(lookup[["district_name", "province_code", "province_name"]])
     t["children_exposed"] = t.children_u5 * t.exposure_share
     t["children_indoor_smoke"] = t.children_u5 * t.indoor_smoke_share
     t["children_with_symptoms"] = t.children_u5 * t.risk
     t["children_with_symptoms_lo"] = t.children_u5 * t.risk_lo
     t["children_with_symptoms_hi"] = t.children_u5 * t.risk_hi
-    t["polluting_hh"] = t.households * t.hh_polluting_share
+    t["polluting_hh"] = t.households * t.pct_hh_polluting / 100
     t["indoor_polluting_hh"] = t.households * t.hh_indoor_share
     rmin, rmax = t.risk.min(), t.risk.max()
     t["risk_index"] = 100 * (t.risk - rmin) / (rmax - rmin)
@@ -152,11 +159,21 @@ def main():
     t["priority_tier"] = pd.cut(t.priority_rank, [0, 10, 20, 30], labels=["High", "Medium", "Lower"])
     t["rank_uncertain"] = (t.priority_rank_hi - t.priority_rank_lo) > 10
 
-    samp = kids.groupby("district").agg(sample_children=("pid", "size"), sample_clusters=("cluster", "nunique"))
+    samp = kids.groupby("district").agg(sample_children=("pid", "size"))
     samp["sample_households"] = hh.groupby("district").size()
+    samp["sample_clusters"] = hh.groupby("district").cluster.nunique()
     samp["sample_indoor_households"] = hh[(hh.polluting == 1) & (hh.cooks_in_house == 1)].groupby("district").size()
     samp["sample_indoor_households"] = samp.sample_indoor_households.fillna(0).astype(int)
     t = t.join(samp)
+    # Low confidence: indoor-cooking estimate rests on < 30 sampled households, or EICV7 and the
+    # Census disagree by > 5 points on exposure (a sign of groups EICV7 does not cover).
+    few_indoor = t.sample_indoor_households < 30
+    gap = (100 * (t.exposure_share - t.eicv7_exposure_share)).abs() > 5
+    t["low_confidence"] = few_indoor | gap
+    t["low_confidence_reason"] = [
+        "; ".join(r for r, f in [("fewer than 30 sampled indoor-cooking households", a),
+                                 ("EICV7 and Census exposure differ by more than 5 points", b)] if f)
+        for a, b in zip(few_indoor, gap)]
     t.index.name = "district_code"
     t = t.reset_index().sort_values("priority_rank")
     t.to_csv(OUT / "district_index.csv", index=False)

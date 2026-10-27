@@ -6,10 +6,10 @@
   "census_children_u5": 1731594,
   "census_children_total_matches": true,
   "districts": 30,
-  "national_children_exposed": 1682492,
-  "national_children_indoor_smoke": 290346,
+  "national_children_exposed": 1677923,
+  "national_children_indoor_smoke": 290345,
   "national_children_with_symptoms": 148977,
-  "national_polluting_hh": 3133313,
+  "national_polluting_hh": 3113811,
   "model_fuel_effect_national_pp": 0.517,
   "n_bootstrap": 500
 }

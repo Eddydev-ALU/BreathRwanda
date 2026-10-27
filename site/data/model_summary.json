@@ -50,53 +50,53 @@
    "definition": "Child under 5, alive, mother reports cough in the last 2 weeks (h31 = 1 or 2) AND short, rapid breaths (h31b = 1)."
   },
   "ari": {
-   "label": "ARI symptoms (strict DHS definition)",
+   "label": "ARI symptoms (official DHS definition)",
    "n_children": 14692,
-   "n_events": 219,
-   "weighted_prevalence_pct": 1.54,
+   "n_events": 249,
+   "weighted_prevalence_pct": 1.76,
    "cv": {
     "logistic": {
-     "auc": 0.5432,
-     "brier": 0.0152,
-     "calib_intercept": -0.0005,
-     "calib_slope": 0.2942
+     "auc": 0.5629,
+     "brier": 0.0173,
+     "calib_intercept": 0.0003,
+     "calib_slope": 0.4374
     },
     "xgboost": {
-     "auc": 0.5422,
-     "brier": 0.0152,
-     "calib_intercept": -0.0003,
-     "calib_slope": 0.307
+     "auc": 0.5627,
+     "brier": 0.0173,
+     "calib_intercept": -0.0001,
+     "calib_slope": 0.4109
     },
     "province_only": {
-     "auc": 0.5042,
-     "brier": 0.0152,
+     "auc": 0.5099,
+     "brier": 0.0173,
      "calib_intercept": -0.0003,
-     "calib_slope": 0.2767
+     "calib_slope": 0.2815
     }
    },
    "chosen_model": "logistic",
    "sign_check": {
     "fuel[wood/straw/biomass]": {
-     "or": 1.328,
-     "lo": 0.415,
-     "hi": 4.245,
-     "p": 0.6324
+     "or": 1.412,
+     "lo": 0.468,
+     "hi": 4.261,
+     "p": 0.5405
     },
     "fuel[charcoal]": {
-     "or": 0.925,
-     "lo": 0.309,
-     "hi": 2.773,
-     "p": 0.8896
+     "or": 1.024,
+     "lo": 0.354,
+     "hi": 2.966,
+     "p": 0.9651
     },
     "place[in the house]": {
-     "or": 0.933,
-     "lo": 0.593,
-     "hi": 1.468,
-     "p": 0.765
+     "or": 0.816,
+     "lo": 0.533,
+     "hi": 1.249,
+     "p": 0.3491
     }
    },
    "role": "sensitivity",
-   "definition": "As above AND the problem was in the chest (h31c = 1 chest only or 3 both): the standard DHS ARI definition."
+   "definition": "Short, rapid breaths (h31b = 1) with a problem in the chest (h31c = 1 chest only or 3 both); cough not required. The official DHS-7/8 ARI definition; reproduces the published 1.8% (2025) and 1.7% (2019-20)."
   }
  },
  "oddsRatios": {
@@ -105,181 +105,181 @@
     "feature": "fuel",
     "label": "Cooking fuel",
     "level": "charcoal",
-    "or": 0.925,
-    "lo": 0.309,
-    "hi": 2.773,
-    "p": 0.8896
+    "or": 1.024,
+    "lo": 0.354,
+    "hi": 2.966,
+    "p": 0.9651
    },
    {
     "feature": "fuel",
     "label": "Cooking fuel",
     "level": "wood/straw/biomass",
-    "or": 1.328,
-    "lo": 0.415,
-    "hi": 4.245,
-    "p": 0.6324
+    "or": 1.412,
+    "lo": 0.468,
+    "hi": 4.261,
+    "p": 0.5405
    },
    {
     "feature": "place",
     "label": "Where food is cooked",
     "level": "separate building",
-    "or": 0.766,
-    "lo": 0.511,
-    "hi": 1.149,
-    "p": 0.1981
+    "or": 0.725,
+    "lo": 0.496,
+    "hi": 1.058,
+    "p": 0.0955
    },
    {
     "feature": "place",
     "label": "Where food is cooked",
     "level": "in the house",
-    "or": 0.933,
-    "lo": 0.593,
-    "hi": 1.468,
-    "p": 0.765
+    "or": 0.816,
+    "lo": 0.533,
+    "hi": 1.25,
+    "p": 0.3491
    },
    {
     "feature": "wealth_q",
     "label": "Household wealth",
     "level": "1",
-    "or": 1.225,
-    "lo": 0.637,
-    "hi": 2.356,
-    "p": 0.5431
+    "or": 1.124,
+    "lo": 0.606,
+    "hi": 2.082,
+    "p": 0.7111
    },
    {
     "feature": "wealth_q",
     "label": "Household wealth",
     "level": "2",
-    "or": 1.598,
-    "lo": 0.882,
-    "hi": 2.895,
-    "p": 0.1224
+    "or": 1.503,
+    "lo": 0.862,
+    "hi": 2.62,
+    "p": 0.1507
    },
    {
     "feature": "wealth_q",
     "label": "Household wealth",
     "level": "3",
-    "or": 1.277,
-    "lo": 0.704,
-    "hi": 2.315,
-    "p": 0.4214
+    "or": 1.143,
+    "lo": 0.649,
+    "hi": 2.014,
+    "p": 0.6434
    },
    {
     "feature": "wealth_q",
     "label": "Household wealth",
     "level": "4",
-    "or": 0.772,
-    "lo": 0.419,
-    "hi": 1.423,
-    "p": 0.4074
+    "or": 0.64,
+    "lo": 0.353,
+    "hi": 1.161,
+    "p": 0.1419
    },
    {
     "feature": "rural",
     "label": "Rural residence",
     "level": "1",
-    "or": 1.062,
-    "lo": 0.622,
-    "hi": 1.815,
-    "p": 0.8247
+    "or": 1.164,
+    "lo": 0.658,
+    "hi": 2.061,
+    "p": 0.6018
    },
    {
     "feature": "age_group",
     "label": "Child age",
     "level": "<1y",
-    "or": 1.264,
-    "lo": 0.901,
-    "hi": 1.772,
-    "p": 0.1747
+    "or": 1.377,
+    "lo": 1.004,
+    "hi": 1.888,
+    "p": 0.0469
    },
    {
     "feature": "age_group",
     "label": "Child age",
     "level": "1y",
-    "or": 1.281,
-    "lo": 0.907,
-    "hi": 1.81,
-    "p": 0.1597
+    "or": 1.269,
+    "lo": 0.913,
+    "hi": 1.763,
+    "p": 0.1555
    },
    {
     "feature": "hhsize",
     "label": "Household size",
     "level": "1-3",
-    "or": 1.169,
-    "lo": 0.794,
-    "hi": 1.722,
-    "p": 0.4284
+    "or": 1.128,
+    "lo": 0.787,
+    "hi": 1.617,
+    "p": 0.5109
    },
    {
     "feature": "hhsize",
     "label": "Household size",
     "level": "6-7",
-    "or": 1.335,
-    "lo": 0.906,
-    "hi": 1.964,
-    "p": 0.1436
+    "or": 1.257,
+    "lo": 0.875,
+    "hi": 1.806,
+    "p": 0.2151
    },
    {
     "feature": "hhsize",
     "label": "Household size",
     "level": "8+",
-    "or": 1.181,
-    "lo": 0.736,
-    "hi": 1.896,
-    "p": 0.4894
+    "or": 1.03,
+    "lo": 0.652,
+    "hi": 1.627,
+    "p": 0.8984
    },
    {
     "feature": "province",
     "label": "Province",
     "level": "2",
-    "or": 1.354,
-    "lo": 0.6,
-    "hi": 3.057,
-    "p": 0.4651
+    "or": 1.248,
+    "lo": 0.569,
+    "hi": 2.742,
+    "p": 0.5803
    },
    {
     "feature": "province",
     "label": "Province",
     "level": "3",
-    "or": 1.624,
-    "lo": 0.742,
-    "hi": 3.553,
-    "p": 0.2249
+    "or": 1.55,
+    "lo": 0.726,
+    "hi": 3.307,
+    "p": 0.2571
    },
    {
     "feature": "province",
     "label": "Province",
     "level": "4",
-    "or": 1.372,
-    "lo": 0.583,
-    "hi": 3.232,
-    "p": 0.4689
+    "or": 1.204,
+    "lo": 0.525,
+    "hi": 2.764,
+    "p": 0.6611
    },
    {
     "feature": "province",
     "label": "Province",
     "level": "5",
-    "or": 1.32,
-    "lo": 0.577,
-    "hi": 3.022,
-    "p": 0.5111
+    "or": 1.205,
+    "lo": 0.538,
+    "hi": 2.701,
+    "p": 0.6505
    },
    {
     "feature": "sex_female",
     "label": "Child sex",
     "level": "1",
-    "or": 0.898,
-    "lo": 0.669,
-    "hi": 1.206,
-    "p": 0.4754
+    "or": 0.833,
+    "lo": 0.631,
+    "hi": 1.099,
+    "p": 0.1955
    },
    {
     "feature": "survey2025",
     "label": "Survey round",
     "level": "1",
-    "or": 1.085,
-    "lo": 0.798,
-    "hi": 1.476,
-    "p": 0.6021
+    "or": 1.103,
+    "lo": 0.829,
+    "hi": 1.469,
+    "p": 0.5013
    }
   ],
   "cough_fast": [
@@ -470,94 +470,94 @@
    {
     "label": "Household wealth",
     "key": "wealth_q",
-    "meanAbsShap": 0.2034
-   },
-   {
-    "label": "Cooking fuel",
-    "key": "fuel",
-    "meanAbsShap": 0.1304
+    "meanAbsShap": 0.2079
    },
    {
     "label": "Child age",
     "key": "age_group",
-    "meanAbsShap": 0.1164
+    "meanAbsShap": 0.135
+   },
+   {
+    "label": "Cooking fuel",
+    "key": "fuel",
+    "meanAbsShap": 0.1205
    },
    {
     "label": "Where food is cooked",
     "key": "place",
-    "meanAbsShap": 0.1137
-   },
-   {
-    "label": "Household size",
-    "key": "hhsize",
-    "meanAbsShap": 0.1088
+    "meanAbsShap": 0.1103
    },
    {
     "label": "Province",
     "key": "province",
-    "meanAbsShap": 0.0949
+    "meanAbsShap": 0.0985
    },
    {
     "label": "Child sex",
     "key": "sex_female",
-    "meanAbsShap": 0.0537
+    "meanAbsShap": 0.0916
    },
    {
-    "label": "Survey round",
-    "key": "survey2025",
-    "meanAbsShap": 0.0408
+    "label": "Household size",
+    "key": "hhsize",
+    "meanAbsShap": 0.0884
    },
    {
     "label": "Rural residence",
     "key": "rural",
-    "meanAbsShap": 0.0218
+    "meanAbsShap": 0.0547
+   },
+   {
+    "label": "Survey round",
+    "key": "survey2025",
+    "meanAbsShap": 0.0489
    }
   ],
   "ari_xgboost": [
    {
     "label": "Household wealth",
     "key": "wealth_q",
-    "meanAbsShap": 0.1742
+    "meanAbsShap": 0.1977
    },
    {
     "label": "Cooking fuel",
     "key": "fuel",
-    "meanAbsShap": 0.169
+    "meanAbsShap": 0.139
    },
    {
     "label": "Child age",
     "key": "age_group",
-    "meanAbsShap": 0.1162
+    "meanAbsShap": 0.1374
    },
    {
     "label": "Where food is cooked",
     "key": "place",
-    "meanAbsShap": 0.1046
-   },
-   {
-    "label": "Household size",
-    "key": "hhsize",
-    "meanAbsShap": 0.1018
+    "meanAbsShap": 0.1173
    },
    {
     "label": "Province",
     "key": "province",
-    "meanAbsShap": 0.0992
+    "meanAbsShap": 0.1104
+   },
+   {
+    "label": "Household size",
+    "key": "hhsize",
+    "meanAbsShap": 0.0927
    },
    {
     "label": "Child sex",
     "key": "sex_female",
-    "meanAbsShap": 0.0739
+    "meanAbsShap": 0.0917
    },
    {
     "label": "Survey round",
     "key": "survey2025",
-    "meanAbsShap": 0.0691
+    "meanAbsShap": 0.0684
    },
    {
     "label": "Rural residence",
     "key": "rural",
-    "meanAbsShap": 0.0419
+    "meanAbsShap": 0.0599
    }
   ],
   "cough_fast_logistic": [
@@ -952,10 +952,10 @@
   "census_children_u5": 1731594,
   "census_children_total_matches": true,
   "districts": 30,
-  "national_children_exposed": 1682492,
-  "national_children_indoor_smoke": 290346,
+  "national_children_exposed": 1677923,
+  "national_children_indoor_smoke": 290345,
   "national_children_with_symptoms": 148977,
-  "national_polluting_hh": 3133313,
+  "national_polluting_hh": 3113811,
   "model_fuel_effect_national_pp": 0.517,
   "n_bootstrap": 500,
   "eicv7_mean_predicted_risk_pct_model": 8.59

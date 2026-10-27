@@ -61,6 +61,7 @@ def main():
             "code": c, "name": d.district_name, "province": d.province_name,
             "population": round(d.population), "childrenU5": round(d.children_u5), "households": round(d.households),
             "exposureShare": r(d.exposure_share), "exposureShareLo": r(d.exposure_share_lo), "exposureShareHi": r(d.exposure_share_hi),
+            "eicv7ExposureShare": r(d.eicv7_exposure_share),
             "indoorSmokeShare": r(d.indoor_smoke_share), "indoorSmokeShareLo": r(d.indoor_smoke_share_lo),
             "indoorSmokeShareHi": r(d.indoor_smoke_share_hi),
             "childrenExposed": round(d.children_exposed), "childrenIndoorSmoke": round(d.children_indoor_smoke),
@@ -84,6 +85,8 @@ def main():
             "sampleHouseholds": int(d.sample_households), "sampleClusters": int(d.sample_clusters),
             "sampleChildren": int(d.sample_children), "sampleIndoorHouseholds": int(d.sample_indoor_households),
             "lowConfidenceIndoor": bool(d.sample_indoor_households < 30),
+            "lowConfidence": bool(d.low_confidence),
+            "lowConfidenceReason": d.low_confidence_reason if isinstance(d.low_confidence_reason, str) else "",
             "whyFactors": factors[c],
         })
     (SITE / "districts.json").write_text(json.dumps(records, separators=(",", ":")))
@@ -123,7 +126,7 @@ def main():
         "priority_rank", "priority_rank_lo", "priority_rank_hi", "priority_tier", "district_code", "district_name",
         "province_name", "children_u5", "children_exposed", "children_indoor_smoke", "exposure_share",
         "indoor_smoke_share", "risk", "risk_lo", "risk_hi", "risk_index", "children_with_symptoms", "polluting_hh",
-        "children_per_hh", "priority_score", "rank_uncertain"]].copy()
+        "children_per_hh", "priority_score", "rank_uncertain", "low_confidence", "low_confidence_reason"]].copy()
     for c in ["exposure_share", "indoor_smoke_share", "risk", "risk_lo", "risk_hi"]:
         rk[c] = (100 * rk[c]).round(1)
     rk = rk.rename(columns={"exposure_share": "exposure_pct", "indoor_smoke_share": "indoor_smoke_pct",

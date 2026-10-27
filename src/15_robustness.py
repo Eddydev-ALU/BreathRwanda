@@ -35,7 +35,6 @@ def main():
     kids = prepare(pd.read_parquet(PROCESSED / "eicv7_children.parquet")).reset_index(drop=True)
     kids["survey2025"] = 1
     hh = pd.read_parquet(PROCESSED / "eicv7_households.parquet")
-    hh = hh[hh.fuel.notna()].reset_index(drop=True)
     names = pd.read_csv(REFERENCE / "district_lookup.csv").set_index("district_code").district_name
 
     main_s = scores(dhs, kids, hh)
