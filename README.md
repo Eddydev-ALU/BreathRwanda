@@ -26,6 +26,7 @@ src/            analysis pipeline (run in order, or ./run_pipeline.sh)
   14            district index with bootstrap uncertainty
   15            robustness of the ranking
   16-17         export of website data and automated QA checks
+notebooks/      walkthrough.ipynb: results tour (reads aggregate outputs only)
 outputs/        aggregate tables and figures only
 docs/           documentation
 site/           the website (site/data holds the exported JSON/GeoJSON/CSV)

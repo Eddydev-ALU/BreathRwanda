@@ -188,7 +188,19 @@ Full table: `outputs/district/district_index.csv`; download version: `site/data/
 The ranking is stable to model form, survey round and most predictors. It changes under the strict ARI outcome, but that model has no predictive skill (AUC 0.54), so this variant is reported and not used. Province carries much of the signal: Southern and Eastern provinces have higher adjusted risk than Kigali.
 
 ## 7. Planner assumptions (stove cost, effectiveness, usage)
-*Pending: sourced values are being compiled into `site/data/assumptions.json` (guide §7.3). Our survey data cannot estimate the stove effect (§5.2), so effectiveness comes from published research and is shown on the site as an editable assumption.*
+All values, with full citations and URLs, are in `data/reference/assumptions.json` (copied to `site/data/assumptions.json`). All are editable on the website. Our survey data cannot estimate the stove effect (§5.2), so effectiveness comes from published research. Because trials and observational studies disagree, **cases averted are shown as a range**.
+
+| Stove | Cost to programme (RWF) | Sustained use | Effect: trial | Effect: observational upper bound |
+|---|---:|---:|---:|---:|
+| Improved biomass cookstove, Tier 3 (default) | 36,000 (EAQIP subsidy example; 45,000 full price) | 0.83 (Barstow 2016, Rwanda) | 0.16 (RESPIRE, RR 0.84, n.s.) | 0.21 (derived: 0.44 × ~48% exposure cut, Pope 2017) |
+| LPG kit | 150,000 (KT Press 2025; refills extra) | 0.90 (HAPIN trial conditions; real-world likely lower) | 0.04 (HAPIN, IRR 0.96, n.s.) | 0.44 (derived: 1 − 1/1.78, Dherani 2008) |
+| Electric pressure cooker | 85,000 (SEforALL 2023, Kigali) | 0.41 of cooking events (same) | 0.04 (as LPG) | 0.44 (as LPG) |
+
+Cases averted per stove in district d = children per polluting household × risk among exposed children × effect × usage. Cost, usage and effect are the same in every district, so they scale the totals but **do not change the ranking**.
+
+**Example** (walkthrough notebook §6): 5 billion RWF buys 138,888 Tier 3 cookstoves. These go to Nyaruguru, then Gisagara. They reach about 68,800 children under 5 and avert about 1,230 (trial) to 1,610 (observational) cases of cough with fast breathing in any two-week window.
+
+Programme context: EAQIP targets 500,000 households with US$17M in subsidies, paid in instalments tied to verified use (BRD Operations Manual Ver 05, 2024). The reported 2029 target is to cut biomass cooking from 79.9% to 42% of households (New Times, Nov 2025; the NST2 text itself was not located).
 
 ## 8. Limitations
 1. The symptom is reported by mothers. It is a symptom, **not a diagnosis of pneumonia**.
