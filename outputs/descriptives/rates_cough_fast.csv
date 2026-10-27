@@ -1,0 +1,80 @@
+scope,variable,category,pct,se,ci_lo,ci_hi,n,n_events
+pooled,All children,All children,7.97,0.27,7.44,8.51,14692,1178
+pooled,Cooking fuel,Charcoal,6.2,0.57,5.09,7.31,3017,197
+pooled,Cooking fuel,"Clean (gas, electricity, biogas)",5.31,1.11,3.13,7.48,504,27
+pooled,Cooking fuel,"Wood, straw or other biomass",8.59,0.32,7.98,9.21,11171,954
+pooled,Where food is cooked,In the house,8.82,0.59,7.67,9.97,2962,265
+pooled,Where food is cooked,Outdoors,8.25,0.57,7.14,9.35,3017,252
+pooled,Where food is cooked,Separate building,7.59,0.33,6.95,8.23,8713,661
+pooled,Fuel and cooking place,Clean fuel,5.31,1.11,3.13,7.48,504,27
+pooled,Fuel and cooking place,"Polluting fuel, cooked in the house",9.16,0.63,7.93,10.39,2721,251
+pooled,Fuel and cooking place,"Polluting fuel, cooked outside the house",7.82,0.3,7.23,8.41,11467,900
+pooled,Wealth quintile,Poorest,9.62,0.56,8.53,10.71,3434,328
+pooled,Wealth quintile,Poorer,9.16,0.61,7.96,10.36,2836,260
+pooled,Wealth quintile,Middle,8.09,0.54,7.04,9.15,2800,222
+pooled,Wealth quintile,Richer,7.12,0.61,5.92,8.32,2794,209
+pooled,Wealth quintile,Richest,5.48,0.51,4.48,6.49,2828,159
+pooled,Residence,Rural,8.48,0.32,7.84,9.11,10588,902
+pooled,Residence,Urban,6.34,0.48,5.41,7.27,4104,276
+pooled,Province,Kigali City,4.21,0.64,2.97,5.46,1660,68
+pooled,Province,Southern,10.02,0.61,8.81,11.23,3423,335
+pooled,Province,Western,7.5,0.54,6.45,8.56,3667,267
+pooled,Province,Northern,7.23,0.63,6.0,8.47,2249,160
+pooled,Province,Eastern,9.16,0.59,8.0,10.33,3693,348
+pooled,Child age,Under 1 year,9.38,0.58,8.25,10.51,3021,292
+pooled,Child age,1 year,10.09,0.59,8.92,11.25,2939,297
+pooled,Child age,2-4 years,6.76,0.31,6.16,7.36,8732,589
+pooled,Survey,DHS 2019-20,7.38,0.38,6.63,8.12,7758,587
+pooled,Survey,DHS 2025,8.66,0.39,7.89,9.42,6934,591
+2019,All children,All children,7.38,0.38,6.63,8.12,7758,587
+2019,Cooking fuel,Charcoal,6.22,0.96,4.35,8.09,1315,84
+2019,Cooking fuel,"Clean (gas, electricity, biogas)",4.46,1.37,1.78,7.14,232,10
+2019,Cooking fuel,"Wood, straw or other biomass",7.75,0.42,6.93,8.57,6211,493
+2019,Where food is cooked,In the house,9.18,0.8,7.62,10.75,1761,163
+2019,Where food is cooked,Outdoors,7.5,0.81,5.92,9.08,1556,117
+2019,Where food is cooked,Separate building,6.65,0.44,5.79,7.5,4441,307
+2019,Fuel and cooking place,Clean fuel,4.46,1.37,1.78,7.14,232,10
+2019,Fuel and cooking place,"Polluting fuel, cooked in the house",9.55,0.84,7.91,11.19,1652,159
+2019,Fuel and cooking place,"Polluting fuel, cooked outside the house",6.92,0.41,6.11,7.73,5874,418
+2019,Wealth quintile,Poorest,9.42,0.77,7.9,10.93,1896,181
+2019,Wealth quintile,Poorer,8.15,0.8,6.58,9.71,1488,126
+2019,Wealth quintile,Middle,7.18,0.71,5.8,8.56,1469,102
+2019,Wealth quintile,Richer,6.39,0.87,4.69,8.08,1460,97
+2019,Wealth quintile,Richest,5.28,0.73,3.85,6.71,1445,81
+2019,Residence,Rural,7.68,0.42,6.85,8.51,6111,480
+2019,Residence,Urban,5.96,0.85,4.28,7.63,1647,107
+2019,Province,Kigali City,5.51,1.06,3.44,7.58,918,49
+2019,Province,Southern,8.3,0.85,6.64,9.97,1767,151
+2019,Province,Western,8.42,0.77,6.91,9.93,1990,163
+2019,Province,Northern,5.78,0.72,4.36,7.2,1224,73
+2019,Province,Eastern,7.63,0.81,6.04,9.23,1859,151
+2019,Child age,Under 1 year,9.93,0.83,8.29,11.56,1570,162
+2019,Child age,1 year,9.86,0.78,8.34,11.39,1570,159
+2019,Child age,2-4 years,5.64,0.39,4.88,6.4,4618,266
+2019,Survey,DHS 2019-20,7.38,0.38,6.63,8.12,7758,587
+2025,All children,All children,8.66,0.39,7.89,9.42,6934,591
+2025,Cooking fuel,Charcoal,6.18,0.67,4.88,7.49,1702,113
+2025,Cooking fuel,"Clean (gas, electricity, biogas)",6.06,1.71,2.72,9.41,272,17
+2025,Cooking fuel,"Wood, straw or other biomass",9.65,0.48,8.71,10.59,4960,461
+2025,Where food is cooked,In the house,8.3,0.85,6.63,9.97,1201,102
+2025,Where food is cooked,Outdoors,9.08,0.78,7.56,10.6,1461,135
+2025,Where food is cooked,Separate building,8.6,0.49,7.64,9.56,4272,354
+2025,Fuel and cooking place,Clean fuel,6.06,1.71,2.72,9.41,272,17
+2025,Fuel and cooking place,"Polluting fuel, cooked in the house",8.56,0.93,6.73,10.39,1069,92
+2025,Fuel and cooking place,"Polluting fuel, cooked outside the house",8.8,0.44,7.94,9.65,5593,482
+2025,Wealth quintile,Poorest,9.86,0.8,8.28,11.43,1538,147
+2025,Wealth quintile,Poorer,10.28,0.94,8.45,12.11,1348,134
+2025,Wealth quintile,Middle,9.13,0.82,7.51,10.74,1331,120
+2025,Wealth quintile,Richer,7.97,0.86,6.28,9.67,1334,112
+2025,Wealth quintile,Richest,5.72,0.72,4.31,7.12,1383,78
+2025,Residence,Rural,9.55,0.51,8.56,10.54,4477,422
+2025,Residence,Urban,6.6,0.55,5.53,7.67,2457,169
+2025,Province,Kigali City,2.73,0.66,1.44,4.01,742,19
+2025,Province,Southern,11.83,0.89,10.08,13.58,1656,184
+2025,Province,Western,6.35,0.71,4.96,7.75,1677,104
+2025,Province,Northern,9.03,1.09,6.89,11.17,1025,87
+2025,Province,Eastern,10.8,0.84,9.15,12.45,1834,197
+2025,Child age,Under 1 year,8.78,0.79,7.23,10.32,1451,130
+2025,Child age,1 year,10.35,0.91,8.56,12.14,1369,138
+2025,Child age,2-4 years,8.05,0.48,7.1,8.99,4114,323
+2025,Survey,DHS 2025,8.66,0.39,7.89,9.42,6934,591
