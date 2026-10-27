@@ -1,40 +1,66 @@
 {
-  "_about": "Planner assumptions (guide section 7.3). Every value has a source; values marked 'derived' are our own arithmetic on a cited figure. All values are editable on the website. Compiled 27 Oct 2026.",
+  "_about": "Planner assumptions (guide section 7.3). Every value has a source; values marked 'derived' are our own arithmetic on a cited figure. All values are editable on the website. They are assumptions from published research and programme documents, not results from our own data. Compiled 27 Oct 2026; citations re-verified 27 Oct 2026.",
   "howToRead": {
-    "cost": "Cost to the programme per household reached, in RWF (one-off; fuel not included).",
-    "usage": "Share of households that actually use the new stove as their main stove (sustained use).",
+    "cost": "One-off cost per household reached, in RWF (fuel not included). The improved cookstove uses the EAQIP subsidy (programme share); LPG and the electric pressure cooker use retail prices, so they are not on the same basis.",
+    "usage": "Share of households that actually use the new stove (sustained use). For the electric pressure cooker it is the share of cooking events, a weaker measure.",
     "effect": "Share of a child's smoke-related risk of cough with fast breathing removed when the stove is used. Given as a range: 'trial' = randomised-trial point estimate; 'observational' = upper bound derived from observational studies.",
     "rankingNote": "Cost, usage and effect are the same in every district, so they change the totals but not which districts come first."
   },
   "effectEvidence": {
-    "summary": "Randomised trials, including HAPIN which had a site in Rwanda (Kayonza), did not show a statistically significant reduction in severe infant pneumonia from LPG cooking (IRR 0.96, 98.75% CI 0.64-1.44). Observational studies associate solid-fuel use with higher child pneumonia risk (pooled OR 1.78). Our own Rwanda survey model also finds no significant fuel effect after adjustment. Cases averted are therefore shown as a range of scenarios, not a prediction.",
+    "summary": "Randomised trials, including HAPIN which had a site in Rwanda (Kayonza), did not show a statistically significant reduction in severe infant pneumonia from LPG cooking (IRR 0.96, 98.75% CI 0.64-1.44). Observational studies associate solid-fuel use with higher child pneumonia risk (pooled OR 1.78). Our own Rwanda survey model also finds no significant fuel effect after adjustment. Cases averted are therefore shown as a range of scenarios, not a prediction. Trial outcomes are severe or physician-diagnosed pneumonia in infants and young children; our outcome is mother-reported cough with fast breathing in children under 5, so these effects are borrowed from a different, more specific outcome, not measured in our data. The observational values are upper bounds: they assume the association is fully causal and the exposure fully removed.",
     "sources": [
-      {"id": "hapin", "finding": "LPG intervention: severe pneumonia 5.67 vs 6.06 per 100 child-years, IRR 0.96 (98.75% CI 0.64-1.44); child PM2.5 24.2 vs 66.0 ug/m3", "citation": "McCollum ED et al. (HAPIN Investigators). N Engl J Med 2024;390:32-43", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10768798"},
-      {"id": "dherani", "finding": "Unprocessed solid fuel use and pneumonia in children under 5: pooled OR 1.78 (95% CI 1.45-2.18)", "citation": "Dherani M et al. Bull World Health Organ 2008;86(5):390-398", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2647443"},
-      {"id": "respire", "finding": "Chimney woodstove: physician-diagnosed pneumonia RR 0.84 (0.63-1.13); severe pneumonia reduced by about a third", "citation": "Smith KR et al. Lancet 2011;378:1717-26", "url": "https://blogs.washplus.org/iaqupdates/2011/11/effect-of-reduction-in-household-air-pollution-on-childhood-pneumonia-in-guatemala/index.html"},
-      {"id": "pope", "finding": "Advanced-combustion biomass stoves cut kitchen PM2.5 by 41% (29-50%) and personal exposure by 55% (19-87%); levels stay above WHO guidelines", "citation": "Pope D et al. Environment International 2017;101:7-18", "url": "https://livrepository.liverpool.ac.uk/3005727/"}
+      {
+        "id": "hapin",
+        "finding": "LPG intervention: severe pneumonia in the first year of life (imaging- or oximetry-confirmed, or verbal autopsy) 5.67 vs 6.06 per 100 child-years, IRR 0.96 (98.75% CI 0.64-1.44); child PM2.5 median 24.2 vs 66.0 ug/m3",
+        "citation": "McCollum ED et al. (HAPIN Investigators). N Engl J Med 2024;390:32-43",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10768798"
+      },
+      {
+        "id": "dherani",
+        "finding": "Unprocessed solid fuel use and pneumonia/ALRI in children under 5: pooled odds ratio 1.78 (95% CI 1.45-2.18)",
+        "citation": "Dherani M et al. Bull World Health Organ 2008;86(5):390-398",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2647443"
+      },
+      {
+        "id": "respire",
+        "finding": "Chimney woodstove, children <18 months: physician-diagnosed pneumonia RR 0.84 (95% CI 0.63-1.13); authors report a significant reduction of about a third in severe pneumonia (exact estimate not verified)",
+        "citation": "Smith KR et al. Lancet 2011;378:1717-26",
+        "url": "https://doi.org/10.1016/S0140-6736(11)60921-5"
+      },
+      {
+        "id": "pope",
+        "finding": "Advanced-combustion biomass stoves cut kitchen PM2.5 by 41% (29-50%); personal PM2.5 exposure fell 55% (19-87%) for solid-fuel stoves with chimneys (no personal estimate given for advanced combustion); levels stay above WHO guidelines",
+        "citation": "Pope D et al. Environment International 2017;101:7-18",
+        "url": "https://livrepository.liverpool.ac.uk/3005727/"
+      }
     ]
   },
   "stoves": [
     {
       "id": "lpg",
-      "name": "LPG gas stove kit",
+      "name": "LPG gas stove",
       "cost": 150000,
-      "costSource": "Stove price 'as much as' Rwf 150,000 (2-burner stove + 12 kg cylinder + pay-as-you-go valve kit programme). KT Press, Oct 2025: https://www.ktpress.rw/2025/10/50000-households-to-get-free-cooking-gas-kits-courtesy-of-rwanda-saudi-deal/ . Refill Rwf 22,000-28,000 per 12 kg (about 2 months), not included: New Times 2026 https://www.newtimes.co.rw/article/35066/news/energy/why-gas-retailers-are-charging-different-prices-across-rwanda",
+      "costSource": "Gas stove alone 'as much as' Rwf 150,000 ($120) per KT Press, 29 Oct 2025 (the programme kit of 2-burner stove + 12 kg cylinder + smart pay-as-you-go valve is described separately, with no kit price given): https://www.ktpress.rw/2025/10/50000-households-to-get-free-cooking-gas-kits-courtesy-of-rwanda-saudi-deal/ . Refill not included: Rwf 23,340 per 12 kg at SP stations (Rwf 1,945/kg) and Rwf 27,000-28,000 at retailers, New Times 22 Apr 2026 https://www.newtimes.co.rw/article/35066/news/energy/why-gas-retailers-are-charging-different-prices-across-rwanda ; one 12 kg cylinder lasts up to ~2 months (KT Press).",
       "usage": 0.9,
-      "usageSource": "HAPIN trial: biomass stove used on a median 0.4% of monitored days, but with free LPG and close monitoring. Real-world use is likely lower; no Rwanda field data found. Lower this value to test refill-cost risk.",
-      "effect": {"trial": 0.04, "observational": 0.44},
-      "effectSource": "trial = 1 - IRR 0.96 (HAPIN, not significant); observational = 1 - 1/1.78 (derived from Dherani 2008 pooled OR, assumes exposure fully removed)"
+      "usageSource": "Assumption (not a measured value). HAPIN trial: biomass stove used on a median 0.4% of monitored days, but with free LPG and close monitoring. Real-world use is likely lower; no Rwanda field data found. Lower this value to test refill-cost risk.",
+      "effect": {
+        "trial": 0.04,
+        "observational": 0.44
+      },
+      "effectSource": "trial = 1 - IRR 0.96 (HAPIN, severe infant pneumonia, not significant); observational = 1 - 1/1.78 = 0.438 (derived from the Dherani 2008 pooled odds ratio; upper bound assuming causality and full exposure removal)"
     },
     {
       "id": "ics",
       "name": "Improved biomass cookstove (Tier 3)",
       "cost": 36000,
-      "costSource": "EAQIP clean-cooking results-based financing: worked example of a Tier 3 stove priced Rwf 45,000 with a Rwf 36,000 subsidy (household pays 9,000). Current rule: Tier 3 subsidy 80%, cap Rwf 38,000. BRD, EAQIP Component 3b Clean Cooking RBF Operations Manual Ver 05 (1 Mar 2024), section 6.7 and Table 2: https://www.brd.rw/wp-content/uploads/2023/01/EAQIP_CC-RBF_OM_-_Ver_0306-04-2022.pdf . Use 45,000 for full price without subsidy.",
+      "costSource": "EAQIP clean-cooking results-based financing: worked example of a Tier 3 stove priced Rwf 45,000 with a Rwf 36,000 subsidy (household pays 9,000). Rule as of Ver 05 (1 Mar 2024): Tier 3 subsidy 80%, cap Rwf 38,000. BRD, EAQIP Component 3b Clean Cooking RBF Operations Manual Ver 05 (1 Mar 2024; the file name says Ver03), section 6.7 and Table 2: https://www.brd.rw/wp-content/uploads/2023/01/EAQIP_CC-RBF_OM_-_Ver_0306-04-2022.pdf . Use 45,000 for full price without subsidy.",
       "usage": 0.83,
-      "usageSource": "Rwanda, free EcoZoom stoves to ~100k households: 83.3% of households observed cooking were using it at about 1 year (51.3% also used other stoves). Barstow CK et al. BMC Public Health 2016;16:584 https://pmc.ncbi.nlm.nih.gov/articles/PMC4947312 . Pilot exclusive use was only 28.5% at 5 months (Barstow et al. PLoS One 2014).",
-      "effect": {"trial": 0.16, "observational": 0.21},
-      "effectSource": "trial = 1 - RR 0.84 (RESPIRE chimney stove, not significant); observational = 0.44 x 0.48 (derived: Dherani upper bound scaled by the ~41-55% exposure reduction in Pope 2017)"
+      "usageSource": "Rwanda, free EcoZoom stoves to 101,778 households: about a year after distribution, 83.3% (25 of 30) of households seen cooking were using it, and 89.3% reported it as their primary stove; 51.3% reported also using other stoves. Barstow CK et al. BMC Public Health 2016;16:584 https://pmc.ncbi.nlm.nih.gov/articles/PMC4947312 . Pilot reported exclusive use was only 28.5% over 5 months (Barstow et al. PLoS One 2014;9:e92403).",
+      "effect": {
+        "trial": 0.16,
+        "observational": 0.18
+      },
+      "effectSource": "trial = 1 - RR 0.84 (RESPIRE chimney stove, physician-diagnosed pneumonia, not significant); observational = 0.438 x 0.41 = 0.18 (derived: Dherani upper bound scaled by the 41% kitchen PM2.5 reduction for advanced-combustion stoves in Pope 2017; assumes risk falls in proportion to exposure, which likely overstates benefit)"
     },
     {
       "id": "epc",
@@ -42,15 +68,35 @@
       "cost": 85000,
       "costSource": "List price Rwf 85,000 (pilot discounted to Rwf 40,000), electricity not included. SEforALL 2023, Examining the Experience of Using EPCs in Urban Households in Kigali: https://www.seforall.org/system/files/2023-11/report-rwanda-clean-cooking-final.pdf",
       "usage": 0.41,
-      "usageSource": "Kigali pilot (n=100, ~3 months): EPC used in 41% of cooking events; charcoal meals fell from 67% to 45%. Same SEforALL 2023 report. Longer follow-up not found.",
-      "effect": {"trial": 0.04, "observational": 0.44},
+      "usageSource": "Kigali pilot (n=100 grid-connected charcoal/LPG households, ~2-3 months of EPC use, Mar-May 2023): EPC used in 41% of cooking events (not share of households); charcoal meals fell from 67% to 45%. SEforALL 2023, Examining the Experience of Using EPCs in Urban Households in Kigali: https://www.seforall.org/system/files/2023-11/report-rwanda-clean-cooking-final.pdf . Longer follow-up not found.",
+      "effect": {
+        "trial": 0.04,
+        "observational": 0.44
+      },
       "effectSource": "Clean fuel, same evidence as LPG (no EPC-specific health trial found). Applies only to meals cooked on the EPC, which the usage rate captures."
     }
   ],
-  "defaults": {"stove": "ics", "budgetRWF": 5000000000, "effectScenario": "observational"},
+  "defaults": {
+    "stove": "ics",
+    "budgetRWF": 5000000000,
+    "effectScenario": "observational"
+  },
   "programmeContext": [
-    {"fact": "EAQIP clean-cooking target: 500,000 households; US$17M for subsidies + US$3M technical assistance", "source": "BRD EAQIP CC-RBF Operations Manual Ver 05 (2024), section 1", "url": "https://www.brd.rw/wp-content/uploads/2023/01/EAQIP_CC-RBF_OM_-_Ver_0306-04-2022.pdf"},
-    {"fact": "National target reported for 2029: biomass cooking from 79.9% to 42% of households; clean cooking from 9% (2024) to 22%", "source": "AllAfrica / New Times, 2 Nov 2025 (does not name the NST2 document directly)", "url": "https://allafrica.com/stories/202511030169.html"},
-    {"fact": "Subsidy is paid in instalments tied to verified use (50% at sale, 40% after 3-month use check, 10% after 1 year for pay-as-you-go)", "source": "BRD EAQIP CC-RBF Operations Manual Ver 05 (2024), Table 3", "url": "https://www.brd.rw/wp-content/uploads/2023/01/EAQIP_CC-RBF_OM_-_Ver_0306-04-2022.pdf"}
-  ]
+    {
+      "fact": "EAQIP clean-cooking target: 500,000 households (by 2026); US$17M for results-based subsidies + US$3M technical assistance",
+      "source": "BRD EAQIP CC-RBF Operations Manual Ver 05 (2024), section 1",
+      "url": "https://www.brd.rw/wp-content/uploads/2023/01/EAQIP_CC-RBF_OM_-_Ver_0306-04-2022.pdf"
+    },
+    {
+      "fact": "National target reported for 2029: biomass cooking from 79.9% to 42% of households; clean cooking from 9% (2024) to 22%",
+      "source": "AllAfrica / New Times, 2 Nov 2025 (does not name the NST2 document directly)",
+      "url": "https://allafrica.com/stories/202511030169.html"
+    },
+    {
+      "fact": "Subsidy for pay-as-you-go/credit sales is paid 50% on verified sale, 40% after a 3-month use check, 10% after 1 year (cash sales: 80% / 20%)",
+      "source": "BRD EAQIP CC-RBF Operations Manual Ver 05 (2024), Table 3",
+      "url": "https://www.brd.rw/wp-content/uploads/2023/01/EAQIP_CC-RBF_OM_-_Ver_0306-04-2022.pdf"
+    }
+  ],
+  "plannerDisclaimer": "Stove effect, usage and cost are editable assumptions from published research and programme documents, not results from our data. Trials measured severe or doctor-diagnosed pneumonia in infants; we apply their effects to cough with fast breathing in children under 5, so 'cases averted' is an illustrative range, not a prediction."
 }

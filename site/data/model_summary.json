@@ -902,7 +902,7 @@
  ],
  "robustness": [
   {
-   "variant": "Strict ARI outcome",
+   "variant": "Official DHS ARI outcome",
    "spearman_vs_main": 0.629,
    "top10_overlap": 5,
    "entered_top10": "Karongi, Rutsiro, Nyabihu, Ngororero, Nyamasheke",

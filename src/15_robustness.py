@@ -40,7 +40,7 @@ def main():
     main_s = scores(dhs, kids, hh)
     top_main = set(main_s.nlargest(10).index)
     variants = {
-        "Strict ARI outcome": dict(outcome="ari"),
+        "Official DHS ARI outcome": dict(outcome="ari"),
         "DHS 2025 only": dict(dhs=dhs[dhs.survey == 2025].reset_index(drop=True), drop="survey2025"),
         "Without province": dict(drop="province"),
         "Without wealth": dict(drop="wealth_q"),
