@@ -1,0 +1,11 @@
+cat,n,pct_unw,pct_w
+1 electric stove,49,0.3,0.4
+2 solar cooker,12,0.1,0.1
+3 liquefied petroleum gas (lpg)/cooking gas stove,868,6.0,6.0
+5 biogas stove,4,0.0,0.0
+6 liquid fuel stove,2,0.0,0.0
+7 manufactured solid fuel stove,80,0.6,0.6
+8 traditional solid fuel stove,7087,49.1,49.2
+9 three stone stove/open fire,6199,43.0,42.8
+95 no food cooked in household,125,0.9,0.9
+96 other,1,0.0,0.0

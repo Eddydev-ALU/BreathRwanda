@@ -1,0 +1,14 @@
+cat,n,pct_unw,pct_w
+1 electricity,29,0.2,0.2
+10 agricultural crop,18,0.1,0.1
+11 animal dung,2,0.0,0.0
+12 briquette,3,0.0,0.0
+13 saw dust,2,0.0,0.0
+2 lpg / natural gas,588,4.5,4.2
+4 biogas,4,0.0,0.0
+5 kerosene,3,0.0,0.0
+7 charcoal,1979,15.3,16.2
+8 wood,8001,61.8,61.4
+9 straw/shrubs/grass,2274,17.6,17.4
+95 no food cooked in house,45,0.3,0.3
+96 other,1,0.0,0.0
