@@ -1,0 +1,41 @@
+term,coef,se,odds_ratio,or_lo,or_hi,p_value,feature,level,outcome
+fuel[charcoal],0.0176,0.2382,1.0178,0.6382,1.6232,0.941,fuel,charcoal,cough_fast
+fuel[wood/straw/biomass],0.0781,0.2748,1.0813,0.631,1.8528,0.7761,fuel,wood/straw/biomass,cough_fast
+place[separate building],-0.1261,0.0906,0.8815,0.7381,1.0527,0.1637,place,separate building,cough_fast
+place[in the house],0.0234,0.1083,1.0237,0.828,1.2656,0.8289,place,in the house,cough_fast
+wealth_q[1],0.3062,0.1553,1.3583,1.0018,1.8416,0.0487,wealth_q,1,cough_fast
+wealth_q[2],0.3323,0.1523,1.3942,1.0345,1.879,0.0291,wealth_q,2,cough_fast
+wealth_q[3],0.2545,0.1461,1.2898,0.9687,1.7173,0.0815,wealth_q,3,cough_fast
+wealth_q[4],0.1592,0.1502,1.1725,0.8735,1.5739,0.2894,wealth_q,4,cough_fast
+rural[1],-0.0648,0.1305,0.9372,0.7258,1.2103,0.6191,rural,1,cough_fast
+age_group[<1y],0.337,0.0776,1.4008,1.2032,1.6309,0.0,age_group,<1y,cough_fast
+age_group[1y],0.4145,0.0772,1.5136,1.3012,1.7607,0.0,age_group,1y,cough_fast
+hhsize[1-3],0.1437,0.0896,1.1546,0.9687,1.3762,0.1085,hhsize,1-3,cough_fast
+hhsize[6-7],-0.0015,0.0845,0.9985,0.8462,1.1784,0.9863,hhsize,6-7,cough_fast
+hhsize[8+],-0.044,0.1178,0.957,0.7596,1.2056,0.709,hhsize,8+,cough_fast
+province[2],0.8147,0.2009,2.2586,1.5236,3.3483,0.0,province,2,cough_fast
+province[3],0.5241,0.202,1.6889,1.1368,2.509,0.0095,province,3,cough_fast
+province[4],0.4814,0.2096,1.6183,1.0731,2.4405,0.0217,province,4,cough_fast
+province[5],0.7416,0.2019,2.0992,1.4133,3.1181,0.0002,province,5,cough_fast
+sex_female[1],-0.072,0.0644,0.9306,0.8202,1.0558,0.2639,sex_female,1,cough_fast
+survey2025[1],0.1606,0.0842,1.1742,0.9956,1.3848,0.0564,survey2025,1,cough_fast
+fuel[charcoal],-0.0777,0.5601,0.9252,0.3087,2.7732,0.8896,fuel,charcoal,ari
+fuel[wood/straw/biomass],0.2836,0.5929,1.328,0.4154,4.245,0.6324,fuel,wood/straw/biomass,ari
+place[separate building],-0.2663,0.207,0.7662,0.5107,1.1495,0.1981,place,separate building,ari
+place[in the house],-0.0691,0.2311,0.9333,0.5934,1.4678,0.765,place,in the house,ari
+wealth_q[1],0.2029,0.3336,1.2249,0.637,2.3555,0.5431,wealth_q,1,ari
+wealth_q[2],0.4685,0.3033,1.5976,0.8817,2.8946,0.1224,wealth_q,2,ari
+wealth_q[3],0.2442,0.3037,1.2766,0.7039,2.3153,0.4214,wealth_q,3,ari
+wealth_q[4],-0.2585,0.312,0.7722,0.4189,1.4234,0.4074,wealth_q,4,ari
+rural[1],0.0605,0.2733,1.0624,0.6218,1.8152,0.8247,rural,1,ari
+age_group[<1y],0.2341,0.1725,1.2637,0.9013,1.7719,0.1747,age_group,<1y,ari
+age_group[1y],0.2479,0.1763,1.2813,0.907,1.8102,0.1597,age_group,1y,ari
+hhsize[1-3],0.1564,0.1975,1.1693,0.794,1.722,0.4284,hhsize,1-3,ari
+hhsize[6-7],0.2886,0.1973,1.3345,0.9065,1.9645,0.1436,hhsize,6-7,ari
+hhsize[8+],0.1668,0.2413,1.1815,0.7362,1.8962,0.4894,hhsize,8+,ari
+province[2],0.3034,0.4153,1.3544,0.6002,3.0566,0.4651,province,2,ari
+province[3],0.4848,0.3995,1.6239,0.7422,3.5531,0.2249,province,3,ari
+province[4],0.3165,0.437,1.3723,0.5828,3.2317,0.4689,province,4,ari
+province[5],0.2777,0.4227,1.3201,0.5766,3.0225,0.5111,province,5,ari
+sex_female[1],-0.1073,0.1504,0.8982,0.6689,1.2061,0.4754,sex_female,1,ari
+survey2025[1],0.0819,0.157,1.0853,0.7978,1.4764,0.6021,survey2025,1,ari

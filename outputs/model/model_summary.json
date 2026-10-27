@@ -1,0 +1,96 @@
+{
+  "cough_fast": {
+    "label": "Cough with short, rapid breathing",
+    "n_children": 14692,
+    "n_events": 1178,
+    "weighted_prevalence_pct": 7.97,
+    "cv": {
+      "logistic": {
+        "auc": 0.5881,
+        "brier": 0.0729,
+        "calib_intercept": -0.001,
+        "calib_slope": 0.7883
+      },
+      "xgboost": {
+        "auc": 0.5842,
+        "brier": 0.0732,
+        "calib_intercept": -0.0019,
+        "calib_slope": 0.6476
+      },
+      "province_only": {
+        "auc": 0.5557,
+        "brier": 0.0731,
+        "calib_intercept": -0.0006,
+        "calib_slope": 0.8769
+      }
+    },
+    "chosen_model": "logistic",
+    "sign_check": {
+      "fuel[wood/straw/biomass]": {
+        "or": 1.081,
+        "lo": 0.631,
+        "hi": 1.853,
+        "p": 0.7761
+      },
+      "fuel[charcoal]": {
+        "or": 1.018,
+        "lo": 0.638,
+        "hi": 1.623,
+        "p": 0.941
+      },
+      "place[in the house]": {
+        "or": 1.024,
+        "lo": 0.828,
+        "hi": 1.266,
+        "p": 0.8289
+      }
+    }
+  },
+  "ari": {
+    "label": "ARI symptoms (strict DHS definition)",
+    "n_children": 14692,
+    "n_events": 219,
+    "weighted_prevalence_pct": 1.54,
+    "cv": {
+      "logistic": {
+        "auc": 0.5432,
+        "brier": 0.0152,
+        "calib_intercept": -0.0005,
+        "calib_slope": 0.2942
+      },
+      "xgboost": {
+        "auc": 0.5422,
+        "brier": 0.0152,
+        "calib_intercept": -0.0003,
+        "calib_slope": 0.307
+      },
+      "province_only": {
+        "auc": 0.5042,
+        "brier": 0.0152,
+        "calib_intercept": -0.0003,
+        "calib_slope": 0.2767
+      }
+    },
+    "chosen_model": "logistic",
+    "sign_check": {
+      "fuel[wood/straw/biomass]": {
+        "or": 1.328,
+        "lo": 0.415,
+        "hi": 4.245,
+        "p": 0.6324
+      },
+      "fuel[charcoal]": {
+        "or": 0.925,
+        "lo": 0.309,
+        "hi": 2.773,
+        "p": 0.8896
+      },
+      "place[in the house]": {
+        "or": 0.933,
+        "lo": 0.593,
+        "hi": 1.468,
+        "p": 0.765
+      }
+    }
+  }
+}
