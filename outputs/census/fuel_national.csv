@@ -1,0 +1,17 @@
+cat,n,pct_unw,pct_w
+1 Firewood,234297,70.6,70.6
+10 Briquette,32,0.0,0.0
+11 Peat,2,0.0,0.0
+12 Sawdust,93,0.0,0.0
+13 Straw/shrub/grass,18369,5.5,5.5
+14 Others (Specify),133,0.0,0.0
+15 Do not cook (Not Applicable),4585,1.4,1.4
+2 Charcoal,57459,17.3,17.3
+3 Gas,14978,4.5,4.5
+4 Electricity,91,0.0,0.0
+5 Kerosene/Parafine,25,0.0,0.0
+6 Biogas,24,0.0,0.0
+7 Solar power,69,0.0,0.0
+8 Crop waste,1717,0.5,0.5
+9 Animal dung,31,0.0,0.0
+99 Not Stated,12,0.0,0.0
