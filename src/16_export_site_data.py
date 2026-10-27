@@ -3,6 +3,7 @@
   site/data/districts.json      one record per district (field names match the planner JS)
   site/data/model_summary.json  outcome definitions, validation, odds ratios, importance, checks
   site/data/ranking_default.csv default priority ranking for download
+  site/data/assumptions.json    stove cost/usage/effect with sources (copied from data/reference)
 
 "Why this district?" factors: for the logistic model, each child's prediction decomposes
 exactly into beta_j * (x_ij - national mean_j) per factor (linear SHAP, log-odds). We average
@@ -13,7 +14,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from common import OUTPUTS, PROCESSED, ROOT
+from common import OUTPUTS, PROCESSED, REFERENCE, ROOT
 from model_spec import LABELS, design, feature_of, fit_logit, prepare
 
 SITE = ROOT / "site" / "data"
@@ -128,6 +129,8 @@ def main():
     rk = rk.rename(columns={"exposure_share": "exposure_pct", "indoor_smoke_share": "indoor_smoke_pct",
                             "risk": "risk_pct", "risk_lo": "risk_pct_lo", "risk_hi": "risk_pct_hi"})
     rk.round(3).to_csv(SITE / "ranking_default.csv", index=False)
+
+    (SITE / "assumptions.json").write_text((REFERENCE / "assumptions.json").read_text())
 
     sizes = {p.name: round(p.stat().st_size / 1024, 1) for p in SITE.iterdir()}
     print("site/data sizes (KB):", sizes, "total", round(sum(sizes.values()), 1))

@@ -17,7 +17,10 @@ def main():
     geo = json.loads((SITE / "districts.geojson").read_text())
     census = pd.read_csv(OUTPUTS / "census" / "district_population.csv")
     nat = json.loads((OUTPUTS / "district" / "national_checks.json").read_text())
+    a = json.loads((SITE / "assumptions.json").read_text())
     checks = {
+        "every stove assumption has a source": all(st.get(k) for st in a["stoves"]
+                                                   for k in ["costSource", "usageSource", "effectSource"]),
         "30 districts": len(d) == 30 and d.code.is_unique,
         "codes match boundary file": set(d.code) == {f["properties"]["district_code"] for f in geo["features"]},
         "names match boundary file": set(d.name) == {f["properties"]["district_name"] for f in geo["features"]},
