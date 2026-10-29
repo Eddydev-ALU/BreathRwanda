@@ -63,7 +63,15 @@ def main():
     rank = pd.read_csv(SITE / "ranking_default.csv")
     merged = rank.merge(d, left_on="district_code", right_on="code")
     bad_rows = row_level_files()
+    def strict_json(path):
+        try:
+            json.loads(path.read_text(), parse_constant=lambda c: (_ for _ in ()).throw(ValueError(c)))
+            return True
+        except ValueError:
+            return False
+
     checks = {
+        "site JSON is strict (no NaN/Infinity)": all(strict_json(p) for p in SITE.glob("*.json*")),
         "every stove assumption has a source": all(st.get(k) for st in a["stoves"]
                                                    for k in ["costSource", "usageSource", "effectSource"]),
         "assumptions identical in data/reference and site/data":

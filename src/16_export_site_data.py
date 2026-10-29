@@ -89,13 +89,13 @@ def main():
             "lowConfidenceReason": d.low_confidence_reason if isinstance(d.low_confidence_reason, str) else "",
             "whyFactors": factors[c],
         })
-    (SITE / "districts.json").write_text(json.dumps(records, separators=(",", ":")))
+    (SITE / "districts.json").write_text(json.dumps(records, separators=(",", ":"), allow_nan=False))
 
     ors = pd.read_csv(OUTPUTS / "model" / "odds_ratios.csv")
     imp = pd.read_csv(OUTPUTS / "model" / "feature_importance.csv")
     ms = json.loads((OUTPUTS / "model" / "model_summary.json").read_text())
     nat = json.loads((OUTPUTS / "district" / "national_checks.json").read_text())
-    rob = pd.read_csv(OUTPUTS / "district" / "robustness.csv")
+    rob = pd.read_csv(OUTPUTS / "district" / "robustness.csv").fillna("")
     rates = pd.read_csv(OUTPUTS / "descriptives" / "rates_cough_fast.csv")
     summary = {
         "outcomes": {
@@ -120,7 +120,8 @@ def main():
                      "bootstrap": f"{nat['n_bootstrap']} rounds; DHS clusters (model refit) and EICV7 clusters resampled within strata"},
         "appliedTo": "EICV7 2023/24 children under 5 (7,667), scaled to Census 2022 district counts",
     }
-    (SITE / "model_summary.json").write_text(json.dumps(summary, indent=1))
+    # allow_nan=False: browsers reject NaN, so fail loudly instead of writing invalid JSON.
+    (SITE / "model_summary.json").write_text(json.dumps(summary, indent=1, allow_nan=False))
 
     rk = t.sort_values("priority_rank")[[
         "priority_rank", "priority_rank_lo", "priority_rank_hi", "priority_tier", "district_code", "district_name",

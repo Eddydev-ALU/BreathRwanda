@@ -933,8 +933,8 @@
    "variant": "Without household size",
    "spearman_vs_main": 0.997,
    "top10_overlap": 10,
-   "entered_top10": NaN,
-   "left_top10": NaN
+   "entered_top10": "",
+   "left_top10": ""
   },
   {
    "variant": "XGBoost instead of logistic",
