@@ -1,7 +1,7 @@
 """Build and execute notebooks/walkthrough.ipynb from the aggregate pipeline outputs.
 
 Usage (after ./run_pipeline.sh): .venv/bin/python notebooks/build_walkthrough.py
-The notebook reads only outputs/ and site/data/ (never raw microdata), so its saved outputs are safe to commit.
+The notebook reads only outputs/ and website/data/ (never raw microdata), so its saved outputs are safe to commit.
 Requires a Jupyter kernel for the venv:
   .venv/bin/python -m ipykernel install --user --name breathrwanda
 """
@@ -20,7 +20,7 @@ cells.append(md("""# Clean Air, Healthy Children: analysis walkthrough
 
 This notebook walks through the results of the analysis pipeline in `src/` (run it with `./run_pipeline.sh`).
 
-**It only reads aggregate outputs** (`outputs/`, `site/data/`). It never loads the survey microdata, so it is safe to share and commit with its outputs. To change the analysis, edit the scripts in `src/` and rerun the pipeline, then rerun this notebook.
+**It only reads aggregate outputs** (`outputs/`, `website/data/`). It never loads the survey microdata, so it is safe to share and commit with its outputs. To change the analysis, edit the scripts in `src/` and rerun the pipeline, then rerun this notebook.
 
 | Section | What it shows |
 |---|---|
@@ -41,7 +41,7 @@ from IPython.display import Image, display
 from matplotlib.colors import LinearSegmentedColormap
 
 ROOT = Path.cwd().parent if Path.cwd().name == "notebooks" else Path.cwd()
-OUT, SITE = ROOT / "outputs", ROOT / "site" / "data"
+OUT, SITE = ROOT / "outputs", ROOT / "website" / "data"
 pd.set_option("display.max_columns", 30, "display.width", 160)
 
 # Sequential single-hue ramp (light -> dark blue) for maps
@@ -141,7 +141,7 @@ cells.append(md("""The ranking is stable to the model type, the survey round and
 
 cells.append(md("""## 6. Example: allocating a stove budget
 
-The website's planner follows the same greedy rule as below. Districts are served in order of cases averted per stove, each up to its number of polluting-fuel households. Stove cost, usage and effect come from `site/data/assumptions.json`, where every value has a source.
+The website's planner follows the same greedy rule as below. Districts are served in order of cases averted per stove, each up to its number of polluting-fuel households. Stove cost, usage and effect come from `website/data/assumptions.json`, where every value has a source.
 
 Trials and observational studies disagree on how much a cleaner stove reduces child respiratory illness, so **cases averted are shown as a range**: from the randomised-trial estimate (low) to an upper bound from observational studies (high). **Children reached** is the more certain number."""))
 cells.append(code("""assumptions = json.loads((SITE / "assumptions.json").read_text())

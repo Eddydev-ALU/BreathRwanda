@@ -15,7 +15,7 @@ import pandas as pd
 
 from common import DOCS, OUTPUTS, ROOT
 
-SITE = ROOT / "site" / "data"
+SITE = ROOT / "website" / "data"
 REQUIRED = ["code", "name", "province", "childrenU5", "households", "exposureShare", "exposureShareLo",
             "exposureShareHi", "indoorSmokeShare", "risk", "riskLo", "riskHi", "riskExposed", "pollutingHH",
             "childrenPerHH", "priorityScore", "priorityRank", "priorityRankLo", "priorityRankHi", "priorityTier",
@@ -74,7 +74,7 @@ def main():
         "site JSON is strict (no NaN/Infinity)": all(strict_json(p) for p in SITE.glob("*.json*")),
         "every stove assumption has a source": all(st.get(k) for st in a["stoves"]
                                                    for k in ["costSource", "usageSource", "effectSource"]),
-        "assumptions identical in data/reference and site/data":
+        "assumptions identical in data/reference and website/data":
             (ROOT / "data" / "reference" / "assumptions.json").read_text() == (SITE / "assumptions.json").read_text(),
         "30 districts": len(d) == 30 and d.code.is_unique,
         "required fields present and non-null": all(c in d and d[c].notna().all() for c in REQUIRED),
@@ -99,8 +99,8 @@ def main():
         "national predicted risk within 1pp of DHS 2025": abs(nat["eicv7_mean_predicted_risk_pct"] - nat["dhs2025_observed_pct"]) < 1,
         "national figures in methods doc match outputs": numbers_in_docs(nat),
         "site data < 1 MB": sum(p.stat().st_size for p in SITE.iterdir()) < 1_000_000,
-        "only JSON/GeoJSON/CSV in site/data": all(p.suffix in {".json", ".geojson", ".csv"} for p in SITE.iterdir()),
-        "no row-level CSV in outputs/ or site/data": not bad_rows,
+        "only JSON/GeoJSON/CSV in website/data": all(p.suffix in {".json", ".geojson", ".csv"} for p in SITE.iterdir()),
+        "no row-level CSV in outputs/ or website/data": not bad_rows,
         "notebook output tables are aggregate (<= 30 rows)": notebook_tables_small(),
     }
     if bad_rows:

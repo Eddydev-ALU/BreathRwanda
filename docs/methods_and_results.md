@@ -122,7 +122,7 @@ Mean |SHAP| (log-odds), main outcome. For logistic regression this is the exact 
 | Household size | 0.05 | 0.06 |
 | Cooking fuel | 0.02 | 0.08 |
 
-The website's "Why is this district high risk?" panel uses each district's average linear SHAP contribution per factor relative to the national average, converted to percentage points (`whyFactors` in `site/data/districts.json`).
+The website's "Why is this district high risk?" panel uses each district's average linear SHAP contribution per factor relative to the national average, converted to percentage points (`whyFactors` in `website/data/districts.json`).
 
 ## 6. District index
 
@@ -176,7 +176,7 @@ Each round (1) resamples DHS clusters within strata and refits the model, then (
 | 9 (3–16) | Rubavu | Western | 78,964 | 76,911 | 38,632 | 8.6 (7.4–9.8) | 0.61 |
 | 10 (3–17) | Rusizi | Western | 69,849 | 69,458 | 8,522 | 8.0 (7.0–9.0) | 0.66 |
 
-Full table: `outputs/district/district_index.csv`; download version: `site/data/ranking_default.csv`. **Rubavu** has by far the most children exposed to smoke inside the house (38,632), so it moves to the top under the planner's "indoor cooking first" option.
+Full table: `outputs/district/district_index.csv`; download version: `website/data/ranking_default.csv`. **Rubavu** has by far the most children exposed to smoke inside the house (38,632), so it moves to the top under the planner's "indoor cooking first" option.
 
 ### 6.6 Robustness (`outputs/district/robustness.csv`)
 
@@ -192,7 +192,7 @@ Full table: `outputs/district/district_index.csv`; download version: `site/data/
 The ranking is stable to model form, survey round and most predictors. It changes under the ARI outcome, but that model has little predictive skill (AUC 0.56), so this variant is reported and not used. Province carries much of the signal: Southern and Eastern provinces have higher adjusted risk than Kigali.
 
 ## 7. Planner assumptions (stove cost, effectiveness, usage)
-All values, with full citations and URLs, are in `data/reference/assumptions.json` (copied to `site/data/assumptions.json`); every citation was checked against its source on 27 Oct 2026. **These are editable assumptions from published research and programme documents, not results from our data.** Our survey data cannot estimate the stove effect (§5.2). Trials measured severe or doctor-diagnosed pneumonia in infants; we apply their effects to cough with fast breathing in children under 5, so **cases averted are an illustrative range, not a prediction**.
+All values, with full citations and URLs, are in `data/reference/assumptions.json` (copied to `website/data/assumptions.json`); every citation was checked against its source on 27 Oct 2026. **These are editable assumptions from published research and programme documents, not results from our data.** Our survey data cannot estimate the stove effect (§5.2). Trials measured severe or doctor-diagnosed pneumonia in infants; we apply their effects to cough with fast breathing in children under 5, so **cases averted are an illustrative range, not a prediction**.
 
 | Stove | Cost per household (RWF) | Sustained use | Effect: trial | Effect: observational upper bound |
 |---|---:|---:|---:|---:|
