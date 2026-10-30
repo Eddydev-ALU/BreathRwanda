@@ -98,7 +98,7 @@ function DistrictMap({ geo, byCode, measure, scale, selectedCode, onSelect }) {
       scrollWheelZoom={false}
       attributionControl={false}
       style={{ background: 'var(--color-bg)' }}
-      className="h-[58vh] min-h-[340px] w-full border border-line lg:h-[620px]"
+      className="h-[46vh] min-h-[300px] w-full border border-line sm:h-[58vh] lg:h-[620px]"
       aria-label="Map of Rwanda's 30 districts"
     >
       <GeoJSON
@@ -137,9 +137,25 @@ export default function MapPage() {
     setParams(next, { replace: true })
   }
 
+  const mapBox = useRef(null)
   useEffect(() => {
-    if (selected) heading.current?.focus({ preventScroll: true })
+    if (!selected) return
+    heading.current?.focus({ preventScroll: true })
+    // On phones the panel is a bottom sheet: bring the map to the top so it stays visible above it.
+    if (window.matchMedia('(max-width: 1023px)').matches) {
+      const top = mapBox.current?.getBoundingClientRect().top
+      if (Number.isFinite(top) && Math.abs(top) > 8) window.scrollBy({ top: top - 8, behavior: 'smooth' })
+    }
   }, [selected?.code])
+
+  useEffect(() => {
+    if (!selected) return
+    const onKey = (e) => {
+      if (e.key === 'Escape' && !document.querySelector('[role="tooltip"]')) update({ district: null })
+    }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [selected?.code, params])
 
   if (status === 'loading') return <Loading what="the map" />
   if (status === 'error') return <LoadError error={error} retry={retry} />
@@ -149,7 +165,7 @@ export default function MapPage() {
   const sorted = [...districts].sort((a, b) => a.name.localeCompare(b.name))
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <div className={`mx-auto max-w-6xl px-4 pt-8 sm:px-6 ${selected ? 'pb-[50vh] lg:pb-0' : ''}`}>
       <h1 className="text-3xl sm:text-4xl">District risk map</h1>
       <p className="mt-3 max-w-prose">
         Tap or click a district to see its numbers. Risk means the estimated share of children under 5 with cough and
@@ -192,7 +208,7 @@ export default function MapPage() {
             </div>
           </fieldset>
 
-          <div className="mt-4">
+          <div className="mt-4 scroll-mt-2" ref={mapBox}>
             <DistrictMap
               geo={data.geo}
               byCode={byCode}
@@ -234,10 +250,11 @@ export default function MapPage() {
           aria-label="District details"
           className={
             selected
-              ? 'fixed inset-x-0 bottom-0 z-[1000] max-h-[60vh] overflow-y-auto border-t border-line bg-bg px-4 pb-8 pt-5 lg:static lg:z-auto lg:max-h-none lg:overflow-visible lg:border lg:p-5'
+              ? 'fixed inset-x-0 bottom-0 z-[1000] max-h-[50vh] overflow-y-auto overscroll-contain border-t border-line bg-bg px-4 pb-8 pt-3 lg:static lg:z-auto lg:max-h-none lg:overflow-visible lg:border lg:p-5'
               : 'hidden lg:block lg:border lg:border-line lg:p-5'
           }
         >
+          {selected && <span aria-hidden="true" className="mx-auto mb-3 block h-1 w-10 rounded bg-line lg:hidden" />}
           {selected ? (
             <DistrictPanel
               d={selected}

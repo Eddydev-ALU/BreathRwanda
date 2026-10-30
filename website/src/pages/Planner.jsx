@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useData } from '../lib/data.js'
 import { plan } from '../lib/planner.js'
@@ -109,6 +109,42 @@ function BarChart({ rows }) {
   )
 }
 
+// Phones only: keeps the totals in view while the settings are being changed.
+function SummaryBar({ result, target }) {
+  const [hidden, setHidden] = useState(false)
+  useEffect(() => {
+    const el = target.current
+    if (!el || !('IntersectionObserver' in window)) return
+    const io = new IntersectionObserver(([e]) => setHidden(e.isIntersecting || e.boundingClientRect.top < 0), {
+      threshold: 0,
+    })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [target])
+  if (hidden) return null
+  return (
+    <div className="fixed inset-x-0 bottom-0 z-[900] border-t border-line bg-bg px-4 py-2 lg:hidden">
+      <a
+        href="#results-heading"
+        className="flex min-h-11 items-center justify-between gap-3 text-sm text-ink no-underline"
+        onClick={(e) => {
+          e.preventDefault()
+          target.current?.scrollIntoView({ behavior: 'smooth' })
+        }}
+      >
+        <span className="tabular-nums">
+          <strong>{fmtInt(result.stoves)}</strong> stoves · <strong>{fmtInt(result.children)}</strong> children ·{' '}
+          <strong>
+            {fmtInt(result.casesLow)}–{fmtInt(result.casesHigh)}
+          </strong>{' '}
+          cases averted
+        </span>
+        <span className="shrink-0 text-accent underline">Results</span>
+      </a>
+    </div>
+  )
+}
+
 export default function Planner() {
   usePageMeta(
     'Stove budget planner',
@@ -125,6 +161,7 @@ export default function Planner() {
   const [budget, setBudget] = useState(null)
   const [priority, setPriority] = useState('risk')
   const [edits, setEdits] = useState({})
+  const resultsRef = useRef(null)
 
   const activeId = stoveId || a?.defaults?.stove || 'ics'
   const stove = stoves.find((s) => s.id === activeId) || stoves[0]
@@ -144,7 +181,7 @@ export default function Planner() {
   const costInvalid = !(params.cost > 0)
 
   const columns = [
-    { key: 'order', header: 'Order', sort: (r) => r.order, render: (r) => r.order },
+    { key: 'order', header: 'Order', sortLabel: 'Order served', sort: (r) => r.order, render: (r) => r.order },
     { key: 'name', header: 'District', sort: (r) => r.name, render: (r) => r.name },
     { key: 'stoves', header: 'Stoves', align: 'right', sort: (r) => r.stoves, render: (r) => fmtInt(r.stoves) },
     {
@@ -196,7 +233,8 @@ export default function Planner() {
     )
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:pb-0">
+      {!costInvalid && <SummaryBar result={result} target={resultsRef} />}
       <h1 className="text-3xl sm:text-4xl">What-if stove planner</h1>
       <p className="mt-3 max-w-prose">
         Set a budget and a stove type. Stoves go first to the districts where each one is expected to prevent the most
@@ -398,7 +436,7 @@ export default function Planner() {
         </form>
 
         {/* Results */}
-        <section aria-labelledby="results-heading" aria-live="polite">
+        <section ref={resultsRef} aria-labelledby="results-heading" aria-live="polite" className="scroll-mt-4">
           <h2 id="results-heading" className="text-2xl">
             Results
           </h2>
@@ -490,6 +528,50 @@ export default function Planner() {
                       caption="Stoves, children reached and cases averted by district"
                       rowKey={(r) => r.code}
                       minWidth="520px"
+                      card={(r) => (
+                        <div>
+                          <div className="flex items-baseline justify-between gap-3">
+                            <p className="font-medium">
+                              <span className="text-muted">{r.order}.</span> {r.name}
+                            </p>
+                            <p className="text-sm text-muted">{(100 * r.budgetShare).toFixed(1)}% of budget</p>
+                          </div>
+                          <dl className="mt-1 grid grid-cols-3 gap-2 text-sm">
+                            <div>
+                              <dt className="text-xs text-muted">Stoves</dt>
+                              <dd className="tabular-nums">{fmtInt(r.stoves)}</dd>
+                            </div>
+                            <div>
+                              <dt className="text-xs text-muted">Children reached</dt>
+                              <dd className="tabular-nums">{fmtInt(r.children)}</dd>
+                            </div>
+                            <div>
+                              <dt className="text-xs text-muted">Cases averted</dt>
+                              <dd className="tabular-nums">
+                                {fmtInt(r.casesLow)} to {fmtInt(r.casesHigh)}
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      )}
+                      cardFooter={
+                        <dl className="grid grid-cols-3 gap-2 border-b border-line py-3 text-sm font-medium">
+                          <div>
+                            <dt className="text-xs text-muted">Total stoves</dt>
+                            <dd className="tabular-nums">{fmtInt(result.stoves)}</dd>
+                          </div>
+                          <div>
+                            <dt className="text-xs text-muted">Total children</dt>
+                            <dd className="tabular-nums">{fmtInt(result.children)}</dd>
+                          </div>
+                          <div>
+                            <dt className="text-xs text-muted">Total cases averted</dt>
+                            <dd className="tabular-nums">
+                              {fmtInt(result.casesLow)} to {fmtInt(result.casesHigh)}
+                            </dd>
+                          </div>
+                        </dl>
+                      }
                       footer={
                         <tfoot>
                           <tr className="border-t border-ink/40 bg-surface font-medium">

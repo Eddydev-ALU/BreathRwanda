@@ -81,8 +81,8 @@
   border: 1px solid var(--color-line);
   border-radius: var(--radius);
 }
-.leaflet-bar a,
-.leaflet-touch .leaflet-bar a {
+.leaflet-container .leaflet-bar a,
+.leaflet-touch.leaflet-container .leaflet-bar a {
   width: 44px;
   height: 44px;
   line-height: 44px;
