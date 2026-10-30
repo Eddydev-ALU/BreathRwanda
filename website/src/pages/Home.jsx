@@ -153,11 +153,11 @@ export default function Home() {
           <Smoke />
         </div>
         <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6 sm:pb-24">
-          <p className="fade-up text-sm font-medium uppercase tracking-wider text-white/85">Children and cooking smoke in Rwanda</p>
+          <p className="fade-up text-sm font-medium uppercase tracking-wider text-white">Children and cooking smoke in Rwanda</p>
           <h1 className="fade-up mt-3 max-w-[18ch] text-4xl text-white sm:text-6xl" style={{ animationDelay: '120ms' }}>
             Where will clean cooking stoves protect the most children in Rwanda?
           </h1>
-          <p className="fade-up mt-5 max-w-prose text-lg text-white/90" style={{ animationDelay: '240ms' }}>
+          <p className="fade-up mt-5 max-w-prose text-lg text-white" style={{ animationDelay: '240ms' }}>
             Most homes cook with firewood or charcoal. BreathRwanda shows which districts have the most children exposed,
             and where a stove budget protects the most of them.
           </p>
@@ -218,7 +218,7 @@ export default function Home() {
           <Reveal delay={100}>
             <p className="text-sm font-medium uppercase tracking-wider text-muted">Explore the data</p>
             <h2 id="explore" className="mt-2 text-3xl sm:text-4xl">
-              Find the data where you live
+              See the numbers for your district
             </h2>
             <p className="mt-4 max-w-prose">
               See risk, children exposed and smoke inside the house for each of Rwanda’s 30 districts, with the
@@ -304,7 +304,7 @@ export default function Home() {
             <h2 id="learn" className="mt-2 max-w-[30ch] text-3xl text-white sm:text-4xl">
               Why smoke from cooking matters for children under 5
             </h2>
-            <p className="mt-4 max-w-prose text-white/90">
+            <p className="mt-4 max-w-prose text-white">
               Household air pollution is the smoke from cooking with wood, charcoal and other polluting fuels in and
               around the home. In Rwanda, nearly every child under 5 lives in a home that cooks this way.
             </p>
@@ -328,7 +328,7 @@ export default function Home() {
             ].map((f, i) => (
               <Reveal key={f.h} delay={i * 90} className="border-t border-white/40 pt-4">
                 <p className="font-serif text-2xl font-semibold text-white">{f.h}</p>
-                <p className="mt-2 text-white/90">{f.t}</p>
+                <p className="mt-2 text-white">{f.t}</p>
                 {f.src && (
                   <p className="mt-2 text-sm">
                     <a href={WHO_URL} target="_blank" rel="noreferrer" className="text-white underline underline-offset-4">

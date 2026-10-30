@@ -145,7 +145,7 @@ export default function MapPage() {
     // On phones the panel is a bottom sheet: bring the map to the top so it stays visible above it.
     if (window.matchMedia('(max-width: 1023px)').matches) {
       const top = mapBox.current?.getBoundingClientRect().top
-      if (Number.isFinite(top) && Math.abs(top) > 8) window.scrollBy({ top: top - 8, behavior: 'smooth' })
+      if (Number.isFinite(top) && Math.abs(top - 72) > 8) window.scrollBy({ top: top - 72, behavior: 'smooth' })
     }
   }, [selected?.code])
 
