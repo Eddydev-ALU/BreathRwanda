@@ -10,6 +10,7 @@ import { Banner, Loading, LoadError, usePageMeta } from '../components/Status.js
 import DistrictPanel from '../components/DistrictPanel.jsx'
 import Tip from '../components/Tip.jsx'
 import { Term } from '../components/terms.jsx'
+import PageHero from '../components/PageHero.jsx'
 
 const MEASURES = [
   { id: 'risk', label: 'Risk index', field: 'riskIndex', fmt: (v) => Math.round(v), unit: 'index, 0 to 100' },
@@ -157,23 +158,24 @@ export default function MapPage() {
     return () => document.removeEventListener('keydown', onKey)
   }, [selected?.code, params])
 
-  if (status === 'loading') return <Loading what="the map" />
-  if (status === 'error') return <LoadError error={error} retry={retry} />
+  const hero = (
+    <PageHero image="kinigi-hills" eyebrow="Explore the data" title="District risk map">
+      Tap or click a district to see its numbers. Risk means the estimated share of children under 5 with cough and fast
+      breathing in a two-week period.
+    </PageHero>
+  )
+  if (status === 'loading') return <>{hero}<Loading what="the map" /></>
+  if (status === 'error') return <>{hero}<LoadError error={error} retry={retry} /></>
 
   const shares = districts.map((d) => d.exposureShare).filter(Number.isFinite)
   const exposureRange = `${Math.round(100 * Math.min(...shares))}% and ${Math.round(100 * Math.max(...shares))}%`
   const sorted = [...districts].sort((a, b) => a.name.localeCompare(b.name))
 
   return (
-    <div className={`mx-auto max-w-6xl px-4 pt-8 sm:px-6 ${selected ? 'pb-[50vh] lg:pb-0' : ''}`}>
-      <h1 className="text-3xl sm:text-4xl">District risk map</h1>
-      <p className="mt-3 max-w-prose">
-        Tap or click a district to see its numbers. Risk means the estimated share of children under 5 with cough and
-        fast breathing in a two-week period.
-      </p>
-      <div className="mt-5">
-        <Banner />
-      </div>
+    <>
+    {hero}
+    <div className={`mx-auto max-w-6xl px-4 pt-10 sm:px-6 ${selected ? 'pb-[50vh] lg:pb-0' : ''}`}>
+      <Banner />
 
       <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
         <div>
@@ -273,5 +275,6 @@ export default function MapPage() {
         </aside>
       </div>
     </div>
+    </>
   )
 }

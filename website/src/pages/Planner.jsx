@@ -8,6 +8,7 @@ import { AnimatedNumber, Banner, Loading, LoadError, usePageMeta } from '../comp
 import SortTable from '../components/SortTable.jsx'
 import Tip from '../components/Tip.jsx'
 import { Term } from '../components/terms.jsx'
+import PageHero from '../components/PageHero.jsx'
 
 const SLIDER_MAX_RWF = 20_000_000_000
 const SLIDER_STEPS = 1000
@@ -98,7 +99,7 @@ function BarChart({ rows }) {
           <li key={r.code} className="grid grid-cols-[7.5rem_minmax(0,1fr)] items-center gap-3 text-sm sm:grid-cols-[9rem_minmax(0,1fr)]">
             <span className="truncate">{r.name}</span>
             <span className="flex items-center gap-2">
-              <span className="h-4 bg-scale-4" style={{ width: `${Math.max(0.5, (r.stoves / max) * 75)}%` }} />
+              <span className="h-4 bg-scale-4 transition-[width] duration-500 ease-out motion-reduce:transition-none" style={{ width: `${Math.max(0.5, (r.stoves / max) * 75)}%` }} />
               <span className="whitespace-nowrap tabular-nums text-muted">{fmtInt(r.stoves)}</span>
             </span>
           </li>
@@ -172,8 +173,14 @@ export default function Planner() {
     [data, params?.cost, params?.usage, params?.effectTrial, params?.effectObservational, amount, priority],
   )
 
-  if (status === 'loading') return <Loading what="the planner" />
-  if (status === 'error') return <LoadError error={error} retry={retry} />
+  const hero = (
+    <PageHero image="cookstoves-uganda" eyebrow="Plan a budget" title="What-if stove planner">
+      Set a budget and a stove type. Stoves go first to the districts where each one is expected to prevent the most
+      cases of cough with fast breathing, up to the number of households there that cook with polluting fuel.
+    </PageHero>
+  )
+  if (status === 'loading') return <>{hero}<Loading what="the planner" /></>
+  if (status === 'error') return <>{hero}<LoadError error={error} retry={retry} /></>
   if (!stove) return <LoadError error={new Error('No stove types found in assumptions.json.')} retry={retry} />
 
   const edited = Boolean(edits[stove.id])
@@ -233,16 +240,11 @@ export default function Planner() {
     )
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:pb-0">
+    <>
+    {hero}
+    <div className="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 lg:pb-0">
       {!costInvalid && <SummaryBar result={result} target={resultsRef} />}
-      <h1 className="text-3xl sm:text-4xl">What-if stove planner</h1>
-      <p className="mt-3 max-w-prose">
-        Set a budget and a stove type. Stoves go first to the districts where each one is expected to prevent the most
-        cases of cough with fast breathing, up to the number of households there that cook with polluting fuel.
-      </p>
-      <div className="mt-5">
-        <Banner />
-      </div>
+      <Banner />
 
       <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         {/* Inputs */}
@@ -611,5 +613,6 @@ export default function Planner() {
         </section>
       </div>
     </div>
+    </>
   )
 }
