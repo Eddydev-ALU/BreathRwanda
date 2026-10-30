@@ -59,12 +59,12 @@ test('budget that does not divide by the cost', () => {
 })
 
 test('indoor priority starts with Rubavu and respects limits', () => {
-  const r = plan(districts, stoveOf('ics'), 20_000_000_000, 'indoor')
+  const r = plan(districts, stoveOf('ics'), 5_000_000_000, 'indoor')
   checkInvariants(r)
+  assert.equal(r.rows[0].name, 'Rubavu')
   const huge = plan(districts, stoveOf('ics'), 1e15, 'indoor')
   assert.equal(huge.stoves, [...limits.values()].reduce((a, b) => a + b, 0))
   checkInvariants(huge)
-  assert.ok(r.rows.some((x) => x.name === 'Rubavu'))
 })
 
 test('bad inputs do not throw', () => {

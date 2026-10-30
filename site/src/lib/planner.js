@@ -4,9 +4,10 @@
 
 // One "segment" is a group of households in a district that can receive stoves.
 // "risk" priority: all polluting-fuel households, one segment per district.
-// "indoor" priority: households that burn polluting fuel inside the house come first;
-// the rest of each district's polluting-fuel households follow, using the district
-// totals minus the indoor part (children and risk-weighted children are additive).
+// "indoor" priority: households that burn polluting fuel inside the house come first,
+// starting with the districts that have the most children breathing that smoke indoors.
+// The rest of each district's polluting-fuel households follow in the default order,
+// using the district totals minus the indoor part (children and risk-weighted children add up).
 function segments(districts, priority) {
   if (priority !== 'indoor') {
     return districts.map((d) => ({
@@ -53,7 +54,11 @@ export function plan(districts, stove, budgetInput, priority = 'risk') {
 
   const segs = segments(districts, priority)
     .map((s) => ({ ...s, score: s.childrenPerHH * s.risk }))
-    .sort((a, b) => a.pass - b.pass || b.score - a.score || a.d.priorityRank - b.d.priorityRank)
+    .sort((a, b) => {
+      if (a.pass !== b.pass) return a.pass - b.pass
+      if (priority === 'indoor' && a.pass === 1) return b.d.childrenIndoorSmoke - a.d.childrenIndoorSmoke
+      return b.score - a.score || a.d.priorityRank - b.d.priorityRank
+    })
 
   const byCode = new Map()
   let left = affordable
