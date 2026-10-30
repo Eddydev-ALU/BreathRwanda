@@ -1,9 +1,9 @@
 """Step 16: export small, aggregate-only JSON/CSV files for the static website.
 
-  site/data/districts.json      one record per district (field names match the planner JS)
-  site/data/model_summary.json  outcome definitions, validation, odds ratios, importance, checks
-  site/data/ranking_default.csv default priority ranking for download
-  site/data/assumptions.json    stove cost/usage/effect with sources (copied from data/reference)
+  website/data/districts.json      one record per district (field names match the planner JS)
+  website/data/model_summary.json  outcome definitions, validation, odds ratios, importance, checks
+  website/data/ranking_default.csv default priority ranking for download
+  website/data/assumptions.json    stove cost/usage/effect with sources (copied from data/reference)
 
 "Why this district?" factors: for the logistic model, each child's prediction decomposes
 exactly into beta_j * (x_ij - national mean_j) per factor (linear SHAP, log-odds). We average
@@ -17,7 +17,7 @@ import pandas as pd
 from common import OUTPUTS, PROCESSED, REFERENCE, ROOT
 from model_spec import LABELS, design, feature_of, fit_logit, prepare
 
-SITE = ROOT / "site" / "data"
+SITE = ROOT / "website" / "data"
 OUTCOME = "cough_fast"
 
 
@@ -133,7 +133,7 @@ def main():
     (SITE / "assumptions.json").write_text((REFERENCE / "assumptions.json").read_text())
 
     sizes = {p.name: round(p.stat().st_size / 1024, 1) for p in SITE.iterdir()}
-    print("site/data sizes (KB):", sizes, "total", round(sum(sizes.values()), 1))
+    print("website/data sizes (KB):", sizes, "total", round(sum(sizes.values()), 1))
     print("example district:", json.dumps(records[0])[:700])
 
 

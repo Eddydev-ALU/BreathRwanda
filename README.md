@@ -29,7 +29,7 @@ src/            analysis pipeline (run in order, or ./run_pipeline.sh)
 notebooks/      walkthrough.ipynb: results tour (reads aggregate outputs only)
 outputs/        aggregate tables and figures only
 docs/           documentation
-site/           the website (site/data holds the exported JSON/GeoJSON/CSV)
+website/        the website (Vite + React; website/data holds the exported JSON/GeoJSON/CSV, see "Website")
 data/raw/       survey microdata (NOT in the repository)
 ```
 
@@ -41,6 +41,38 @@ uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requi
 # put the survey files in data/raw/ (see below), then:
 ./run_pipeline.sh
 ```
+
+## Website
+
+`website/` holds the public website: a static Vite + React + Tailwind CSS app with a Leaflet map. Everything runs in the browser from five small files; there is no server and no database.
+
+| Page | What it shows | Data files |
+|---|---|---|
+| Home (`/`) | Headline question and four national numbers | `model_summary.json` |
+| Map (`/map`) | Choropleth of the 30 districts (risk index, children exposed, children exposed indoors) and a district panel with tier, rank interval, risk interval and "why" factors. `/map?district=Rubavu&measure=indoor` opens a district directly | `districts.json`, `districts.geojson`, `model_summary.json` |
+| Ranking (`/ranking`) | Sortable table with tier, rank interval, province filter, search and CSV download | `districts.json` |
+| Planner (`/planner`) | Budget and stove-type what-if tool (greedy allocation, guide §7.3 and §8.4), cases averted as a trial-to-observational range, CSV download | `districts.json`, `assumptions.json` |
+| Methods (`/methods`) | Sources, method steps, model validation and odds ratios, stove evidence, limitations, AI disclosure | `model_summary.json`, `assumptions.json` |
+
+### Run it locally
+```bash
+cd website
+npm install
+npm run dev        # http://localhost:5173
+npm test           # planner tests: 5 billion RWF case, budget 0, huge and non-divisible budgets
+npm run build      # static site in website/dist
+```
+
+### Where the data comes from
+`src/16_export_site_data.py` writes `website/data/` (`districts.json`, `districts.geojson`, `assumptions.json`, `model_summary.json`, `ranking_default.csv`) from the aggregate outputs of the pipeline. `website/scripts/prepare-data.mjs` runs before every `dev` and `build`. It checks that the 30 district names and codes match between `districts.json` and the boundaries, turns `NaN` into valid JSON, keeps only the fields the site uses, removes source text that names a diagnosis (the site only uses the term "cough with fast breathing"), checks the total is under 1 MB, and writes the result to `website/public/data/` (generated, not committed). No household or child records are used.
+
+Planner choices worth knowing:
+- *Highest baseline risk first* serves districts by cases averted per stove (children per polluting household × risk among exposed children), each up to its number of polluting-fuel households.
+- *Indoor cooking first* first serves households that burn polluting fuel inside the house, starting with the districts with the most children exposed indoors (Rubavu first). The remaining polluting-fuel households then follow in the default order, using each district's totals minus its indoor part.
+- Rows are rounded before totals are summed, so the big numbers, chart and table always agree.
+
+### Deploy
+On Vercel: import the GitHub repository, set **Root Directory** to `website`, and keep the defaults (build `npm run build`, output `dist`; `website/vercel.json` adds the page rewrites). Netlify works the same way with base directory `website` (`website/netlify.toml`).
 
 ### Data availability
 The survey microdata used in this project cannot be redistributed. To reproduce the analysis, register at the [NISR microdata portal](https://microdata.statistics.gov.rw/index.php/auth/login) and request:
@@ -64,5 +96,4 @@ Data: National Institute of Statistics of Rwanda (NISR), Integrated Household Li
 AI tools were used for research, planning, code assistance and drafting support. The team reviewed, tested and is responsible for all analysis, code, results and text in this submission.
 
 ## Team
-- _Name_ (data and model)
-- _Name_ (website and deployment)
+Team: Eddy, De Noella

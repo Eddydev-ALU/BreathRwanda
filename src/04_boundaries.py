@@ -4,7 +4,7 @@ table, check the match with NISR codes and write a simplified GeoJSON for the we
 Outputs:
   data/reference/districts_rbc_full.geojson   full-resolution download (EPSG:4326)
   data/reference/district_lookup.csv          code, name, province
-  site/data/districts.geojson                 simplified, code + name only
+  website/data/districts.geojson                 simplified, code + name only
 """
 import json
 import sys
@@ -82,7 +82,7 @@ def main():
     out = gdf[["district_code", "geometry"]].merge(lookup[["district_code", "district_name"]], on="district_code")
     out["geometry"] = out.geometry.make_valid().simplify(SIMPLIFY_DEG, preserve_topology=True)
     out["district_code"] = out.district_code.astype(int)
-    site = ROOT / "site" / "data"
+    site = ROOT / "website" / "data"
     site.mkdir(parents=True, exist_ok=True)
     path = site / "districts.geojson"
     # Round coordinates to 5 dp (~1 m) to keep the file small.
