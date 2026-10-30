@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+
+/* Only these colours exist on the site. The default Tailwind palette is removed. */
+@theme {
+  --color-*: initial;
+  --color-bg: #f7f5f0;
+  --color-surface: #fbfaf7;
+  --color-ink: #1f2421;
+  --color-muted: #6b706c;
+  --color-line: #dad7cf;
+  --color-accent: #1f5c4a;
+  --color-white: #ffffff;
+  --color-scale-0: #f1e6d0;
+  --color-scale-1: #e2bfa4;
+  --color-scale-2: #d39778;
+  --color-scale-3: #c4704b;
+  --color-scale-4: #b5481f;
+
+  --font-serif: 'Source Serif 4 Variable', Georgia, serif;
+  --font-sans: 'Inter Variable', system-ui, sans-serif;
+
+  --radius-sm: 2px;
+  --radius: 4px;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--color-scale-1);
+  }
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Leaflet: flat controls, no shadows, site colours. */
+.leaflet-container {
+  background: var(--color-bg);
+  font-family: var(--font-sans);
+}
+.leaflet-bar,
+.leaflet-touch .leaflet-bar {
+  box-shadow: none;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+.leaflet-bar a,
+.leaflet-touch .leaflet-bar a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  color: var(--color-ink);
+  background: var(--color-surface);
+  border-bottom-color: var(--color-line);
+}
+.leaflet-bar a:first-child,
+.leaflet-bar a:last-child {
+  border-radius: 0;
+}
+.leaflet-tooltip {
+  box-shadow: none;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-size: 0.875rem;
+  padding: 6px 10px;
+}
+.leaflet-tooltip-top::before {
+  border-top-color: var(--color-line);
+}
+.leaflet-control-attribution {
+  background: rgb(247 245 240 / 0.9) !important;
+  color: var(--color-muted);
+  font-size: 11px;
+}
+.leaflet-control-attribution a {
+  color: var(--color-accent);
+}
+.leaflet-interactive:focus {
+  outline: none;
+}
+.district-path {
+  transition: fill-opacity 120ms ease;
+}
