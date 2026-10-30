@@ -6,6 +6,7 @@ import { fmtInt, fmtPct, fmtPctRange, isLowConfidence, lowConfidenceReasons, ran
 import { Banner, Loading, LoadError, LowConfidence, TierLabel, usePageMeta } from '../components/Status.jsx'
 import SortTable from '../components/SortTable.jsx'
 import { Term } from '../components/terms.jsx'
+import PageHero from '../components/PageHero.jsx'
 
 const TIER_ORDER = { High: 1, Medium: 2, Lower: 3 }
 const pct1 = (x) => (Number.isFinite(x) ? (100 * x).toFixed(1) : '')
@@ -22,8 +23,14 @@ export default function Ranking() {
     (d) => (!province || d.province === province) && d.name.toLowerCase().includes(query.trim().toLowerCase()),
   )
 
-  if (status === 'loading') return <Loading what="the ranking" />
-  if (status === 'error') return <LoadError error={error} retry={retry} />
+  const hero = (
+    <PageHero image="village" eyebrow="Explore the data" title="District ranking">
+      Districts ranked by how many cases of cough with fast breathing one clean stove is expected to prevent. Read the
+      tier first and the rank range second: rank 7 is not clearly worse than rank 8.
+    </PageHero>
+  )
+  if (status === 'loading') return <>{hero}<Loading what="the ranking" /></>
+  if (status === 'error') return <>{hero}<LoadError error={error} retry={retry} /></>
 
   const columns = [
     {
@@ -102,15 +109,10 @@ export default function Ranking() {
     )
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
-      <h1 className="text-3xl sm:text-4xl">District ranking</h1>
-      <p className="mt-3 max-w-prose">
-        Districts are ranked by how many cases of cough with fast breathing one clean stove is expected to prevent.
-        Ranks overlap a lot, so read the tier first and the rank range second: rank 7 is not clearly worse than rank 8.
-      </p>
-      <div className="mt-5">
-        <Banner />
-      </div>
+    <>
+    {hero}
+    <div className="page-x pt-10">
+      <Banner />
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:flex sm:flex-wrap sm:items-end">
         <div>
@@ -200,5 +202,6 @@ export default function Ranking() {
         />
       </div>
     </div>
+    </>
   )
 }

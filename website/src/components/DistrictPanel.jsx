@@ -43,7 +43,7 @@ function WhyBars({ factors, nationalPct }) {
               <div className="relative mt-1 h-3 border-x border-line" aria-hidden="true">
                 <span className="absolute inset-y-0 left-1/2 w-px bg-line" />
                 <span
-                  className={`absolute inset-y-0 ${up ? 'bg-scale-4' : 'bg-scale-2'}`}
+                  className={`absolute inset-y-0 transition-[width] duration-500 ease-out motion-reduce:transition-none ${up ? 'bg-scale-4' : 'bg-scale-2'}`}
                   style={up ? { left: '50%', width: `${w}%` } : { right: '50%', width: `${w}%` }}
                 />
               </div>
@@ -70,7 +70,7 @@ function Row({ label, term, children }) {
 export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
   const factors = Array.isArray(d.whyFactors) ? d.whyFactors : []
   return (
-    <article aria-labelledby="district-heading" className="space-y-6">
+    <article key={d.code} aria-labelledby="district-heading" className="panel-in space-y-6">
       <div className="flex items-start justify-between gap-4">
         <div>
           <h2 id="district-heading" ref={headingRef} tabIndex={-1} className="text-3xl focus:outline-none">

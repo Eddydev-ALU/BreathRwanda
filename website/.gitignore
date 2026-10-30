@@ -2,3 +2,5 @@ node_modules/
 dist/
 # generated from website/data by scripts/prepare-data.mjs
 public/data/
+.vercel
+.env*

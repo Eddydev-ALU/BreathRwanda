@@ -2,6 +2,8 @@ import { useData } from '../lib/data.js'
 import { fmtInt, isLowConfidence } from '../lib/format.js'
 import { Loading, LoadError, usePageMeta } from '../components/Status.jsx'
 import { Term } from '../components/terms.jsx'
+import PageHero from '../components/PageHero.jsx'
+import { IMAGES } from '../lib/images.js'
 
 const REPO_URL = 'https://github.com/Eddydev-ALU/BreathRwanda'
 
@@ -80,8 +82,13 @@ function Section({ id, title, children }) {
 export default function Methods() {
   usePageMeta('Methods and limits', 'Data sources, method, model results and limitations of BreathRwanda.')
   const { status, data, error, retry } = useData(['model', 'assumptions', 'districts'])
-  if (status === 'loading') return <Loading what="the methods" />
-  if (status === 'error') return <LoadError error={error} retry={retry} />
+  const hero = (
+    <PageHero image="nyabarongo" eyebrow="Methods and limits" title="How the numbers were made">
+      The data, the model, how good it is, and what these numbers cannot tell you.
+    </PageHero>
+  )
+  if (status === 'loading') return <>{hero}<Loading what="the methods" /></>
+  if (status === 'error') return <>{hero}<LoadError error={error} retry={retry} /></>
 
   const m = data.model
   const n = m.national
@@ -91,13 +98,9 @@ export default function Methods() {
   const lowConf = (data.districts || []).filter(isLowConfidence).map((d) => d.name).sort()
 
   return (
-    <div className="mx-auto max-w-6xl space-y-10 px-4 pt-8 sm:px-6">
-      <div>
-        <h1 className="text-3xl sm:text-4xl">Methods and limits</h1>
-        <p className="mt-3 max-w-prose">
-          How the numbers on this site were made, how good they are, and what they cannot tell you.
-        </p>
-      </div>
+    <>
+    {hero}
+    <div className="page-x space-y-10 pt-12">
 
       <Section id="sources" title="Data sources">
         <ul className="space-y-4">
@@ -320,6 +323,38 @@ export default function Methods() {
         </p>
         <p>Team: Eddy, De Noella</p>
       </Section>
+
+      <Section id="credits" title="Image credits">
+        <p className="text-sm">
+          All photos come from Wikimedia Commons and are used under the licences below. Each was cropped, resized and
+          compressed for this site. The LPG drawing on The Problem page is our own. General facts about household air
+          pollution are from the{' '}
+          <a href="https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health" target="_blank" rel="noreferrer">
+            WHO fact sheet (16 December 2025)
+          </a>
+          .
+        </p>
+        <ul className="space-y-2 text-sm">
+          {Object.values(IMAGES).map((im) => (
+            <li key={im.slug}>
+              <a href={im.source} target="_blank" rel="noreferrer">
+                {im.title}
+              </a>{' '}
+              <span className="text-muted">
+                by {im.author},{' '}
+                {im.licenseUrl ? (
+                  <a href={im.licenseUrl} target="_blank" rel="noreferrer">
+                    {im.license}
+                  </a>
+                ) : (
+                  im.license
+                )}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </Section>
     </div>
+    </>
   )
 }
