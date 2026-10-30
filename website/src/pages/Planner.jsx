@@ -394,6 +394,10 @@ export default function Planner() {
               </details>
             </div>
             <p className="mt-3 text-sm">Cost and effectiveness come from published research and can be changed.</p>
+            {a?.howToRead?.cost && <p className="mt-2 text-sm text-muted">{a.howToRead.cost}</p>}
+            {stove.id === 'epc' && a?.howToRead?.usage && (
+              <p className="mt-2 text-sm text-muted">{a.howToRead.usage}</p>
+            )}
           </fieldset>
 
           <fieldset>
@@ -461,7 +465,10 @@ export default function Planner() {
                         Studies disagree on how much a cleaner stove reduces cough with fast breathing in children. The
                         low number uses the effect found in randomised trials ({Math.round(100 * result.effLow)}% for
                         this stove). The high number uses an upper bound from observational studies (
-                        {Math.round(100 * result.effHigh)}%). Our own survey model cannot measure this effect.
+                        {Math.round(100 * result.effHigh)}%). Our own survey model cannot measure this effect. The
+                        trials also measured more serious, doctor-diagnosed illness in infants; here their effects are
+                        applied to cough with fast breathing in all children under 5, so the range is an illustration,
+                        not a prediction.
                       </Tip>
                     </>
                   }

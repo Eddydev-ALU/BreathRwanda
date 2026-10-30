@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useData } from '../lib/data.js'
 import { downloadCsv } from '../lib/csv.js'
-import { fmtInt, fmtPct, fmtPctRange, rankShort, rankText } from '../lib/format.js'
+import { fmtInt, fmtPct, fmtPctRange, isLowConfidence, lowConfidenceReasons, rankShort, rankText } from '../lib/format.js'
 import { Banner, Loading, LoadError, LowConfidence, TierLabel, usePageMeta } from '../components/Status.jsx'
 import SortTable from '../components/SortTable.jsx'
 import { Term } from '../components/terms.jsx'
@@ -75,8 +75,8 @@ export default function Ranking() {
       header: 'Confidence',
       sortLabel: 'Low confidence',
       term: <Term k="lowConfidence" />,
-      sort: (d) => (d.lowConfidenceIndoor ? 1 : 0),
-      render: (d) => (d.lowConfidenceIndoor ? <LowConfidence withTip={false} /> : <span className="text-muted">Normal</span>),
+      sort: (d) => (isLowConfidence(d) ? 1 : 0),
+      render: (d) => (isLowConfidence(d) ? <LowConfidence withTip={false} /> : <span className="text-muted">Normal</span>),
     },
   ]
 
@@ -95,7 +95,8 @@ export default function Ranking() {
         { header: 'risk_90_low_pct', value: (d) => pct1(d.riskLo) },
         { header: 'risk_90_high_pct', value: (d) => pct1(d.riskHi) },
         { header: 'children_exposed_indoors', value: (d) => d.childrenIndoorSmoke },
-        { header: 'low_confidence_indoor', value: (d) => (d.lowConfidenceIndoor ? 'yes' : 'no') },
+        { header: 'low_confidence', value: (d) => (isLowConfidence(d) ? 'yes' : 'no') },
+        { header: 'low_confidence_reason', value: (d) => lowConfidenceReasons(d).join(' ') },
       ],
       [...shown].sort((a, b) => a.priorityRank - b.priorityRank),
     )
@@ -189,7 +190,7 @@ export default function Ranking() {
                   <dd className="tabular-nums">{fmtInt(d.childrenIndoorSmoke)}</dd>
                 </div>
               </dl>
-              {d.lowConfidenceIndoor && (
+              {isLowConfidence(d) && (
                 <div className="mt-2">
                   <LowConfidence />
                 </div>
