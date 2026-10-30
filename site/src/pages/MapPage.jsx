@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { GeoJSON, MapContainer } from 'react-leaflet'
+import { AttributionControl, GeoJSON, MapContainer } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useData } from '../lib/data.js'
@@ -96,7 +96,8 @@ function DistrictMap({ geo, byCode, measure, scale, selectedCode, onSelect }) {
       maxBounds={bounds.pad(0.5)}
       zoomSnap={0.25}
       scrollWheelZoom={false}
-      attributionControl
+      attributionControl={false}
+      style={{ background: 'var(--color-bg)' }}
       className="h-[58vh] min-h-[340px] w-full border border-line lg:h-[620px]"
       aria-label="Map of Rwanda's 30 districts"
     >
@@ -107,6 +108,7 @@ function DistrictMap({ geo, byCode, measure, scale, selectedCode, onSelect }) {
         onEachFeature={onEachFeature}
         attribution="Boundaries: NISR / Rwanda Biomedical Centre"
       />
+      <AttributionControl position="bottomright" prefix='<a href="https://leafletjs.com">Leaflet</a>' />
     </MapContainer>
   )
 }
@@ -157,7 +159,7 @@ export default function MapPage() {
         <Banner />
       </div>
 
-      <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
+      <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
         <div>
           <fieldset>
             <legend className="text-sm font-medium">
@@ -232,7 +234,7 @@ export default function MapPage() {
           aria-label="District details"
           className={
             selected
-              ? 'fixed inset-x-0 bottom-0 z-[1000] max-h-[72vh] overflow-y-auto border-t border-line bg-bg px-4 pb-8 pt-5 lg:static lg:z-auto lg:max-h-none lg:overflow-visible lg:border lg:p-5'
+              ? 'fixed inset-x-0 bottom-0 z-[1000] max-h-[60vh] overflow-y-auto border-t border-line bg-bg px-4 pb-8 pt-5 lg:static lg:z-auto lg:max-h-none lg:overflow-visible lg:border lg:p-5'
               : 'hidden lg:block lg:border lg:border-line lg:p-5'
           }
         >

@@ -76,9 +76,9 @@ function NumberField({ id, label, value, onChange, suffix, hint }) {
   )
 }
 
-function BigNumber({ label, children, extra }) {
+function BigNumber({ label, children, extra, wide }) {
   return (
-    <div className="border-t border-line pt-3">
+    <div className={`border-t border-line pt-3 ${wide ? 'col-span-2' : ''}`}>
       <p className="text-sm text-muted">
         {label}
         {extra}
@@ -164,7 +164,7 @@ export default function Planner() {
     },
     {
       key: 'share',
-      header: 'Share of budget',
+      header: 'Budget share',
       align: 'right',
       sort: (r) => r.budgetShare,
       render: (r) => `${(100 * r.budgetShare).toFixed(1)}%`,
@@ -206,7 +206,7 @@ export default function Planner() {
         <Banner />
       </div>
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+      <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         {/* Inputs */}
         <form className="space-y-8" onSubmit={(e) => e.preventDefault()} aria-label="Planner settings">
           <fieldset>
@@ -406,7 +406,7 @@ export default function Planner() {
             <p className="mt-4">Enter a cost per stove above 0 RWF to see results.</p>
           ) : (
             <>
-              <div className="mt-4 grid gap-6 sm:grid-cols-3">
+              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4">
                 <BigNumber label="Stoves bought">
                   <AnimatedNumber value={result.stoves} format={fmtInt} />
                 </BigNumber>
@@ -414,6 +414,7 @@ export default function Planner() {
                   <AnimatedNumber value={result.children} format={fmtInt} />
                 </BigNumber>
                 <BigNumber
+                  wide
                   label="Cases averted"
                   extra={
                     <>
@@ -488,6 +489,7 @@ export default function Planner() {
                       initial={{ key: 'order', dir: 'asc' }}
                       caption="Stoves, children reached and cases averted by district"
                       rowKey={(r) => r.code}
+                      minWidth="520px"
                       footer={
                         <tfoot>
                           <tr className="border-t border-ink/40 bg-surface font-medium">

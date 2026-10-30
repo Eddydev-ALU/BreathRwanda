@@ -35,7 +35,7 @@ function WhyBars({ factors, nationalPct }) {
               <div className="flex items-baseline justify-between gap-3 text-sm">
                 <span>{FACTOR_NAMES[f.key] || f.factor}</span>
                 <span className="tabular-nums text-muted">
-                  {f.pp > 0 ? '+' : f.pp < 0 ? '−' : ''}
+                  {f.pp >= 0.05 ? '+' : f.pp <= -0.05 ? '−' : ''}
                   {Math.abs(f.pp).toFixed(1)} points
                   <span className="sr-only">{up ? ', raises risk' : f.pp < 0 ? ', lowers risk' : ''}</span>
                 </span>
@@ -73,7 +73,7 @@ export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
     <article aria-labelledby="district-heading" className="space-y-6">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h2 id="district-heading" ref={headingRef} tabIndex={-1} className="text-3xl">
+          <h2 id="district-heading" ref={headingRef} tabIndex={-1} className="text-3xl focus:outline-none">
             {d.name}
           </h2>
           <p className="text-muted">{d.province}</p>
@@ -107,7 +107,7 @@ export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
       <dl>
         <Row label="Risk of cough with fast breathing" term="interval">
           {fmtPct(d.risk)}
-          <span className="block text-xs text-muted">90% interval {fmtPctRange(d.riskLo, d.riskHi)}</span>
+          <span className="block whitespace-nowrap text-xs text-muted">90% interval {fmtPctRange(d.riskLo, d.riskHi)}</span>
         </Row>
         <Row label="Risk index" term="riskIndex">
           {Number.isFinite(d.riskIndex) ? Math.round(d.riskIndex) : 'No data'} of 100
@@ -128,6 +128,13 @@ export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
         <h3 id="why-heading" className="text-xl">
           {d.priorityTier === 'High' ? 'Why is this district high risk?' : 'What raises or lowers risk here?'}
         </h3>
+        {d.priorityTier === 'High' && (
+          <p className="mt-2 text-sm">
+            The tier is not set by risk alone. It also counts how many young children live in each polluting-fuel
+            household here ({Number.isFinite(d.childrenPerHH) ? d.childrenPerHH.toFixed(2) : 'No data'}), because
+            one stove protects more children where there are more of them.
+          </p>
+        )}
         <div className="mt-3">
           {factors.length ? <WhyBars factors={factors} nationalPct={nationalPct} /> : <p>No data</p>}
         </div>

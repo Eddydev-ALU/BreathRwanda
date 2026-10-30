@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 // A plain sortable table. columns: [{ key, header, sort: (row) => value, render: (row) => node, align, term }]
-export default function SortTable({ columns, rows, initial, caption, rowKey, footer }) {
+export default function SortTable({ columns, rows, initial, caption, rowKey, footer, minWidth = '640px' }) {
   const [sort, setSort] = useState(initial || { key: columns[0].key, dir: 'asc' })
   const col = columns.find((c) => c.key === sort.key) || columns[0]
   const sorted = [...rows].sort((a, b) => {
@@ -16,7 +16,7 @@ export default function SortTable({ columns, rows, initial, caption, rowKey, foo
 
   return (
     <div className="overflow-x-auto border border-line">
-      <table className="w-full min-w-[640px] border-collapse text-sm">
+      <table className="w-full border-collapse text-sm" style={{ minWidth }}>
         <caption className="sr-only">{caption}</caption>
         <thead>
           <tr className="border-b border-line bg-surface">
