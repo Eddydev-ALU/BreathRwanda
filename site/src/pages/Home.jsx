@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useData } from '../lib/data.js'
 import { fmtAbout, fmtMillions, NO_DATA } from '../lib/format.js'
-import { Loading, LoadError, usePageMeta } from '../components/Status.jsx'
+import { usePageMeta } from '../components/Status.jsx'
 import { Term } from '../components/terms.jsx'
 
 function Stat({ value, children }) {
+  const missing = value === '…' || /No data/.test(value)
   return (
     <div className="border-t border-line pt-4">
-      <p className="font-serif text-4xl font-semibold leading-none sm:text-5xl">{value}</p>
+      <p className={`font-serif text-4xl font-semibold leading-none sm:text-5xl ${missing ? 'text-muted' : ''}`}>{value}</p>
       <p className="mt-3 max-w-[22ch] text-[0.95rem] text-muted">{children}</p>
     </div>
   )
@@ -18,15 +19,13 @@ export default function Home() {
     null,
     'Which Rwandan districts have the most young children exposed to cooking smoke, and where clean cooking stoves would protect the most children for a given budget.',
   )
-  const { status, data, error, retry } = useData()
-  if (status === 'loading') return <Loading />
-  if (status === 'error') return <LoadError error={error} retry={retry} />
-
-  const n = data.model.national
+  const { status, data, retry } = useData(['model'])
+  const n = data?.model?.national || {}
   const share =
     Number.isFinite(n.national_children_exposed) && Number.isFinite(n.census_children_u5)
       ? `${Math.round((100 * n.national_children_exposed) / n.census_children_u5)}%`
       : NO_DATA
+  const show = (v) => (status === 'loading' ? '…' : v)
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-8 pt-10 sm:px-6 sm:pt-16">
@@ -59,17 +58,25 @@ export default function Home() {
         <h2 id="numbers" className="sr-only">
           Key numbers
         </h2>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <Stat value={fmtMillions(n.census_children_u5)}>children under 5 in Rwanda</Stat>
-          <Stat value={share}>
+        {status === 'error' && (
+          <p role="alert" className="mb-6">
+            The numbers could not be loaded.{' '}
+            <button type="button" onClick={retry} className="min-h-11 text-accent underline">
+              Try again
+            </button>
+          </p>
+        )}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4" aria-busy={status === 'loading'}>
+          <Stat value={show(fmtMillions(n.census_children_u5))}>children under 5 in Rwanda</Stat>
+          <Stat value={show(share)}>
             live in homes cooking with polluting fuel
             <Term k="pollutingFuel" />
           </Stat>
-          <Stat value={`about ${fmtAbout(n.national_children_indoor_smoke)}`}>
+          <Stat value={show(`about ${fmtAbout(n.national_children_indoor_smoke)}`)}>
             breathe that smoke inside the house
             <Term k="indoor" />
           </Stat>
-          <Stat value={`about ${fmtAbout(n.national_children_with_symptoms)}`}>
+          <Stat value={show(`about ${fmtAbout(n.national_children_with_symptoms)}`)}>
             have cough with fast breathing in any two-week period
           </Stat>
         </div>

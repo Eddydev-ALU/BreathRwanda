@@ -12,7 +12,7 @@ const pct1 = (x) => (Number.isFinite(x) ? (100 * x).toFixed(1) : '')
 
 export default function Ranking() {
   usePageMeta('District ranking', 'Priority ranking of Rwanda’s 30 districts for clean cooking stoves, with uncertainty ranges.')
-  const { status, data, error, retry } = useData()
+  const { status, data, error, retry } = useData(['districts'])
   const [province, setProvince] = useState('')
   const [query, setQuery] = useState('')
 

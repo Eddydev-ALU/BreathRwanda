@@ -118,7 +118,7 @@ export default function MapPage() {
     'District map',
     'Map of the 30 districts of Rwanda by risk of cough with fast breathing in children under 5 and children exposed to cooking smoke.',
   )
-  const { status, data, error, retry } = useData()
+  const { status, data, error, retry } = useData(['districts', 'geo', 'model'])
   const [params, setParams] = useSearchParams()
   const heading = useRef(null)
 

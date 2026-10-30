@@ -1,39 +1,42 @@
 import { useEffect, useState } from 'react'
 
 const base = `${import.meta.env.BASE_URL}data/`
-let pending = null
-
-async function fetchJson(name) {
-  const res = await fetch(base + name)
-  if (!res.ok) throw new Error(`${name} could not be loaded (HTTP ${res.status})`)
-  return res.json()
+const FILES = {
+  districts: 'districts.json',
+  geo: 'districts.geojson',
+  assumptions: 'assumptions.json',
+  model: 'model_summary.json',
 }
+const cache = {}
 
-function loadAll() {
-  if (!pending) {
-    pending = Promise.all(
-      ['districts.json', 'districts.geojson', 'assumptions.json', 'model_summary.json'].map(fetchJson),
-    ).then(([districts, geo, assumptions, model]) => ({ districts, geo, assumptions, model }))
-    pending.catch(() => {
-      pending = null
+function load(key) {
+  if (!cache[key]) {
+    cache[key] = fetch(base + FILES[key]).then((res) => {
+      if (!res.ok) throw new Error(`${FILES[key]} could not be loaded (HTTP ${res.status})`)
+      return res.json()
+    })
+    cache[key].catch(() => {
+      delete cache[key]
     })
   }
-  return pending
+  return cache[key]
 }
 
-// All pages share one download of the small data files.
-export function useData() {
+// Each page asks only for the files it needs; files already downloaded are reused.
+export function useData(keys) {
+  const id = keys.join(',')
   const [state, setState] = useState({ status: 'loading' })
   const [attempt, setAttempt] = useState(0)
   useEffect(() => {
     let live = true
-    loadAll().then(
-      (data) => live && setState({ status: 'ready', data }),
+    setState({ status: 'loading' })
+    Promise.all(keys.map(load)).then(
+      (values) => live && setState({ status: 'ready', data: Object.fromEntries(keys.map((k, i) => [k, values[i]])) }),
       (error) => live && setState({ status: 'error', error }),
     )
     return () => {
       live = false
     }
-  }, [attempt])
+  }, [id, attempt])
   return { ...state, retry: () => setAttempt((a) => a + 1) }
 }

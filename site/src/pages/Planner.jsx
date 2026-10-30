@@ -114,7 +114,7 @@ export default function Planner() {
     'Stove budget planner',
     'Choose a budget and a stove type to see how many stoves can be bought, which districts they reach and how many children they protect.',
   )
-  const { status, data, error, retry } = useData()
+  const { status, data, error, retry } = useData(['districts', 'assumptions'])
   const a = data?.assumptions
   const stoves = useMemo(
     () => (a ? STOVE_ORDER.map((id) => a.stoves.find((s) => s.id === id)).filter(Boolean) : []),

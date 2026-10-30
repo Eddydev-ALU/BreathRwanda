@@ -79,7 +79,7 @@ function Section({ id, title, children }) {
 
 export default function Methods() {
   usePageMeta('Methods and limits', 'Data sources, method, model results and limitations of BreathRwanda.')
-  const { status, data, error, retry } = useData()
+  const { status, data, error, retry } = useData(['model', 'assumptions'])
   if (status === 'loading') return <Loading what="the methods" />
   if (status === 'error') return <LoadError error={error} retry={retry} />
 
