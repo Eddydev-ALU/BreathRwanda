@@ -4,7 +4,11 @@ All photos come from Wikimedia Commons and are used under the licence shown. Eac
 
 | File | Photo | Author | Licence | Source |
 |---|---|---|---|---|
-| `hero-fire` | Amashiga bakoresha muguteka bakayaterekako inkono | NathanRUZO | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amashiga_bakoresha_muguteka_bakayaterekako_inkono.jpg) |
+| `slide-volcanoes` | Muhabura,Gahinga and Sabyinyo | Adygrafix250 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Muhabura,Gahinga_and_Sabyinyo.jpg) |
+| `slide-mist` | Rwanda landscape Image | Emile Maurice | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rwanda_landscape_Image.jpg) |
+| `slide-karongi` | Karongi in Rwanda | Ericnkurunziza | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Karongi_in_Rwanda.jpg) |
+| `slide-kivu` | Sunset of Lake Kivu on Kivu belt | UWIMPUHWE Va | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sunset_of_Lake_Kivu_on_Kivu_belt.jpg) |
+| `slide-dawn` | Muhabura and Gahinga In the Morning | Adygrafix250 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Muhabura_and_Gahinga_In_the_Morning.jpg) |
 | `hills-terraces` | Hills with terrace and tea plantation | Peace Batuma | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hills_with_terrace_and_tea_plantation.jpg) |
 | `hills-mist` | The Welcoming Mist | Dpiskho | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Welcoming_Mist.jpg) |
 | `kinigi-hills` | Kinigi, Ruanda (32445249318) | Nina R from Africa | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kinigi,_Ruanda_(32445249318).jpg) |

@@ -8,7 +8,7 @@ const a = 'text-white underline-offset-4 hover:underline'
 export default function SiteFooter() {
   return (
     <footer className="mt-24 bg-accent text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[2fr_1fr_1fr_1fr]">
+      <div className="page-x grid gap-10 py-14 md:grid-cols-[2fr_1fr_1fr_1fr]">
         <div>
           <p className="font-serif text-2xl font-semibold">BreathRwanda</p>
           <p className="mt-3 max-w-sm text-white/85">
@@ -60,7 +60,7 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-white/20">
-        <p className="mx-auto max-w-6xl px-4 py-6 text-sm text-white/80 sm:px-6">
+        <p className="page-x py-6 text-sm text-white/80">
           AI tools were used for research, planning, code assistance and drafting support. The team reviewed, tested and
           is responsible for all analysis, code, results and text in this submission.
         </p>

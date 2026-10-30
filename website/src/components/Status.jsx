@@ -4,7 +4,7 @@ import { Term } from './terms.jsx'
 
 export function Loading({ what = 'data' }) {
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-16 pt-28 text-muted sm:px-6" role="status" aria-live="polite">
+    <div className="page-x pb-16 pt-28 text-muted" role="status" aria-live="polite">
       Loading {what}…
     </div>
   )
@@ -12,7 +12,7 @@ export function Loading({ what = 'data' }) {
 
 export function LoadError({ error, retry }) {
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-16 pt-28 sm:px-6" role="alert">
+    <div className="page-x pb-16 pt-28" role="alert">
       <h1 className="text-2xl">The data could not be loaded</h1>
       <p className="mt-3 max-w-prose text-muted">
         {error?.message || 'Something went wrong.'} Check your connection and try again.

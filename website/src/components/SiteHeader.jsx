@@ -170,7 +170,7 @@ export default function SiteHeader() {
         solid ? 'border-b border-line bg-bg text-ink' : 'border-b border-transparent bg-transparent text-white'
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="page-x flex h-16 items-center justify-between">
         <Link to="/" className={`font-serif text-xl font-semibold no-underline ${solid ? 'text-ink' : 'text-white'}`}>
           BreathRwanda
         </Link>

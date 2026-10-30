@@ -12,7 +12,7 @@ export default function PageHero({ image, eyebrow, title, children }) {
           <div className="absolute inset-0 bg-ink/25" />
         </div>
       )}
-      <div className="mx-auto max-w-6xl px-4 pb-12 pt-28 sm:px-6 sm:pb-16 sm:pt-36">
+      <div className="page-x pb-12 pt-28 sm:pb-16 sm:pt-36">
         {eyebrow && <p className="fade-up text-sm font-medium uppercase tracking-wider text-white">{eyebrow}</p>}
         <h1 className="fade-up mt-2 max-w-[22ch] text-4xl text-white sm:text-5xl" style={{ animationDelay: '80ms' }}>
           {title}

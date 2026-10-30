@@ -174,7 +174,7 @@ export default function MapPage() {
   return (
     <>
     {hero}
-    <div className={`mx-auto max-w-6xl px-4 pt-10 sm:px-6 ${selected ? 'pb-[50vh] lg:pb-0' : ''}`}>
+    <div className={`page-x pt-10 ${selected ? 'pb-[50vh] lg:pb-0' : ''}`}>
       <Banner />
 
       <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">

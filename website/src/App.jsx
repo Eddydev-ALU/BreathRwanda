@@ -16,7 +16,7 @@ function NotFound() {
   return (
     <>
       <PageHero image="hills-mist" title="Page not found" />
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <div className="page-x py-12">
         <Link to="/">Go to the home page</Link>
       </div>
     </>

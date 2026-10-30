@@ -1,16 +1,65 @@
 // Photos used on the site. All from Wikimedia Commons; see public/images/CREDITS.md.
 // Each file exists as .webp and .jpg in public/images. Changes made: cropped, resized, compressed.
 export const IMAGES = {
-  "hero-fire": {
-    "slug": "hero-fire",
+  "slide-volcanoes": {
+    "slug": "slide-volcanoes",
     "w": 1440,
     "h": 810,
-    "alt": "A clay cooking pot on three stones over an open wood fire",
-    "title": "Amashiga bakoresha muguteka bakayaterekako inkono",
-    "author": "NathanRUZO",
-    "source": "https://commons.wikimedia.org/wiki/File:Amashiga_bakoresha_muguteka_bakayaterekako_inkono.jpg",
+    "alt": "The Muhabura, Gahinga and Sabyinyo volcanoes above farmland in the morning",
+    "caption": "Muhabura, Gahinga and Sabyinyo volcanoes",
+    "title": "Muhabura,Gahinga and Sabyinyo",
+    "author": "Adygrafix250",
+    "source": "https://commons.wikimedia.org/wiki/File:Muhabura,Gahinga_and_Sabyinyo.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "slide-mist": {
+    "slug": "slide-mist",
+    "w": 1440,
+    "h": 810,
+    "alt": "Morning mist lying between green hills in Rwanda",
+    "caption": "Morning mist in the hills",
+    "title": "Rwanda landscape Image",
+    "author": "Emile Maurice",
+    "source": "https://commons.wikimedia.org/wiki/File:Rwanda_landscape_Image.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "slide-karongi": {
+    "slug": "slide-karongi",
+    "w": 1440,
+    "h": 810,
+    "alt": "Hills and valleys of Karongi District under a cloudy sky",
+    "caption": "Karongi District, Western Province",
+    "title": "Karongi in Rwanda",
+    "author": "Ericnkurunziza",
+    "source": "https://commons.wikimedia.org/wiki/File:Karongi_in_Rwanda.jpg",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "slide-kivu": {
+    "slug": "slide-kivu",
+    "w": 1440,
+    "h": 810,
+    "alt": "Sunset over Lake Kivu seen from the Kivu Belt road",
+    "caption": "Lake Kivu at sunset",
+    "title": "Sunset of Lake Kivu on Kivu belt",
+    "author": "UWIMPUHWE Va",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset_of_Lake_Kivu_on_Kivu_belt.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "slide-dawn": {
+    "slug": "slide-dawn",
+    "w": 1440,
+    "h": 810,
+    "alt": "The Muhabura and Gahinga volcanoes against the sky at dawn",
+    "caption": "Muhabura and Gahinga at dawn",
+    "title": "Muhabura and Gahinga In the Morning",
+    "author": "Adygrafix250",
+    "source": "https://commons.wikimedia.org/wiki/File:Muhabura_and_Gahinga_In_the_Morning.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
   },
   "hills-terraces": {
     "slug": "hills-terraces",
@@ -145,3 +194,6 @@ export const IMAGES = {
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   }
 }
+
+// Home page slideshow, in order.
+export const SLIDES = ["slide-volcanoes", "slide-mist", "slide-karongi", "slide-kivu", "slide-dawn"]

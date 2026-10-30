@@ -111,7 +111,7 @@ export default function Ranking() {
   return (
     <>
     {hero}
-    <div className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
+    <div className="page-x pt-10">
       <Banner />
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:flex sm:flex-wrap sm:items-end">

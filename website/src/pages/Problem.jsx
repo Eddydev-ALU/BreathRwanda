@@ -31,10 +31,10 @@ function LpgDrawing() {
 function Section({ n, id, title, image, imageNode, children, flip }) {
   return (
     <section aria-labelledby={id} className={n % 2 ? 'bg-card' : 'bg-bg'}>
-      <div className={`mx-auto grid max-w-6xl items-start gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 ${flip ? 'lg:[&>*:first-child]:order-2' : ''}`}>
+      <div className={`page-x grid items-start gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16 ${flip ? 'lg:[&>*:first-child]:order-2' : ''}`}>
         <Reveal>
           <p className="text-sm font-medium uppercase tracking-wider text-muted">Part {n}</p>
-          <h2 id={id} className="mt-2 text-3xl sm:text-4xl">
+          <h2 id={id} className="rule mt-2 text-3xl sm:text-4xl">
             {title}
           </h2>
           <div className="mt-5 max-w-prose space-y-4">{children}</div>

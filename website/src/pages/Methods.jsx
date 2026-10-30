@@ -100,7 +100,7 @@ export default function Methods() {
   return (
     <>
     {hero}
-    <div className="mx-auto max-w-6xl space-y-10 px-4 pt-12 sm:px-6">
+    <div className="page-x space-y-10 pt-12">
 
       <Section id="sources" title="Data sources">
         <ul className="space-y-4">

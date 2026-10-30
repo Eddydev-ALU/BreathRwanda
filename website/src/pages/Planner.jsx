@@ -242,7 +242,7 @@ export default function Planner() {
   return (
     <>
     {hero}
-    <div className="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 lg:pb-0">
+    <div className="page-x pb-16 pt-10 lg:pb-0">
       {!costInvalid && <SummaryBar result={result} target={resultsRef} />}
       <Banner />
 

@@ -6,6 +6,8 @@ import { usePageMeta } from '../components/Status.jsx'
 import { Term } from '../components/terms.jsx'
 import Photo from '../components/Photo.jsx'
 import Reveal, { useInView } from '../components/Reveal.jsx'
+import HeroSlideshow from '../components/HeroSlideshow.jsx'
+import { useParallax } from '../components/useParallax.js'
 
 const WHO_URL = 'https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health'
 
@@ -127,6 +129,15 @@ function findings(districts) {
   ]
 }
 
+function ParallaxPhoto({ slug }) {
+  const ref = useParallax(0.12)
+  return (
+    <div ref={ref} className="absolute inset-x-0 -bottom-[12%] -top-[12%] will-change-transform">
+      <Photo slug={slug} />
+    </div>
+  )
+}
+
 export default function Home() {
   usePageMeta(
     null,
@@ -146,13 +157,9 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ink text-white">
-        <div className="absolute inset-0 -z-10">
-          <Photo slug="hero-fire" eager imgClassName="kenburns" />
-          <div className="absolute inset-0 bg-overlay" />
-          <div className="absolute inset-0 bg-ink/25" />
-          <Smoke />
-        </div>
-        <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6 sm:pb-24">
+        <HeroSlideshow />
+        <Smoke />
+        <div className="page-x relative z-10 w-full pb-32 pt-32 sm:pb-28">
           <p className="fade-up text-sm font-medium uppercase tracking-wider text-white">Children and cooking smoke in Rwanda</p>
           <h1 className="fade-up mt-3 max-w-[18ch] text-4xl text-white sm:text-6xl" style={{ animationDelay: '120ms' }}>
             Where will clean cooking stoves protect the most children in Rwanda?
@@ -164,20 +171,33 @@ export default function Home() {
           <div className="fade-up mt-8" style={{ animationDelay: '360ms' }}>
             <Link
               to="/map"
-              className="inline-flex min-h-12 items-center gap-2 rounded bg-white px-6 font-medium text-accent no-underline hover:bg-bg"
+              className="card-link inline-flex min-h-12 items-center gap-2 rounded bg-white px-6 font-medium text-accent no-underline hover:bg-bg"
             >
-              Explore the map <span aria-hidden="true">→</span>
+              Explore the map <span aria-hidden="true" className="card-arrow inline-block">→</span>
             </Link>
           </div>
+          <a
+            href="#numbers"
+            className="scroll-cue mt-10 hidden items-center gap-2 text-sm text-white no-underline lg:inline-flex"
+            onClick={(e) => {
+              e.preventDefault()
+              document.getElementById('numbers')?.scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="1.6" /></svg>
+            Scroll to the numbers
+          </a>
         </div>
       </section>
 
       {/* Key numbers */}
       <section aria-labelledby="numbers" className="bg-card">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <h2 id="numbers" className="text-3xl sm:text-4xl">
-            Rwanda in four numbers
-          </h2>
+        <div className="page-x py-16 sm:py-20">
+          <Reveal>
+            <h2 id="numbers" className="rule text-3xl sm:text-4xl">
+              Rwanda in four numbers
+            </h2>
+          </Reveal>
           {status === 'error' && (
             <p role="alert" className="mt-4">
               The numbers could not be loaded.{' '}
@@ -211,13 +231,13 @@ export default function Home() {
 
       {/* Explore the data */}
       <section aria-labelledby="explore" className="bg-bg">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2">
+        <div className="page-x grid items-center gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16">
           <Reveal className="aspect-[16/10] overflow-hidden rounded border border-line">
             <Photo slug="hills-terraces" />
           </Reveal>
           <Reveal delay={100}>
             <p className="text-sm font-medium uppercase tracking-wider text-muted">Explore the data</p>
-            <h2 id="explore" className="mt-2 text-3xl sm:text-4xl">
+            <h2 id="explore" className="rule mt-2 text-3xl sm:text-4xl">
               See the numbers for your district
             </h2>
             <p className="mt-4 max-w-prose">
@@ -256,10 +276,12 @@ export default function Home() {
 
       {/* Resources */}
       <section aria-labelledby="tools" className="bg-card">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <h2 id="tools" className="text-3xl sm:text-4xl">
-            Tools and methods
-          </h2>
+        <div className="page-x py-16 sm:py-20">
+          <Reveal>
+            <h2 id="tools" className="rule text-3xl sm:text-4xl">
+              Tools and methods
+            </h2>
+          </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <Card delay={0} to="/map" image="kinigi-hills" label="Tool" title="Risk map">
               Colour the 30 districts by risk, children exposed or smoke indoors, and open any district for its details.
@@ -276,10 +298,12 @@ export default function Home() {
 
       {/* Key findings */}
       <section aria-labelledby="findings" className="bg-bg">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <h2 id="findings" className="text-3xl sm:text-4xl">
-            Key findings
-          </h2>
+        <div className="page-x py-16 sm:py-20">
+          <Reveal>
+            <h2 id="findings" className="rule text-3xl sm:text-4xl">
+              Key findings
+            </h2>
+          </Reveal>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {findings(districts).map((f, i) => (
               <Card key={f.title} delay={i * 90} to={f.to} image={f.image} label="Finding · EICV7 2023/24 and Census 2022" title={f.title}>
@@ -294,14 +318,14 @@ export default function Home() {
       {/* Learn more */}
       <section aria-labelledby="learn" className="relative isolate overflow-hidden bg-ink text-white">
         <div className="absolute inset-0 -z-10">
-          <Photo slug="hills-mist" />
+          <ParallaxPhoto slug="hills-mist" />
           <div className="absolute inset-0 bg-overlay" />
           <div className="absolute inset-0 bg-ink/25" />
         </div>
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
+        <div className="page-x py-20 sm:py-24">
           <Reveal>
             <p className="text-sm font-medium uppercase tracking-wider text-white/80">Learn more</p>
-            <h2 id="learn" className="mt-2 max-w-[30ch] text-3xl text-white sm:text-4xl">
+            <h2 id="learn" className="rule rule-light mt-2 max-w-[30ch] text-3xl text-white sm:text-4xl">
               Why smoke from cooking matters for children under 5
             </h2>
             <p className="mt-4 max-w-prose text-white">
