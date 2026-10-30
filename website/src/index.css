@@ -18,11 +18,60 @@
   --color-scale-3: #c4704b;
   --color-scale-4: #b5481f;
 
-  --font-serif: 'Source Serif 4 Variable', Georgia, serif;
-  --font-sans: 'Inter Variable', system-ui, sans-serif;
+  /* One family, PT Sans, for text and headings. font-serif is kept as the heading alias. */
+  --font-serif: 'PT Sans', system-ui, sans-serif;
+  --font-sans: 'PT Sans', system-ui, sans-serif;
 
   --radius-sm: 2px;
-  --radius: 4px;
+  --radius: 6px;
+  --radius-box: 16px;
+  --shadow-box: 0 1px 3px rgb(31 36 33 / 0.05), 0 8px 28px rgb(31 36 33 / 0.09);
+}
+
+/* Every card or panel on the site: rounded corners and a soft shadow, no hard border. */
+@utility box {
+  border-radius: var(--radius-box);
+  background: var(--color-card);
+  box-shadow: var(--shadow-box);
+}
+
+/* Pill buttons. btn-solid for the main action, btn-outline for secondary ones,
+   btn-light / btn-ghost-light on dark photos. */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0 1.4rem;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+@utility btn-solid {
+  background: var(--color-accent);
+  color: var(--color-white);
+  &:hover { background: var(--color-ink); }
+}
+@utility btn-outline {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: transparent;
+  &:hover { background: var(--color-surface); }
+}
+@utility btn-light {
+  background: var(--color-white);
+  color: var(--color-accent);
+  &:hover { background: var(--color-bg); }
+}
+@utility btn-ghost-light {
+  border-color: var(--color-white);
+  color: var(--color-white);
+  &:hover { background: var(--color-white); color: var(--color-accent); }
 }
 
 /* Full-width page sections with side padding that grows with the screen. */
@@ -39,16 +88,15 @@
     background: var(--color-bg);
     color: var(--color-ink);
     font-family: var(--font-sans);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.0625rem;
+    line-height: 1.55;
   }
   h1,
   h2,
   h3 {
     font-family: var(--font-serif);
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.01em;
   }
   a {
     color: var(--color-accent);
@@ -137,7 +185,7 @@
   width: 44px;
   height: 44px;
   border: 1px solid rgb(255 255 255 / 0.5);
-  border-radius: var(--radius);
+  border-radius: 9999px;
   color: #ffffff;
   transition: background-color 150ms ease, border-color 150ms ease;
 }

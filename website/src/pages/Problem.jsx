@@ -34,12 +34,12 @@ function Section({ n, id, title, image, imageNode, children, flip }) {
       <div className={`page-x grid items-start gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16 ${flip ? 'lg:[&>*:first-child]:order-2' : ''}`}>
         <Reveal>
           <p className="text-sm font-medium uppercase tracking-wider text-muted">Part {n}</p>
-          <h2 id={id} className="rule mt-2 text-3xl sm:text-4xl">
+          <h2 id={id} className="rule mt-2 text-2xl sm:text-3xl">
             {title}
           </h2>
           <div className="mt-5 max-w-prose space-y-4">{children}</div>
         </Reveal>
-        <Reveal delay={100} className="aspect-[16/10] overflow-hidden rounded border border-line">
+        <Reveal delay={100} className="box aspect-[16/10] overflow-hidden">
           {imageNode || <Photo slug={image} />}
         </Reveal>
       </div>
@@ -49,8 +49,8 @@ function Section({ n, id, title, image, imageNode, children, flip }) {
 
 function Fact({ value, children }) {
   return (
-    <div className="border-t border-line pt-3">
-      <p className="font-serif text-3xl font-semibold tabular-nums">{value}</p>
+    <div className="box p-5">
+      <p className="font-serif text-2xl font-bold tabular-nums sm:text-3xl">{value}</p>
       <p className="mt-1 text-sm text-muted">{children}</p>
     </div>
   )
@@ -121,7 +121,7 @@ export default function Problem() {
       </Section>
 
       <Section n={3} id="today" title="Rwanda today" image="kigali">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-4">
           <Fact value={fmtInt(n.census_children_u5)}>children under 5 (Census 2022)</Fact>
           <Fact value={`${(100 * exposedShare).toFixed(1)}%`}>
             live in homes cooking mainly with polluting fuel
@@ -169,7 +169,7 @@ export default function Problem() {
         <p>
           <Link
             to="/planner"
-            className="inline-flex min-h-12 items-center rounded border border-accent bg-accent px-6 font-medium text-white no-underline hover:border-ink hover:bg-ink"
+            className="btn btn-solid"
           >
             Plan a budget
           </Link>

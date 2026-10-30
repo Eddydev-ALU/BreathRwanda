@@ -20,7 +20,7 @@ export function LoadError({ error, retry }) {
       <button
         type="button"
         onClick={retry}
-        className="mt-6 min-h-11 rounded border border-accent bg-accent px-5 text-white hover:bg-ink"
+        className="btn btn-solid mt-6"
       >
         Try again
       </button>
