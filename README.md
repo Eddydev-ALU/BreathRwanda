@@ -96,5 +96,4 @@ Data: National Institute of Statistics of Rwanda (NISR), Integrated Household Li
 AI tools were used for research, planning, code assistance and drafting support. The team reviewed, tested and is responsible for all analysis, code, results and text in this submission.
 
 ## Team
-- _Name_ (data and model)
-- _Name_ (website and deployment)
+Team: Eddy, De Noella

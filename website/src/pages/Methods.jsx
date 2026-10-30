@@ -312,7 +312,7 @@ export default function Methods() {
             BreathRwanda on GitHub
           </a>
         </p>
-        <p>Team: Member 1, Member 2</p>
+        <p>Team: Eddy, De Noella</p>
       </Section>
     </div>
   )
