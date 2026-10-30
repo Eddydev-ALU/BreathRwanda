@@ -81,8 +81,8 @@ export default function Home() {
           </Stat>
         </div>
         <p className="mt-8 max-w-prose text-sm text-muted">
-          These numbers are estimates from household surveys (EICV7 2023/24, Rwanda DHS 2019-20 and 2025) scaled to
-          the 2022 Census. <Link to="/methods">How they were made</Link>.
+          These numbers are estimates from household surveys (EICV7 2023/24, Rwanda DHS 2019-20 and 2025) and the
+          2022 Census. <Link to="/methods">How they were made</Link>.
         </p>
       </section>
     </div>

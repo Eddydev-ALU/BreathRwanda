@@ -1,5 +1,5 @@
 import { useData } from '../lib/data.js'
-import { fmtInt } from '../lib/format.js'
+import { fmtInt, isLowConfidence } from '../lib/format.js'
 import { Loading, LoadError, usePageMeta } from '../components/Status.jsx'
 import { Term } from '../components/terms.jsx'
 
@@ -9,7 +9,7 @@ const SOURCES = [
   {
     name: 'Integrated Household Living Conditions Survey (EICV7) 2023/24',
     by: 'NISR',
-    use: 'Cooking fuel, cooking place and household details for every child under 5. The model is applied to these children.',
+    use: 'Where food is cooked, household wealth and other details for every child under 5. The model is applied to these children.',
     url: 'https://microdata.statistics.gov.rw/index.php/catalog/119',
   },
   {
@@ -27,7 +27,7 @@ const SOURCES = [
   {
     name: 'Population and Housing Census 2022',
     by: 'NISR',
-    use: 'Number of children under 5 and households in each district.',
+    use: 'Number of children under 5 and households in each district, and the main cooking fuel of each household.',
     url: 'https://microdata.statistics.gov.rw/index.php/catalog/109',
   },
   {
@@ -79,7 +79,7 @@ function Section({ id, title, children }) {
 
 export default function Methods() {
   usePageMeta('Methods and limits', 'Data sources, method, model results and limitations of BreathRwanda.')
-  const { status, data, error, retry } = useData(['model', 'assumptions'])
+  const { status, data, error, retry } = useData(['model', 'assumptions', 'districts'])
   if (status === 'loading') return <Loading what="the methods" />
   if (status === 'error') return <LoadError error={error} retry={retry} />
 
@@ -88,6 +88,7 @@ export default function Methods() {
   const cv = m.outcome.cv || {}
   const auc = (x) => (Number.isFinite(x?.auc) ? x.auc.toFixed(2) : 'No data')
   const maxImp = Math.max(...m.importance.map((x) => x.meanAbsShap))
+  const lowConf = (data.districts || []).filter(isLowConfidence).map((d) => d.name).sort()
 
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 pt-8 sm:px-6">
@@ -128,9 +129,10 @@ export default function Methods() {
             <strong>Apply it to EICV7.</strong> {m.appliedTo}. Each child gets a predicted risk.
           </li>
           <li>
-            <strong>Add up by district.</strong> For each district: the share of children in homes with polluting fuel
-            <Term k="pollutingFuel" />, the share where that fuel is burned inside the house, and the average risk.
-            These are multiplied by the Census 2022 number of children under 5.
+            <strong>Add up by district.</strong> The Census 2022 gives the number of children under 5, the share in
+            homes with polluting fuel
+            <Term k="pollutingFuel" /> and the number of polluting-fuel households. EICV7 gives the share where that
+            fuel is burned inside the house (the Census does not ask where food is cooked) and the average risk.
           </li>
           <li>
             <strong>Measure uncertainty.</strong> {m.training.bootstrap}. The 5th and 95th percentiles give the 90%
@@ -243,8 +245,11 @@ export default function Methods() {
           Stove cost, usage and effectiveness come from programme documents and published studies. Every value can be
           changed in the planner. Randomised trials found small effects that were not statistically clear, while
           observational studies suggest larger ones, so the planner shows cases averted
-          <Term k="casesAverted" /> as a range.
+          <Term k="casesAverted" /> as a range. The trials measured more serious, doctor-diagnosed illness in
+          infants, while this site applies their effects to cough with fast breathing in all children under 5, so the
+          range is an illustration, not a prediction.
         </p>
+        {data.assumptions.howToRead?.cost && <p className="text-sm text-muted">{data.assumptions.howToRead.cost}</p>}
         <ul className="list-disc space-y-1 pl-5 text-sm">
           {data.assumptions.evidence.map((e) => (
             <li key={e.id}>
@@ -272,9 +277,8 @@ export default function Methods() {
           </li>
           <li>
             Neither survey is built for precise district estimates. District numbers carry uncertainty, so read the
-            ranking as broad tiers. Indoor-cooking estimates for most Eastern districts, and for Gicumbi, rest on fewer
-            than 30 sampled households and are marked low confidence
-            <Term k="lowConfidence" />.
+            ranking as broad tiers. {lowConf.length > 0 && <>Districts marked low confidence
+            <Term k="lowConfidence" />: {lowConf.join(', ')}.</>}
           </li>
           <li>
             Stove cost, effectiveness and usage are assumptions taken from the sources listed. Real results depend on
@@ -286,8 +290,10 @@ export default function Methods() {
             such as nutrition, vaccination or outdoor air pollution.
           </li>
           <li>
-            Refugee-camp households (for example Mahama camp in Kirehe) are counted in the Census but are probably
-            missing from the EICV7 survey sample.
+            Refugee-camp households are counted in the Census but are probably missing from the EICV7 survey sample.
+            In Kirehe, the Census area that holds Mahama camp has about 21% of the district’s children under 5, and
+            most of its households cook with gas. Fuel use now comes from the Census, which includes the camp, but
+            indoor cooking and risk for Kirehe still come from EICV7, so Kirehe is marked low confidence.
           </li>
         </ul>
       </Section>
