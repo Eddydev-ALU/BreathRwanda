@@ -1,4 +1,4 @@
 node_modules/
 dist/
-# generated from site/data by scripts/prepare-data.mjs
+# generated from website/data by scripts/prepare-data.mjs
 public/data/
