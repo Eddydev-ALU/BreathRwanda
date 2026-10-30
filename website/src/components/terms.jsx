@@ -28,7 +28,7 @@ export const TERMS = {
   },
   lowConfidence: {
     label: 'Low confidence',
-    text: 'Fewer than 30 sampled households in this district cook with polluting fuel inside the house. The indoor-smoke numbers for this district rest on very few households and could be quite different in reality.',
+    text: 'The numbers for this district rest on thin data: either fewer than 30 sampled households cook with polluting fuel inside the house, or the household survey and the Census disagree on fuel use by more than 5 percentage points. The real values could be quite different.',
   },
   casesAverted: {
     label: 'Cases averted',

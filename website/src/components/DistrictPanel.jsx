@@ -1,4 +1,4 @@
-import { fmtInt, fmtPct, fmtPctRange, rankText } from '../lib/format.js'
+import { fmtInt, fmtPct, fmtPctRange, isLowConfidence, lowConfidenceReasons, rankText } from '../lib/format.js'
 import { LowConfidence, TierLabel } from './Status.jsx'
 import { Term } from './terms.jsx'
 
@@ -96,8 +96,15 @@ export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
         </p>
         <div className="mt-1 flex flex-wrap items-center gap-3">
           <TierLabel tier={d.priorityTier} large />
-          {d.lowConfidenceIndoor && <LowConfidence />}
+          {isLowConfidence(d) && <LowConfidence />}
         </div>
+        {isLowConfidence(d) && (
+          <ul className="mt-2 text-sm text-muted">
+            {lowConfidenceReasons(d).map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        )}
         <p className="mt-2 text-sm text-muted">
           {rankText(d)}
           <Term k="rank" />

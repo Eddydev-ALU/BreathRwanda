@@ -29,3 +29,17 @@ export const parseAmount = (s) => {
   const digits = String(s).replace(/[^0-9]/g, '')
   return digits === '' ? 0 : Number(digits)
 }
+
+// Low-confidence flag from the pipeline, with the reasons in plain words.
+export const isLowConfidence = (d) => Boolean(d.lowConfidence ?? d.lowConfidenceIndoor)
+
+const REASONS = [
+  [/fewer than 30 sampled indoor-cooking households/i, 'Fewer than 30 households in the survey sample cook indoors with polluting fuel.'],
+  [/exposure differ by more than 5 points/i, 'The household survey and the Census disagree on fuel use here by more than 5 percentage points.'],
+]
+export const lowConfidenceReasons = (d) => {
+  const raw = String(d.lowConfidenceReason || '')
+  const found = REASONS.filter(([re]) => re.test(raw)).map(([, text]) => text)
+  if (found.length) return found
+  return d.lowConfidenceIndoor ? [REASONS[0][1]] : []
+}
