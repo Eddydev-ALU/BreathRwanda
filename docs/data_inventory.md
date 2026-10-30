@@ -38,7 +38,7 @@ data/reference/      district_lookup.csv (+ full-res boundary, git-ignored)
 src/                 00_inventory … 06_district_overview, common.py
 outputs/             aggregate CSVs only
 docs/variables/      variable name + label list for every file (metadata only)
-site/data/           districts.geojson (simplified, for the website)
+website/data/           districts.geojson (simplified, for the website)
 ```
 
 - `.gitignore` excludes `data/raw/`, `data/processed/`, every `*.dta/*.DTA/*.sav/*.zip/*.parquet`, `.venv/` and the full-resolution boundary file.
@@ -263,7 +263,7 @@ Full tables: `outputs/dhs/<year>/ari_breakdowns.csv`.
 - Downloaded with `outSR=4326` and paging logic (one page was enough). **30 features** (25 Polygon, 5 MultiPolygon), 0 invalid geometries; bounds lon 28.86–30.90, lat −2.84 to −1.05.
 - Fields: `OBJECTID`, `province`, `province_id`, `district`, `district_id`, `province_data`, `Shape_Length`, `Shape_Area`.
 - `district_id` equals the NISR code. **All 30 codes and all 30 names match** `data/reference/district_lookup.csv`. No mismatches. The REMA fallback was not needed.
-- Website file: `site/data/districts.geojson`, simplified with tolerance 0.001° (~110 m), coordinates rounded to 5 dp, fields `district_code` and `district_name` only, **152 KB**.
+- Website file: `website/data/districts.geojson`, simplified with tolerance 0.001° (~110 m), coordinates rounded to 5 dp, fields `district_code` and `district_name` only, **152 KB**.
 - Lookup table: `data/reference/district_lookup.csv` (district_code, district_name, province_code, province_name).
 
 ## 7. District overview (all sources)

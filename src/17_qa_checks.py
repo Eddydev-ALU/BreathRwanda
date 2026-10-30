@@ -9,7 +9,7 @@ import pandas as pd
 
 from common import OUTPUTS, ROOT
 
-SITE = ROOT / "site" / "data"
+SITE = ROOT / "website" / "data"
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
         "polluting HH <= households": (d.pollutingHH <= d.households).all(),
         "national predicted risk within 1pp of DHS 2025": abs(nat["eicv7_mean_predicted_risk_pct"] - nat["dhs2025_observed_pct"]) < 1,
         "site data < 1 MB": sum(p.stat().st_size for p in SITE.iterdir()) < 1_000_000,
-        "no row-level files in site/data": all(p.suffix in {".json", ".geojson", ".csv"} for p in SITE.iterdir())
+        "no row-level files in website/data": all(p.suffix in {".json", ".geojson", ".csv"} for p in SITE.iterdir())
         and len(pd.read_csv(SITE / "ranking_default.csv")) == 30,
     }
     for k, v in checks.items():

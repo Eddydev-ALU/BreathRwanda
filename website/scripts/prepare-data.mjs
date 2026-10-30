@@ -1,4 +1,4 @@
-// Copies the pipeline exports in site/data into public/data for the static site.
+// Copies the pipeline exports in website/data into public/data for the static site.
 // Only aggregate district files are read. The script fails if anything looks wrong,
 // so a bad export never reaches the published site.
 import { readFileSync, writeFileSync, mkdirSync, statSync } from 'node:fs'
