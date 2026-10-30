@@ -119,7 +119,7 @@ function MobileMenu({ open, onClose }) {
         role="dialog"
         aria-modal="true"
         aria-label="Menu"
-        className={`absolute inset-y-0 right-0 flex w-full max-w-sm flex-col bg-bg px-6 pb-8 pt-3 transition-transform duration-300 ${
+        className={`absolute inset-y-0 right-0 flex w-full max-w-sm flex-col bg-bg px-6 pb-8 pt-3 text-ink transition-transform duration-300 ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -127,7 +127,7 @@ function MobileMenu({ open, onClose }) {
           <Link to="/" onClick={onClose} className="py-3 font-serif text-xl font-semibold text-ink no-underline">
             BreathRwanda
           </Link>
-          <button type="button" onClick={onClose} className="min-h-11 min-w-11 rounded border border-line px-3 text-sm">
+          <button type="button" onClick={onClose} className="min-h-11 min-w-11 rounded border border-line px-3 text-sm text-ink">
             Close<span className="sr-only"> menu</span>
           </button>
         </div>

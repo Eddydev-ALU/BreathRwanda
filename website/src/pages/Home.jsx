@@ -149,6 +149,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10">
           <Photo slug="hero-fire" eager imgClassName="kenburns" />
           <div className="absolute inset-0 bg-overlay" />
+          <div className="absolute inset-0 bg-ink/25" />
           <Smoke />
         </div>
         <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6 sm:pb-24">
@@ -295,12 +296,12 @@ export default function Home() {
         <div className="absolute inset-0 -z-10">
           <Photo slug="hills-mist" />
           <div className="absolute inset-0 bg-overlay" />
-          <div className="absolute inset-0 bg-overlay" />
+          <div className="absolute inset-0 bg-ink/25" />
         </div>
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <Reveal>
             <p className="text-sm font-medium uppercase tracking-wider text-white/80">Learn more</p>
-            <h2 id="learn" className="mt-2 max-w-[24ch] text-3xl text-white sm:text-4xl">
+            <h2 id="learn" className="mt-2 max-w-[30ch] text-3xl text-white sm:text-4xl">
               Why smoke from cooking matters for children under 5
             </h2>
             <p className="mt-4 max-w-prose text-white/90">

@@ -8,6 +8,8 @@ export default function PageHero({ image, eyebrow, title, children }) {
         <div className="absolute inset-0 -z-10">
           <Photo slug={image} eager imgClassName="kenburns" />
           <div className="absolute inset-0 bg-overlay" />
+          {/* A second, lighter layer keeps small white text above 4.5:1 on bright photos. */}
+          <div className="absolute inset-0 bg-ink/25" />
         </div>
       )}
       <div className="mx-auto max-w-6xl px-4 pb-12 pt-28 sm:px-6 sm:pb-16 sm:pt-36">

@@ -154,7 +154,7 @@ export default function Problem() {
       >
         <p>Cleaner stoves cut the smoke a family breathes. The planner compares three options:</p>
         <ul className="divide-y divide-line border-y border-line">
-          {data.assumptions.stoves.map((s) => (
+          {['ics', 'lpg', 'epc'].map((id) => data.assumptions.stoves.find((s) => s.id === id)).filter(Boolean).map((s) => (
             <li key={s.id} className="flex items-baseline justify-between gap-4 py-2.5">
               <span>{stoveName[s.id] || s.name}</span>
               <span className="tabular-nums text-muted">{fmtRWF(s.cost)}</span>
