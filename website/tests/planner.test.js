@@ -28,10 +28,10 @@ test('5 billion RWF, improved cookstove, default priority', () => {
   assert.equal(r.affordable, 138888)
   assert.equal(r.stoves, 138888)
   assert.deepEqual(r.rows.map((x) => x.name), ['Nyaruguru', 'Gisagara'])
-  // Matches the walkthrough notebook: about 68,800 children, 1,230 to 1,610 cases.
+  // Matches the walkthrough notebook: about 68,800 children, 1,230 to 1,380 cases (ICS observational effect 0.18 after the citation audit).
   assert.ok(Math.abs(r.children - 68800) < 100, `children ${r.children}`)
   assert.ok(Math.abs(r.casesLow - 1230) < 10, `low ${r.casesLow}`)
-  assert.ok(Math.abs(r.casesHigh - 1610) < 10, `high ${r.casesHigh}`)
+  assert.ok(Math.abs(r.casesHigh - 1383) < 10, `high ${r.casesHigh}`)
   checkInvariants(r)
 })
 

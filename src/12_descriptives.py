@@ -15,7 +15,7 @@ from common import OUTPUTS, PROCESSED  # noqa: E402
 from survey_stats import weighted_mean_ci  # noqa: E402
 
 OUTCOMES = {"cough_fast": "Cough with short, rapid breathing (last 2 weeks)",
-            "ari": "ARI symptoms: cough + rapid breathing + chest problem"}
+            "ari": "ARI symptoms: rapid breathing with a chest problem (official DHS)"}
 PROVINCES = {1: "Kigali City", 2: "Southern", 3: "Western", 4: "Northern", 5: "Eastern"}
 WEALTH = {1: "Poorest", 2: "Poorer", 3: "Middle", 4: "Richer", 5: "Richest"}
 

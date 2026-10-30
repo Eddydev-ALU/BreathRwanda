@@ -28,7 +28,7 @@ from model_spec import (LABELS, PROVINCES, design, feature_of, fit_logit, fit_xg
 
 OUT = OUTPUTS / "model"
 FIG = OUTPUTS / "figures"
-OUTCOMES = {"cough_fast": "Cough with short, rapid breathing", "ari": "ARI symptoms (strict DHS definition)"}
+OUTCOMES = {"cough_fast": "Cough with short, rapid breathing", "ari": "ARI symptoms (official DHS definition)"}
 INK, INK2, MUTED, GRID, SURFACE = "#0b0b0b", "#52514e", "#8a8984", "#e6e5e1", "#fcfcfb"
 S1, S2 = "#2a78d6", "#eb6834"   # categorical slots 1-2 (logistic, XGBoost)
 

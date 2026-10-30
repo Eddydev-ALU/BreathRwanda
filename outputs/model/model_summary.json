@@ -47,49 +47,49 @@
     }
   },
   "ari": {
-    "label": "ARI symptoms (strict DHS definition)",
+    "label": "ARI symptoms (official DHS definition)",
     "n_children": 14692,
-    "n_events": 219,
-    "weighted_prevalence_pct": 1.54,
+    "n_events": 249,
+    "weighted_prevalence_pct": 1.76,
     "cv": {
       "logistic": {
-        "auc": 0.5432,
-        "brier": 0.0152,
-        "calib_intercept": -0.0005,
-        "calib_slope": 0.2942
+        "auc": 0.5629,
+        "brier": 0.0173,
+        "calib_intercept": 0.0003,
+        "calib_slope": 0.4374
       },
       "xgboost": {
-        "auc": 0.5422,
-        "brier": 0.0152,
-        "calib_intercept": -0.0003,
-        "calib_slope": 0.307
+        "auc": 0.5627,
+        "brier": 0.0173,
+        "calib_intercept": -0.0001,
+        "calib_slope": 0.4109
       },
       "province_only": {
-        "auc": 0.5042,
-        "brier": 0.0152,
+        "auc": 0.5099,
+        "brier": 0.0173,
         "calib_intercept": -0.0003,
-        "calib_slope": 0.2767
+        "calib_slope": 0.2815
       }
     },
     "chosen_model": "logistic",
     "sign_check": {
       "fuel[wood/straw/biomass]": {
-        "or": 1.328,
-        "lo": 0.415,
-        "hi": 4.245,
-        "p": 0.6324
+        "or": 1.412,
+        "lo": 0.468,
+        "hi": 4.261,
+        "p": 0.5405
       },
       "fuel[charcoal]": {
-        "or": 0.925,
-        "lo": 0.309,
-        "hi": 2.773,
-        "p": 0.8896
+        "or": 1.024,
+        "lo": 0.354,
+        "hi": 2.966,
+        "p": 0.9651
       },
       "place[in the house]": {
-        "or": 0.933,
-        "lo": 0.593,
-        "hi": 1.468,
-        "p": 0.765
+        "or": 0.816,
+        "lo": 0.533,
+        "hi": 1.249,
+        "p": 0.3491
       }
     }
   }

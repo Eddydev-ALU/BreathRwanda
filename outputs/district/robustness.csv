@@ -1,5 +1,5 @@
 variant,spearman_vs_main,top10_overlap,entered_top10,left_top10
-Strict ARI outcome,0.629,5,"Karongi, Rutsiro, Nyabihu, Ngororero, Nyamasheke","Nyanza, Nyamagabe, Kamonyi, Rwamagana, Bugesera"
+Official DHS ARI outcome,0.629,5,"Karongi, Rutsiro, Nyabihu, Ngororero, Nyamasheke","Nyanza, Nyamagabe, Kamonyi, Rwamagana, Bugesera"
 DHS 2025 only,0.863,8,"Huye, Ngoma","Rubavu, Rusizi"
 Without province,0.779,7,"Rutsiro, Nyamasheke, Ngoma","Nyamagabe, Kamonyi, Rwamagana"
 Without wealth,0.989,8,"Huye, Ngoma","Rubavu, Rusizi"

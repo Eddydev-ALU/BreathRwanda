@@ -17,21 +17,21 @@ cough_fast,xgboost,wealth_q,Household wealth,0.06401
 cough_fast,xgboost,hhsize,Household size,0.06123
 cough_fast,xgboost,sex_female,Child sex,0.03574
 cough_fast,xgboost,rural,Rural residence,0.01914
-ari,logistic,wealth_q,Household wealth,0.20344
-ari,logistic,fuel,Cooking fuel,0.13037
-ari,logistic,age_group,Child age,0.11638
-ari,logistic,place,Where food is cooked,0.11369
-ari,logistic,hhsize,Household size,0.10884
-ari,logistic,province,Province,0.09493
-ari,logistic,sex_female,Child sex,0.05366
-ari,logistic,survey2025,Survey round,0.04075
-ari,logistic,rural,Rural residence,0.02177
-ari,xgboost,wealth_q,Household wealth,0.17418
-ari,xgboost,fuel,Cooking fuel,0.169
-ari,xgboost,age_group,Child age,0.11622
-ari,xgboost,place,Where food is cooked,0.10461
-ari,xgboost,hhsize,Household size,0.10183
-ari,xgboost,province,Province,0.09924
-ari,xgboost,sex_female,Child sex,0.07386
-ari,xgboost,survey2025,Survey round,0.06912
-ari,xgboost,rural,Rural residence,0.04192
+ari,logistic,wealth_q,Household wealth,0.20792
+ari,logistic,age_group,Child age,0.13502
+ari,logistic,fuel,Cooking fuel,0.12054
+ari,logistic,place,Where food is cooked,0.11025
+ari,logistic,province,Province,0.09847
+ari,logistic,sex_female,Child sex,0.09164
+ari,logistic,hhsize,Household size,0.08838
+ari,logistic,rural,Rural residence,0.05467
+ari,logistic,survey2025,Survey round,0.04888
+ari,xgboost,wealth_q,Household wealth,0.19769
+ari,xgboost,fuel,Cooking fuel,0.13902
+ari,xgboost,age_group,Child age,0.13745
+ari,xgboost,place,Where food is cooked,0.11734
+ari,xgboost,province,Province,0.11042
+ari,xgboost,hhsize,Household size,0.09271
+ari,xgboost,sex_female,Child sex,0.09175
+ari,xgboost,survey2025,Survey round,0.0684
+ari,xgboost,rural,Rural residence,0.05992

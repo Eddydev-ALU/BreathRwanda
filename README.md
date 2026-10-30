@@ -36,10 +36,11 @@ data/raw/       survey microdata (NOT in the repository)
 ## Reproduce
 
 ```bash
-uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
+uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.lock   # exact versions
 # macOS only, for XGBoost: brew install libomp
 # put the survey files in data/raw/ (see below), then:
-./run_pipeline.sh
+./run_pipeline.sh                              # ~5-7 min; step 04 needs internet (RBC boundaries)
+.venv/bin/python notebooks/build_walkthrough.py   # optional: rebuild the results notebook
 ```
 
 ## Website

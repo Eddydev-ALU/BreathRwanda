@@ -1,37 +1,37 @@
 variable,category,n_children,n_ari,pct_children_w,pct_ari_w,pct_cough_w
-fuel_group,clean,276,3,3.87,1.35,18.15
+fuel_group,clean,276,4,3.87,1.47,18.15
 fuel_group,kerosene,1,0,0.02,0.0,0.0
 fuel_group,no cooking,7,0,0.1,0.0,15.18
 fuel_group,other,2,0,0.04,0.0,0.0
-fuel_group,polluting,6714,99,95.98,1.56,27.13
-fuel_detail,charcoal,1725,14,24.89,0.86,22.41
-fuel_detail,clean,276,3,3.87,1.35,18.15
+fuel_group,polluting,6714,115,95.98,1.8,27.13
+fuel_detail,charcoal,1725,15,24.89,0.92,22.41
+fuel_detail,clean,276,4,3.87,1.47,18.15
 fuel_detail,kerosene,1,0,0.02,0.0,0.0
 fuel_detail,no cooking,7,0,0.1,0.0,15.18
-fuel_detail,other,2523,52,35.66,2.22,29.85
-fuel_detail,wood,2468,33,35.47,1.4,27.67
-cook_place,in a separate building,4298,64,60.3,1.61,26.74
-cook_place,in the house,1211,19,16.89,1.53,26.95
+fuel_detail,other,2523,64,35.66,2.69,29.85
+fuel_detail,wood,2468,36,35.47,1.54,27.67
+cook_place,in a separate building,4298,73,60.3,1.84,26.74
+cook_place,in the house,1211,21,16.89,1.59,26.95
 cook_place,missing / no cooking,7,0,0.1,0.0,15.18
-cook_place,outdoors,1484,19,22.71,1.43,26.7
-polluting_indoor,clean/other,286,3,4.02,1.29,17.84
-polluting_indoor,polluting + in the house,1077,18,15.0,1.69,28.49
-polluting_indoor,"polluting, not in house",5637,81,80.98,1.54,26.87
-v025,urban,2488,25,30.46,1.1,21.74
-v025,rural,4512,77,69.54,1.75,28.95
-v190,poorest,1557,24,22.53,1.65,31.42
-v190,poorer,1358,29,19.83,2.27,27.63
-v190,middle,1339,20,19.53,1.52,26.68
+cook_place,outdoors,1484,25,22.71,1.81,26.7
+polluting_indoor,clean/other,286,4,4.02,1.41,17.84
+polluting_indoor,polluting + in the house,1077,19,15.0,1.71,28.49
+polluting_indoor,"polluting, not in house",5637,96,80.98,1.82,26.87
+v025,urban,2488,29,30.46,1.23,21.74
+v025,rural,4512,90,69.54,2.03,28.95
+v190,poorest,1557,29,22.53,1.94,31.42
+v190,poorer,1358,36,19.83,2.8,27.63
+v190,middle,1339,23,19.53,1.76,26.68
 v190,richer,1350,14,19.31,1.03,26.37
-v190,richest,1396,15,18.79,1.26,20.7
-v024,city of kigali,759,4,14.36,0.76,14.9
-v024,southern province,1668,32,21.51,2.17,33.35
-v024,western province,1686,22,21.84,1.31,23.47
-v024,northern province,1030,17,13.87,1.82,26.16
-v024,eastern province,1857,27,28.41,1.54,30.56
-age_group,0-11m,1453,22,20.59,1.5,24.07
-age_group,12-23m,1376,18,19.9,1.4,27.94
-age_group,24-59m,4171,62,59.51,1.63,27.28
-hv242,,5789,83,83.11,1.56,26.71
+v190,richest,1396,17,18.79,1.36,20.7
+v024,city of kigali,759,5,14.36,0.81,14.9
+v024,southern province,1668,36,21.51,2.45,33.35
+v024,western province,1686,26,21.84,1.55,23.47
+v024,northern province,1030,18,13.87,1.92,26.16
+v024,eastern province,1857,34,28.41,1.9,30.56
+age_group,0-11m,1453,26,20.59,1.79,24.07
+age_group,12-23m,1376,22,19.9,1.67,27.94
+age_group,24-59m,4171,71,59.51,1.83,27.28
+hv242,,5789,98,83.11,1.83,26.71
 hv242,no,486,8,7.05,1.4,26.24
-hv242,yes,725,11,9.84,1.63,27.47
+hv242,yes,725,13,9.84,1.72,27.47

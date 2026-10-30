@@ -11,14 +11,14 @@
 | Item | Status | Key fact |
 |---|---|---|
 | EICV7 2023/24 | ✅ Ready | 15,054 households, 62,110 persons, 7,671 children <5. Fuel counts match the guide exactly (9,601 / 2,554 / 758). |
-| DHS 2025 (RW 91) | ✅ Ready, ⚠️ small outcome | 7,000 living children <5; strict ARI = **102 cases (1.55% weighted)**. Official published value is 1.8%. |
-| DHS 2019-20 (RW 81) | ✅ Ready, ⚠️ small outcome | 7,796 living children <5; strict ARI = **117 cases (1.51%)**. Official value is 1.7%. |
+| DHS 2025 (RW 91) | ✅ Ready, ⚠️ small outcome | 7,000 living children <5; official ARI definition = **119 cases (1.79% weighted)**, matching the published 1.8% exactly. |
+| DHS 2019-20 (RW 81) | ✅ Ready, ⚠️ small outcome | 7,796 living children <5; official ARI = **130 cases (1.70%)**, matching the published 1.7% exactly. |
 | Census 2022 (PHC5 10% sample) | ✅ Ready | Weighted population **13,245,753**; children <5 **1,731,594**. Also has cooking fuel and "energy-saving stove". |
 | District boundaries (RBC) | ✅ Ready | 30 districts, EPSG:4326; `district_id` = NISR code, all 30 codes and names match. Simplified file 152 KB. |
 | District code system | ✅ Same everywhere | EICV7 `district`, Census `ml02`, DHS `sdistrict`/`shdistrict`, RBC `district_id`. All use codes 11–57. |
 
 **Main issues to decide before modelling (details in §8):**
-1. The strict DHS ARI outcome has only ~100 cases per survey, and at district level 0–12 cases. That is too few for a stable model with several predictors.
+1. The official DHS ARI outcome has only ~120–130 cases per survey, and at district level 0–12 cases. That is too few for a stable model with several predictors.
 2. Polluting fuel is almost universal: 97% of children <5 in EICV7, and 95–100% in every district outside Kigali. On its own it cannot rank districts.
 3. In DHS 2025 the descriptive ARI gradient by fuel and cooking place is weak or absent. In 2019-20 it is in the expected direction but small.
 4. DHS 2025 and EICV7 split "wood" and "straw/shrubs/grass" very differently, so these must be merged into one category.
@@ -112,7 +112,7 @@ Possibly useful extra: the person file has `s3q4` "Suffer from an illness or inj
 | Missing (= "no cooking option at home") | 88 | 0.6 | 0.6 | 0.0 |
 | Other (briquette, peat, sawdust, biogas, electricity, kerosene, other) | 21 | 0.1 | 0.1 | 0.1 |
 
-✅ Raw counts match the guide **exactly** (9,601 firewood, 2,554 charcoal, 758 gas). Weighted shares are within 2 points. The guide does not mention the 1,949 straw/shrub/grass households (13%), which are also polluting.
+✅ Raw counts match the guide **exactly** (9,601 firewood, 2,554 charcoal, 758 gas). Weighted shares are within 2 points. **They also match NISR's published figures exactly:** the EICV7 Main Indicators Report 2023/24, Table 5.9 (p. 57), gives firewood 75.0%, charcoal 18.8%, gas or biogas 5.4%, crop waste 0.6%. Ours, among households that cook, are firewood + straw/shrub/grass 75.0, charcoal 18.8, gas/biogas/electricity 5.4, crop waste 0.6. NISR counts straw/shrub/grass as firewood, which supports merging them. Source: https://statistics.gov.rw/sites/default/files/documents/2025-07/EICV7_Main%20Indicator%20Report.pdf The guide does not mention the 1,949 straw/shrub/grass households (13%), which are also polluting.
 
 **Polluting vs clean:** 94.0% of households / **97.0% of children <5** use a polluting primary fuel; 5.4% of households / 2.9% of children use clean fuel.
 
@@ -165,18 +165,20 @@ Possibly useful extra: the person file has `s3q4` "Suffer from an illness or inj
 
 ### 4.3 ARI definition used
 
-> **ARI symptoms = 1** if the child is alive and under 5 (`b5=1`, `b19<60`), **and** had a cough in the last 2 weeks (`h31` ∈ {1,2}), **and** had short, rapid breaths (`h31b`=1), **and** the problem was in the chest (`h31c` ∈ {1 "chest only", 3 "both"}). Otherwise 0. Denominator: all living children <5; "don't know" counts as no, following DHS convention.
+> **ARI symptoms = 1** if the child is alive and under 5 (`b5=1`, `b19<60`), had short, rapid breaths or difficult breathing (`h31b`=1), **and** the problem was in the chest (`h31c` ∈ {1 "chest only", 3 "both"}). **Cough is not required.** Otherwise 0. Denominator: all living children <5; "don't know" counts as no, following DHS convention.
 
-Why: this is the DHS-7/DHS-8 standard definition in the *Guide to DHS Statistics*. The data dictionary supports it directly: `h31c` explicitly separates "chest" from "nose" problems. Children with only a blocked or running nose ("nose only", 562 in 2025) are upper-respiratory cases and are **excluded**.
+Why: this is the DHS-7/DHS-8 definition. The *Guide to DHS Statistics* (DHS-8 edition) gives numerator "(b5=1 & b19 < 60 & h31b = 1 & h31c in 1,3)" and notes that "in prior surveys, the definition of symptoms of ARI included cough". The DHS Program's own code (`DHS-Indicators-Stata`, `Chap10_CH/CH_ARI_FV.do`) uses `h31b==1 & (h31c==1 | h31c==3)`. Both final reports give the same footnote: "Symptoms of ARI include short, rapid breathing that is chest-related and/or difficult breathing that is chest-related" (FR370 Table 10.5; FR401 Table 10.6). `h31b` is asked of every child, not only those with a cough. Children with only a blocked or running nose ("nose only") are **excluded**.
+
+*Correction (27 Oct 2026 audit):* our first version also required a cough (`h31` ∈ {1,2}). That gave 1.55% / 1.51%, 0.2 points below the official values. Dropping the cough condition reproduces them exactly. The pipeline now uses the official definition.
 
 **Check against official DHS figures** (DHS Program API, indicator `CH_ARIS_C_ARI`, preferred rows):
 
 | | Our unweighted N | Official unweighted N | Our weighted N | Official weighted N | Our ARI % | Official ARI % |
 |---|---:|---:|---:|---:|---:|---:|
-| DHS 2025 | 7,000 | 7,000 | 7,056 | 7,056 | 1.55 | 1.8 |
-| DHS 2019-20 | 7,796 | 7,796 | 8,020 | 8,020 | 1.51 | 1.7 |
+| DHS 2025 | 7,000 | 7,000 | 7,056 | 7,056 | 1.79 (weighted cases 126) | 1.8 (126; FR401 Table 10.6) |
+| DHS 2019-20 | 7,796 | 7,796 | 8,020 | 8,020 | 1.70 (137) | 1.7 (137; FR370 Table 10.5) |
 
-The denominators match exactly. The numerator is ~0.2 points (≈15–18 children) lower than the official figure. Variants tested: adding `h31c`=6 "other" and 8 "DK" gives at most 1.62% / 1.64%. **No combination of the available variables reproduces the official values.** The official definition may count something not present in the public recode. This needs checking against the final report's table footnote (open question Q1). The gap does not affect relative comparisons much, but we should cite the official national figure on the website.
+Denominators, rates and weighted case counts all match the published tables exactly.
 
 ### 4.4 Key numbers
 
@@ -188,27 +190,27 @@ The denominators match exactly. The numerator is ~0.2 points (≈15–18 childre
 | Missing / DK cough (`h31`=8) | 56 (0.8%) | 38 (0.5%) |
 | Cough, 2 weeks (weighted %) | 26.75 | 28.38 |
 | Cough + short rapid breaths (n / weighted %) | 592 / 8.58 | 587 / 7.34 |
-| **ARI strict (n / weighted %)** | **102 / 1.55** | **117 / 1.51** |
-| ARI excluding missing cough | 1.57 | 1.52 |
+| **ARI, official definition (n / weighted %)** | **119 / 1.79** | **130 / 1.70** |
+| ARI excluding missing cough | 1.81 | 1.71 |
 | Clusters / strata / districts | 560 / 60 / 30 | 500 / 60 / 30 |
 | Children per district (min–max) | 162–371 | 200–360 |
-| **ARI cases per district (min–max)** | **0–9** | **0–12** |
+| **ARI cases per district (min–max)** | **0–11** | **0–12** |
 
 **Weighted ARI % by group** (n children / n ARI cases in brackets):
 
 | Group | DHS 2025 | DHS 2019-20 |
 |---|---|---|
-| Clean fuel (electricity, LPG, biogas, solar…) | 1.35 (276 / **3**) | 0.32 (235 / **1**) |
-| Polluting fuel | 1.56 (6,714 / 99) | 1.55 (7,561 / 116) |
-| – wood | 1.40 | 1.62 |
-| – charcoal | 0.86 | 0.91 |
-| – straw/shrubs/grass + other biomass | 2.22 | 1.97 |
-| Cook in the house | 1.53 (1,211 / 19) | 1.83 (1,777 / 33) |
-| Separate building | 1.61 (4,298 / 64) | 1.25 (4,460 / 58) |
-| Outdoors | 1.43 (1,484 / 19) | 1.86 (1,559 / 26) |
-| Polluting fuel **and** in the house | 1.69 (1,077 / 18) | 1.90 (1,667 / 32) |
-| Urban / rural | 1.10 / 1.75 | 0.88 / 1.64 |
-| Poorest → richest quintile | 1.65, 2.27, 1.52, 1.03, 1.26 | 1.93, 2.23, 1.79, 0.80, 0.68 |
+| Clean fuel (electricity, LPG, biogas, solar…) | 1.47 (276 / **4**) | 0.32 (235 / **1**) |
+| Polluting fuel | 1.80 (6,714 / 115) | 1.75 (7,561 / 129) |
+| – wood | 1.54 | 1.81 |
+| – charcoal | 0.92 | 1.21 |
+| – straw/shrubs/grass + other biomass | 2.69 | 2.06 |
+| Cook in the house | 1.59 (1,211 / 21) | 2.00 (1,777 / 35) |
+| Separate building | 1.84 (4,298 / 73) | 1.41 (4,460 / 65) |
+| Outdoors | 1.81 (1,484 / 25) | 2.17 (1,559 / 30) |
+| Polluting fuel **and** in the house | 1.71 (1,077 / 19) | 2.08 (1,667 / 34) |
+| Urban / rural | 1.23 / 2.03 | 0.99 / 1.86 |
+| Poorest → richest quintile | 1.94, 2.80, 1.76, 1.03, 1.36 | 2.14, 2.48, 1.94, 0.86, 0.98 |
 
 Full tables: `outputs/dhs/<year>/ari_breakdowns.csv`.
 
@@ -223,8 +225,8 @@ Full tables: `outputs/dhs/<year>/ari_breakdowns.csv`.
 | Cook in the house / separate building / outdoors | 18.3 / 61.5 / 19.4 | 22.3 / 58.2 / 19.2 |
 
 ### 4.6 Problems flagged
-- **Very few outcome events.** ~100 strict-ARI cases per survey, only 1–3 among clean-fuel children, and 0–12 per district. District-level DHS ARI rates are not usable directly.
-- **Weak exposure gradient.** In 2025, cooking place shows no ARI difference (1.4–1.6%) and polluting vs clean is 1.56 vs 1.35 with only 3 clean-fuel cases. In 2019-20 the direction is as expected but based on very few cases. Charcoal users have *lower* ARI than wood users, likely because charcoal users are more urban and richer (confounding).
+- **Very few outcome events.** ~120–130 ARI cases per survey, only 1–4 among clean-fuel children, and 0–12 per district. District-level DHS ARI rates are not usable directly.
+- **Weak exposure gradient.** In 2025, cooking place shows no ARI difference (1.6–1.8%) and polluting vs clean is 1.80 vs 1.47 with only 4 clean-fuel cases. In 2019-20 the direction is as expected but based on very few cases. Charcoal users have *lower* ARI than wood users, likely because charcoal users are more urban and richer (confounding).
 - **Wood/straw split changed sharply** between DHS 2019-20 (61/17) and DHS 2025 (37/33), and EICV7 (62/13) resembles 2019-20. This looks like a change in how "udushari" (straw/shrubs) was recorded, not a real shift in fuel use. → Merge wood + straw/shrubs into one category.
 - **Urban share jumps** from 17.6% (2019-20) to 30.5% (2025) of children, probably because of the 2022 Census urban reclassification. Urban is not comparable across the two DHS rounds.
 - `hv222` stove type exists only in 2025; `hv240` chimney is empty in 2019-20 and half-filled in 2025.
@@ -272,37 +274,37 @@ From `outputs/district_overview.csv`. Census numbers are weighted; EICV7/DHS col
 
 | Code | District | Census pop | Census <5 | Census % hh polluting | Census % saving stove | EICV7 hh / clusters / <5 | EICV7 % <5 polluting | EICV7 % <5 cook in dwelling | DHS25 <5 / ARI | DHS19 <5 / ARI |
 |---|---|---:|---:|---:|---:|---|---:|---:|---|---|
-| 11 | Nyarugenge | 374,312 | 46,934 | 78.2 | 5.7 | 647 / 72 / 277 | 86.6 | 22.4 | 183 / 0 | 277 / 0 |
+| 11 | Nyarugenge | 374,312 | 46,934 | 78.2 | 5.7 | 647 / 72 / 277 | 86.6 | 22.4 | 183 / 1 | 277 / 2 |
 | 12 | Gasabo | 879,476 | 117,275 | 79.9 | 7.2 | 644 / 72 / 313 | 87.0 | 21.9 | 371 / 4 | 360 / 2 |
-| 13 | Kicukiro | 491,731 | 59,317 | 71.2 | 7.0 | 647 / 72 / 287 | 82.8 | 17.2 | 205 / 0 | 283 / 4 |
-| 21 | Nyanza | 365,718 | 46,837 | 97.8 | 65.1 | 486 / 54 / 258 | 100.0 | 21.1 | 187 / 5 | 232 / 1 |
-| 22 | Gisagara | 396,996 | 54,355 | 97.2 | 75.6 | 486 / 54 / 277 | 100.0 | 43.3 | 277 / 9 | 234 / 1 |
+| 13 | Kicukiro | 491,731 | 59,317 | 71.2 | 7.0 | 647 / 72 / 287 | 82.8 | 17.2 | 205 / 0 | 283 / 5 |
+| 21 | Nyanza | 365,718 | 46,837 | 97.8 | 65.1 | 486 / 54 / 258 | 100.0 | 21.1 | 187 / 5 | 232 / 2 |
+| 22 | Gisagara | 396,996 | 54,355 | 97.2 | 75.6 | 486 / 54 / 277 | 100.0 | 43.3 | 277 / 11 | 234 / 1 |
 | 23 | Nyaruguru | 318,126 | 42,169 | 98.9 | 30.9 | 486 / 54 / 299 | 100.0 | 45.3 | 201 / 5 | 250 / 5 |
 | 24 | Huye | 381,894 | 49,310 | 97.0 | 24.1 | 485 / 54 / 229 | 96.7 | 29.7 | 219 / 6 | 200 / 2 |
-| 25 | Nyamagabe | 371,501 | 43,729 | 98.9 | 30.7 | 486 / 54 / 235 | 100.0 | 29.8 | 189 / 0 | 227 / 6 |
-| 26 | Ruhango | 359,121 | 43,538 | 98.1 | 65.3 | 486 / 54 / 218 | 99.5 | 27.1 | 196 / 1 | 231 / 3 |
-| 27 | Muhanga | 358,433 | 42,432 | 96.8 | 66.7 | 486 / 54 / 204 | 99.1 | 19.3 | 162 / 2 | 207 / 0 |
+| 25 | Nyamagabe | 371,501 | 43,729 | 98.9 | 30.7 | 486 / 54 / 235 | 100.0 | 29.8 | 189 / 0 | 227 / 7 |
+| 26 | Ruhango | 359,121 | 43,538 | 98.1 | 65.3 | 486 / 54 / 218 | 99.5 | 27.1 | 196 / 2 | 231 / 3 |
+| 27 | Muhanga | 358,433 | 42,432 | 96.8 | 66.7 | 486 / 54 / 204 | 99.1 | 19.3 | 162 / 3 | 207 / 0 |
 | 28 | Kamonyi | 450,849 | 56,348 | 96.3 | 42.1 | 484 / 54 / 239 | 99.5 | 17.2 | 237 / 4 | 203 / 1 |
 | 31 | Karongi | 373,869 | 45,414 | 98.1 | 28.5 | 486 / 54 / 245 | 98.8 | 21.0 | 200 / 1 | 257 / 1 |
-| 32 | Rutsiro | 369,180 | 47,942 | 99.2 | 38.9 | 486 / 54 / 276 | 100.0 | 43.0 | 219 / 5 | 304 / 8 |
-| 33 | Rubavu | 546,680 | 78,964 | 95.2 | 6.8 | 485 / 54 / 283 | 97.6 | 50.7 | 319 / 9 | 313 / 7 |
+| 32 | Rutsiro | 369,180 | 47,942 | 99.2 | 38.9 | 486 / 54 / 276 | 100.0 | 43.0 | 219 / 6 | 304 / 8 |
+| 33 | Rubavu | 546,680 | 78,964 | 95.2 | 6.8 | 485 / 54 / 283 | 97.6 | 50.7 | 319 / 11 | 313 / 7 |
 | 34 | Nyabihu | 319,041 | 41,306 | 99.2 | 17.1 | 486 / 54 / 263 | 100.0 | 46.5 | 205 / 0 | 276 / 12 |
-| 35 | Ngororero | 367,955 | 45,901 | 99.2 | 28.6 | 485 / 54 / 226 | 100.0 | 21.2 | 191 / 0 | 259 / 3 |
-| 36 | Rusizi | 485,513 | 69,849 | 97.2 | 21.7 | 486 / 54 / 309 | 98.7 | 12.5 | 293 / 0 | 294 / 6 |
-| 37 | Nyamasheke | 434,157 | 57,161 | 98.8 | 18.8 | 486 / 54 / 267 | 100.0 | 10.8 | 259 / 7 | 295 / 9 |
-| 41 | Rulindo | 360,144 | 45,278 | 98.0 | 29.6 | 486 / 54 / 231 | 99.5 | 9.8 | 185 / 3 | 212 / 2 |
-| 42 | Gakenke | 365,292 | 41,970 | 98.8 | 56.3 | 486 / 54 / 223 | 99.5 | 11.0 | 185 / 5 | 227 / 3 |
+| 35 | Ngororero | 367,955 | 45,901 | 99.2 | 28.6 | 485 / 54 / 226 | 100.0 | 21.2 | 191 / 1 | 259 / 4 |
+| 36 | Rusizi | 485,513 | 69,849 | 97.2 | 21.7 | 486 / 54 / 309 | 98.7 | 12.5 | 293 / 0 | 294 / 7 |
+| 37 | Nyamasheke | 434,157 | 57,161 | 98.8 | 18.8 | 486 / 54 / 267 | 100.0 | 10.8 | 259 / 7 | 295 / 12 |
+| 41 | Rulindo | 360,144 | 45,278 | 98.0 | 29.6 | 486 / 54 / 231 | 99.5 | 9.8 | 185 / 3 | 212 / 3 |
+| 42 | Gakenke | 365,292 | 41,970 | 98.8 | 56.3 | 486 / 54 / 223 | 99.5 | 11.0 | 185 / 6 | 227 / 3 |
 | 43 | Musanze | 476,522 | 59,938 | 95.1 | 35.9 | 486 / 54 / 239 | 94.6 | 19.8 | 253 / 5 | 283 / 2 |
 | 44 | Burera | 387,729 | 48,354 | 99.2 | 13.2 | 486 / 54 / 248 | 100.0 | 6.0 | 190 / 0 | 270 / 2 |
-| 45 | Gicumbi | 448,824 | 56,817 | 98.4 | 57.8 | 486 / 54 / 222 | 99.5 | 2.9 | 217 / 4 | 237 / 9 |
-| 51 | Rwamagana | 484,953 | 63,927 | 96.1 | 24.5 | 486 / 54 / 277 | 95.4 | 11.4 | 249 / 5 | 218 / 1 |
-| 52 | Nyagatare | 653,861 | 94,260 | 96.3 | 48.1 | 486 / 54 / 274 | 100.0 | 0.9 | 315 / 8 | 297 / 9 |
-| 53 | Gatsibo | 551,127 | 73,344 | 97.2 | 28.6 | 486 / 54 / 251 | 99.2 | 2.6 | 249 / 2 | 248 / 0 |
+| 45 | Gicumbi | 448,824 | 56,817 | 98.4 | 57.8 | 486 / 54 / 222 | 99.5 | 2.9 | 217 / 4 | 237 / 10 |
+| 51 | Rwamagana | 484,953 | 63,927 | 96.1 | 24.5 | 486 / 54 / 277 | 95.4 | 11.4 | 249 / 7 | 218 / 1 |
+| 52 | Nyagatare | 653,861 | 94,260 | 96.3 | 48.1 | 486 / 54 / 274 | 100.0 | 0.9 | 315 / 9 | 297 / 10 |
+| 53 | Gatsibo | 551,127 | 73,344 | 97.2 | 28.6 | 486 / 54 / 251 | 99.2 | 2.6 | 249 / 3 | 248 / 0 |
 | 54 | Kayonza | 457,156 | 61,862 | 96.6 | 40.5 | 485 / 54 / 239 | 98.7 | 6.0 | 282 / 3 | 312 / 2 |
-| 55 | Kirehe | 460,860 | 62,156 | 87.4 | 45.6 | 486 / 54 / 226 | 100.0 | 0.8 | 217 / 1 | 252 / 7 |
+| 55 | Kirehe | 460,860 | 62,156 | 87.4 | 45.6 | 486 / 54 / 226 | 100.0 | 0.8 | 217 / 4 | 252 / 7 |
 | 56 | Ngoma | 404,048 | 53,150 | 97.4 | 28.1 | 486 / 54 / 259 | 99.3 | 2.0 | 239 / 4 | 236 / 2 |
 | 57 | Bugesera | 550,685 | 81,757 | 94.2 | 18.9 | 486 / 54 / 277 | 95.2 | 9.5 | 306 / 4 | 302 / 7 |
-| | **Total** | **13,245,753** | **1,731,594** | | | **15,054 / 1,674 / 7,671** | | | **7,000 / 102** | **7,796 / 117** |
+| | **Total** | **13,245,753** | **1,731,594** | | | **15,054 / 1,674 / 7,671** | | | **7,000 / 119** | **7,796 / 130** |
 
 Every district has 54–72 EICV7 clusters and 200–313 sampled children <5, so no district is extremely thin, but all district estimates still need intervals. **Cooking inside the dwelling** varies from 0.8% (Kirehe) to 50.7% (Rubavu) and is the exposure dimension that actually differs between districts. The West and South are high; the East is very low.
 
@@ -348,18 +350,18 @@ Child-weighted % of children <5 under the proposed shared categories (`outputs/h
 
 ## 9. Problems and open questions
 
-**Q1. ARI numerator gap.** Our strict ARI (1.55% / 1.51%) is ~0.2 points below the official DHS values (1.8% / 1.7%), even though denominators match exactly. Check the footnote of the ARI table in the 2025 and 2019-20 final reports (FR370 for 2019-20) to see whether another item counts.
+**Q1. ARI numerator gap: RESOLVED.** The official DHS-7/8 definition does not require a cough (see §4.3). With it we reproduce 1.79% / 1.70% and the published weighted case counts exactly.
 
 **Q2. Outcome choice (most important decision).** The strict ARI outcome has ~100 events per survey. Options:
-- (a) Strict ARI, **pooling DHS 2019-20 + 2025** (219 events, 14,796 children) with a survey-year term. This is the standard, defensible definition, but still few events for ~10 parameters.
+- (a) Official ARI, **pooling DHS 2019-20 + 2025** (249 events in the 14,692-child analysis sample) with a survey-year term. This is the standard, defensible definition, but still few events for ~10 parameters.
 - (b) **Cough with short, rapid breaths** (no chest condition): 592 + 587 events (8.6% / 7.3%). Much more statistical power, but it includes upper-respiratory ("nose only") cases, so it must be labelled honestly as "cough with fast breathing", not pneumonia/ARI.
 - (c) Use (b) as the main model and (a) as a sensitivity check.
 
 **Q3. Is the exposure signal strong enough?** The descriptive association between cooking place and ARI is flat in 2025. Polluting vs clean rests on 1–3 clean-fuel cases. A model may show weak or non-significant fuel/place effects. Plan for honest reporting, and consider the guide's §6.8 exposure-index fallback as a parallel product (it does not depend on the outcome). The exposure index should combine polluting fuel **and** indoor cooking, since fuel alone is ~97% everywhere outside Kigali.
 
-**Q4. Refugee camp households (Mahama, Kirehe)** appear in the Census and push Kirehe's clean-fuel share to 11%. Should C_d and H_d for Kirehe include them? They are likely outside EICV7's frame.
+**Q4. Refugee camp households (Mahama, Kirehe)** appear in the Census and push Kirehe's clean-fuel share to 11%. Census Mahama sector has 12,805 children under 5 (21% of Kirehe), with 62% of households cooking with gas. *Decision:* exposure and polluting households now come from the Census, which includes them. Kirehe is flagged low-confidence because EICV7 (100%) and the Census (84.8%) disagree.
 
-**Q5. Census vs EICV7 for exposure shares.** The Census (10% sample, ~30–90k persons per district) gives far more precise district fuel shares than EICV7 (~485 households per district), but has no cooking place. Option: take polluting-fuel share from the Census and cooking place + predicted risk from EICV7.
+**Q5. Census vs EICV7 for exposure shares: DONE.** Polluting-fuel exposure is taken from the Census (child-level, 4,000–11,700 sampled children per district, design-based intervals). Cooking place and predicted risk come from EICV7.
 
 **Q6. Stove cost/effectiveness sources** are still needed for `assumptions.json` (not part of this step).
 

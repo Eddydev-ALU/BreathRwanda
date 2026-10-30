@@ -1,10 +1,12 @@
 """Step 2: verify DHS 2025 (RW 91) and DHS 2019-20 (RW 81) variables, build the ARI
 symptom indicator and compute weighted prevalence.
 
-ARI definition (Guide to DHS Statistics, DHS-7/DHS-8): among living children under 5,
-  ari = 1 if cough in last 2 weeks (h31 in 1,2)
-          AND short, rapid breaths (h31b == 1)
+ARI definition (Guide to DHS Statistics, DHS-7/DHS-8; DHS-Indicators-Stata CH_ARI_FV.do):
+among living children under 5,
+  ari = 1 if short, rapid breaths (h31b == 1)
           AND problem in the chest (h31c in 1 'chest only', 3 'both')
+Since DHS-7 cough is NOT required (h31b is asked of every child). This reproduces the
+official values exactly: 1.79% (2025) and 1.70% (2019-20).
 DHS counts "don't know"/missing as "no" (denominator = all living children <5).
 We also report a variant that drops children with missing/don't know cough data.
 
@@ -83,7 +85,7 @@ def run(year):
 
     alive["cough"] = alive.h31.isin([1, 2]).astype(int)
     alive["cough_fast"] = (alive.cough.eq(1) & alive.h31b.eq(1)).astype(int)
-    alive["ari"] = (alive.cough_fast.eq(1) & alive.h31c.isin([1, 3])).astype(int)
+    alive["ari"] = (alive.h31b.eq(1) & alive.h31c.isin([1, 3])).astype(int)
 
     def wrate(g, col):
         return 100 * np.average(g[col], weights=g["w"])

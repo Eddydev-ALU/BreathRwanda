@@ -61,6 +61,7 @@ def main():
             "code": c, "name": d.district_name, "province": d.province_name,
             "population": round(d.population), "childrenU5": round(d.children_u5), "households": round(d.households),
             "exposureShare": r(d.exposure_share), "exposureShareLo": r(d.exposure_share_lo), "exposureShareHi": r(d.exposure_share_hi),
+            "eicv7ExposureShare": r(d.eicv7_exposure_share),
             "indoorSmokeShare": r(d.indoor_smoke_share), "indoorSmokeShareLo": r(d.indoor_smoke_share_lo),
             "indoorSmokeShareHi": r(d.indoor_smoke_share_hi),
             "childrenExposed": round(d.children_exposed), "childrenIndoorSmoke": round(d.children_indoor_smoke),
@@ -84,22 +85,24 @@ def main():
             "sampleHouseholds": int(d.sample_households), "sampleClusters": int(d.sample_clusters),
             "sampleChildren": int(d.sample_children), "sampleIndoorHouseholds": int(d.sample_indoor_households),
             "lowConfidenceIndoor": bool(d.sample_indoor_households < 30),
+            "lowConfidence": bool(d.low_confidence),
+            "lowConfidenceReason": d.low_confidence_reason if isinstance(d.low_confidence_reason, str) else "",
             "whyFactors": factors[c],
         })
-    (SITE / "districts.json").write_text(json.dumps(records, separators=(",", ":")))
+    (SITE / "districts.json").write_text(json.dumps(records, separators=(",", ":"), allow_nan=False))
 
     ors = pd.read_csv(OUTPUTS / "model" / "odds_ratios.csv")
     imp = pd.read_csv(OUTPUTS / "model" / "feature_importance.csv")
     ms = json.loads((OUTPUTS / "model" / "model_summary.json").read_text())
     nat = json.loads((OUTPUTS / "district" / "national_checks.json").read_text())
-    rob = pd.read_csv(OUTPUTS / "district" / "robustness.csv")
+    rob = pd.read_csv(OUTPUTS / "district" / "robustness.csv").fillna("")
     rates = pd.read_csv(OUTPUTS / "descriptives" / "rates_cough_fast.csv")
     summary = {
         "outcomes": {
             "cough_fast": {**ms["cough_fast"], "role": "main", "definition":
                            "Child under 5, alive, mother reports cough in the last 2 weeks (h31 = 1 or 2) AND short, rapid breaths (h31b = 1)."},
             "ari": {**ms["ari"], "role": "sensitivity", "definition":
-                    "As above AND the problem was in the chest (h31c = 1 chest only or 3 both): the standard DHS ARI definition."},
+                    "Short, rapid breaths (h31b = 1) with a problem in the chest (h31c = 1 chest only or 3 both); cough not required. The official DHS-7/8 ARI definition; reproduces the published 1.8% (2025) and 1.7% (2019-20)."},
         },
         "oddsRatios": {o: [{"feature": f.feature, "label": LABELS[f.feature], "level": f.level, "or": r(f.odds_ratio, 3),
                             "lo": r(f.or_lo, 3), "hi": r(f.or_hi, 3), "p": r(f.p_value, 4)}
@@ -117,13 +120,14 @@ def main():
                      "bootstrap": f"{nat['n_bootstrap']} rounds; DHS clusters (model refit) and EICV7 clusters resampled within strata"},
         "appliedTo": "EICV7 2023/24 children under 5 (7,667), scaled to Census 2022 district counts",
     }
-    (SITE / "model_summary.json").write_text(json.dumps(summary, indent=1))
+    # allow_nan=False: browsers reject NaN, so fail loudly instead of writing invalid JSON.
+    (SITE / "model_summary.json").write_text(json.dumps(summary, indent=1, allow_nan=False))
 
     rk = t.sort_values("priority_rank")[[
         "priority_rank", "priority_rank_lo", "priority_rank_hi", "priority_tier", "district_code", "district_name",
         "province_name", "children_u5", "children_exposed", "children_indoor_smoke", "exposure_share",
         "indoor_smoke_share", "risk", "risk_lo", "risk_hi", "risk_index", "children_with_symptoms", "polluting_hh",
-        "children_per_hh", "priority_score", "rank_uncertain"]].copy()
+        "children_per_hh", "priority_score", "rank_uncertain", "low_confidence", "low_confidence_reason"]].copy()
     for c in ["exposure_share", "indoor_smoke_share", "risk", "risk_lo", "risk_hi"]:
         rk[c] = (100 * rk[c]).round(1)
     rk = rk.rename(columns={"exposure_share": "exposure_pct", "indoor_smoke_share": "indoor_smoke_pct",
