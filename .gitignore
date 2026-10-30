@@ -36,3 +36,6 @@ data/reference/districts_rbc_full.geojson
 *.hdf5
 *.npy
 *.npz
+
+# Frontend is shared with a teammate separately; not committed from this branch
+frontend/
