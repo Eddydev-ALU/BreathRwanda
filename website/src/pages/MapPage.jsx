@@ -99,7 +99,7 @@ function DistrictMap({ geo, byCode, measure, scale, selectedCode, onSelect }) {
       scrollWheelZoom={false}
       attributionControl={false}
       style={{ background: 'var(--color-bg)' }}
-      className="h-[46vh] min-h-[300px] w-full border border-line sm:h-[58vh] lg:h-[620px]"
+      className="box h-[46vh] min-h-[300px] w-full overflow-hidden sm:h-[58vh] lg:h-[620px]"
       aria-label="Map of Rwanda's 30 districts"
     >
       <GeoJSON
@@ -192,7 +192,7 @@ export default function MapPage() {
               {MEASURES.map((m) => (
                 <label
                   key={m.id}
-                  className={`flex min-h-11 cursor-pointer items-center rounded border px-3 text-sm has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
+                  className={`flex min-h-11 cursor-pointer items-center rounded-full border px-4 text-sm has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
                     m.id === measure.id ? 'border-accent bg-accent text-white' : 'border-line bg-surface hover:border-muted'
                   }`}
                 >
@@ -236,7 +236,7 @@ export default function MapPage() {
               id="district-select"
               value={selected?.name || ''}
               onChange={(e) => update({ district: e.target.value || null })}
-              className="mt-2 block min-h-11 w-full max-w-sm rounded border border-line bg-surface px-3"
+              className="mt-2 block min-h-11 w-full max-w-sm rounded-lg border border-line bg-surface px-3"
             >
               <option value="">Select a district</option>
               {sorted.map((d) => (
@@ -252,8 +252,8 @@ export default function MapPage() {
           aria-label="District details"
           className={
             selected
-              ? 'fixed inset-x-0 bottom-0 z-[1000] max-h-[50vh] overflow-y-auto overscroll-contain border-t border-line bg-bg px-4 pb-8 pt-3 lg:static lg:z-auto lg:max-h-none lg:overflow-visible lg:border lg:p-5'
-              : 'hidden lg:block lg:border lg:border-line lg:p-5'
+              ? 'fixed inset-x-0 bottom-0 z-[1000] max-h-[50vh] overflow-y-auto overscroll-contain rounded-t-2xl bg-card px-4 pb-8 pt-3 shadow-box lg:static lg:z-auto lg:max-h-none lg:overflow-visible lg:rounded-2xl lg:p-6'
+              : 'hidden lg:box lg:block lg:p-6'
           }
         >
           {selected && <span aria-hidden="true" className="mx-auto mb-3 block h-1 w-10 rounded bg-line lg:hidden" />}

@@ -60,7 +60,7 @@ export default function Tip({ label, children }) {
           e.stopPropagation()
           setOpen((o) => !o)
         }}
-        className="relative ml-1 inline-flex h-6 w-6 items-center justify-center rounded border border-line bg-surface font-sans text-xs font-semibold leading-none text-muted after:absolute after:-inset-2.5 after:content-[''] hover:border-muted hover:text-ink"
+        className="relative ml-1 inline-flex h-6 w-6 items-center justify-center rounded-lg border border-line bg-surface font-sans text-xs font-semibold leading-none text-muted after:absolute after:-inset-2.5 after:content-[''] hover:border-muted hover:text-ink"
       >
         ?
       </button>
@@ -70,7 +70,7 @@ export default function Tip({ label, children }) {
           id={id}
           role="tooltip"
           style={pos ? { left: pos.left, top: pos.top } : { visibility: 'hidden', left: 0, top: 0 }}
-          className="fixed z-[1100] block w-72 max-w-[calc(100vw-32px)] rounded border border-line bg-surface p-3 text-left font-sans text-sm font-normal normal-case leading-normal tracking-normal text-ink"
+          className="fixed z-[1100] block w-72 max-w-[calc(100vw-32px)] rounded-xl border border-line bg-surface p-3 shadow-box text-left font-sans text-sm font-normal normal-case leading-normal tracking-normal text-ink"
         >
           <span className="mb-1 block font-semibold">{label}</span>
           {children}

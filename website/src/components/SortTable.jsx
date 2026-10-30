@@ -29,7 +29,7 @@ export default function SortTable({ columns, rows, initial, caption, rowKey, foo
                 id={selectId}
                 value={sort.key}
                 onChange={(e) => setSort({ key: e.target.value, dir: sort.dir })}
-                className="mt-1 min-h-11 w-full rounded border border-line bg-surface px-3"
+                className="mt-1 min-h-11 w-full rounded-lg border border-line bg-surface px-3"
               >
                 {columns.map((c) => (
                   <option key={c.key} value={c.key}>
@@ -41,15 +41,15 @@ export default function SortTable({ columns, rows, initial, caption, rowKey, foo
             <button
               type="button"
               onClick={() => setSort((s) => ({ ...s, dir: s.dir === 'asc' ? 'desc' : 'asc' }))}
-              className="min-h-11 rounded border border-line bg-surface px-3 text-sm"
+              className="min-h-11 rounded-lg border border-line bg-surface px-3 text-sm"
             >
               {sort.dir === 'asc' ? 'Low to high' : 'High to low'}
               <span className="sr-only">, change order</span>
             </button>
           </div>
-          <ul className="mt-3 divide-y divide-line border-y border-line" aria-label={caption}>
+          <ul className="mt-3 space-y-3" aria-label={caption}>
             {sorted.map((r) => (
-              <li key={rowKey(r)} className="py-3">
+              <li key={rowKey(r)} className="box p-4">
                 {card(r)}
               </li>
             ))}
@@ -59,7 +59,7 @@ export default function SortTable({ columns, rows, initial, caption, rowKey, foo
         </div>
       )}
 
-      <div className={`overflow-x-auto border border-line ${card ? 'hidden md:block' : ''}`}>
+      <div className={`box overflow-x-auto ${card ? 'hidden md:block' : ''}`}>
         <table className="w-full border-collapse text-sm" style={{ minWidth }}>
           <caption className="sr-only">{caption}</caption>
           <thead>

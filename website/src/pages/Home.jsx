@@ -64,11 +64,11 @@ function CountUp({ value, format }) {
 
 function Stat({ value, format, children, delay }) {
   return (
-    <Reveal delay={delay} className="border-t border-line pt-4">
-      <p className="font-serif text-4xl font-semibold leading-none tabular-nums sm:text-5xl">
+    <Reveal delay={delay} className="box h-full p-6">
+      <p className="font-serif text-3xl font-bold leading-none tabular-nums sm:text-4xl">
         <CountUp value={value} format={format} />
       </p>
-      <p className="mt-3 max-w-[24ch] text-[0.95rem] text-muted">{children}</p>
+      <p className="mt-3 text-[0.95rem] text-muted">{children}</p>
     </Reveal>
   )
 }
@@ -81,7 +81,7 @@ function Card({ to, image, label, title, children, delay, external }) {
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="text-xs font-medium uppercase tracking-wider text-muted">{label}</p>
-        <h3 className="mt-2 text-xl text-ink">
+        <h3 className="mt-2 text-lg text-ink">
           <span className="grow-underline">{title}</span>
         </h3>
         <p className="mt-2 flex-1 text-[0.95rem] text-muted">{children}</p>
@@ -93,7 +93,7 @@ function Card({ to, image, label, title, children, delay, external }) {
   )
   return (
     <Reveal delay={delay} className="h-full">
-      <Link to={to} className="card-link flex h-full flex-col rounded border border-line bg-card no-underline">
+      <Link to={to} className="card-link box flex h-full flex-col overflow-hidden no-underline">
         {inner}
       </Link>
     </Reveal>
@@ -161,17 +161,17 @@ export default function Home() {
         <Smoke />
         <div className="page-x relative z-10 w-full pb-32 pt-32 sm:pb-28">
           <p className="fade-up text-sm font-medium uppercase tracking-wider text-white">Children and cooking smoke in Rwanda</p>
-          <h1 className="fade-up mt-3 max-w-[18ch] text-4xl text-white sm:text-6xl" style={{ animationDelay: '120ms' }}>
+          <h1 className="fade-up mt-3 max-w-[20ch] text-3xl text-white sm:text-5xl" style={{ animationDelay: '120ms' }}>
             Where will clean cooking stoves protect the most children in Rwanda?
           </h1>
-          <p className="fade-up mt-5 max-w-prose text-lg text-white" style={{ animationDelay: '240ms' }}>
+          <p className="fade-up mt-5 max-w-prose text-white sm:text-lg" style={{ animationDelay: '240ms' }}>
             Most homes cook with firewood or charcoal. BreathRwanda shows which districts have the most children exposed,
             and where a stove budget protects the most of them.
           </p>
           <div className="fade-up mt-8" style={{ animationDelay: '360ms' }}>
             <Link
               to="/map"
-              className="card-link inline-flex min-h-12 items-center gap-2 rounded bg-white px-6 font-medium text-accent no-underline hover:bg-bg"
+              className="card-link btn btn-light"
             >
               Explore the map <span aria-hidden="true" className="card-arrow inline-block">→</span>
             </Link>
@@ -191,10 +191,10 @@ export default function Home() {
       </section>
 
       {/* Key numbers */}
-      <section aria-labelledby="numbers" className="bg-card">
+      <section aria-labelledby="numbers" className="bg-bg">
         <div className="page-x py-16 sm:py-20">
           <Reveal>
-            <h2 id="numbers" className="rule text-3xl sm:text-4xl">
+            <h2 id="numbers" className="rule text-2xl sm:text-3xl">
               Rwanda in four numbers
             </h2>
           </Reveal>
@@ -206,7 +206,7 @@ export default function Home() {
               </button>
             </p>
           )}
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4" aria-busy={status === 'loading'}>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" aria-busy={status === 'loading'}>
             <Stat delay={0} value={n.census_children_u5 / 1e6} format={(x) => `${x.toFixed(2)} million`}>
               children under 5 in Rwanda
             </Stat>
@@ -230,14 +230,14 @@ export default function Home() {
       </section>
 
       {/* Explore the data */}
-      <section aria-labelledby="explore" className="bg-bg">
+      <section aria-labelledby="explore" className="bg-card">
         <div className="page-x grid items-center gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16">
-          <Reveal className="aspect-[16/10] overflow-hidden rounded border border-line">
+          <Reveal className="box aspect-[16/10] overflow-hidden">
             <Photo slug="hills-terraces" />
           </Reveal>
           <Reveal delay={100}>
             <p className="text-sm font-medium uppercase tracking-wider text-muted">Explore the data</p>
-            <h2 id="explore" className="rule mt-2 text-3xl sm:text-4xl">
+            <h2 id="explore" className="rule mt-2 text-2xl sm:text-3xl">
               See the numbers for your district
             </h2>
             <p className="mt-4 max-w-prose">
@@ -253,7 +253,7 @@ export default function Home() {
                   id="home-district"
                   defaultValue=""
                   onChange={(e) => e.target.value && navigate(`/map?district=${encodeURIComponent(e.target.value)}`)}
-                  className="mt-1 min-h-12 w-64 max-w-full rounded border border-line bg-card px-3"
+                  className="mt-1 min-h-11 w-64 max-w-full rounded-lg border border-line bg-card px-3"
                 >
                   <option value="">Choose a district</option>
                   {sorted.map((d) => (
@@ -265,7 +265,7 @@ export default function Home() {
               </div>
               <Link
                 to="/map"
-                className="inline-flex min-h-12 items-center rounded border border-accent bg-accent px-6 font-medium text-white no-underline hover:bg-ink hover:border-ink"
+                className="btn btn-solid"
               >
                 Open the risk map
               </Link>
@@ -275,10 +275,10 @@ export default function Home() {
       </section>
 
       {/* Resources */}
-      <section aria-labelledby="tools" className="bg-card">
+      <section aria-labelledby="tools" className="bg-bg">
         <div className="page-x py-16 sm:py-20">
           <Reveal>
-            <h2 id="tools" className="rule text-3xl sm:text-4xl">
+            <h2 id="tools" className="rule text-2xl sm:text-3xl">
               Tools and methods
             </h2>
           </Reveal>
@@ -297,10 +297,10 @@ export default function Home() {
       </section>
 
       {/* Key findings */}
-      <section aria-labelledby="findings" className="bg-bg">
+      <section aria-labelledby="findings" className="bg-card">
         <div className="page-x py-16 sm:py-20">
           <Reveal>
-            <h2 id="findings" className="rule text-3xl sm:text-4xl">
+            <h2 id="findings" className="rule text-2xl sm:text-3xl">
               Key findings
             </h2>
           </Reveal>
@@ -350,7 +350,7 @@ export default function Home() {
                 t: 'of children under 5 in Rwanda live in homes that cook mainly with polluting fuel (Census 2022).',
               },
             ].map((f, i) => (
-              <Reveal key={f.h} delay={i * 90} className="border-t border-white/40 pt-4">
+              <Reveal key={f.h} delay={i * 90} className="rounded-2xl bg-white/10 p-6 shadow-box backdrop-blur-sm">
                 <p className="font-serif text-2xl font-semibold text-white">{f.h}</p>
                 <p className="mt-2 text-white">{f.t}</p>
                 {f.src && (
@@ -366,7 +366,7 @@ export default function Home() {
           <Reveal className="mt-10">
             <Link
               to="/problem"
-              className="inline-flex min-h-12 items-center gap-2 rounded border border-white px-6 font-medium text-white no-underline hover:bg-white hover:text-accent"
+              className="btn btn-ghost-light"
             >
               Read about the problem <span aria-hidden="true">→</span>
             </Link>

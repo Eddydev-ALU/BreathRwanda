@@ -123,7 +123,7 @@ export default function Ranking() {
             id="province"
             value={province}
             onChange={(e) => setProvince(e.target.value)}
-            className="mt-1 min-h-11 w-full rounded border border-line bg-surface px-3 sm:w-auto"
+            className="mt-1 min-h-11 w-full rounded-lg border border-line bg-surface px-3 sm:w-auto"
           >
             <option value="">All provinces</option>
             {provinces.map((p) => (
@@ -141,13 +141,13 @@ export default function Ranking() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="For example Rubavu"
-            className="mt-1 min-h-11 w-full rounded border border-line bg-surface px-3 sm:w-56"
+            className="mt-1 min-h-11 w-full rounded-lg border border-line bg-surface px-3 sm:w-56"
           />
         </div>
         <button
           type="button"
           onClick={exportCsv}
-          className="min-h-11 rounded border border-accent px-4 text-accent hover:bg-surface sm:ml-auto"
+          className="btn btn-outline sm:ml-auto"
         >
           Download CSV
         </button>

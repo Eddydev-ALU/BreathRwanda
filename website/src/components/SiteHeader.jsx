@@ -127,7 +127,7 @@ function MobileMenu({ open, onClose }) {
           <Link to="/" onClick={onClose} className="py-3 font-serif text-xl font-semibold text-ink no-underline">
             BreathRwanda
           </Link>
-          <button type="button" onClick={onClose} className="min-h-11 min-w-11 rounded border border-line px-3 text-sm text-ink">
+          <button type="button" onClick={onClose} className="min-h-11 min-w-11 rounded-full border border-line px-4 text-sm text-ink">
             Close<span className="sr-only"> menu</span>
           </button>
         </div>
@@ -197,7 +197,7 @@ export default function SiteHeader() {
           type="button"
           onClick={() => setMenu(true)}
           aria-expanded={menu}
-          className={`min-h-11 rounded border px-4 text-sm lg:hidden ${solid ? 'border-line text-ink' : 'border-white/70 text-white'}`}
+          className={`min-h-11 rounded-full border px-4 text-sm lg:hidden ${solid ? 'border-line text-ink' : 'border-white/70 text-white'}`}
         >
           Menu
         </button>

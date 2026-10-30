@@ -64,7 +64,7 @@ function NumberField({ id, label, value, onChange, suffix, hint }) {
           }}
           onBlur={() => setText(null)}
           aria-describedby={hint ? `${id}-hint` : undefined}
-          className="min-h-11 w-32 rounded border border-line bg-surface px-3 tabular-nums"
+          className="min-h-11 w-32 rounded-lg border border-line bg-surface px-3 tabular-nums"
         />
         <span className="text-sm text-muted">{suffix}</span>
       </div>
@@ -79,7 +79,7 @@ function NumberField({ id, label, value, onChange, suffix, hint }) {
 
 function BigNumber({ label, children, extra, wide }) {
   return (
-    <div className={`border-t border-line pt-3 ${wide ? 'col-span-2' : ''}`}>
+    <div className={`box p-4 ${wide ? 'col-span-2' : ''}`}>
       <p className="text-sm text-muted">
         {label}
         {extra}
@@ -248,7 +248,7 @@ export default function Planner() {
 
       <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         {/* Inputs */}
-        <form className="space-y-8" onSubmit={(e) => e.preventDefault()} aria-label="Planner settings">
+        <form className="box space-y-8 self-start p-5 sm:p-6" onSubmit={(e) => e.preventDefault()} aria-label="Planner settings">
           <fieldset>
             <legend className="font-serif text-xl font-semibold">1. Budget</legend>
             <label htmlFor="budget-number" className="mt-3 block text-sm font-medium">
@@ -261,7 +261,7 @@ export default function Planner() {
                 inputMode="numeric"
                 value={fmtInt(amount)}
                 onChange={(e) => setBudget(parseAmount(e.target.value))}
-                className="min-h-11 w-full max-w-xs rounded border border-line bg-surface px-3 text-lg tabular-nums"
+                className="min-h-11 w-full max-w-xs rounded-lg border border-line bg-surface px-3 text-lg tabular-nums"
               />
               <span className="text-muted">RWF</span>
             </div>
@@ -298,7 +298,7 @@ export default function Planner() {
                 return (
                   <label
                     key={s.id}
-                    className={`flex cursor-pointer gap-3 rounded border p-3 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
+                    className={`flex cursor-pointer gap-3 rounded-xl border p-3 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
                       on ? 'border-accent bg-surface' : 'border-line hover:border-muted'
                     }`}
                   >
@@ -323,14 +323,14 @@ export default function Planner() {
               })}
             </div>
 
-            <div className="mt-5 rounded border border-line p-4">
+            <div className="mt-5 rounded-xl border border-line p-4">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <p className="font-medium">Assumptions for: {STOVE_NAMES[stove.id] || stove.name}</p>
                 <button
                   type="button"
                   onClick={() => setEdits((e) => ({ ...e, [stove.id]: undefined }))}
                   disabled={!edited}
-                  className="min-h-11 rounded border border-line px-3 text-sm enabled:hover:border-muted disabled:text-muted"
+                  className="min-h-11 rounded-full border border-line px-4 text-sm enabled:hover:border-muted disabled:text-muted"
                 >
                   Reset to defaults
                 </button>
@@ -419,7 +419,7 @@ export default function Planner() {
               ].map((o) => (
                 <label
                   key={o.id}
-                  className={`flex cursor-pointer gap-3 rounded border p-3 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
+                  className={`flex cursor-pointer gap-3 rounded-xl border p-3 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
                     priority === o.id ? 'border-accent bg-surface' : 'border-line hover:border-muted'
                   }`}
                 >
@@ -450,7 +450,7 @@ export default function Planner() {
             <p className="mt-4">Enter a cost per stove above 0 RWF to see results.</p>
           ) : (
             <>
-              <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4">
+              <div className="mt-4 grid grid-cols-2 gap-4">
                 <BigNumber label="Stoves bought">
                   <AnimatedNumber value={result.stoves} format={fmtInt} />
                 </BigNumber>
@@ -524,7 +524,7 @@ export default function Planner() {
                     <button
                       type="button"
                       onClick={exportCsv}
-                      className="min-h-11 rounded border border-accent px-4 text-accent hover:bg-surface"
+                      className="btn btn-outline"
                     >
                       Download CSV
                     </button>

@@ -73,7 +73,7 @@ export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
     <article key={d.code} aria-labelledby="district-heading" className="panel-in space-y-6">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h2 id="district-heading" ref={headingRef} tabIndex={-1} className="text-3xl focus:outline-none">
+          <h2 id="district-heading" ref={headingRef} tabIndex={-1} className="text-2xl focus:outline-none">
             {d.name}
           </h2>
           <p className="text-muted">{d.province}</p>
@@ -82,7 +82,7 @@ export default function DistrictPanel({ d, nationalPct, onClose, headingRef }) {
           <button
             type="button"
             onClick={onClose}
-            className="min-h-11 min-w-11 rounded border border-line px-3 text-sm hover:border-muted"
+            className="min-h-11 min-w-11 rounded-full border border-line px-4 text-sm hover:border-muted"
           >
             Close<span className="sr-only"> district details</span>
           </button>

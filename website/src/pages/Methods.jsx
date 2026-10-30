@@ -70,11 +70,11 @@ function levelName(o) {
 
 function Section({ id, title, children }) {
   return (
-    <section aria-labelledby={id} className="border-t border-line pt-8">
+    <section aria-labelledby={id} className="box max-w-3xl p-6 sm:p-8">
       <h2 id={id} className="text-2xl">
         {title}
       </h2>
-      <div className="mt-4 max-w-prose space-y-4">{children}</div>
+      <div className="mt-4 space-y-4">{children}</div>
     </section>
   )
 }
@@ -209,7 +209,7 @@ export default function Methods() {
           lower. If the 95% confidence interval includes 1, the survey cannot tell the difference from no effect.
           Cooking fuel and cooking place both include 1.
         </p>
-        <div className="mt-3 overflow-x-auto border border-line">
+        <div className="box mt-3 overflow-x-auto">
           <table className="w-full min-w-[560px] text-sm">
             <caption className="sr-only">Odds ratios from the risk model</caption>
             <thead className="bg-surface">
